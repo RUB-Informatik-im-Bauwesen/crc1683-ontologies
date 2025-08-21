@@ -1,0 +1,311 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en" ],
+    "baseIris" : [ "https://w3id.org/bot", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://example.org/LCMO" ],
+    "iri" : "http://example.org/LCMO"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://example.org/LCMO#LifeCycleStage",
+    "baseIri" : "http://example.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LifeCycleStage",
+      "en" : "Life Cycle Stage"
+    },
+    "id" : "6"
+  }, {
+    "iri" : "http://example.org/LCMO#ParameterGroup",
+    "baseIri" : "http://example.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ParameterGroup",
+      "en" : "Parameter Group"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://example.org/LCMO#Resource",
+    "baseIri" : "http://example.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Resource",
+      "en" : "Resource"
+    },
+    "id" : "11"
+  }, {
+    "iri" : "http://example.org/LCMO#PropertyGroup",
+    "baseIri" : "http://example.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PropertyGroup",
+      "en" : "Property Group"
+    },
+    "id" : "4"
+  }, {
+    "instances" : 0,
+    "union" : [ "18", "13", "11", "10" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://example.org/LCMO#ProductElement",
+    "baseIri" : "http://example.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProductElement",
+      "en" : "Product Element"
+    },
+    "subClasses" : [ "21" ],
+    "id" : "10",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://example.org/LCMO#Property",
+    "baseIri" : "http://example.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Property",
+      "en" : "Property"
+    },
+    "id" : "5"
+  }, {
+    "iri" : "http://example.org/LCMO#DataObject",
+    "baseIri" : "http://example.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataObject",
+      "en" : "Data Object"
+    },
+    "id" : "17"
+  }, {
+    "iri" : "http://example.org/LCMO#Process",
+    "baseIri" : "http://example.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Process",
+      "en" : "Process"
+    },
+    "id" : "18"
+  }, {
+    "iri" : "http://example.org/LCMO#Product",
+    "baseIri" : "http://example.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Product",
+      "en" : "Product"
+    },
+    "subClasses" : [ "10" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://example.org/LCMO#Activity",
+    "baseIri" : "http://example.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Activity",
+      "en" : "Activity"
+    },
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/bot#Element",
+    "baseIri" : "https://w3id.org/bot",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Element"
+    },
+    "attributes" : [ "external" ],
+    "id" : "21",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://example.org/LCMO#Parameter",
+    "baseIri" : "http://example.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Parameter",
+      "en" : "Parameter"
+    },
+    "id" : "2"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://example.org/LCMO#hasParameter",
+    "baseIri" : "http://example.org/LCMO",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasParameter",
+      "en" : "has parameter"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://example.org/LCMO#hasProperty",
+    "baseIri" : "http://example.org/LCMO",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasProperty",
+      "en" : "has property"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://example.org/LCMO#hasLifeCycleStage",
+    "baseIri" : "http://example.org/LCMO",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasLifeCycleStage",
+      "en" : "has life cycle stage"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://example.org/LCMO#hasParameterGroup",
+    "baseIri" : "http://example.org/LCMO",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasParameterGroup",
+      "en" : "has parameter group"
+    },
+    "domain" : "10",
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "range" : "13",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://example.org/LCMO#hasProductElement",
+    "baseIri" : "http://example.org/LCMO",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasProductElement",
+      "en" : "has product element"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://example.org/LCMO#hasDataObject",
+    "baseIri" : "http://example.org/LCMO",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "hasDataObject",
+      "en" : "has data object"
+    },
+    "domain" : "16",
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://example.org/LCMO#hasProcess",
+    "baseIri" : "http://example.org/LCMO",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "hasProcess",
+      "en" : "has process"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "range" : "10",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://example.org/LCMO#hasResource",
+    "baseIri" : "http://example.org/LCMO",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasResource",
+      "en" : "has resource"
+    },
+    "domain" : "18",
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://example.org/LCMO#hasPropertyGroup",
+    "baseIri" : "http://example.org/LCMO",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasPropertyGroup",
+      "en" : "has property group"
+    },
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "23"
+  } ]
+}

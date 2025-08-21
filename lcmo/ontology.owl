@@ -1,0 +1,257 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.org/LCMO#"
+     xml:base="http://example.org/LCMO"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://example.org/LCMO"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://example.org/LCMO#hasDataObject -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/LCMO#hasDataObject">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org/LCMO#Process"/>
+                    <rdf:Description rdf:about="http://example.org/LCMO#Product"/>
+                    <rdf:Description rdf:about="http://example.org/LCMO#ProductElement"/>
+                    <rdf:Description rdf:about="http://example.org/LCMO#Resource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://example.org/LCMO#DataObject"/>
+        <rdfs:label xml:lang="en">has data object</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/LCMO#hasLifeCycleStage -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/LCMO#hasLifeCycleStage">
+        <rdfs:domain rdf:resource="http://example.org/LCMO#Activity"/>
+        <rdfs:range rdf:resource="http://example.org/LCMO#LifeCycleStage"/>
+        <rdfs:label xml:lang="en">has life cycle stage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/LCMO#hasParameter -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/LCMO#hasParameter">
+        <rdfs:domain rdf:resource="http://example.org/LCMO#ParameterGroup"/>
+        <rdfs:range rdf:resource="http://example.org/LCMO#Parameter"/>
+        <rdfs:label xml:lang="en">has parameter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/LCMO#hasParameterGroup -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/LCMO#hasParameterGroup">
+        <rdfs:domain rdf:resource="http://example.org/LCMO#ProductElement"/>
+        <rdfs:range rdf:resource="http://example.org/LCMO#ParameterGroup"/>
+        <rdfs:label xml:lang="en">has parameter group</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/LCMO#hasProcess -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/LCMO#hasProcess">
+        <rdfs:domain rdf:resource="http://example.org/LCMO#LifeCycleStage"/>
+        <rdfs:range rdf:resource="http://example.org/LCMO#Process"/>
+        <rdfs:label xml:lang="en">has process</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/LCMO#hasProductElement -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/LCMO#hasProductElement">
+        <rdfs:domain rdf:resource="http://example.org/LCMO#LifeCycleStage"/>
+        <rdfs:range rdf:resource="http://example.org/LCMO#ProductElement"/>
+        <rdfs:label xml:lang="en">has product element</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/LCMO#hasProperty -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/LCMO#hasProperty">
+        <rdfs:domain rdf:resource="http://example.org/LCMO#PropertyGroup"/>
+        <rdfs:range rdf:resource="http://example.org/LCMO#Property"/>
+        <rdfs:label xml:lang="en">has property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/LCMO#hasPropertyGroup -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/LCMO#hasPropertyGroup">
+        <rdfs:domain rdf:resource="http://example.org/LCMO#Resource"/>
+        <rdfs:range rdf:resource="http://example.org/LCMO#PropertyGroup"/>
+        <rdfs:label xml:lang="en">has property group</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/LCMO#hasResource -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/LCMO#hasResource">
+        <rdfs:domain rdf:resource="http://example.org/LCMO#Process"/>
+        <rdfs:range rdf:resource="http://example.org/LCMO#Resource"/>
+        <rdfs:label xml:lang="en">has resource</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://example.org/LCMO#Activity -->
+
+
+    <owl:Class rdf:about="http://example.org/LCMO#Activity">
+        <rdfs:label xml:lang="en">Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/LCMO#DataObject -->
+
+
+    <owl:Class rdf:about="http://example.org/LCMO#DataObject">
+        <rdfs:label xml:lang="en">Data Object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/LCMO#LifeCycleStage -->
+
+
+    <owl:Class rdf:about="http://example.org/LCMO#LifeCycleStage">
+        <rdfs:label xml:lang="en">Life Cycle Stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/LCMO#Parameter -->
+
+
+    <owl:Class rdf:about="http://example.org/LCMO#Parameter">
+        <rdfs:label xml:lang="en">Parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/LCMO#ParameterGroup -->
+
+
+    <owl:Class rdf:about="http://example.org/LCMO#ParameterGroup">
+        <rdfs:label xml:lang="en">Parameter Group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/LCMO#Process -->
+
+
+    <owl:Class rdf:about="http://example.org/LCMO#Process">
+        <rdfs:label xml:lang="en">Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/LCMO#Product -->
+
+
+    <owl:Class rdf:about="http://example.org/LCMO#Product">
+        <rdfs:label xml:lang="en">Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/LCMO#ProductElement -->
+
+
+    <owl:Class rdf:about="http://example.org/LCMO#ProductElement">
+        <rdfs:subClassOf rdf:resource="http://example.org/LCMO#Product"/>
+        <rdfs:label xml:lang="en">Product Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/LCMO#Property -->
+
+
+    <owl:Class rdf:about="http://example.org/LCMO#Property">
+        <rdfs:label xml:lang="en">Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/LCMO#PropertyGroup -->
+
+
+    <owl:Class rdf:about="http://example.org/LCMO#PropertyGroup">
+        <rdfs:label xml:lang="en">Property Group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/LCMO#Resource -->
+
+
+    <owl:Class rdf:about="http://example.org/LCMO#Resource">
+        <rdfs:label xml:lang="en">Resource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bot#Element -->
+
+
+    <owl:Class rdf:about="https://w3id.org/bot#Element">
+        <rdfs:subClassOf rdf:resource="http://example.org/LCMO#ProductElement"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
