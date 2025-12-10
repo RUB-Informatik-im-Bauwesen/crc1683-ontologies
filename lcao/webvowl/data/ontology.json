@@ -1,0 +1,1712 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "https://schema.org", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/LCMO", "https://w3id.org/LCAO" ],
+    "iri" : "https://w3id.org/LCAO",
+    "author" : [ "_:genid2147483653" ],
+    "labels" : {
+      "undefined" : "LCAO Ontology"
+    },
+    "comments" : {
+      "en" : "TODO: write description"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "_:genid2147483653",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "_:genid2147483652",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2025-12-10",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "lcao",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "undefined",
+        "value" : "https://github.com/RUB-Informatik-im-Bauwesen/crc1683-ontologies/tree/main/lcao",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "5",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/LCAO#LCAScenario",
+    "baseIri" : "https://w3id.org/LCAO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LCAScenario"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/LCAO#LCAScenario_Slab_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "labels" : {
+        "IRI-based" : "LCAScenario_Slab_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#LCAScenario_Beam_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "labels" : {
+        "IRI-based" : "LCAScenario_Beam_1"
+      }
+    } ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/LCMO#ConstructionProcess",
+    "baseIri" : "https://w3id.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConstructionProcess"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/LCMO#ProcessResource",
+    "baseIri" : "https://w3id.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProcessResource"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/LCAO#LCAMetaData",
+    "baseIri" : "https://w3id.org/LCAO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LCAMetaData"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/LCAO#LCAMetaData_Beam_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "labels" : {
+        "IRI-based" : "LCAMetaData_Beam_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#LCAMetaData_Slab_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "labels" : {
+        "IRI-based" : "LCAMetaData_Slab_1"
+      }
+    } ],
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/LCAO#ProcessEnvironmentalIndicator",
+    "baseIri" : "https://w3id.org/LCAO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProcessEnvironmentalIndicator"
+    },
+    "subClasses" : [ "9", "10", "11" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/LCAO#SubProcessImpactIndicator",
+    "baseIri" : "https://w3id.org/LCAO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubProcessImpactIndicator"
+    },
+    "id" : "13",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/LCAO#FlowPropertySet",
+    "baseIri" : "https://w3id.org/LCAO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FlowPropertySet"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/LCAO#EnergyConsumption_SpecificCrane_Literature_PropertySet_Slab_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasSource" : [ {
+          "identifier" : "hasSource",
+          "language" : "undefined",
+          "value" : "Sensor_1234-5678-9012-3456",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "EnergyConsumption_SpecificCrane_Literature_PropertySet_Slab_1"
+      }
+    } ],
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/LCAO#SubProcessInventoryIndicator",
+    "baseIri" : "https://w3id.org/LCAO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubProcessInventoryIndicator"
+    },
+    "id" : "18",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HTML"
+    },
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "instances" : 0,
+    "union" : [ "29", "34" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "26",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "https://w3id.org/LCAO#Flow",
+    "baseIri" : "https://w3id.org/LCAO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Flow"
+    },
+    "id" : "15"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/LCAO#ProcessInventoryIndicator",
+    "baseIri" : "https://w3id.org/LCAO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProcessInventoryIndicator"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/LCAO#PERT_Extraction_Literature_Beam_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "kg CO2 eq.",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "6.83",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PERT_Extraction_Literature_Beam_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#PERT_Extraction_Beam_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "labels" : {
+        "IRI-based" : "PERT_Extraction_Beam_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#PENRT_Extraction_Literature_Beam_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "kg CO2 eq.",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "10.5",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PENRT_Extraction_Literature_Beam_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#PERT_Transfer_Literature_Slab_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "MJ",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "390",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PERT_Transfer_Literature_Slab_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#PERT_Transport_Slab_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "MJ",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "1.28",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PERT_Transport_Slab_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#PENRT_Transfer_Literature_Slab_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "MJ",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "597",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PENRT_Transfer_Literature_Slab_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#PENRT_Transfer_Slab_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "MJ",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "109",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PENRT_Transfer_Slab_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#PERT_Transport_Literature_Beam_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "MJ",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "8.52",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PERT_Transport_Literature_Beam_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#PERT_Transfer_Slab_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "MJ",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "71.4",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PERT_Transfer_Slab_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#PENRT_Transport_Literature_Slab_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "MJ",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "195",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PENRT_Transport_Literature_Slab_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#PENRT_Extraction_Slab_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "kg CO2 eq.",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "76.859",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PENRT_Extraction_Slab_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#PERT_Transfer_Beam_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "MJ",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "71.3",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PERT_Transfer_Beam_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#PENRT_Transport_Slab_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "MJ",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "22",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PENRT_Transport_Slab_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#PENRT_Extraction_Literature_Slab_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "kg CO2 eq.",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "4005.5",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PENRT_Extraction_Literature_Slab_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#PERT_Extraction_Literature_Slab_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "kg CO2 eq.",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "2624.83",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PERT_Extraction_Literature_Slab_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#PENRT_Transport_Beam_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "MJ",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "15.7",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PENRT_Transport_Beam_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#PENRT_Extraction_Beam_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "labels" : {
+        "IRI-based" : "PENRT_Extraction_Beam_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#PENRT_Transport_Literature_Beam_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "MJ",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "147",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PENRT_Transport_Literature_Beam_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#PERT_Extraction_Slab_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "kg CO2 eq.",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "50.13",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PERT_Extraction_Slab_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#PENRT_Transfer_Literature_Beam_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "MJ",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "418",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PENRT_Transfer_Literature_Beam_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#PERT_Transport_Beam_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "MJ",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "0.914",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PERT_Transport_Beam_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#PERT_Transfer_Literature_Beam_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "MJ",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "273",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PERT_Transfer_Literature_Beam_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#PENRT_Transfer_Beam_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "MJ",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "109",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PENRT_Transfer_Beam_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#PERT_Transport_Literature_Slab_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "MJ",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "11.3",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PERT_Transport_Literature_Slab_1"
+      }
+    } ],
+    "id" : "10",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://w3id.org/LCAO#LCIAMethod",
+    "baseIri" : "https://w3id.org/LCAO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LCIAMethod"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/LCAO#LCIAMethod_Slab_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasName" : [ {
+          "identifier" : "hasName",
+          "language" : "undefined",
+          "value" : "DIN EN 15804",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "Based on PEF 3.1 (Product Environmental Footprint)"
+      },
+      "labels" : {
+        "IRI-based" : "LCIAMethod_Slab_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#LCIAMethod_Beam_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasName" : [ {
+          "identifier" : "hasName",
+          "language" : "undefined",
+          "value" : "DIN EN 15804",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "Based on PEF 3.1 (Product Environmental Footprint)"
+      },
+      "labels" : {
+        "IRI-based" : "LCIAMethod_Beam_1"
+      }
+    } ],
+    "id" : "24"
+  }, {
+    "iri" : "https://w3id.org/LCAO#SystemBoundary",
+    "baseIri" : "https://w3id.org/LCAO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SystemBoundary"
+    },
+    "id" : "49"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "https://schema.org/Person",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "attributes" : [ "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://w3id.org/LCAO#FunctionalUnit",
+    "baseIri" : "https://w3id.org/LCAO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FunctionalUnit"
+    },
+    "id" : "7"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "https://w3id.org/LCAO#LCAApplicationPoint",
+    "baseIri" : "https://w3id.org/LCAO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LCAApplicationPoint"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/LCAO#LCAApplicationPoint_Beam_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "labels" : {
+        "IRI-based" : "LCAApplicationPoint_Beam_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#LCAApplicationPoint_Slab_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "labels" : {
+        "IRI-based" : "LCAApplicationPoint_Slab_1"
+      }
+    } ],
+    "id" : "39"
+  }, {
+    "iri" : "https://w3id.org/LCAO#Process",
+    "equivalent" : [ "4" ],
+    "baseIri" : "https://w3id.org/LCAO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Process"
+    },
+    "subClasses" : [ "29" ],
+    "attributes" : [ "equivalent" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/LCAO#SubProcessEnvironmentalIndicator",
+    "baseIri" : "https://w3id.org/LCAO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubProcessEnvironmentalIndicator"
+    },
+    "subClasses" : [ "18", "13" ],
+    "id" : "9",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "https://w3id.org/LCAO#ProcessImpactIndicator",
+    "baseIri" : "https://w3id.org/LCAO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProcessImpactIndicator"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/LCAO#GWP_Extraction_Literature_Slab_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "kg CO2 eq.",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "321.941",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "GWP_Extraction_Literature_Slab_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#GWP_Transfer_Beam_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "kg CO2 eq.",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "8.78",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "GWP_Transfer_Beam_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#GWP_Transfer_Literature_Beam_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "kg CO2 eq.",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "33.6",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "GWP_Transfer_Literature_Beam_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#GWP_Transport_Slab_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "kg CO2 eq.",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "1.67",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "GWP_Transport_Slab_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#GWP_Extraction_Slab_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "kg CO2 eq.",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "6.1729",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "GWP_Extraction_Slab_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#GWP_Transport_Literature_Slab_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "kg CO2 eq.",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "14.8",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "GWP_Transport_Literature_Slab_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#GWP_Transport_Literature_Beam_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "kg CO2 eq.",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "11.13",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "GWP_Transport_Literature_Beam_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#GWP_Extraction_Literature_Beam_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "kg CO2 eq.",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "0.841",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "GWP_Extraction_Literature_Beam_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#GWP_Transfer_Slab_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "kg CO2 eq.",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "8.8",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "GWP_Transfer_Slab_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#GWP_Extraction_Beam_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "labels" : {
+        "IRI-based" : "GWP_Extraction_Beam_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#GWP_Transfer_Literature_Slab_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "kg CO2 eq.",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "48",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "GWP_Transfer_Literature_Slab_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#GWP_Transport_Beam_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "kg CO2 eq.",
+          "type" : "label"
+        } ],
+        "hasValue" : [ {
+          "identifier" : "hasValue",
+          "language" : "undefined",
+          "value" : "1.2",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "GWP_Transport_Beam_1"
+      }
+    } ],
+    "id" : "11",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://w3id.org/LCAO#LCAStudy",
+    "baseIri" : "https://w3id.org/LCAO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LCAStudy"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/LCAO#LCAStudy_Beam_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "labels" : {
+        "IRI-based" : "LCAStudy_Beam_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#LCAStudy_Slab_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "labels" : {
+        "IRI-based" : "LCAStudy_Slab_1"
+      }
+    } ],
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/LCAO#LCIMethod",
+    "baseIri" : "https://w3id.org/LCAO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LCIMethod"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/LCAO#LCIMethod_Slab_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasName" : [ {
+          "identifier" : "hasName",
+          "language" : "undefined",
+          "value" : "Allocation – mass",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "LCIMethod_Slab_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/LCAO#LCIMethod_Beam_1",
+      "baseIri" : "https://w3id.org/LCAO",
+      "annotations" : {
+        "hasName" : [ {
+          "identifier" : "hasName",
+          "language" : "undefined",
+          "value" : "Allocation – mass",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "LCIMethod_Beam_1"
+      }
+    } ],
+    "id" : "51"
+  }, {
+    "iri" : "https://w3id.org/LCAO#SubProcess",
+    "equivalent" : [ "5" ],
+    "baseIri" : "https://w3id.org/LCAO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubProcess"
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "29",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "https://w3id.org/LCMO#ProjectActivity",
+    "baseIri" : "https://w3id.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProjectActivity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Resource"
+    },
+    "attributes" : [ "external" ],
+    "id" : "34"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/LCAO#hasLCAMetaData",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasLCAMetaData"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/LCAO#hasFunctionalUnit",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasFunctionalUnit"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "range" : "9",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/LCAO#isUnitFlow",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "isUnitFlow"
+    },
+    "domain" : "15",
+    "attributes" : [ "datatype" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://w3id.org/LCAO#hasSource",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasSource"
+    },
+    "domain" : "17",
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/LCAO#isFlowType",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "isFlowType"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/LCAO#hasLCIAMethod",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasLCIAMethod"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/LCAO#isLCAApplicationPoint_EoLPlanning",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "isLCAApplicationPoint_EoLPlanning"
+    },
+    "domain" : "26",
+    "attributes" : [ "datatype" ],
+    "id" : "25"
+  }, {
+    "range" : "30",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "range" : "8",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "range" : "9",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/LCAO#hasFlow",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasFlow"
+    },
+    "domain" : "30",
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://w3id.org/LCAO#isLCAApplicationPoint_EoLExecution",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "isLCAApplicationPoint_EoLExecution"
+    },
+    "domain" : "26",
+    "attributes" : [ "datatype" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://w3id.org/LCAO#hasLCAApplicationPoint",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "hasLCAApplicationPoint"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "range" : "8",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "8",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://w3id.org/LCAO#isLCAApplicationPoint_NewConstructionPlanning",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "isLCAApplicationPoint_NewConstructionPlanning"
+    },
+    "domain" : "26",
+    "attributes" : [ "datatype" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/LCAO#hasProcessEnvironmentalIndicator",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasProcessEnvironmentalIndicator"
+    },
+    "domain" : "30",
+    "attributes" : [ "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://w3id.org/LCAO#hasSubProcess",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "hasSubProcess"
+    },
+    "domain" : "30",
+    "attributes" : [ "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/LCAO#hasLCIMethod",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "hasLCIMethod"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/LCAO#isLCAScenarioPrediction",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "isLCAScenarioPrediction"
+    },
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "56"
+  }, {
+    "iri" : "https://w3id.org/LCAO#isLCAScenarioMeasurement",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "isLCAScenarioMeasurement"
+    },
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://w3id.org/LCAO#isLCAScenarioEstimation",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "isLCAScenarioEstimation"
+    },
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://w3id.org/LCAO#isLinkedToProjectActivity",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "isLinkedToProjectActivity"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "61"
+  }, {
+    "iri" : "https://w3id.org/LCAO#hasCharacterizationFactor",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "hasCharacterizationFactor"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://w3id.org/LCAO#isUnitProcess",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "isUnitProcess"
+    },
+    "domain" : "30",
+    "attributes" : [ "datatype" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://w3id.org/LCAO#hasFlowPropertySet",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "hasFlowPropertySet"
+    },
+    "domain" : "15",
+    "attributes" : [ "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://w3id.org/LCAO#hasExchangeDirection",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "hasExchangeDirection"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://w3id.org/LCAO#hasProcess",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "hasProcess"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://w3id.org/LCAO#isPartOfForegroundSystem",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "isPartOfForegroundSystem"
+    },
+    "domain" : "30",
+    "attributes" : [ "datatype" ],
+    "id" : "68"
+  }, {
+    "iri" : "https://w3id.org/LCAO#hasLCAScenario",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasLCAScenario"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://w3id.org/LCAO#hasSystemBoundary",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "hasSystemBoundary"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://w3id.org/LCAO#hasAllocationRule",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "hasAllocationRule"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://w3id.org/LCAO#hasSubProcessEnvironmentalIndicator",
+    "baseIri" : "https://w3id.org/LCAO",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasSubProcessEnvironmentalIndicator"
+    },
+    "domain" : "29",
+    "attributes" : [ "object" ],
+    "id" : "72"
+  } ]
+}

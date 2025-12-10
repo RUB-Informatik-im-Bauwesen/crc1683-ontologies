@@ -4,7 +4,7 @@
     "languages" : [ "en", "undefined" ],
     "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "https://schema.org", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/LCMO", "https://w3id.org/COPO" ],
     "iri" : "https://w3id.org/COPO",
-    "author" : [ "_:genid2147483649" ],
+    "author" : [ "_:genid2147483657" ],
     "labels" : {
       "undefined" : "COPO Ontology"
     },
@@ -21,13 +21,13 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "_:genid2147483649",
+        "value" : "_:genid2147483657",
         "type" : "label"
       } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "_:genid2147483648",
+        "value" : "_:genid2147483656",
         "type" : "label"
       } ],
       "created" : [ {
@@ -61,7 +61,7 @@
     "id" : "7",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "10",
     "type" : "owl:Class"
   }, {
     "id" : "12",
@@ -73,10 +73,10 @@
     "id" : "17",
     "type" : "owl:Class"
   }, {
-    "id" : "21",
+    "id" : "25",
     "type" : "owl:Class"
   }, {
-    "id" : "23",
+    "id" : "19",
     "type" : "owl:Class"
   }, {
     "id" : "43",
@@ -97,13 +97,13 @@
     "id" : "58",
     "type" : "owl:Class"
   }, {
-    "id" : "11",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
-    "id" : "19",
+    "id" : "27",
     "type" : "owl:Class"
   }, {
-    "id" : "25",
+    "id" : "21",
     "type" : "owl:Class"
   }, {
     "id" : "59",
@@ -115,10 +115,10 @@
     "id" : "65",
     "type" : "owl:Class"
   }, {
-    "id" : "51",
+    "id" : "8",
     "type" : "owl:Class"
   }, {
-    "id" : "10",
+    "id" : "51",
     "type" : "owl:Class"
   }, {
     "id" : "73",
@@ -133,7 +133,7 @@
     "id" : "55",
     "type" : "owl:Class"
   }, {
-    "id" : "26",
+    "id" : "22",
     "type" : "owl:Class"
   }, {
     "id" : "85",
@@ -142,7 +142,7 @@
     "id" : "41",
     "type" : "owl:Class"
   }, {
-    "id" : "20",
+    "id" : "28",
     "type" : "owl:Class"
   }, {
     "id" : "46",
@@ -154,7 +154,7 @@
     "id" : "32",
     "type" : "owl:Class"
   }, {
-    "id" : "18",
+    "id" : "26",
     "type" : "owl:Class"
   }, {
     "id" : "98",
@@ -190,22 +190,22 @@
     "id" : "39",
     "type" : "owl:Class"
   }, {
-    "id" : "24",
-    "type" : "owl:Class"
-  }, {
-    "id" : "48",
+    "id" : "20",
     "type" : "owl:Class"
   }, {
     "id" : "105",
     "type" : "owl:Class"
   }, {
-    "id" : "28",
+    "id" : "48",
     "type" : "owl:Class"
   }, {
-    "id" : "106",
+    "id" : "24",
     "type" : "owl:Class"
   }, {
     "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
     "type" : "owl:Class"
   }, {
     "id" : "37",
@@ -220,7 +220,7 @@
     "id" : "42",
     "type" : "owl:Class"
   }, {
-    "id" : "8",
+    "id" : "11",
     "type" : "owl:Class"
   }, {
     "id" : "118",
@@ -238,7 +238,7 @@
     "id" : "116",
     "type" : "owl:Class"
   }, {
-    "id" : "22",
+    "id" : "18",
     "type" : "owl:Class"
   }, {
     "id" : "131",
@@ -277,7 +277,7 @@
     "id" : "96",
     "type" : "owl:Class"
   }, {
-    "id" : "27",
+    "id" : "23",
     "type" : "owl:Class"
   }, {
     "id" : "139",
@@ -347,6 +347,16 @@
     "id" : "5",
     "superClasses" : [ "6" ]
   }, {
+    "iri" : "https://w3id.org/LCMO#ConstructionProcessPropertyGroup",
+    "baseIri" : "https://w3id.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConstructionProcessPropertyGroup"
+    },
+    "subClasses" : [ "8", "9" ],
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
     "iri" : "https://w3id.org/COPO#Removal",
     "baseIri" : "https://w3id.org/COPO",
     "instances" : 0,
@@ -356,18 +366,8 @@
     "comment" : {
       "undefined" : "According to DIN 18007: Demolition works – Concepts, procedures, fields of application"
     },
-    "id" : "7",
-    "superClasses" : [ "8" ]
-  }, {
-    "iri" : "https://w3id.org/LCMO#ConstructionProcessPropertyGroup",
-    "baseIri" : "https://w3id.org/LCMO",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ConstructionProcessPropertyGroup"
-    },
-    "subClasses" : [ "10", "11" ],
-    "attributes" : [ "external" ],
-    "id" : "9"
+    "id" : "10",
+    "superClasses" : [ "11" ]
   }, {
     "iri" : "https://w3id.org/COPO#Length",
     "baseIri" : "https://w3id.org/COPO",
@@ -420,22 +420,22 @@
         "concernsLifeCycleModule" : [ {
           "identifier" : "concernsLifeCycleModule",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#C2_Transport_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "concernsLifeCycleModule",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#C3_Recycling_WasteProcessing_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "concernsLifeCycleModule",
-          "language" : "undefined",
           "value" : "https://w3id.org/COPO#C1_Deconstruction_1",
           "type" : "iri"
         }, {
           "identifier" : "concernsLifeCycleModule",
           "language" : "undefined",
+          "value" : "https://w3id.org/COPO#C2_Transport_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "concernsLifeCycleModule",
+          "language" : "undefined",
           "value" : "https://w3id.org/COPO#C4_Disposal_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "concernsLifeCycleModule",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#C3_Recycling_WasteProcessing_1",
           "type" : "iri"
         } ]
       },
@@ -447,25 +447,25 @@
     "id" : "15",
     "superClasses" : [ "16" ]
   }, {
-    "iri" : "https://w3id.org/LCMO#ConstructionProcess",
-    "baseIri" : "https://w3id.org/LCMO",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ConstructionProcess"
-    },
-    "subClasses" : [ "18", "19", "20" ],
-    "attributes" : [ "external" ],
-    "id" : "17"
-  }, {
     "iri" : "https://w3id.org/LCMO#ProcessResource",
     "baseIri" : "https://w3id.org/LCMO",
     "instances" : 0,
     "label" : {
       "IRI-based" : "ProcessResource"
     },
-    "subClasses" : [ "22", "23", "24", "25", "26", "27", "28" ],
+    "subClasses" : [ "18", "19", "20", "21", "22", "23", "24" ],
     "attributes" : [ "external" ],
-    "id" : "21"
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/LCMO#ConstructionProcess",
+    "baseIri" : "https://w3id.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConstructionProcess"
+    },
+    "subClasses" : [ "26", "27", "28" ],
+    "attributes" : [ "external" ],
+    "id" : "25"
   }, {
     "iri" : "https://w3id.org/COPO#HammerDrill",
     "baseIri" : "https://w3id.org/COPO",
@@ -488,8 +488,8 @@
         "IRI-based" : "HammerDrill_1"
       }
     } ],
-    "id" : "23",
-    "superClasses" : [ "21" ]
+    "id" : "19",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "https://w3id.org/COPO#Materialname",
     "baseIri" : "https://w3id.org/COPO",
@@ -580,27 +580,7 @@
         "hasConstructionProcessPropertyGroup" : [ {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#CapacityUtilization_Demag_AC100-4_Slab_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
           "value" : "https://w3id.org/COPO#Power_Demag_AC100-4_Slab_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#Power_Demag_AC100-4_Beam_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#EnergyConsumption_Demag_AC100-4_Beam_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#CapacityUtilization_Demag_AC100-4_Beam_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
@@ -610,12 +590,22 @@
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#WorkingTime_Demag_AC100-4_Slab_1",
+          "value" : "https://w3id.org/COPO#Power_Demag_AC100-4_Beam_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#WorkingTime_Demag_AC100-4_Beam_1",
+          "value" : "https://w3id.org/COPO#CapacityUtilization_Demag_AC100-4_Beam_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#EnergyConsumptionRecorded_Slab_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#CapacityUtilization_Demag_AC100-4_Slab_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
@@ -625,7 +615,17 @@
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#EnergyConsumptionRecorded_Slab_1",
+          "value" : "https://w3id.org/COPO#WorkingTime_Demag_AC100-4_Beam_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#EnergyConsumption_Demag_AC100-4_Beam_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#WorkingTime_Demag_AC100-4_Slab_1",
           "type" : "iri"
         } ]
       },
@@ -713,8 +713,8 @@
         "IRI-based" : "EnergyConsumptionRecorded_Beam_1"
       }
     } ],
-    "id" : "11",
-    "superClasses" : [ "9" ]
+    "id" : "9",
+    "superClasses" : [ "7" ]
   }, {
     "iri" : "https://w3id.org/COPO#Extraction",
     "baseIri" : "https://w3id.org/COPO",
@@ -740,12 +740,12 @@
         }, {
           "identifier" : "hasProcessResource",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#DemolitionHammer_1",
+          "value" : "https://w3id.org/COPO#CuttingTorch_1",
           "type" : "iri"
         }, {
           "identifier" : "hasProcessResource",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#Saw_1",
+          "value" : "https://w3id.org/COPO#DemolitionHammer_1",
           "type" : "iri"
         }, {
           "identifier" : "hasProcessResource",
@@ -755,23 +755,13 @@
         }, {
           "identifier" : "hasProcessResource",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#CuttingTorch_1",
+          "value" : "https://w3id.org/COPO#Saw_1",
           "type" : "iri"
         } ],
         "hasProcessEnvironmentalIndicator" : [ {
           "identifier" : "hasProcessEnvironmentalIndicator",
           "language" : "undefined",
-          "value" : "https://w3id.org/LCAO#PERT_Extraction_Literature_Slab_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasProcessEnvironmentalIndicator",
-          "language" : "undefined",
           "value" : "https://w3id.org/LCAO#GWP_Extraction_Literature_Slab_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasProcessEnvironmentalIndicator",
-          "language" : "undefined",
-          "value" : "https://w3id.org/LCAO#PERT_Extraction_Slab_1",
           "type" : "iri"
         }, {
           "identifier" : "hasProcessEnvironmentalIndicator",
@@ -781,12 +771,22 @@
         }, {
           "identifier" : "hasProcessEnvironmentalIndicator",
           "language" : "undefined",
+          "value" : "https://w3id.org/LCAO#PENRT_Extraction_Slab_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasProcessEnvironmentalIndicator",
+          "language" : "undefined",
           "value" : "https://w3id.org/LCAO#GWP_Extraction_Slab_1",
           "type" : "iri"
         }, {
           "identifier" : "hasProcessEnvironmentalIndicator",
           "language" : "undefined",
-          "value" : "https://w3id.org/LCAO#PENRT_Extraction_Slab_1",
+          "value" : "https://w3id.org/LCAO#PERT_Extraction_Slab_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasProcessEnvironmentalIndicator",
+          "language" : "undefined",
+          "value" : "https://w3id.org/LCAO#PERT_Extraction_Literature_Slab_1",
           "type" : "iri"
         } ],
         "hasSubsequentConstructionProcess" : [ {
@@ -818,17 +818,7 @@
         "hasProcessEnvironmentalIndicator" : [ {
           "identifier" : "hasProcessEnvironmentalIndicator",
           "language" : "undefined",
-          "value" : "https://w3id.org/LCAO#GWP_Extraction_Beam_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasProcessEnvironmentalIndicator",
-          "language" : "undefined",
           "value" : "https://w3id.org/LCAO#GWP_Extraction_Literature_Beam_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasProcessEnvironmentalIndicator",
-          "language" : "undefined",
-          "value" : "https://w3id.org/LCAO#PENRT_Extraction_Literature_Beam_1",
           "type" : "iri"
         }, {
           "identifier" : "hasProcessEnvironmentalIndicator",
@@ -838,12 +828,22 @@
         }, {
           "identifier" : "hasProcessEnvironmentalIndicator",
           "language" : "undefined",
-          "value" : "https://w3id.org/LCAO#PENRT_Extraction_Beam_1",
+          "value" : "https://w3id.org/LCAO#PERT_Extraction_Beam_1",
           "type" : "iri"
         }, {
           "identifier" : "hasProcessEnvironmentalIndicator",
           "language" : "undefined",
-          "value" : "https://w3id.org/LCAO#PERT_Extraction_Beam_1",
+          "value" : "https://w3id.org/LCAO#GWP_Extraction_Beam_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasProcessEnvironmentalIndicator",
+          "language" : "undefined",
+          "value" : "https://w3id.org/LCAO#PENRT_Extraction_Literature_Beam_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasProcessEnvironmentalIndicator",
+          "language" : "undefined",
+          "value" : "https://w3id.org/LCAO#PENRT_Extraction_Beam_1",
           "type" : "iri"
         } ],
         "hasSubsequentConstructionProcess" : [ {
@@ -857,8 +857,8 @@
         "IRI-based" : "Extraction_Beam_1"
       }
     } ],
-    "id" : "19",
-    "superClasses" : [ "17" ]
+    "id" : "27",
+    "superClasses" : [ "25" ]
   }, {
     "iri" : "https://w3id.org/COPO#Truck",
     "baseIri" : "https://w3id.org/COPO",
@@ -873,12 +873,12 @@
         "hasResourceType" : [ {
           "identifier" : "hasResourceType",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#Mercedes-Benz_Actros_2653_LS_1",
+          "value" : "https://w3id.org/COPO#SpecificTruck_Literature_1",
           "type" : "iri"
         }, {
           "identifier" : "hasResourceType",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#SpecificTruck_Literature_1",
+          "value" : "https://w3id.org/COPO#Mercedes-Benz_Actros_2653_LS_1",
           "type" : "iri"
         } ]
       },
@@ -886,8 +886,8 @@
         "IRI-based" : "Truck_1"
       }
     } ],
-    "id" : "25",
-    "superClasses" : [ "21" ]
+    "id" : "21",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "https://w3id.org/COPO#WorkingTime",
     "baseIri" : "https://w3id.org/COPO",
@@ -1020,12 +1020,6 @@
         "IRI-based" : "WorkingTime_SpecificHammerDrill_Literature_Beam_1"
       }
     }, {
-      "iri" : "https://w3id.org/COPO#WorkingTime_Hilti_DST_10-CA_Beam_1",
-      "baseIri" : "https://w3id.org/COPO",
-      "labels" : {
-        "IRI-based" : "WorkingTime_Hilti_DST_10-CA_Beam_1"
-      }
-    }, {
       "iri" : "https://w3id.org/COPO#WorkingTime_Hilti_DST_10-CA_Slab_1",
       "baseIri" : "https://w3id.org/COPO",
       "annotations" : {
@@ -1040,10 +1034,10 @@
         "IRI-based" : "WorkingTime_Hilti_DST_10-CA_Slab_1"
       }
     }, {
-      "iri" : "https://w3id.org/COPO#WorkingTime_SpecificCuttingTorch_Literature_Beam_1",
+      "iri" : "https://w3id.org/COPO#WorkingTime_Hilti_DST_10-CA_Beam_1",
       "baseIri" : "https://w3id.org/COPO",
       "labels" : {
-        "IRI-based" : "WorkingTime_SpecificCuttingTorch_Literature_Beam_1"
+        "IRI-based" : "WorkingTime_Hilti_DST_10-CA_Beam_1"
       }
     }, {
       "iri" : "https://w3id.org/COPO#WorkingTime_SpecificCuttingTorch_Literature_Slab_1",
@@ -1058,6 +1052,12 @@
       },
       "labels" : {
         "IRI-based" : "WorkingTime_SpecificCuttingTorch_Literature_Slab_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/COPO#WorkingTime_SpecificCuttingTorch_Literature_Beam_1",
+      "baseIri" : "https://w3id.org/COPO",
+      "labels" : {
+        "IRI-based" : "WorkingTime_SpecificCuttingTorch_Literature_Beam_1"
       }
     }, {
       "iri" : "https://w3id.org/COPO#WorkingTime_Demag_AC100-4_Slab_1",
@@ -1137,27 +1137,12 @@
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#Power_SpecificCuttingTorch_Literature_Beam_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#CapacityUtilization_SpecificCuttingTorch_Literature_Beam_1",
+          "value" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
           "value" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Slab_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#Power_SpecificCuttingTorch_Literature_Slab_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#WorkingTime_SpecificCuttingTorch_Literature_Slab_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
@@ -1172,12 +1157,27 @@
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1",
+          "value" : "https://w3id.org/COPO#WorkingTime_SpecificCuttingTorch_Literature_Slab_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#Power_SpecificCuttingTorch_Literature_Beam_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#Power_SpecificCuttingTorch_Literature_Slab_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
           "value" : "https://w3id.org/COPO#WorkingTime_SpecificCuttingTorch_Literature_Beam_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#CapacityUtilization_SpecificCuttingTorch_Literature_Beam_1",
           "type" : "iri"
         } ]
       },
@@ -1228,18 +1228,6 @@
     "id" : "65",
     "superClasses" : [ "66" ]
   }, {
-    "iri" : "https://w3id.org/COPO#MechanicalProcedure",
-    "baseIri" : "https://w3id.org/COPO",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MechanicalProcedure"
-    },
-    "comment" : {
-      "undefined" : "According to DIN 18007: Demolition works – Concepts, procedures, fields of application"
-    },
-    "id" : "51",
-    "superClasses" : [ "8" ]
-  }, {
     "iri" : "https://w3id.org/COPO#EnergyConsumptionLiterature",
     "baseIri" : "https://w3id.org/COPO",
     "instances" : 0,
@@ -1259,8 +1247,20 @@
         "IRI-based" : "EnergyConsumptionLiterature_Beam_1"
       }
     } ],
-    "id" : "10",
-    "superClasses" : [ "9" ]
+    "id" : "8",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/COPO#MechanicalProcedure",
+    "baseIri" : "https://w3id.org/COPO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MechanicalProcedure"
+    },
+    "comment" : {
+      "undefined" : "According to DIN 18007: Demolition works – Concepts, procedures, fields of application"
+    },
+    "id" : "51",
+    "superClasses" : [ "11" ]
   }, {
     "iri" : "https://w3id.org/COPO#EnergyConsumption",
     "baseIri" : "https://w3id.org/COPO",
@@ -1273,6 +1273,20 @@
       "baseIri" : "https://w3id.org/COPO",
       "labels" : {
         "IRI-based" : "EnergyConsumption_SpecificTruck_Literature_Slab_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/COPO#EnergyConsumption_Hilti_DST_20-CA_Slab_1",
+      "baseIri" : "https://w3id.org/COPO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "MJ",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "EnergyConsumption_Hilti_DST_20-CA_Slab_1"
       }
     }, {
       "iri" : "https://w3id.org/COPO#EnergyConsumption_Demag_AC100-4_Slab_1",
@@ -1301,20 +1315,6 @@
       },
       "labels" : {
         "IRI-based" : "EnergyConsumption_Demag_AC100-4_Beam_1"
-      }
-    }, {
-      "iri" : "https://w3id.org/COPO#EnergyConsumption_Hilti_DST_20-CA_Slab_1",
-      "baseIri" : "https://w3id.org/COPO",
-      "annotations" : {
-        "hasUnit" : [ {
-          "identifier" : "hasUnit",
-          "language" : "undefined",
-          "value" : "MJ",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "EnergyConsumption_Hilti_DST_20-CA_Slab_1"
       }
     }, {
       "iri" : "https://w3id.org/COPO#EnergyConsumption_Mercedes-Benz_Actros_2653_LS_Beam_1",
@@ -1347,20 +1347,6 @@
         "IRI-based" : "EnergyConsumption_SpecificCuttingTorch_Literature_Beam_1"
       }
     }, {
-      "iri" : "https://w3id.org/COPO#EnergyConsumption_SpecificExcavator_Literature_Beam_1",
-      "baseIri" : "https://w3id.org/COPO",
-      "annotations" : {
-        "hasUnit" : [ {
-          "identifier" : "hasUnit",
-          "language" : "undefined",
-          "value" : "MJ",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "EnergyConsumption_SpecificExcavator_Literature_Beam_1"
-      }
-    }, {
       "iri" : "https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Slab_1",
       "baseIri" : "https://w3id.org/COPO",
       "annotations" : {
@@ -1373,6 +1359,20 @@
       },
       "labels" : {
         "IRI-based" : "EnergyConsumption_SpecificCrane_Literature_Slab_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/COPO#EnergyConsumption_SpecificExcavator_Literature_Beam_1",
+      "baseIri" : "https://w3id.org/COPO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "MJ",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "EnergyConsumption_SpecificExcavator_Literature_Beam_1"
       }
     }, {
       "iri" : "https://w3id.org/COPO#EnergyConsumption_SpecificHammerDrill_Literature_Slab_1",
@@ -1423,12 +1423,6 @@
         "IRI-based" : "EnergyConsumption_SpecificCrane_Literature_Beam_1"
       }
     }, {
-      "iri" : "https://w3id.org/COPO#EnergyConsumption_Hilti_DST_20-CA_Beam_1",
-      "baseIri" : "https://w3id.org/COPO",
-      "labels" : {
-        "IRI-based" : "EnergyConsumption_Hilti_DST_20-CA_Beam_1"
-      }
-    }, {
       "iri" : "https://w3id.org/COPO#EnergyConsumption_SpecificExcavator_Literature_Slab_1",
       "baseIri" : "https://w3id.org/COPO",
       "annotations" : {
@@ -1441,6 +1435,12 @@
       },
       "labels" : {
         "IRI-based" : "EnergyConsumption_SpecificExcavator_Literature_Slab_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/COPO#EnergyConsumption_Hilti_DST_20-CA_Beam_1",
+      "baseIri" : "https://w3id.org/COPO",
+      "labels" : {
+        "IRI-based" : "EnergyConsumption_Hilti_DST_20-CA_Beam_1"
       }
     }, {
       "iri" : "https://w3id.org/COPO#EnergyConsumption_SpecificCuttingTorch_Literature_Slab_1",
@@ -1504,12 +1504,6 @@
         "IRI-based" : "Power_SpecificCrane_Literature_Slab_1"
       }
     }, {
-      "iri" : "https://w3id.org/COPO#Power_Hilti_DST_20-CA_Beam_1",
-      "baseIri" : "https://w3id.org/COPO",
-      "labels" : {
-        "IRI-based" : "Power_Hilti_DST_20-CA_Beam_1"
-      }
-    }, {
       "iri" : "https://w3id.org/COPO#Power_SpecificCrane_Literature_Beam_1",
       "baseIri" : "https://w3id.org/COPO",
       "annotations" : {
@@ -1522,6 +1516,12 @@
       },
       "labels" : {
         "IRI-based" : "Power_SpecificCrane_Literature_Beam_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/COPO#Power_Hilti_DST_20-CA_Beam_1",
+      "baseIri" : "https://w3id.org/COPO",
+      "labels" : {
+        "IRI-based" : "Power_Hilti_DST_20-CA_Beam_1"
       }
     }, {
       "iri" : "https://w3id.org/COPO#Power_Demag_AC100-4_Slab_1",
@@ -1590,18 +1590,10 @@
         "IRI-based" : "Power_Demag_AC100-4_Beam_1"
       }
     }, {
-      "iri" : "https://w3id.org/COPO#Power_Hilti_DST_10-CA_Slab_1",
+      "iri" : "https://w3id.org/COPO#Power_Mercedes-Benz_Actros_2653_LS_Beam_1",
       "baseIri" : "https://w3id.org/COPO",
-      "annotations" : {
-        "hasUnit" : [ {
-          "identifier" : "hasUnit",
-          "language" : "undefined",
-          "value" : "kW",
-          "type" : "label"
-        } ]
-      },
       "labels" : {
-        "IRI-based" : "Power_Hilti_DST_10-CA_Slab_1"
+        "IRI-based" : "Power_Mercedes-Benz_Actros_2653_LS_Beam_1"
       }
     }, {
       "iri" : "https://w3id.org/COPO#Power_Mercedes-Benz_Actros_2653_LS_Slab_1",
@@ -1616,13 +1608,7 @@
         "IRI-based" : "Power_Hilti_DST_10-CA_Beam_1"
       }
     }, {
-      "iri" : "https://w3id.org/COPO#Power_Mercedes-Benz_Actros_2653_LS_Beam_1",
-      "baseIri" : "https://w3id.org/COPO",
-      "labels" : {
-        "IRI-based" : "Power_Mercedes-Benz_Actros_2653_LS_Beam_1"
-      }
-    }, {
-      "iri" : "https://w3id.org/COPO#Power_SpecificExcavator_Literature_Slab_1",
+      "iri" : "https://w3id.org/COPO#Power_Hilti_DST_10-CA_Slab_1",
       "baseIri" : "https://w3id.org/COPO",
       "annotations" : {
         "hasUnit" : [ {
@@ -1633,7 +1619,7 @@
         } ]
       },
       "labels" : {
-        "IRI-based" : "Power_SpecificExcavator_Literature_Slab_1"
+        "IRI-based" : "Power_Hilti_DST_10-CA_Slab_1"
       }
     }, {
       "iri" : "https://w3id.org/COPO#Power_SpecificHammerDrill_Literature_Slab_1",
@@ -1648,6 +1634,20 @@
       },
       "labels" : {
         "IRI-based" : "Power_SpecificHammerDrill_Literature_Slab_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/COPO#Power_SpecificExcavator_Literature_Slab_1",
+      "baseIri" : "https://w3id.org/COPO",
+      "annotations" : {
+        "hasUnit" : [ {
+          "identifier" : "hasUnit",
+          "language" : "undefined",
+          "value" : "kW",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Power_SpecificExcavator_Literature_Slab_1"
       }
     }, {
       "iri" : "https://w3id.org/COPO#Power_SpecificCuttingTorch_Literature_Slab_1",
@@ -1677,7 +1677,7 @@
       "undefined" : "According to DIN 18007: Demolition works – Concepts, procedures, fields of application"
     },
     "id" : "55",
-    "superClasses" : [ "8" ]
+    "superClasses" : [ "11" ]
   }, {
     "iri" : "https://w3id.org/COPO#Excavator",
     "baseIri" : "https://w3id.org/COPO",
@@ -1700,8 +1700,8 @@
         "IRI-based" : "Excavator_1"
       }
     } ],
-    "id" : "26",
-    "superClasses" : [ "21" ]
+    "id" : "22",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "https://w3id.org/COPO#SpecificTruck_Literature",
     "baseIri" : "https://w3id.org/COPO",
@@ -1729,27 +1729,7 @@
         "hasConstructionProcessPropertyGroup" : [ {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#EnergyConsumption_SpecificTruck_Literature_Slab_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#WorkingTime_SpecificTruck_Literature_Beam_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#CapacityUtilization_SpecificTruck_Literature_Beam_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#EnergyConsumption_SpecificTruck_Literature_Beam_1",
+          "value" : "https://w3id.org/COPO#CapacityUtilization_SpecificTruck_Literature_Slab_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
@@ -1759,7 +1739,22 @@
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
+          "value" : "https://w3id.org/COPO#WorkingTime_SpecificTruck_Literature_Beam_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
           "value" : "https://w3id.org/COPO#Power_SpecificTruck_Literature_Slab_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#EnergyConsumption_SpecificTruck_Literature_Slab_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
@@ -1769,12 +1764,17 @@
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
+          "value" : "https://w3id.org/COPO#CapacityUtilization_SpecificTruck_Literature_Beam_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
           "value" : "https://w3id.org/COPO#WorkingTime_SpecificTruck_Literature_Slab_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#CapacityUtilization_SpecificTruck_Literature_Slab_1",
+          "value" : "https://w3id.org/COPO#EnergyConsumption_SpecificTruck_Literature_Beam_1",
           "type" : "iri"
         } ]
       },
@@ -1838,7 +1838,7 @@
         "hasProcessEnvironmentalIndicator" : [ {
           "identifier" : "hasProcessEnvironmentalIndicator",
           "language" : "undefined",
-          "value" : "https://w3id.org/LCAO#PERT_Transport_Beam_1",
+          "value" : "https://w3id.org/LCAO#PENRT_Transport_Beam_1",
           "type" : "iri"
         }, {
           "identifier" : "hasProcessEnvironmentalIndicator",
@@ -1848,12 +1848,12 @@
         }, {
           "identifier" : "hasProcessEnvironmentalIndicator",
           "language" : "undefined",
-          "value" : "https://w3id.org/LCAO#PENRT_Transport_Beam_1",
+          "value" : "https://w3id.org/LCAO#GWP_Transport_Beam_1",
           "type" : "iri"
         }, {
           "identifier" : "hasProcessEnvironmentalIndicator",
           "language" : "undefined",
-          "value" : "https://w3id.org/LCAO#GWP_Transport_Beam_1",
+          "value" : "https://w3id.org/LCAO#PENRT_Transport_Literature_Beam_1",
           "type" : "iri"
         }, {
           "identifier" : "hasProcessEnvironmentalIndicator",
@@ -1863,7 +1863,7 @@
         }, {
           "identifier" : "hasProcessEnvironmentalIndicator",
           "language" : "undefined",
-          "value" : "https://w3id.org/LCAO#PENRT_Transport_Literature_Beam_1",
+          "value" : "https://w3id.org/LCAO#PERT_Transport_Beam_1",
           "type" : "iri"
         } ]
       },
@@ -1895,7 +1895,7 @@
         "hasProcessEnvironmentalIndicator" : [ {
           "identifier" : "hasProcessEnvironmentalIndicator",
           "language" : "undefined",
-          "value" : "https://w3id.org/LCAO#GWP_Transport_Literature_Slab_1",
+          "value" : "https://w3id.org/LCAO#PENRT_Transport_Literature_Slab_1",
           "type" : "iri"
         }, {
           "identifier" : "hasProcessEnvironmentalIndicator",
@@ -1910,6 +1910,11 @@
         }, {
           "identifier" : "hasProcessEnvironmentalIndicator",
           "language" : "undefined",
+          "value" : "https://w3id.org/LCAO#GWP_Transport_Literature_Slab_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasProcessEnvironmentalIndicator",
+          "language" : "undefined",
           "value" : "https://w3id.org/LCAO#PERT_Transport_Slab_1",
           "type" : "iri"
         }, {
@@ -1917,19 +1922,14 @@
           "language" : "undefined",
           "value" : "https://w3id.org/LCAO#PERT_Transport_Literature_Slab_1",
           "type" : "iri"
-        }, {
-          "identifier" : "hasProcessEnvironmentalIndicator",
-          "language" : "undefined",
-          "value" : "https://w3id.org/LCAO#PENRT_Transport_Literature_Slab_1",
-          "type" : "iri"
         } ]
       },
       "labels" : {
         "IRI-based" : "Transport_Slab_1"
       }
     } ],
-    "id" : "20",
-    "superClasses" : [ "17" ]
+    "id" : "28",
+    "superClasses" : [ "25" ]
   }, {
     "iri" : "https://w3id.org/COPO#Holcim_C2530",
     "baseIri" : "https://w3id.org/COPO",
@@ -2032,22 +2032,12 @@
         "hasConstructionProcessPropertyGroup" : [ {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
+          "value" : "https://w3id.org/COPO#WorkingTime_SpecificExcavator_Literature_Slab_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
           "value" : "https://w3id.org/COPO#CapacityUtilization_SpecificExcavator_Literature_Beam_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#CapacityUtilization_SpecificExcavator_Literature_Slab_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#WorkingTime_SpecificExcavator_Literature_Beam_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#EnergyConsumption_SpecificExcavator_Literature_Beam_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
@@ -2057,17 +2047,12 @@
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Slab_1",
+          "value" : "https://w3id.org/COPO#EnergyConsumption_SpecificExcavator_Literature_Slab_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#WorkingTime_SpecificExcavator_Literature_Slab_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1",
+          "value" : "https://w3id.org/COPO#WorkingTime_SpecificExcavator_Literature_Beam_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
@@ -2077,7 +2062,22 @@
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#EnergyConsumption_SpecificExcavator_Literature_Slab_1",
+          "value" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#CapacityUtilization_SpecificExcavator_Literature_Slab_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Slab_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#EnergyConsumption_SpecificExcavator_Literature_Beam_1",
           "type" : "iri"
         } ]
       },
@@ -2124,7 +2124,7 @@
         }, {
           "identifier" : "hasProcessEnvironmentalIndicator",
           "language" : "undefined",
-          "value" : "https://w3id.org/LCAO#PERT_Transfer_Slab_1",
+          "value" : "https://w3id.org/LCAO#GWP_Transfer_Slab_1",
           "type" : "iri"
         }, {
           "identifier" : "hasProcessEnvironmentalIndicator",
@@ -2139,12 +2139,12 @@
         }, {
           "identifier" : "hasProcessEnvironmentalIndicator",
           "language" : "undefined",
-          "value" : "https://w3id.org/LCAO#GWP_Transfer_Slab_1",
+          "value" : "https://w3id.org/LCAO#PENRT_Transfer_Slab_1",
           "type" : "iri"
         }, {
           "identifier" : "hasProcessEnvironmentalIndicator",
           "language" : "undefined",
-          "value" : "https://w3id.org/LCAO#PENRT_Transfer_Slab_1",
+          "value" : "https://w3id.org/LCAO#PERT_Transfer_Slab_1",
           "type" : "iri"
         } ],
         "hasSubsequentConstructionProcess" : [ {
@@ -2187,17 +2187,17 @@
         "hasProcessEnvironmentalIndicator" : [ {
           "identifier" : "hasProcessEnvironmentalIndicator",
           "language" : "undefined",
-          "value" : "https://w3id.org/LCAO#PENRT_Transfer_Beam_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasProcessEnvironmentalIndicator",
-          "language" : "undefined",
           "value" : "https://w3id.org/LCAO#PERT_Transfer_Literature_Beam_1",
           "type" : "iri"
         }, {
           "identifier" : "hasProcessEnvironmentalIndicator",
           "language" : "undefined",
-          "value" : "https://w3id.org/LCAO#GWP_Transfer_Beam_1",
+          "value" : "https://w3id.org/LCAO#GWP_Transfer_Literature_Beam_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasProcessEnvironmentalIndicator",
+          "language" : "undefined",
+          "value" : "https://w3id.org/LCAO#PENRT_Transfer_Beam_1",
           "type" : "iri"
         }, {
           "identifier" : "hasProcessEnvironmentalIndicator",
@@ -2212,7 +2212,7 @@
         }, {
           "identifier" : "hasProcessEnvironmentalIndicator",
           "language" : "undefined",
-          "value" : "https://w3id.org/LCAO#GWP_Transfer_Literature_Beam_1",
+          "value" : "https://w3id.org/LCAO#GWP_Transfer_Beam_1",
           "type" : "iri"
         } ],
         "hasSubsequentConstructionProcess" : [ {
@@ -2232,8 +2232,8 @@
         "IRI-based" : "Transfer_Beam_1"
       }
     } ],
-    "id" : "18",
-    "superClasses" : [ "17" ]
+    "id" : "26",
+    "superClasses" : [ "25" ]
   }, {
     "iri" : "https://w3id.org/COPO#Steel",
     "baseIri" : "https://w3id.org/COPO",
@@ -2294,7 +2294,17 @@
         "hasConstructionProcessPropertyGroup" : [ {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#WorkingTime_Hilti_DST_10-CA_Beam_1",
+          "value" : "https://w3id.org/COPO#Power_Hilti_DST_10-CA_Beam_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#Power_Hilti_DST_10-CA_Slab_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#EnergyConsumption_Hilti_DST_10-CA_Slab_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
@@ -2309,17 +2319,7 @@
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#EnergyConsumption_Hilti_DST_10-CA_Slab_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
           "value" : "https://w3id.org/COPO#EnergyConsumption_Hilti_DST_10-CA_Beam_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#CapacityUtilization_Hilti_DST_10-CA_Slab_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
@@ -2329,17 +2329,17 @@
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#Power_Hilti_DST_10-CA_Beam_1",
+          "value" : "https://w3id.org/COPO#CapacityUtilization_Hilti_DST_10-CA_Slab_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#WorkingTime_Hilti_DST_10-CA_Beam_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
           "value" : "https://w3id.org/COPO#WorkingTime_Hilti_DST_10-CA_Slab_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#Power_Hilti_DST_10-CA_Slab_1",
           "type" : "iri"
         } ]
       },
@@ -2371,21 +2371,21 @@
           "value" : "https://w3id.org/COPO#Geometry_Slab_1",
           "type" : "iri"
         } ],
-        "hasConstructionObjectDataObject" : [ {
-          "identifier" : "hasConstructionObjectDataObject",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#BIM_Model_Slab_1",
-          "type" : "iri"
-        } ],
         "hasObjectType" : [ {
           "identifier" : "hasObjectType",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#Steel_Slab_1",
+          "value" : "https://w3id.org/COPO#Concrete_Slab_1",
           "type" : "iri"
         }, {
           "identifier" : "hasObjectType",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#Concrete_Slab_1",
+          "value" : "https://w3id.org/COPO#Steel_Slab_1",
+          "type" : "iri"
+        } ],
+        "hasConstructionObjectDataObject" : [ {
+          "identifier" : "hasConstructionObjectDataObject",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#BIM_Model_Slab_1",
           "type" : "iri"
         } ]
       },
@@ -2435,11 +2435,6 @@
         "addressesConstructionProcess" : [ {
           "identifier" : "addressesConstructionProcess",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#Transfer_Slab_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "addressesConstructionProcess",
-          "language" : "undefined",
           "value" : "https://w3id.org/COPO#Extraction_Slab_1",
           "type" : "iri"
         }, {
@@ -2451,6 +2446,11 @@
           "identifier" : "addressesConstructionProcess",
           "language" : "undefined",
           "value" : "https://w3id.org/COPO#Transfer_Beam_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "addressesConstructionProcess",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#Transfer_Slab_1",
           "type" : "iri"
         } ],
         "addressesConstructionObject" : [ {
@@ -2541,7 +2541,7 @@
       "undefined" : "According to DIN 18007: Demolition works – Concepts, procedures, fields of application"
     },
     "id" : "35",
-    "superClasses" : [ "8" ]
+    "superClasses" : [ "11" ]
   }, {
     "iri" : "https://w3id.org/LCMO#ConstructionObject",
     "baseIri" : "https://w3id.org/LCMO",
@@ -2606,8 +2606,24 @@
         "IRI-based" : "DemolitionHammer_1"
       }
     } ],
-    "id" : "24",
-    "superClasses" : [ "21" ]
+    "id" : "20",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://w3id.org/COPO#C4_Disposal",
+    "baseIri" : "https://w3id.org/COPO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "C4_Disposal"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/COPO#C4_Disposal_1",
+      "baseIri" : "https://w3id.org/COPO",
+      "labels" : {
+        "IRI-based" : "C4_Disposal_1"
+      }
+    } ],
+    "id" : "105",
+    "superClasses" : [ "66" ]
   }, {
     "iri" : "https://w3id.org/COPO#ConditionGrade",
     "baseIri" : "https://w3id.org/COPO",
@@ -2631,22 +2647,6 @@
     "id" : "48",
     "superClasses" : [ "13", "42" ]
   }, {
-    "iri" : "https://w3id.org/COPO#C4_Disposal",
-    "baseIri" : "https://w3id.org/COPO",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "C4_Disposal"
-    },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/COPO#C4_Disposal_1",
-      "baseIri" : "https://w3id.org/COPO",
-      "labels" : {
-        "IRI-based" : "C4_Disposal_1"
-      }
-    } ],
-    "id" : "105",
-    "superClasses" : [ "66" ]
-  }, {
     "iri" : "https://w3id.org/COPO#Crane",
     "baseIri" : "https://w3id.org/COPO",
     "instances" : 0,
@@ -2660,12 +2660,12 @@
         "hasResourceType" : [ {
           "identifier" : "hasResourceType",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#SpecificCrane_Literature_1",
+          "value" : "https://w3id.org/COPO#Demag_AC100-4_1",
           "type" : "iri"
         }, {
           "identifier" : "hasResourceType",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#Demag_AC100-4_1",
+          "value" : "https://w3id.org/COPO#SpecificCrane_Literature_1",
           "type" : "iri"
         } ]
       },
@@ -2676,24 +2676,8 @@
         "IRI-based" : "Crane_1"
       }
     } ],
-    "id" : "28",
-    "superClasses" : [ "21" ]
-  }, {
-    "iri" : "https://w3id.org/COPO#C3_Recycling_WasteProcessing",
-    "baseIri" : "https://w3id.org/COPO",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "C3_Recycling_WasteProcessing"
-    },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/COPO#C3_Recycling_WasteProcessing_1",
-      "baseIri" : "https://w3id.org/COPO",
-      "labels" : {
-        "IRI-based" : "C3_Recycling_WasteProcessing_1"
-      }
-    } ],
-    "id" : "106",
-    "superClasses" : [ "66" ]
+    "id" : "24",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "https://w3id.org/COPO#Density",
     "baseIri" : "https://w3id.org/COPO",
@@ -2761,6 +2745,22 @@
     "id" : "80",
     "superClasses" : [ "13", "44" ]
   }, {
+    "iri" : "https://w3id.org/COPO#C3_Recycling_WasteProcessing",
+    "baseIri" : "https://w3id.org/COPO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "C3_Recycling_WasteProcessing"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/COPO#C3_Recycling_WasteProcessing_1",
+      "baseIri" : "https://w3id.org/COPO",
+      "labels" : {
+        "IRI-based" : "C3_Recycling_WasteProcessing_1"
+      }
+    } ],
+    "id" : "106",
+    "superClasses" : [ "66" ]
+  }, {
     "iri" : "https://w3id.org/COPO#Mercedes-Benz_Actros_2653_LS",
     "baseIri" : "https://w3id.org/COPO",
     "instances" : 0,
@@ -2774,17 +2774,37 @@
         "hasConstructionProcessPropertyGroup" : [ {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#WorkingTime_Mercedes-Benz_Actros_2653_LS_Slab_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
           "value" : "https://w3id.org/COPO#EnergyConsumptionRecorded_Slab_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
+          "value" : "https://w3id.org/COPO#CapacityUtilization_Mercedes-Benz_Actros_2653_LS_Beam_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#WorkingTime_Mercedes-Benz_Actros_2653_LS_Slab_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#EnergyConsumption_Mercedes-Benz_Actros_2653_LS_Beam_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
           "value" : "https://w3id.org/COPO#EnergyConsumptionRecorded_Beam_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#CapacityUtilization_Mercedes-Benz_Actros_2653_LS_Slab_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#WorkingTime_Mercedes-Benz_Actros_2653_LS_Beam_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
@@ -2799,27 +2819,7 @@
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#EnergyConsumption_Mercedes-Benz_Actros_2653_LS_Beam_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#CapacityUtilization_Mercedes-Benz_Actros_2653_LS_Slab_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#CapacityUtilization_Mercedes-Benz_Actros_2653_LS_Beam_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
           "value" : "https://w3id.org/COPO#Power_Mercedes-Benz_Actros_2653_LS_Beam_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#WorkingTime_Mercedes-Benz_Actros_2653_LS_Beam_1",
           "type" : "iri"
         } ]
       },
@@ -2876,17 +2876,17 @@
         "hasConstructionObjectProperty" : [ {
           "identifier" : "hasConstructionObjectProperty",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#ConditionGrade_Slab_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionObjectProperty",
-          "language" : "undefined",
           "value" : "https://w3id.org/COPO#Damage_Slab_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionObjectProperty",
           "language" : "undefined",
           "value" : "https://w3id.org/COPO#Pollutant_Slab_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionObjectProperty",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#ConditionGrade_Slab_1",
           "type" : "iri"
         } ]
       },
@@ -2900,12 +2900,12 @@
         "hasConstructionObjectProperty" : [ {
           "identifier" : "hasConstructionObjectProperty",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#ConditionGrade_Beam_1",
+          "value" : "https://w3id.org/COPO#Pollutant_Beam_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionObjectProperty",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#Pollutant_Beam_1",
+          "value" : "https://w3id.org/COPO#ConditionGrade_Beam_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionObjectProperty",
@@ -2928,9 +2928,9 @@
     "label" : {
       "IRI-based" : "ConstructionProcedure"
     },
-    "subClasses" : [ "55", "51", "35", "7" ],
+    "subClasses" : [ "55", "51", "35", "10" ],
     "attributes" : [ "external" ],
-    "id" : "8"
+    "id" : "11"
   }, {
     "iri" : "https://w3id.org/COPO#SpecificCrane_Literature",
     "baseIri" : "https://w3id.org/COPO",
@@ -2945,22 +2945,17 @@
         "hasConstructionProcessPropertyGroup" : [ {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Beam_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
           "value" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Slab_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#CapacityUtilization_SpecificCrane_Literature_Beam_1",
+          "value" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Slab_1",
+          "value" : "https://w3id.org/COPO#WorkingTime_SpecificCrane_Literature_Slab_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
@@ -2975,22 +2970,27 @@
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#WorkingTime_SpecificCrane_Literature_Slab_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
           "value" : "https://w3id.org/COPO#WorkingTime_SpecificCrane_Literature_Beam_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1",
+          "value" : "https://w3id.org/COPO#CapacityUtilization_SpecificCrane_Literature_Slab_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#CapacityUtilization_SpecificCrane_Literature_Slab_1",
+          "value" : "https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Beam_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Slab_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#CapacityUtilization_SpecificCrane_Literature_Beam_1",
           "type" : "iri"
         } ]
       },
@@ -3056,36 +3056,6 @@
         "hasConstructionProcessPropertyGroup" : [ {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#CapacityUtilization_SpecificHammerDrill_Literature_Slab_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#EnergyConsumption_SpecificHammerDrill_Literature_Beam_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#CapacityUtilization_SpecificHammerDrill_Literature_Beam_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#WorkingTime_SpecificHammerDrill_Literature_Slab_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#Power_SpecificHammerDrill_Literature_Slab_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
           "value" : "https://w3id.org/COPO#EnergyConsumption_SpecificHammerDrill_Literature_Slab_1",
           "type" : "iri"
         }, {
@@ -3096,12 +3066,42 @@
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
+          "value" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Slab_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#CapacityUtilization_SpecificHammerDrill_Literature_Slab_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#WorkingTime_SpecificHammerDrill_Literature_Slab_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
           "value" : "https://w3id.org/COPO#WorkingTime_SpecificHammerDrill_Literature_Beam_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Slab_1",
+          "value" : "https://w3id.org/COPO#EnergyConsumption_SpecificHammerDrill_Literature_Beam_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#CapacityUtilization_SpecificHammerDrill_Literature_Beam_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#Power_SpecificHammerDrill_Literature_Slab_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1",
           "type" : "iri"
         } ]
       },
@@ -3133,8 +3133,8 @@
         "IRI-based" : "Saw_1"
       }
     } ],
-    "id" : "22",
-    "superClasses" : [ "21" ]
+    "id" : "18",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "https://w3id.org/COPO#BIM_Model",
     "baseIri" : "https://w3id.org/COPO",
@@ -3143,16 +3143,16 @@
       "IRI-based" : "BIM_Model"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/COPO#BIM_Model_Slab_1",
-      "baseIri" : "https://w3id.org/COPO",
-      "labels" : {
-        "IRI-based" : "BIM_Model_Slab_1"
-      }
-    }, {
       "iri" : "https://w3id.org/COPO#BIM_Model_Beam_1",
       "baseIri" : "https://w3id.org/COPO",
       "labels" : {
         "IRI-based" : "BIM_Model_Beam_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/COPO#BIM_Model_Slab_1",
+      "baseIri" : "https://w3id.org/COPO",
+      "labels" : {
+        "IRI-based" : "BIM_Model_Slab_1"
       }
     } ],
     "id" : "131",
@@ -3191,17 +3191,17 @@
         "hasConstructionObjectProperty" : [ {
           "identifier" : "hasConstructionObjectProperty",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#Density_Concrete_Beam_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionObjectProperty",
-          "language" : "undefined",
           "value" : "https://w3id.org/COPO#Materialname_Concrete_Beam_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionObjectProperty",
           "language" : "undefined",
           "value" : "https://w3id.org/COPO#Ratio_Concrete_Beam_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionObjectProperty",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#Density_Concrete_Beam_1",
           "type" : "iri"
         } ]
       },
@@ -3239,17 +3239,17 @@
         "hasConstructionObjectProperty" : [ {
           "identifier" : "hasConstructionObjectProperty",
           "language" : "undefined",
+          "value" : "https://w3id.org/COPO#Density_Steel_Beam_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionObjectProperty",
+          "language" : "undefined",
           "value" : "https://w3id.org/COPO#Ratio_Steel_Beam_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionObjectProperty",
           "language" : "undefined",
           "value" : "https://w3id.org/COPO#Materialname_Steel_Beam_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionObjectProperty",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#Density_Steel_Beam_1",
           "type" : "iri"
         } ]
       },
@@ -3354,12 +3354,22 @@
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#WorkingTime_Hilti_DST_20-CA_Slab_1",
+          "value" : "https://w3id.org/COPO#EnergyConsumptionRecorded_Slab_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#CapacityUtilization_Hilti_DST_20-CA_Beam_1",
+          "value" : "https://w3id.org/COPO#EnergyConsumption_Hilti_DST_20-CA_Slab_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#EnergyConsumptionRecorded_Beam_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasConstructionProcessPropertyGroup",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#WorkingTime_Hilti_DST_20-CA_Slab_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
@@ -3374,27 +3384,17 @@
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#Power_Hilti_DST_20-CA_Beam_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#EnergyConsumptionRecorded_Slab_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasConstructionProcessPropertyGroup",
-          "language" : "undefined",
           "value" : "https://w3id.org/COPO#CapacityUtilization_Hilti_DST_20-CA_Slab_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#EnergyConsumptionRecorded_Beam_1",
+          "value" : "https://w3id.org/COPO#Power_Hilti_DST_20-CA_Beam_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionProcessPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#EnergyConsumption_Hilti_DST_20-CA_Slab_1",
+          "value" : "https://w3id.org/COPO#CapacityUtilization_Hilti_DST_20-CA_Beam_1",
           "type" : "iri"
         } ]
       },
@@ -3464,8 +3464,8 @@
         "IRI-based" : "CuttingTorch_1"
       }
     } ],
-    "id" : "27",
-    "superClasses" : [ "21" ]
+    "id" : "23",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "https://w3id.org/COPO#CapacityUtilization",
     "baseIri" : "https://w3id.org/COPO",
@@ -3678,29 +3678,29 @@
         "hasConstructionObjectPropertyGroup" : [ {
           "identifier" : "hasConstructionObjectPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#Condition_Beam_1",
+          "value" : "https://w3id.org/COPO#Geometry_Beam_1",
           "type" : "iri"
         }, {
           "identifier" : "hasConstructionObjectPropertyGroup",
           "language" : "undefined",
-          "value" : "https://w3id.org/COPO#Geometry_Beam_1",
+          "value" : "https://w3id.org/COPO#Condition_Beam_1",
+          "type" : "iri"
+        } ],
+        "hasObjectType" : [ {
+          "identifier" : "hasObjectType",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#Concrete_Beam_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasObjectType",
+          "language" : "undefined",
+          "value" : "https://w3id.org/COPO#Steel_Beam_1",
           "type" : "iri"
         } ],
         "hasConstructionObjectDataObject" : [ {
           "identifier" : "hasConstructionObjectDataObject",
           "language" : "undefined",
           "value" : "https://w3id.org/COPO#BIM_Model_Beam_1",
-          "type" : "iri"
-        } ],
-        "hasObjectType" : [ {
-          "identifier" : "hasObjectType",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#Steel_Beam_1",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasObjectType",
-          "language" : "undefined",
-          "value" : "https://w3id.org/COPO#Concrete_Beam_1",
           "type" : "iri"
         } ]
       },
@@ -3955,12 +3955,12 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "31"
   }, {
-    "range" : "8",
-    "domain" : "7",
+    "range" : "11",
+    "domain" : "10",
     "attributes" : [ "object", "anonymous" ],
     "id" : "33"
   }, {
-    "range" : "8",
+    "range" : "11",
     "domain" : "35",
     "attributes" : [ "object", "anonymous" ],
     "id" : "34"
@@ -3985,12 +3985,12 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "47"
   }, {
-    "range" : "8",
+    "range" : "11",
     "domain" : "51",
     "attributes" : [ "object", "anonymous" ],
     "id" : "50"
   }, {
-    "range" : "8",
+    "range" : "11",
     "domain" : "55",
     "attributes" : [ "object", "anonymous" ],
     "id" : "54"
@@ -4020,12 +4020,12 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "69"
   }, {
-    "range" : "21",
+    "range" : "25",
     "domain" : "27",
     "attributes" : [ "object", "anonymous" ],
     "id" : "71"
   }, {
-    "range" : "21",
+    "range" : "25",
     "domain" : "26",
     "attributes" : [ "object", "anonymous" ],
     "id" : "72"
@@ -4035,23 +4035,23 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "74"
   }, {
-    "range" : "21",
+    "range" : "25",
     "domain" : "28",
     "attributes" : [ "object", "anonymous" ],
     "id" : "75"
   }, {
-    "range" : "21",
-    "domain" : "23",
+    "range" : "17",
+    "domain" : "22",
     "attributes" : [ "object", "anonymous" ],
     "id" : "76"
   }, {
-    "range" : "21",
-    "domain" : "25",
+    "range" : "17",
+    "domain" : "24",
     "attributes" : [ "object", "anonymous" ],
     "id" : "77"
   }, {
-    "range" : "21",
-    "domain" : "24",
+    "range" : "17",
+    "domain" : "23",
     "attributes" : [ "object", "anonymous" ],
     "id" : "78"
   }, {
@@ -4260,13 +4260,13 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "141"
   }, {
-    "range" : "9",
-    "domain" : "10",
+    "range" : "7",
+    "domain" : "8",
     "attributes" : [ "object", "anonymous" ],
     "id" : "142"
   }, {
-    "range" : "9",
-    "domain" : "11",
+    "range" : "7",
+    "domain" : "9",
     "attributes" : [ "object", "anonymous" ],
     "id" : "143"
   }, {
@@ -4285,8 +4285,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "147"
   }, {
-    "range" : "21",
-    "domain" : "22",
+    "range" : "17",
+    "domain" : "21",
     "attributes" : [ "object", "anonymous" ],
     "id" : "148"
   } ]

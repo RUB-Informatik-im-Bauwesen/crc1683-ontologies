@@ -1,0 +1,1325 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/LCAO#"
+     xml:base="https://w3id.org/LCAO"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:LCAO="https://w3id.org/LCAO#"
+     xmlns:LCMO="https://w3id.org/LCMO#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:schema="https://schema.org/">
+    <owl:Ontology rdf:about="https://w3id.org/LCAO">
+        <dc:contributor rdf:nodeID="genid1"/>
+        <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-10</dc:created>
+        <dc:creator rdf:nodeID="genid3"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/RUB-Informatik-im-Bauwesen/crc1683-ontologies/tree/main/lcao</dc:source>
+        <vann:preferredNamespacePrefix>lcao</vann:preferredNamespacePrefix>
+        <rdfs:comment xml:lang="en">TODO: write description</rdfs:comment>
+        <rdfs:label>LCAO Ontology</rdfs:label>
+    </owl:Ontology>
+    <rdf:Description rdf:nodeID="genid1">
+        <rdf:type rdf:resource="https://schema.org/Person"/>
+        <schema:email rdf:resource="mailto:philipp.hagedorn-n6v@rub.de"/>
+        <schema:identifier rdf:resource="https://orcid.org/0000-0002-6249-243X"/>
+        <schema:memberOf rdf:nodeID="genid2"/>
+        <schema:name>Dr. Philipp Hagedorn</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid3">
+        <rdf:type rdf:resource="https://schema.org/Person"/>
+        <schema:email rdf:resource="mailto:jonas.maibaum@rub.de"/>
+        <schema:identifier rdf:resource="https://orcid.org/0000-0001-5010-7904"/>
+        <schema:memberOf rdf:nodeID="genid4"/>
+        <schema:name>Jonas Maibaum</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid2">
+        <schema:identifier rdf:resource="https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en"/>
+        <schema:name>Ruhr University Bochum, DE</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid4">
+        <schema:identifier rdf:resource="https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/jonas_maibaum.html.en"/>
+        <schema:name>Ruhr University Bochum, DE</schema:name>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/created"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- https://schema.org/email -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/email"/>
+    
+
+
+    <!-- https://schema.org/identifier -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/identifier"/>
+    
+
+
+    <!-- https://schema.org/memberOf -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/memberOf"/>
+    
+
+
+    <!-- https://schema.org/name -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/name"/>
+    
+
+
+    <!-- https://w3id.org/LCMO#belongsToLifeCycleModule -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/LCMO#belongsToLifeCycleModule">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#Process"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/LCMO#hasName -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/LCMO#hasName"/>
+    
+
+
+    <!-- https://w3id.org/LCMO#hasUnit -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/LCMO#hasUnit"/>
+    
+
+
+    <!-- https://w3id.org/LCMO#hasValue -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/LCMO#hasValue"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/LCAO#hasFlow -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCAO#hasFlow">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#Process"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCAO#Flow"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#hasFlowPropertySet -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCAO#hasFlowPropertySet">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#Flow"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCAO#FlowPropertySet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#hasFunctionalUnit -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCAO#hasFunctionalUnit">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#LCAMetaData"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCAO#FunctionalUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#hasLCAApplicationPoint -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCAO#hasLCAApplicationPoint">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#LCAMetaData"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCAO#LCAApplicationPoint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#hasLCAMetaData -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCAO#hasLCAMetaData">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#LCAStudy"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCAO#LCAMetaData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#hasLCAScenario -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCAO#hasLCAScenario">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#LCAMetaData"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCAO#LCAScenario"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#hasLCIAMethod -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCAO#hasLCIAMethod">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#LCAMetaData"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCAO#LCIAMethod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#hasLCIMethod -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCAO#hasLCIMethod">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#LCAMetaData"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCAO#LCIMethod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#hasProcess -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCAO#hasProcess">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#LCAStudy"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCAO#Process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#hasProcessEnvironmentalIndicator -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCAO#hasProcessEnvironmentalIndicator">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#Process"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCAO#ProcessEnvironmentalIndicator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#hasSource -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCAO#hasSource">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#FlowPropertySet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#hasSubProcess -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCAO#hasSubProcess">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCAO#SubProcess"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#hasSubProcessEnvironmentalIndicator -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCAO#hasSubProcessEnvironmentalIndicator">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#SubProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCAO#SubProcessEnvironmentalIndicator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#hasSystemBoundary -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCAO#hasSystemBoundary">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#LCAMetaData"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCAO#SystemBoundary"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#isLinkedToProjectActivity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCAO#isLinkedToProjectActivity">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#LCAStudy"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCMO#ProjectActivity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/LCAO#hasAllocationRule -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/LCAO#hasAllocationRule">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#FlowPropertySet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#hasCharacterizationFactor -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/LCAO#hasCharacterizationFactor">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#FlowPropertySet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#hasExchangeDirection -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/LCAO#hasExchangeDirection">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#FlowPropertySet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#isFlowType -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/LCAO#isFlowType">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#FlowPropertySet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#isLCAApplicationPoint_EoLExecution -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/LCAO#isLCAApplicationPoint_EoLExecution">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#isLCAApplicationPoint_EoLPlanning -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/LCAO#isLCAApplicationPoint_EoLPlanning">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#isLCAApplicationPoint_NewConstructionPlanning -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/LCAO#isLCAApplicationPoint_NewConstructionPlanning">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#isLCAScenarioEstimation -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/LCAO#isLCAScenarioEstimation">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#LCAScenario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#isLCAScenarioMeasurement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/LCAO#isLCAScenarioMeasurement">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#LCAScenario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#isLCAScenarioPrediction -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/LCAO#isLCAScenarioPrediction">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#LCAScenario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#isPartOfForegroundSystem -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/LCAO#isPartOfForegroundSystem">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#isUnitFlow -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/LCAO#isUnitFlow">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#Flow"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/LCAO#isUnitProcess -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/LCAO#isUnitProcess">
+        <rdfs:domain rdf:resource="https://w3id.org/LCAO#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Resource -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
+
+
+    <!-- https://schema.org/Person -->
+
+
+    <owl:Class rdf:about="https://schema.org/Person"/>
+    
+
+
+    <!-- https://w3id.org/LCAO#Flow -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCAO#Flow">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/LCAO#FlowPropertySet -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCAO#FlowPropertySet">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/LCAO#FunctionalUnit -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCAO#FunctionalUnit">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/LCAO#LCAApplicationPoint -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCAO#LCAApplicationPoint">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/LCAO#LCAMetaData -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCAO#LCAMetaData">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/LCAO#LCAScenario -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCAO#LCAScenario">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/LCAO#LCAStudy -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCAO#LCAStudy">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/LCAO#LCIAMethod -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCAO#LCIAMethod">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/LCAO#LCIMethod -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCAO#LCIMethod">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/LCAO#Process -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCAO#Process">
+        <owl:equivalentClass rdf:resource="https://w3id.org/LCMO#ConstructionProcess"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/LCAO#ProcessEnvironmentalIndicator -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCAO#ProcessEnvironmentalIndicator">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/LCAO#ProcessImpactIndicator -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCAO#ProcessImpactIndicator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/LCAO#ProcessEnvironmentalIndicator"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/LCAO#ProcessInventoryIndicator -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCAO#ProcessInventoryIndicator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/LCAO#ProcessEnvironmentalIndicator"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/LCAO#SubProcess -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCAO#SubProcess">
+        <owl:equivalentClass rdf:resource="https://w3id.org/LCMO#ProcessResource"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/LCAO#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/LCAO#SubProcessEnvironmentalIndicator -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCAO#SubProcessEnvironmentalIndicator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/LCAO#ProcessEnvironmentalIndicator"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/LCAO#SubProcessImpactIndicator -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCAO#SubProcessImpactIndicator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/LCAO#SubProcessEnvironmentalIndicator"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/LCAO#SubProcessInventoryIndicator -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCAO#SubProcessInventoryIndicator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/LCAO#SubProcessEnvironmentalIndicator"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/LCAO#SystemBoundary -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCAO#SystemBoundary">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/LCMO#ConstructionProcess -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCMO#ConstructionProcess"/>
+    
+
+
+    <!-- https://w3id.org/LCMO#ProcessResource -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCMO#ProcessResource"/>
+    
+
+
+    <!-- https://w3id.org/LCMO#ProjectActivity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCMO#ProjectActivity"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Slab_1">
+        <hasFlowPropertySet rdf:resource="https://w3id.org/LCAO#EnergyConsumption_SpecificCrane_Literature_PropertySet_Slab_1"/>
+        <isUnitFlow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isUnitFlow>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/COPO#Extraction_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/COPO#Extraction_Beam_1"/>
+    
+
+
+    <!-- https://w3id.org/COPO#Extraction_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/COPO#Extraction_Slab_1"/>
+    
+
+
+    <!-- https://w3id.org/COPO#LCA_Execution_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/COPO#LCA_Execution_1"/>
+    
+
+
+    <!-- https://w3id.org/COPO#Transfer_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/COPO#Transfer_Beam_1"/>
+    
+
+
+    <!-- https://w3id.org/COPO#Transfer_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/COPO#Transfer_Slab_1">
+        <isPartOfForegroundSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isPartOfForegroundSystem>
+        <isUnitProcess rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isUnitProcess>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/COPO#Transport_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/COPO#Transport_Beam_1"/>
+    
+
+
+    <!-- https://w3id.org/COPO#Transport_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/COPO#Transport_Slab_1"/>
+    
+
+
+    <!-- https://w3id.org/LCAO#EnergyConsumption_SpecificCrane_Literature_PropertySet_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#EnergyConsumption_SpecificCrane_Literature_PropertySet_Slab_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#FlowPropertySet"/>
+        <hasExchangeDirection>Output</hasExchangeDirection>
+        <isFlowType>Elementary</isFlowType>
+        <hasSource rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">Sensor_1234-5678-9012-3456</hasSource>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#GWP_Extraction_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#GWP_Extraction_Beam_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessImpactIndicator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#GWP_Extraction_Literature_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#GWP_Extraction_Literature_Beam_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessImpactIndicator"/>
+        <LCMO:hasUnit>kg CO2 eq.</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.841</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#GWP_Extraction_Literature_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#GWP_Extraction_Literature_Slab_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessImpactIndicator"/>
+        <LCMO:hasUnit>kg CO2 eq.</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">321.941</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#GWP_Extraction_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#GWP_Extraction_Slab_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessImpactIndicator"/>
+        <LCMO:hasUnit>kg CO2 eq.</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.1729</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#GWP_Transfer_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#GWP_Transfer_Beam_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessImpactIndicator"/>
+        <LCMO:hasUnit>kg CO2 eq.</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.78</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#GWP_Transfer_Literature_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#GWP_Transfer_Literature_Beam_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessImpactIndicator"/>
+        <LCMO:hasUnit>kg CO2 eq.</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">33.6</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#GWP_Transfer_Literature_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#GWP_Transfer_Literature_Slab_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessImpactIndicator"/>
+        <LCMO:hasUnit>kg CO2 eq.</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">48</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#GWP_Transfer_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#GWP_Transfer_Slab_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessImpactIndicator"/>
+        <LCMO:hasUnit>kg CO2 eq.</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.8</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#GWP_Transport_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#GWP_Transport_Beam_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessImpactIndicator"/>
+        <LCMO:hasUnit>kg CO2 eq.</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#GWP_Transport_Literature_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#GWP_Transport_Literature_Beam_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessImpactIndicator"/>
+        <LCMO:hasUnit>kg CO2 eq.</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.13</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#GWP_Transport_Literature_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#GWP_Transport_Literature_Slab_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessImpactIndicator"/>
+        <LCMO:hasUnit>kg CO2 eq.</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.8</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#GWP_Transport_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#GWP_Transport_Slab_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessImpactIndicator"/>
+        <LCMO:hasUnit>kg CO2 eq.</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.67</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#LCAApplicationPoint_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#LCAApplicationPoint_Beam_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#LCAApplicationPoint"/>
+        <isLCAApplicationPoint_EoLExecution rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLCAApplicationPoint_EoLExecution>
+        <isLCAApplicationPoint_EoLPlanning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isLCAApplicationPoint_EoLPlanning>
+        <isLCAApplicationPoint_NewConstructionPlanning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isLCAApplicationPoint_NewConstructionPlanning>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#LCAApplicationPoint_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#LCAApplicationPoint_Slab_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#LCAApplicationPoint"/>
+        <isLCAApplicationPoint_EoLExecution rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLCAApplicationPoint_EoLExecution>
+        <isLCAApplicationPoint_EoLPlanning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isLCAApplicationPoint_EoLPlanning>
+        <isLCAApplicationPoint_NewConstructionPlanning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isLCAApplicationPoint_NewConstructionPlanning>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#LCAMetaData_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#LCAMetaData_Beam_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#LCAMetaData"/>
+        <hasLCAApplicationPoint rdf:resource="https://w3id.org/LCAO#LCAApplicationPoint_Beam_1"/>
+        <hasLCAScenario rdf:resource="https://w3id.org/LCAO#LCAScenario_Beam_1"/>
+        <hasLCIAMethod rdf:resource="https://w3id.org/LCAO#LCIAMethod_Beam_1"/>
+        <hasLCIMethod rdf:resource="https://w3id.org/LCAO#LCIMethod_Beam_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#LCAMetaData_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#LCAMetaData_Slab_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#LCAMetaData"/>
+        <hasLCAApplicationPoint rdf:resource="https://w3id.org/LCAO#LCAApplicationPoint_Slab_1"/>
+        <hasLCAScenario rdf:resource="https://w3id.org/LCAO#LCAScenario_Slab_1"/>
+        <hasLCIAMethod rdf:resource="https://w3id.org/LCAO#LCIAMethod_Slab_1"/>
+        <hasLCIMethod rdf:resource="https://w3id.org/LCAO#LCIMethod_Slab_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#LCAScenario_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#LCAScenario_Beam_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#LCAScenario"/>
+        <isLCAScenarioEstimation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isLCAScenarioEstimation>
+        <isLCAScenarioMeasurement rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLCAScenarioMeasurement>
+        <isLCAScenarioPrediction rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isLCAScenarioPrediction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#LCAScenario_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#LCAScenario_Slab_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#LCAScenario"/>
+        <isLCAScenarioEstimation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isLCAScenarioEstimation>
+        <isLCAScenarioMeasurement rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLCAScenarioMeasurement>
+        <isLCAScenarioPrediction rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isLCAScenarioPrediction>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#LCAStudy_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#LCAStudy_Beam_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#LCAStudy"/>
+        <hasLCAMetaData rdf:resource="https://w3id.org/LCAO#LCAMetaData_Beam_1"/>
+        <hasProcess rdf:resource="https://w3id.org/COPO#Extraction_Beam_1"/>
+        <hasProcess rdf:resource="https://w3id.org/COPO#Transfer_Beam_1"/>
+        <hasProcess rdf:resource="https://w3id.org/COPO#Transport_Beam_1"/>
+        <isLinkedToProjectActivity rdf:resource="https://w3id.org/COPO#LCA_Execution_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#LCAStudy_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#LCAStudy_Slab_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#LCAStudy"/>
+        <hasLCAMetaData rdf:resource="https://w3id.org/LCAO#LCAMetaData_Slab_1"/>
+        <hasProcess rdf:resource="https://w3id.org/COPO#Extraction_Slab_1"/>
+        <hasProcess rdf:resource="https://w3id.org/COPO#Transfer_Slab_1"/>
+        <hasProcess rdf:resource="https://w3id.org/COPO#Transport_Slab_1"/>
+        <isLinkedToProjectActivity rdf:resource="https://w3id.org/COPO#LCA_Execution_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#LCIAMethod_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#LCIAMethod_Beam_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#LCIAMethod"/>
+        <rdfs:comment>Based on PEF 3.1 (Product Environmental Footprint)</rdfs:comment>
+        <LCMO:hasName>DIN EN 15804</LCMO:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#LCIAMethod_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#LCIAMethod_Slab_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#LCIAMethod"/>
+        <rdfs:comment>Based on PEF 3.1 (Product Environmental Footprint)</rdfs:comment>
+        <LCMO:hasName>DIN EN 15804</LCMO:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#LCIMethod_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#LCIMethod_Beam_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#LCIMethod"/>
+        <LCMO:hasName>Allocation – mass</LCMO:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#LCIMethod_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#LCIMethod_Slab_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#LCIMethod"/>
+        <LCMO:hasName>Allocation – mass</LCMO:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#PENRT_Extraction_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#PENRT_Extraction_Beam_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessInventoryIndicator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#PENRT_Extraction_Literature_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#PENRT_Extraction_Literature_Beam_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessInventoryIndicator"/>
+        <LCMO:hasUnit>kg CO2 eq.</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.5</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#PENRT_Extraction_Literature_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#PENRT_Extraction_Literature_Slab_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessInventoryIndicator"/>
+        <LCMO:hasUnit>kg CO2 eq.</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4005.5</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#PENRT_Extraction_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#PENRT_Extraction_Slab_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessInventoryIndicator"/>
+        <LCMO:hasUnit>kg CO2 eq.</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">76.859</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#PENRT_Transfer_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#PENRT_Transfer_Beam_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessInventoryIndicator"/>
+        <LCMO:hasUnit>MJ</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">109</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#PENRT_Transfer_Literature_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#PENRT_Transfer_Literature_Beam_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessInventoryIndicator"/>
+        <LCMO:hasUnit>MJ</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">418</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#PENRT_Transfer_Literature_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#PENRT_Transfer_Literature_Slab_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessInventoryIndicator"/>
+        <LCMO:hasUnit>MJ</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">597</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#PENRT_Transfer_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#PENRT_Transfer_Slab_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessInventoryIndicator"/>
+        <LCMO:hasUnit>MJ</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">109</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#PENRT_Transport_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#PENRT_Transport_Beam_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessInventoryIndicator"/>
+        <LCMO:hasUnit>MJ</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.7</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#PENRT_Transport_Literature_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#PENRT_Transport_Literature_Beam_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessInventoryIndicator"/>
+        <LCMO:hasUnit>MJ</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">147</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#PENRT_Transport_Literature_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#PENRT_Transport_Literature_Slab_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessInventoryIndicator"/>
+        <LCMO:hasUnit>MJ</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">195</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#PENRT_Transport_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#PENRT_Transport_Slab_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessInventoryIndicator"/>
+        <LCMO:hasUnit>MJ</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#PERT_Extraction_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#PERT_Extraction_Beam_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessInventoryIndicator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#PERT_Extraction_Literature_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#PERT_Extraction_Literature_Beam_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessInventoryIndicator"/>
+        <LCMO:hasUnit>kg CO2 eq.</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.83</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#PERT_Extraction_Literature_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#PERT_Extraction_Literature_Slab_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessInventoryIndicator"/>
+        <LCMO:hasUnit>kg CO2 eq.</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2624.83</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#PERT_Extraction_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#PERT_Extraction_Slab_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessInventoryIndicator"/>
+        <LCMO:hasUnit>kg CO2 eq.</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50.13</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#PERT_Transfer_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#PERT_Transfer_Beam_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessInventoryIndicator"/>
+        <LCMO:hasUnit>MJ</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">71.3</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#PERT_Transfer_Literature_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#PERT_Transfer_Literature_Beam_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessInventoryIndicator"/>
+        <LCMO:hasUnit>MJ</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">273</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#PERT_Transfer_Literature_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#PERT_Transfer_Literature_Slab_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessInventoryIndicator"/>
+        <LCMO:hasUnit>MJ</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">390</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#PERT_Transfer_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#PERT_Transfer_Slab_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessInventoryIndicator"/>
+        <LCMO:hasUnit>MJ</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">71.4</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#PERT_Transport_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#PERT_Transport_Beam_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessInventoryIndicator"/>
+        <LCMO:hasUnit>MJ</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.914</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#PERT_Transport_Literature_Beam_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#PERT_Transport_Literature_Beam_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessInventoryIndicator"/>
+        <LCMO:hasUnit>MJ</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.52</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#PERT_Transport_Literature_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#PERT_Transport_Literature_Slab_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessInventoryIndicator"/>
+        <LCMO:hasUnit>MJ</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.3</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#PERT_Transport_Slab_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#PERT_Transport_Slab_1">
+        <rdf:type rdf:resource="https://w3id.org/LCAO#ProcessInventoryIndicator"/>
+        <LCMO:hasUnit>MJ</LCMO:hasUnit>
+        <LCMO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.28</LCMO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/LCAO#Process -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/LCAO#Process">
+        <hasFlow rdf:resource="https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Slab_1"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

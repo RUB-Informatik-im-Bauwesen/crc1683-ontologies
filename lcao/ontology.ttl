@@ -1,0 +1,791 @@
+@prefix : <https://w3id.org/LCAO#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/LCAO#> .
+
+<https://w3id.org/LCAO> rdf:type owl:Ontology ;
+                         <http://purl.org/dc/elements/1.1/contributor> _:genid1 ;
+                         <http://purl.org/dc/elements/1.1/created> "2025-12-10"^^xsd:date ;
+                         <http://purl.org/dc/elements/1.1/creator> _:genid3 ;
+                         <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                         <http://purl.org/dc/elements/1.1/source> "https://github.com/RUB-Informatik-im-Bauwesen/crc1683-ontologies/tree/main/lcao"^^xsd:anyURI ;
+                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "lcao" ;
+                         rdfs:comment "TODO: write description"@en ;
+                         rdfs:label "LCAO Ontology" .
+
+_:genid1 rdf:type <https://schema.org/Person> ;
+          <https://schema.org/email> <mailto:philipp.hagedorn-n6v@rub.de> ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0002-6249-243X> ;
+          <https://schema.org/memberOf> _:genid2 ;
+          <https://schema.org/name> "Dr. Philipp Hagedorn" .
+
+_:genid3 rdf:type <https://schema.org/Person> ;
+          <https://schema.org/email> <mailto:jonas.maibaum@rub.de> ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0001-5010-7904> ;
+          <https://schema.org/memberOf> _:genid4 ;
+          <https://schema.org/name> "Jonas Maibaum" .
+
+_:genid2 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en> ;
+          <https://schema.org/name> "Ruhr University Bochum, DE" .
+
+_:genid4 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/jonas_maibaum.html.en> ;
+          <https://schema.org/name> "Ruhr University Bochum, DE" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/created
+<http://purl.org/dc/elements/1.1/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/email
+<https://schema.org/email> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/identifier
+<https://schema.org/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/memberOf
+<https://schema.org/memberOf> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/name
+<https://schema.org/name> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/LCMO#belongsToLifeCycleModule
+<https://w3id.org/LCMO#belongsToLifeCycleModule> rdf:type owl:AnnotationProperty ;
+                                                 rdfs:domain :Process .
+
+
+###  https://w3id.org/LCMO#hasName
+<https://w3id.org/LCMO#hasName> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/LCMO#hasUnit
+<https://w3id.org/LCMO#hasUnit> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/LCMO#hasValue
+<https://w3id.org/LCMO#hasValue> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/LCAO#hasFlow
+:hasFlow rdf:type owl:ObjectProperty ;
+         rdfs:domain :Process ;
+         rdfs:range :Flow .
+
+
+###  https://w3id.org/LCAO#hasFlowPropertySet
+:hasFlowPropertySet rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Flow ;
+                    rdfs:range :FlowPropertySet .
+
+
+###  https://w3id.org/LCAO#hasFunctionalUnit
+:hasFunctionalUnit rdf:type owl:ObjectProperty ;
+                   rdfs:domain :LCAMetaData ;
+                   rdfs:range :FunctionalUnit .
+
+
+###  https://w3id.org/LCAO#hasLCAApplicationPoint
+:hasLCAApplicationPoint rdf:type owl:ObjectProperty ;
+                        rdfs:domain :LCAMetaData ;
+                        rdfs:range :LCAApplicationPoint .
+
+
+###  https://w3id.org/LCAO#hasLCAMetaData
+:hasLCAMetaData rdf:type owl:ObjectProperty ;
+                rdfs:domain :LCAStudy ;
+                rdfs:range :LCAMetaData .
+
+
+###  https://w3id.org/LCAO#hasLCAScenario
+:hasLCAScenario rdf:type owl:ObjectProperty ;
+                rdfs:domain :LCAMetaData ;
+                rdfs:range :LCAScenario .
+
+
+###  https://w3id.org/LCAO#hasLCIAMethod
+:hasLCIAMethod rdf:type owl:ObjectProperty ;
+               rdfs:domain :LCAMetaData ;
+               rdfs:range :LCIAMethod .
+
+
+###  https://w3id.org/LCAO#hasLCIMethod
+:hasLCIMethod rdf:type owl:ObjectProperty ;
+              rdfs:domain :LCAMetaData ;
+              rdfs:range :LCIMethod .
+
+
+###  https://w3id.org/LCAO#hasProcess
+:hasProcess rdf:type owl:ObjectProperty ;
+            rdfs:domain :LCAStudy ;
+            rdfs:range :Process .
+
+
+###  https://w3id.org/LCAO#hasProcessEnvironmentalIndicator
+:hasProcessEnvironmentalIndicator rdf:type owl:ObjectProperty ;
+                                  rdfs:domain :Process ;
+                                  rdfs:range :ProcessEnvironmentalIndicator .
+
+
+###  https://w3id.org/LCAO#hasSource
+:hasSource rdf:type owl:ObjectProperty ;
+           rdfs:domain :FlowPropertySet ;
+           rdfs:range rdf:HTML .
+
+
+###  https://w3id.org/LCAO#hasSubProcess
+:hasSubProcess rdf:type owl:ObjectProperty ;
+               rdfs:domain :Process ;
+               rdfs:range rdfs:Resource ,
+                          :SubProcess .
+
+
+###  https://w3id.org/LCAO#hasSubProcessEnvironmentalIndicator
+:hasSubProcessEnvironmentalIndicator rdf:type owl:ObjectProperty ;
+                                     rdfs:domain :SubProcess ;
+                                     rdfs:range :SubProcessEnvironmentalIndicator .
+
+
+###  https://w3id.org/LCAO#hasSystemBoundary
+:hasSystemBoundary rdf:type owl:ObjectProperty ;
+                   rdfs:domain :LCAMetaData ;
+                   rdfs:range :SystemBoundary .
+
+
+###  https://w3id.org/LCAO#isLinkedToProjectActivity
+:isLinkedToProjectActivity rdf:type owl:ObjectProperty ;
+                           rdfs:domain :LCAStudy ;
+                           rdfs:range <https://w3id.org/LCMO#ProjectActivity> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/LCAO#hasAllocationRule
+:hasAllocationRule rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :FlowPropertySet ;
+                   rdfs:range xsd:string .
+
+
+###  https://w3id.org/LCAO#hasCharacterizationFactor
+:hasCharacterizationFactor rdf:type owl:DatatypeProperty ;
+                           rdfs:domain :FlowPropertySet ;
+                           rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/LCAO#hasExchangeDirection
+:hasExchangeDirection rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :FlowPropertySet ;
+                      rdfs:range xsd:string .
+
+
+###  https://w3id.org/LCAO#isFlowType
+:isFlowType rdf:type owl:DatatypeProperty ;
+            rdfs:domain :FlowPropertySet ;
+            rdfs:range xsd:string .
+
+
+###  https://w3id.org/LCAO#isLCAApplicationPoint_EoLExecution
+:isLCAApplicationPoint_EoLExecution rdf:type owl:DatatypeProperty ;
+                                    rdfs:range xsd:boolean .
+
+
+###  https://w3id.org/LCAO#isLCAApplicationPoint_EoLPlanning
+:isLCAApplicationPoint_EoLPlanning rdf:type owl:DatatypeProperty ;
+                                   rdfs:range xsd:boolean .
+
+
+###  https://w3id.org/LCAO#isLCAApplicationPoint_NewConstructionPlanning
+:isLCAApplicationPoint_NewConstructionPlanning rdf:type owl:DatatypeProperty ;
+                                               rdfs:range xsd:boolean .
+
+
+###  https://w3id.org/LCAO#isLCAScenarioEstimation
+:isLCAScenarioEstimation rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :LCAScenario ;
+                         rdfs:range xsd:boolean .
+
+
+###  https://w3id.org/LCAO#isLCAScenarioMeasurement
+:isLCAScenarioMeasurement rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :LCAScenario ;
+                          rdfs:range xsd:boolean .
+
+
+###  https://w3id.org/LCAO#isLCAScenarioPrediction
+:isLCAScenarioPrediction rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :LCAScenario ;
+                         rdfs:range xsd:boolean .
+
+
+###  https://w3id.org/LCAO#isPartOfForegroundSystem
+:isPartOfForegroundSystem rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :Process ;
+                          rdfs:range xsd:boolean .
+
+
+###  https://w3id.org/LCAO#isUnitFlow
+:isUnitFlow rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Flow ;
+            rdfs:range xsd:boolean .
+
+
+###  https://w3id.org/LCAO#isUnitProcess
+:isUnitProcess rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Process ;
+               rdfs:range xsd:boolean .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#Resource
+rdfs:Resource rdf:type owl:Class .
+
+
+###  https://schema.org/Person
+<https://schema.org/Person> rdf:type owl:Class .
+
+
+###  https://w3id.org/LCAO#Flow
+:Flow rdf:type owl:Class ;
+      rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/LCAO#FlowPropertySet
+:FlowPropertySet rdf:type owl:Class ;
+                 rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/LCAO#FunctionalUnit
+:FunctionalUnit rdf:type owl:Class ;
+                rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/LCAO#LCAApplicationPoint
+:LCAApplicationPoint rdf:type owl:Class ;
+                     rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/LCAO#LCAMetaData
+:LCAMetaData rdf:type owl:Class ;
+             rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/LCAO#LCAScenario
+:LCAScenario rdf:type owl:Class ;
+             rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/LCAO#LCAStudy
+:LCAStudy rdf:type owl:Class ;
+          rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/LCAO#LCIAMethod
+:LCIAMethod rdf:type owl:Class ;
+            rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/LCAO#LCIMethod
+:LCIMethod rdf:type owl:Class ;
+           rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/LCAO#Process
+:Process rdf:type owl:Class ;
+         owl:equivalentClass <https://w3id.org/LCMO#ConstructionProcess> ;
+         rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/LCAO#ProcessEnvironmentalIndicator
+:ProcessEnvironmentalIndicator rdf:type owl:Class ;
+                               rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/LCAO#ProcessImpactIndicator
+:ProcessImpactIndicator rdf:type owl:Class ;
+                        rdfs:subClassOf :ProcessEnvironmentalIndicator .
+
+
+###  https://w3id.org/LCAO#ProcessInventoryIndicator
+:ProcessInventoryIndicator rdf:type owl:Class ;
+                           rdfs:subClassOf :ProcessEnvironmentalIndicator .
+
+
+###  https://w3id.org/LCAO#SubProcess
+:SubProcess rdf:type owl:Class ;
+            owl:equivalentClass <https://w3id.org/LCMO#ProcessResource> ;
+            rdfs:subClassOf :Process .
+
+
+###  https://w3id.org/LCAO#SubProcessEnvironmentalIndicator
+:SubProcessEnvironmentalIndicator rdf:type owl:Class ;
+                                  rdfs:subClassOf :ProcessEnvironmentalIndicator .
+
+
+###  https://w3id.org/LCAO#SubProcessImpactIndicator
+:SubProcessImpactIndicator rdf:type owl:Class ;
+                           rdfs:subClassOf :SubProcessEnvironmentalIndicator .
+
+
+###  https://w3id.org/LCAO#SubProcessInventoryIndicator
+:SubProcessInventoryIndicator rdf:type owl:Class ;
+                              rdfs:subClassOf :SubProcessEnvironmentalIndicator .
+
+
+###  https://w3id.org/LCAO#SystemBoundary
+:SystemBoundary rdf:type owl:Class ;
+                rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/LCMO#ConstructionProcess
+<https://w3id.org/LCMO#ConstructionProcess> rdf:type owl:Class .
+
+
+###  https://w3id.org/LCMO#ProcessResource
+<https://w3id.org/LCMO#ProcessResource> rdf:type owl:Class .
+
+
+###  https://w3id.org/LCMO#ProjectActivity
+<https://w3id.org/LCMO#ProjectActivity> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Slab_1
+<https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Slab_1> rdf:type owl:NamedIndividual ;
+                                                                          :hasFlowPropertySet :EnergyConsumption_SpecificCrane_Literature_PropertySet_Slab_1 ;
+                                                                          :isUnitFlow "true"^^xsd:boolean .
+
+
+###  https://w3id.org/COPO#Extraction_Beam_1
+<https://w3id.org/COPO#Extraction_Beam_1> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/COPO#Extraction_Slab_1
+<https://w3id.org/COPO#Extraction_Slab_1> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/COPO#LCA_Execution_1
+<https://w3id.org/COPO#LCA_Execution_1> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/COPO#Transfer_Beam_1
+<https://w3id.org/COPO#Transfer_Beam_1> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/COPO#Transfer_Slab_1
+<https://w3id.org/COPO#Transfer_Slab_1> rdf:type owl:NamedIndividual ;
+                                        :isPartOfForegroundSystem "true"^^xsd:boolean ;
+                                        :isUnitProcess "false"^^xsd:boolean .
+
+
+###  https://w3id.org/COPO#Transport_Beam_1
+<https://w3id.org/COPO#Transport_Beam_1> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/COPO#Transport_Slab_1
+<https://w3id.org/COPO#Transport_Slab_1> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/LCAO#EnergyConsumption_SpecificCrane_Literature_PropertySet_Slab_1
+:EnergyConsumption_SpecificCrane_Literature_PropertySet_Slab_1 rdf:type owl:NamedIndividual ,
+                                                                        :FlowPropertySet ;
+                                                               :hasExchangeDirection "Output" ;
+                                                               :isFlowType "Elementary" ;
+                                                               :hasSource "Sensor_1234-5678-9012-3456"^^rdf:HTML .
+
+
+###  https://w3id.org/LCAO#GWP_Extraction_Beam_1
+:GWP_Extraction_Beam_1 rdf:type owl:NamedIndividual ,
+                                :ProcessImpactIndicator .
+
+
+###  https://w3id.org/LCAO#GWP_Extraction_Literature_Beam_1
+:GWP_Extraction_Literature_Beam_1 rdf:type owl:NamedIndividual ,
+                                           :ProcessImpactIndicator ;
+                                  <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." ;
+                                  <https://w3id.org/LCMO#hasValue> 0.841 .
+
+
+###  https://w3id.org/LCAO#GWP_Extraction_Literature_Slab_1
+:GWP_Extraction_Literature_Slab_1 rdf:type owl:NamedIndividual ,
+                                           :ProcessImpactIndicator ;
+                                  <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." ;
+                                  <https://w3id.org/LCMO#hasValue> 321.941 .
+
+
+###  https://w3id.org/LCAO#GWP_Extraction_Slab_1
+:GWP_Extraction_Slab_1 rdf:type owl:NamedIndividual ,
+                                :ProcessImpactIndicator ;
+                       <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." ;
+                       <https://w3id.org/LCMO#hasValue> 6.1729 .
+
+
+###  https://w3id.org/LCAO#GWP_Transfer_Beam_1
+:GWP_Transfer_Beam_1 rdf:type owl:NamedIndividual ,
+                              :ProcessImpactIndicator ;
+                     <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." ;
+                     <https://w3id.org/LCMO#hasValue> 8.78 .
+
+
+###  https://w3id.org/LCAO#GWP_Transfer_Literature_Beam_1
+:GWP_Transfer_Literature_Beam_1 rdf:type owl:NamedIndividual ,
+                                         :ProcessImpactIndicator ;
+                                <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." ;
+                                <https://w3id.org/LCMO#hasValue> 33.6 .
+
+
+###  https://w3id.org/LCAO#GWP_Transfer_Literature_Slab_1
+:GWP_Transfer_Literature_Slab_1 rdf:type owl:NamedIndividual ,
+                                         :ProcessImpactIndicator ;
+                                <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." ;
+                                <https://w3id.org/LCMO#hasValue> 48 .
+
+
+###  https://w3id.org/LCAO#GWP_Transfer_Slab_1
+:GWP_Transfer_Slab_1 rdf:type owl:NamedIndividual ,
+                              :ProcessImpactIndicator ;
+                     <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." ;
+                     <https://w3id.org/LCMO#hasValue> 8.8 .
+
+
+###  https://w3id.org/LCAO#GWP_Transport_Beam_1
+:GWP_Transport_Beam_1 rdf:type owl:NamedIndividual ,
+                               :ProcessImpactIndicator ;
+                      <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." ;
+                      <https://w3id.org/LCMO#hasValue> 1.2 .
+
+
+###  https://w3id.org/LCAO#GWP_Transport_Literature_Beam_1
+:GWP_Transport_Literature_Beam_1 rdf:type owl:NamedIndividual ,
+                                          :ProcessImpactIndicator ;
+                                 <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." ;
+                                 <https://w3id.org/LCMO#hasValue> 11.13 .
+
+
+###  https://w3id.org/LCAO#GWP_Transport_Literature_Slab_1
+:GWP_Transport_Literature_Slab_1 rdf:type owl:NamedIndividual ,
+                                          :ProcessImpactIndicator ;
+                                 <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." ;
+                                 <https://w3id.org/LCMO#hasValue> 14.8 .
+
+
+###  https://w3id.org/LCAO#GWP_Transport_Slab_1
+:GWP_Transport_Slab_1 rdf:type owl:NamedIndividual ,
+                               :ProcessImpactIndicator ;
+                      <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." ;
+                      <https://w3id.org/LCMO#hasValue> 1.67 .
+
+
+###  https://w3id.org/LCAO#LCAApplicationPoint_Beam_1
+:LCAApplicationPoint_Beam_1 rdf:type owl:NamedIndividual ,
+                                     :LCAApplicationPoint ;
+                            :isLCAApplicationPoint_EoLExecution "true"^^xsd:boolean ;
+                            :isLCAApplicationPoint_EoLPlanning "false"^^xsd:boolean ;
+                            :isLCAApplicationPoint_NewConstructionPlanning "false"^^xsd:boolean .
+
+
+###  https://w3id.org/LCAO#LCAApplicationPoint_Slab_1
+:LCAApplicationPoint_Slab_1 rdf:type owl:NamedIndividual ,
+                                     :LCAApplicationPoint ;
+                            :isLCAApplicationPoint_EoLExecution "true"^^xsd:boolean ;
+                            :isLCAApplicationPoint_EoLPlanning "false"^^xsd:boolean ;
+                            :isLCAApplicationPoint_NewConstructionPlanning "false"^^xsd:boolean .
+
+
+###  https://w3id.org/LCAO#LCAMetaData_Beam_1
+:LCAMetaData_Beam_1 rdf:type owl:NamedIndividual ,
+                             :LCAMetaData ;
+                    :hasLCAApplicationPoint :LCAApplicationPoint_Beam_1 ;
+                    :hasLCAScenario :LCAScenario_Beam_1 ;
+                    :hasLCIAMethod :LCIAMethod_Beam_1 ;
+                    :hasLCIMethod :LCIMethod_Beam_1 .
+
+
+###  https://w3id.org/LCAO#LCAMetaData_Slab_1
+:LCAMetaData_Slab_1 rdf:type owl:NamedIndividual ,
+                             :LCAMetaData ;
+                    :hasLCAApplicationPoint :LCAApplicationPoint_Slab_1 ;
+                    :hasLCAScenario :LCAScenario_Slab_1 ;
+                    :hasLCIAMethod :LCIAMethod_Slab_1 ;
+                    :hasLCIMethod :LCIMethod_Slab_1 .
+
+
+###  https://w3id.org/LCAO#LCAScenario_Beam_1
+:LCAScenario_Beam_1 rdf:type owl:NamedIndividual ,
+                             :LCAScenario ;
+                    :isLCAScenarioEstimation "false"^^xsd:boolean ;
+                    :isLCAScenarioMeasurement "true"^^xsd:boolean ;
+                    :isLCAScenarioPrediction "false"^^xsd:boolean .
+
+
+###  https://w3id.org/LCAO#LCAScenario_Slab_1
+:LCAScenario_Slab_1 rdf:type owl:NamedIndividual ,
+                             :LCAScenario ;
+                    :isLCAScenarioEstimation "false"^^xsd:boolean ;
+                    :isLCAScenarioMeasurement "true"^^xsd:boolean ;
+                    :isLCAScenarioPrediction "false"^^xsd:boolean .
+
+
+###  https://w3id.org/LCAO#LCAStudy_Beam_1
+:LCAStudy_Beam_1 rdf:type owl:NamedIndividual ,
+                          :LCAStudy ;
+                 :hasLCAMetaData :LCAMetaData_Beam_1 ;
+                 :hasProcess <https://w3id.org/COPO#Extraction_Beam_1> ,
+                             <https://w3id.org/COPO#Transfer_Beam_1> ,
+                             <https://w3id.org/COPO#Transport_Beam_1> ;
+                 :isLinkedToProjectActivity <https://w3id.org/COPO#LCA_Execution_1> .
+
+
+###  https://w3id.org/LCAO#LCAStudy_Slab_1
+:LCAStudy_Slab_1 rdf:type owl:NamedIndividual ,
+                          :LCAStudy ;
+                 :hasLCAMetaData :LCAMetaData_Slab_1 ;
+                 :hasProcess <https://w3id.org/COPO#Extraction_Slab_1> ,
+                             <https://w3id.org/COPO#Transfer_Slab_1> ,
+                             <https://w3id.org/COPO#Transport_Slab_1> ;
+                 :isLinkedToProjectActivity <https://w3id.org/COPO#LCA_Execution_1> .
+
+
+###  https://w3id.org/LCAO#LCIAMethod_Beam_1
+:LCIAMethod_Beam_1 rdf:type owl:NamedIndividual ,
+                            :LCIAMethod ;
+                   rdfs:comment "Based on PEF 3.1 (Product Environmental Footprint)" ;
+                   <https://w3id.org/LCMO#hasName> "DIN EN 15804" .
+
+
+###  https://w3id.org/LCAO#LCIAMethod_Slab_1
+:LCIAMethod_Slab_1 rdf:type owl:NamedIndividual ,
+                            :LCIAMethod ;
+                   rdfs:comment "Based on PEF 3.1 (Product Environmental Footprint)" ;
+                   <https://w3id.org/LCMO#hasName> "DIN EN 15804" .
+
+
+###  https://w3id.org/LCAO#LCIMethod_Beam_1
+:LCIMethod_Beam_1 rdf:type owl:NamedIndividual ,
+                           :LCIMethod ;
+                  <https://w3id.org/LCMO#hasName> "Allocation – mass" .
+
+
+###  https://w3id.org/LCAO#LCIMethod_Slab_1
+:LCIMethod_Slab_1 rdf:type owl:NamedIndividual ,
+                           :LCIMethod ;
+                  <https://w3id.org/LCMO#hasName> "Allocation – mass" .
+
+
+###  https://w3id.org/LCAO#PENRT_Extraction_Beam_1
+:PENRT_Extraction_Beam_1 rdf:type owl:NamedIndividual ,
+                                  :ProcessInventoryIndicator .
+
+
+###  https://w3id.org/LCAO#PENRT_Extraction_Literature_Beam_1
+:PENRT_Extraction_Literature_Beam_1 rdf:type owl:NamedIndividual ,
+                                             :ProcessInventoryIndicator ;
+                                    <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." ;
+                                    <https://w3id.org/LCMO#hasValue> 10.5 .
+
+
+###  https://w3id.org/LCAO#PENRT_Extraction_Literature_Slab_1
+:PENRT_Extraction_Literature_Slab_1 rdf:type owl:NamedIndividual ,
+                                             :ProcessInventoryIndicator ;
+                                    <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." ;
+                                    <https://w3id.org/LCMO#hasValue> 4005.5 .
+
+
+###  https://w3id.org/LCAO#PENRT_Extraction_Slab_1
+:PENRT_Extraction_Slab_1 rdf:type owl:NamedIndividual ,
+                                  :ProcessInventoryIndicator ;
+                         <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." ;
+                         <https://w3id.org/LCMO#hasValue> 76.859 .
+
+
+###  https://w3id.org/LCAO#PENRT_Transfer_Beam_1
+:PENRT_Transfer_Beam_1 rdf:type owl:NamedIndividual ,
+                                :ProcessInventoryIndicator ;
+                       <https://w3id.org/LCMO#hasUnit> "MJ" ;
+                       <https://w3id.org/LCMO#hasValue> 109 .
+
+
+###  https://w3id.org/LCAO#PENRT_Transfer_Literature_Beam_1
+:PENRT_Transfer_Literature_Beam_1 rdf:type owl:NamedIndividual ,
+                                           :ProcessInventoryIndicator ;
+                                  <https://w3id.org/LCMO#hasUnit> "MJ" ;
+                                  <https://w3id.org/LCMO#hasValue> 418 .
+
+
+###  https://w3id.org/LCAO#PENRT_Transfer_Literature_Slab_1
+:PENRT_Transfer_Literature_Slab_1 rdf:type owl:NamedIndividual ,
+                                           :ProcessInventoryIndicator ;
+                                  <https://w3id.org/LCMO#hasUnit> "MJ" ;
+                                  <https://w3id.org/LCMO#hasValue> 597 .
+
+
+###  https://w3id.org/LCAO#PENRT_Transfer_Slab_1
+:PENRT_Transfer_Slab_1 rdf:type owl:NamedIndividual ,
+                                :ProcessInventoryIndicator ;
+                       <https://w3id.org/LCMO#hasUnit> "MJ" ;
+                       <https://w3id.org/LCMO#hasValue> 109 .
+
+
+###  https://w3id.org/LCAO#PENRT_Transport_Beam_1
+:PENRT_Transport_Beam_1 rdf:type owl:NamedIndividual ,
+                                 :ProcessInventoryIndicator ;
+                        <https://w3id.org/LCMO#hasUnit> "MJ" ;
+                        <https://w3id.org/LCMO#hasValue> 15.7 .
+
+
+###  https://w3id.org/LCAO#PENRT_Transport_Literature_Beam_1
+:PENRT_Transport_Literature_Beam_1 rdf:type owl:NamedIndividual ,
+                                            :ProcessInventoryIndicator ;
+                                   <https://w3id.org/LCMO#hasUnit> "MJ" ;
+                                   <https://w3id.org/LCMO#hasValue> 147 .
+
+
+###  https://w3id.org/LCAO#PENRT_Transport_Literature_Slab_1
+:PENRT_Transport_Literature_Slab_1 rdf:type owl:NamedIndividual ,
+                                            :ProcessInventoryIndicator ;
+                                   <https://w3id.org/LCMO#hasUnit> "MJ" ;
+                                   <https://w3id.org/LCMO#hasValue> 195 .
+
+
+###  https://w3id.org/LCAO#PENRT_Transport_Slab_1
+:PENRT_Transport_Slab_1 rdf:type owl:NamedIndividual ,
+                                 :ProcessInventoryIndicator ;
+                        <https://w3id.org/LCMO#hasUnit> "MJ" ;
+                        <https://w3id.org/LCMO#hasValue> 22 .
+
+
+###  https://w3id.org/LCAO#PERT_Extraction_Beam_1
+:PERT_Extraction_Beam_1 rdf:type owl:NamedIndividual ,
+                                 :ProcessInventoryIndicator .
+
+
+###  https://w3id.org/LCAO#PERT_Extraction_Literature_Beam_1
+:PERT_Extraction_Literature_Beam_1 rdf:type owl:NamedIndividual ,
+                                            :ProcessInventoryIndicator ;
+                                   <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." ;
+                                   <https://w3id.org/LCMO#hasValue> 6.83 .
+
+
+###  https://w3id.org/LCAO#PERT_Extraction_Literature_Slab_1
+:PERT_Extraction_Literature_Slab_1 rdf:type owl:NamedIndividual ,
+                                            :ProcessInventoryIndicator ;
+                                   <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." ;
+                                   <https://w3id.org/LCMO#hasValue> 2624.83 .
+
+
+###  https://w3id.org/LCAO#PERT_Extraction_Slab_1
+:PERT_Extraction_Slab_1 rdf:type owl:NamedIndividual ,
+                                 :ProcessInventoryIndicator ;
+                        <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." ;
+                        <https://w3id.org/LCMO#hasValue> 50.13 .
+
+
+###  https://w3id.org/LCAO#PERT_Transfer_Beam_1
+:PERT_Transfer_Beam_1 rdf:type owl:NamedIndividual ,
+                               :ProcessInventoryIndicator ;
+                      <https://w3id.org/LCMO#hasUnit> "MJ" ;
+                      <https://w3id.org/LCMO#hasValue> 71.3 .
+
+
+###  https://w3id.org/LCAO#PERT_Transfer_Literature_Beam_1
+:PERT_Transfer_Literature_Beam_1 rdf:type owl:NamedIndividual ,
+                                          :ProcessInventoryIndicator ;
+                                 <https://w3id.org/LCMO#hasUnit> "MJ" ;
+                                 <https://w3id.org/LCMO#hasValue> 273 .
+
+
+###  https://w3id.org/LCAO#PERT_Transfer_Literature_Slab_1
+:PERT_Transfer_Literature_Slab_1 rdf:type owl:NamedIndividual ,
+                                          :ProcessInventoryIndicator ;
+                                 <https://w3id.org/LCMO#hasUnit> "MJ" ;
+                                 <https://w3id.org/LCMO#hasValue> 390 .
+
+
+###  https://w3id.org/LCAO#PERT_Transfer_Slab_1
+:PERT_Transfer_Slab_1 rdf:type owl:NamedIndividual ,
+                               :ProcessInventoryIndicator ;
+                      <https://w3id.org/LCMO#hasUnit> "MJ" ;
+                      <https://w3id.org/LCMO#hasValue> 71.4 .
+
+
+###  https://w3id.org/LCAO#PERT_Transport_Beam_1
+:PERT_Transport_Beam_1 rdf:type owl:NamedIndividual ,
+                                :ProcessInventoryIndicator ;
+                       <https://w3id.org/LCMO#hasUnit> "MJ" ;
+                       <https://w3id.org/LCMO#hasValue> 0.914 .
+
+
+###  https://w3id.org/LCAO#PERT_Transport_Literature_Beam_1
+:PERT_Transport_Literature_Beam_1 rdf:type owl:NamedIndividual ,
+                                           :ProcessInventoryIndicator ;
+                                  <https://w3id.org/LCMO#hasUnit> "MJ" ;
+                                  <https://w3id.org/LCMO#hasValue> 8.52 .
+
+
+###  https://w3id.org/LCAO#PERT_Transport_Literature_Slab_1
+:PERT_Transport_Literature_Slab_1 rdf:type owl:NamedIndividual ,
+                                           :ProcessInventoryIndicator ;
+                                  <https://w3id.org/LCMO#hasUnit> "MJ" ;
+                                  <https://w3id.org/LCMO#hasValue> 11.3 .
+
+
+###  https://w3id.org/LCAO#PERT_Transport_Slab_1
+:PERT_Transport_Slab_1 rdf:type owl:NamedIndividual ,
+                                :ProcessInventoryIndicator ;
+                       <https://w3id.org/LCMO#hasUnit> "MJ" ;
+                       <https://w3id.org/LCMO#hasValue> 1.28 .
+
+
+###  https://w3id.org/LCAO#Process
+:Process rdf:type owl:NamedIndividual ;
+         :hasFlow <https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Slab_1> .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,685 @@
+<https://w3id.org/LCAO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/LCAO> <http://purl.org/dc/elements/1.1/contributor> _:genid1 .
+_:genid1 <https://schema.org/name> "Dr. Philipp Hagedorn" .
+_:genid1 <https://schema.org/memberOf> _:genid2 .
+_:genid2 <https://schema.org/name> "Ruhr University Bochum, DE" .
+_:genid2 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en> .
+_:genid1 <https://schema.org/identifier> <https://orcid.org/0000-0002-6249-243X> .
+_:genid1 <https://schema.org/email> <mailto:philipp.hagedorn-n6v@rub.de> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+<https://schema.org/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCAO> <http://purl.org/dc/elements/1.1/created> "2025-12-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/LCAO> <http://purl.org/dc/elements/1.1/creator> _:genid3 .
+_:genid3 <https://schema.org/name> "Jonas Maibaum" .
+_:genid3 <https://schema.org/memberOf> _:genid4 .
+_:genid4 <https://schema.org/name> "Ruhr University Bochum, DE" .
+_:genid4 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/jonas_maibaum.html.en> .
+_:genid3 <https://schema.org/identifier> <https://orcid.org/0000-0001-5010-7904> .
+_:genid3 <https://schema.org/email> <mailto:jonas.maibaum@rub.de> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+<https://w3id.org/LCAO> <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/LCAO> <http://purl.org/dc/elements/1.1/source> "https://github.com/RUB-Informatik-im-Bauwesen/crc1683-ontologies/tree/main/lcao"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/LCAO> <http://purl.org/vocab/vann/preferredNamespacePrefix> "lcao" .
+<https://w3id.org/LCAO> <http://www.w3.org/2000/01/rdf-schema#comment> "TODO: write description"@en .
+<https://w3id.org/LCAO> <http://www.w3.org/2000/01/rdf-schema#label> "LCAO Ontology" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/created
+<http://purl.org/dc/elements/1.1/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/email
+<https://schema.org/email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/identifier
+<https://schema.org/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/memberOf
+<https://schema.org/memberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/name
+<https://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/LCMO#belongsToLifeCycleModule
+<https://w3id.org/LCMO#belongsToLifeCycleModule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/LCMO#belongsToLifeCycleModule> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#Process> .
+# 
+# https://w3id.org/LCMO#hasName
+<https://w3id.org/LCMO#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/LCMO#hasUnit
+<https://w3id.org/LCMO#hasUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/LCMO#hasValue
+<https://w3id.org/LCMO#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/LCAO#hasFlow
+<https://w3id.org/LCAO#hasFlow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCAO#hasFlow> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#Process> .
+<https://w3id.org/LCAO#hasFlow> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCAO#Flow> .
+# 
+# https://w3id.org/LCAO#hasFlowPropertySet
+<https://w3id.org/LCAO#hasFlowPropertySet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCAO#hasFlowPropertySet> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#Flow> .
+<https://w3id.org/LCAO#hasFlowPropertySet> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCAO#FlowPropertySet> .
+# 
+# https://w3id.org/LCAO#hasFunctionalUnit
+<https://w3id.org/LCAO#hasFunctionalUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCAO#hasFunctionalUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#LCAMetaData> .
+<https://w3id.org/LCAO#hasFunctionalUnit> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCAO#FunctionalUnit> .
+# 
+# https://w3id.org/LCAO#hasLCAApplicationPoint
+<https://w3id.org/LCAO#hasLCAApplicationPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCAO#hasLCAApplicationPoint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#LCAMetaData> .
+<https://w3id.org/LCAO#hasLCAApplicationPoint> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCAO#LCAApplicationPoint> .
+# 
+# https://w3id.org/LCAO#hasLCAMetaData
+<https://w3id.org/LCAO#hasLCAMetaData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCAO#hasLCAMetaData> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#LCAStudy> .
+<https://w3id.org/LCAO#hasLCAMetaData> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCAO#LCAMetaData> .
+# 
+# https://w3id.org/LCAO#hasLCAScenario
+<https://w3id.org/LCAO#hasLCAScenario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCAO#hasLCAScenario> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#LCAMetaData> .
+<https://w3id.org/LCAO#hasLCAScenario> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCAO#LCAScenario> .
+# 
+# https://w3id.org/LCAO#hasLCIAMethod
+<https://w3id.org/LCAO#hasLCIAMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCAO#hasLCIAMethod> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#LCAMetaData> .
+<https://w3id.org/LCAO#hasLCIAMethod> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCAO#LCIAMethod> .
+# 
+# https://w3id.org/LCAO#hasLCIMethod
+<https://w3id.org/LCAO#hasLCIMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCAO#hasLCIMethod> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#LCAMetaData> .
+<https://w3id.org/LCAO#hasLCIMethod> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCAO#LCIMethod> .
+# 
+# https://w3id.org/LCAO#hasProcess
+<https://w3id.org/LCAO#hasProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCAO#hasProcess> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#LCAStudy> .
+<https://w3id.org/LCAO#hasProcess> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCAO#Process> .
+# 
+# https://w3id.org/LCAO#hasProcessEnvironmentalIndicator
+<https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#Process> .
+<https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCAO#ProcessEnvironmentalIndicator> .
+# 
+# https://w3id.org/LCAO#hasSource
+<https://w3id.org/LCAO#hasSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCAO#hasSource> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#FlowPropertySet> .
+<https://w3id.org/LCAO#hasSource> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/LCAO#hasSubProcess
+<https://w3id.org/LCAO#hasSubProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCAO#hasSubProcess> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#Process> .
+<https://w3id.org/LCAO#hasSubProcess> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCAO#hasSubProcess> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCAO#SubProcess> .
+# 
+# https://w3id.org/LCAO#hasSubProcessEnvironmentalIndicator
+<https://w3id.org/LCAO#hasSubProcessEnvironmentalIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCAO#hasSubProcessEnvironmentalIndicator> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#SubProcess> .
+<https://w3id.org/LCAO#hasSubProcessEnvironmentalIndicator> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCAO#SubProcessEnvironmentalIndicator> .
+# 
+# https://w3id.org/LCAO#hasSystemBoundary
+<https://w3id.org/LCAO#hasSystemBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCAO#hasSystemBoundary> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#LCAMetaData> .
+<https://w3id.org/LCAO#hasSystemBoundary> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCAO#SystemBoundary> .
+# 
+# https://w3id.org/LCAO#isLinkedToProjectActivity
+<https://w3id.org/LCAO#isLinkedToProjectActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCAO#isLinkedToProjectActivity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#LCAStudy> .
+<https://w3id.org/LCAO#isLinkedToProjectActivity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCMO#ProjectActivity> .
+<https://w3id.org/LCMO#ProjectActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/LCAO#hasAllocationRule
+<https://w3id.org/LCAO#hasAllocationRule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/LCAO#hasAllocationRule> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#FlowPropertySet> .
+<https://w3id.org/LCAO#hasAllocationRule> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/LCAO#hasCharacterizationFactor
+<https://w3id.org/LCAO#hasCharacterizationFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/LCAO#hasCharacterizationFactor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#FlowPropertySet> .
+<https://w3id.org/LCAO#hasCharacterizationFactor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#hasExchangeDirection
+<https://w3id.org/LCAO#hasExchangeDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/LCAO#hasExchangeDirection> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#FlowPropertySet> .
+<https://w3id.org/LCAO#hasExchangeDirection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/LCAO#isFlowType
+<https://w3id.org/LCAO#isFlowType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/LCAO#isFlowType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#FlowPropertySet> .
+<https://w3id.org/LCAO#isFlowType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/LCAO#isLCAApplicationPoint_EoLExecution
+<https://w3id.org/LCAO#isLCAApplicationPoint_EoLExecution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/LCAO#isLCAApplicationPoint_EoLExecution> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://w3id.org/LCAO#isLCAApplicationPoint_EoLPlanning
+<https://w3id.org/LCAO#isLCAApplicationPoint_EoLPlanning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/LCAO#isLCAApplicationPoint_EoLPlanning> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://w3id.org/LCAO#isLCAApplicationPoint_NewConstructionPlanning
+<https://w3id.org/LCAO#isLCAApplicationPoint_NewConstructionPlanning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/LCAO#isLCAApplicationPoint_NewConstructionPlanning> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://w3id.org/LCAO#isLCAScenarioEstimation
+<https://w3id.org/LCAO#isLCAScenarioEstimation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/LCAO#isLCAScenarioEstimation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#LCAScenario> .
+<https://w3id.org/LCAO#isLCAScenarioEstimation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://w3id.org/LCAO#isLCAScenarioMeasurement
+<https://w3id.org/LCAO#isLCAScenarioMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/LCAO#isLCAScenarioMeasurement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#LCAScenario> .
+<https://w3id.org/LCAO#isLCAScenarioMeasurement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://w3id.org/LCAO#isLCAScenarioPrediction
+<https://w3id.org/LCAO#isLCAScenarioPrediction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/LCAO#isLCAScenarioPrediction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#LCAScenario> .
+<https://w3id.org/LCAO#isLCAScenarioPrediction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://w3id.org/LCAO#isPartOfForegroundSystem
+<https://w3id.org/LCAO#isPartOfForegroundSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/LCAO#isPartOfForegroundSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#Process> .
+<https://w3id.org/LCAO#isPartOfForegroundSystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://w3id.org/LCAO#isUnitFlow
+<https://w3id.org/LCAO#isUnitFlow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/LCAO#isUnitFlow> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#Flow> .
+<https://w3id.org/LCAO#isUnitFlow> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://w3id.org/LCAO#isUnitProcess
+<https://w3id.org/LCAO#isUnitProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/LCAO#isUnitProcess> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCAO#Process> .
+<https://w3id.org/LCAO#isUnitProcess> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2000/01/rdf-schema#Resource
+# 
+# https://schema.org/Person
+# 
+# https://w3id.org/LCAO#Flow
+<https://w3id.org/LCAO#Flow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCAO#Flow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/LCAO#FlowPropertySet
+<https://w3id.org/LCAO#FlowPropertySet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCAO#FlowPropertySet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/LCAO#FunctionalUnit
+<https://w3id.org/LCAO#FunctionalUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCAO#FunctionalUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/LCAO#LCAApplicationPoint
+<https://w3id.org/LCAO#LCAApplicationPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCAO#LCAApplicationPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/LCAO#LCAMetaData
+<https://w3id.org/LCAO#LCAMetaData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCAO#LCAMetaData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/LCAO#LCAScenario
+<https://w3id.org/LCAO#LCAScenario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCAO#LCAScenario> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/LCAO#LCAStudy
+<https://w3id.org/LCAO#LCAStudy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCAO#LCAStudy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/LCAO#LCIAMethod
+<https://w3id.org/LCAO#LCIAMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCAO#LCIAMethod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/LCAO#LCIMethod
+<https://w3id.org/LCAO#LCIMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCAO#LCIMethod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/LCAO#Process
+<https://w3id.org/LCAO#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCAO#Process> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/LCMO#ConstructionProcess> .
+<https://w3id.org/LCMO#ConstructionProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCAO#Process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/LCAO#ProcessEnvironmentalIndicator
+<https://w3id.org/LCAO#ProcessEnvironmentalIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCAO#ProcessEnvironmentalIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/LCAO#ProcessImpactIndicator
+<https://w3id.org/LCAO#ProcessImpactIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCAO#ProcessImpactIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCAO#ProcessEnvironmentalIndicator> .
+# 
+# https://w3id.org/LCAO#ProcessInventoryIndicator
+<https://w3id.org/LCAO#ProcessInventoryIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCAO#ProcessInventoryIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCAO#ProcessEnvironmentalIndicator> .
+# 
+# https://w3id.org/LCAO#SubProcess
+<https://w3id.org/LCAO#SubProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCAO#SubProcess> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/LCMO#ProcessResource> .
+<https://w3id.org/LCMO#ProcessResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCAO#SubProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCAO#Process> .
+# 
+# https://w3id.org/LCAO#SubProcessEnvironmentalIndicator
+<https://w3id.org/LCAO#SubProcessEnvironmentalIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCAO#SubProcessEnvironmentalIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCAO#ProcessEnvironmentalIndicator> .
+# 
+# https://w3id.org/LCAO#SubProcessImpactIndicator
+<https://w3id.org/LCAO#SubProcessImpactIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCAO#SubProcessImpactIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCAO#SubProcessEnvironmentalIndicator> .
+# 
+# https://w3id.org/LCAO#SubProcessInventoryIndicator
+<https://w3id.org/LCAO#SubProcessInventoryIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCAO#SubProcessInventoryIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCAO#SubProcessEnvironmentalIndicator> .
+# 
+# https://w3id.org/LCAO#SystemBoundary
+<https://w3id.org/LCAO#SystemBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCAO#SystemBoundary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/LCMO#ConstructionProcess
+# 
+# https://w3id.org/LCMO#ProcessResource
+# 
+# https://w3id.org/LCMO#ProjectActivity
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Slab_1
+<https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Slab_1> <https://w3id.org/LCAO#hasFlowPropertySet> <https://w3id.org/LCAO#EnergyConsumption_SpecificCrane_Literature_PropertySet_Slab_1> .
+<https://w3id.org/LCAO#EnergyConsumption_SpecificCrane_Literature_PropertySet_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Slab_1> <https://w3id.org/LCAO#isUnitFlow> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://w3id.org/COPO#Extraction_Beam_1
+<https://w3id.org/COPO#Extraction_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/COPO#Extraction_Slab_1
+<https://w3id.org/COPO#Extraction_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/COPO#LCA_Execution_1
+<https://w3id.org/COPO#LCA_Execution_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/COPO#Transfer_Beam_1
+<https://w3id.org/COPO#Transfer_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/COPO#Transfer_Slab_1
+<https://w3id.org/COPO#Transfer_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Transfer_Slab_1> <https://w3id.org/LCAO#isPartOfForegroundSystem> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/COPO#Transfer_Slab_1> <https://w3id.org/LCAO#isUnitProcess> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://w3id.org/COPO#Transport_Beam_1
+<https://w3id.org/COPO#Transport_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/COPO#Transport_Slab_1
+<https://w3id.org/COPO#Transport_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/LCAO#EnergyConsumption_SpecificCrane_Literature_PropertySet_Slab_1
+<https://w3id.org/LCAO#EnergyConsumption_SpecificCrane_Literature_PropertySet_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#FlowPropertySet> .
+<https://w3id.org/LCAO#EnergyConsumption_SpecificCrane_Literature_PropertySet_Slab_1> <https://w3id.org/LCAO#hasExchangeDirection> "Output" .
+<https://w3id.org/LCAO#EnergyConsumption_SpecificCrane_Literature_PropertySet_Slab_1> <https://w3id.org/LCAO#isFlowType> "Elementary" .
+<https://w3id.org/LCAO#EnergyConsumption_SpecificCrane_Literature_PropertySet_Slab_1> <https://w3id.org/LCAO#hasSource> "Sensor_1234-5678-9012-3456"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
+# 
+# https://w3id.org/LCAO#GWP_Extraction_Beam_1
+<https://w3id.org/LCAO#GWP_Extraction_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#GWP_Extraction_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessImpactIndicator> .
+# 
+# https://w3id.org/LCAO#GWP_Extraction_Literature_Beam_1
+<https://w3id.org/LCAO#GWP_Extraction_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#GWP_Extraction_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessImpactIndicator> .
+<https://w3id.org/LCAO#GWP_Extraction_Literature_Beam_1> <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." .
+<https://w3id.org/LCAO#GWP_Extraction_Literature_Beam_1> <https://w3id.org/LCMO#hasValue> "0.841"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#GWP_Extraction_Literature_Slab_1
+<https://w3id.org/LCAO#GWP_Extraction_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#GWP_Extraction_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessImpactIndicator> .
+<https://w3id.org/LCAO#GWP_Extraction_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." .
+<https://w3id.org/LCAO#GWP_Extraction_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "321.941"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#GWP_Extraction_Slab_1
+<https://w3id.org/LCAO#GWP_Extraction_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#GWP_Extraction_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessImpactIndicator> .
+<https://w3id.org/LCAO#GWP_Extraction_Slab_1> <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." .
+<https://w3id.org/LCAO#GWP_Extraction_Slab_1> <https://w3id.org/LCMO#hasValue> "6.1729"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#GWP_Transfer_Beam_1
+<https://w3id.org/LCAO#GWP_Transfer_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#GWP_Transfer_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessImpactIndicator> .
+<https://w3id.org/LCAO#GWP_Transfer_Beam_1> <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." .
+<https://w3id.org/LCAO#GWP_Transfer_Beam_1> <https://w3id.org/LCMO#hasValue> "8.78"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#GWP_Transfer_Literature_Beam_1
+<https://w3id.org/LCAO#GWP_Transfer_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#GWP_Transfer_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessImpactIndicator> .
+<https://w3id.org/LCAO#GWP_Transfer_Literature_Beam_1> <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." .
+<https://w3id.org/LCAO#GWP_Transfer_Literature_Beam_1> <https://w3id.org/LCMO#hasValue> "33.6"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#GWP_Transfer_Literature_Slab_1
+<https://w3id.org/LCAO#GWP_Transfer_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#GWP_Transfer_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessImpactIndicator> .
+<https://w3id.org/LCAO#GWP_Transfer_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." .
+<https://w3id.org/LCAO#GWP_Transfer_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "48"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#GWP_Transfer_Slab_1
+<https://w3id.org/LCAO#GWP_Transfer_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#GWP_Transfer_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessImpactIndicator> .
+<https://w3id.org/LCAO#GWP_Transfer_Slab_1> <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." .
+<https://w3id.org/LCAO#GWP_Transfer_Slab_1> <https://w3id.org/LCMO#hasValue> "8.8"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#GWP_Transport_Beam_1
+<https://w3id.org/LCAO#GWP_Transport_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#GWP_Transport_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessImpactIndicator> .
+<https://w3id.org/LCAO#GWP_Transport_Beam_1> <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." .
+<https://w3id.org/LCAO#GWP_Transport_Beam_1> <https://w3id.org/LCMO#hasValue> "1.2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#GWP_Transport_Literature_Beam_1
+<https://w3id.org/LCAO#GWP_Transport_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#GWP_Transport_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessImpactIndicator> .
+<https://w3id.org/LCAO#GWP_Transport_Literature_Beam_1> <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." .
+<https://w3id.org/LCAO#GWP_Transport_Literature_Beam_1> <https://w3id.org/LCMO#hasValue> "11.13"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#GWP_Transport_Literature_Slab_1
+<https://w3id.org/LCAO#GWP_Transport_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#GWP_Transport_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessImpactIndicator> .
+<https://w3id.org/LCAO#GWP_Transport_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." .
+<https://w3id.org/LCAO#GWP_Transport_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "14.8"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#GWP_Transport_Slab_1
+<https://w3id.org/LCAO#GWP_Transport_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#GWP_Transport_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessImpactIndicator> .
+<https://w3id.org/LCAO#GWP_Transport_Slab_1> <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." .
+<https://w3id.org/LCAO#GWP_Transport_Slab_1> <https://w3id.org/LCMO#hasValue> "1.67"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#LCAApplicationPoint_Beam_1
+<https://w3id.org/LCAO#LCAApplicationPoint_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#LCAApplicationPoint_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#LCAApplicationPoint> .
+<https://w3id.org/LCAO#LCAApplicationPoint_Beam_1> <https://w3id.org/LCAO#isLCAApplicationPoint_EoLExecution> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/LCAO#LCAApplicationPoint_Beam_1> <https://w3id.org/LCAO#isLCAApplicationPoint_EoLPlanning> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/LCAO#LCAApplicationPoint_Beam_1> <https://w3id.org/LCAO#isLCAApplicationPoint_NewConstructionPlanning> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://w3id.org/LCAO#LCAApplicationPoint_Slab_1
+<https://w3id.org/LCAO#LCAApplicationPoint_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#LCAApplicationPoint_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#LCAApplicationPoint> .
+<https://w3id.org/LCAO#LCAApplicationPoint_Slab_1> <https://w3id.org/LCAO#isLCAApplicationPoint_EoLExecution> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/LCAO#LCAApplicationPoint_Slab_1> <https://w3id.org/LCAO#isLCAApplicationPoint_EoLPlanning> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/LCAO#LCAApplicationPoint_Slab_1> <https://w3id.org/LCAO#isLCAApplicationPoint_NewConstructionPlanning> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://w3id.org/LCAO#LCAMetaData_Beam_1
+<https://w3id.org/LCAO#LCAMetaData_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#LCAMetaData_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#LCAMetaData> .
+<https://w3id.org/LCAO#LCAMetaData_Beam_1> <https://w3id.org/LCAO#hasLCAApplicationPoint> <https://w3id.org/LCAO#LCAApplicationPoint_Beam_1> .
+<https://w3id.org/LCAO#LCAMetaData_Beam_1> <https://w3id.org/LCAO#hasLCAScenario> <https://w3id.org/LCAO#LCAScenario_Beam_1> .
+<https://w3id.org/LCAO#LCAScenario_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#LCAMetaData_Beam_1> <https://w3id.org/LCAO#hasLCIAMethod> <https://w3id.org/LCAO#LCIAMethod_Beam_1> .
+<https://w3id.org/LCAO#LCIAMethod_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#LCAMetaData_Beam_1> <https://w3id.org/LCAO#hasLCIMethod> <https://w3id.org/LCAO#LCIMethod_Beam_1> .
+<https://w3id.org/LCAO#LCIMethod_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/LCAO#LCAMetaData_Slab_1
+<https://w3id.org/LCAO#LCAMetaData_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#LCAMetaData_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#LCAMetaData> .
+<https://w3id.org/LCAO#LCAMetaData_Slab_1> <https://w3id.org/LCAO#hasLCAApplicationPoint> <https://w3id.org/LCAO#LCAApplicationPoint_Slab_1> .
+<https://w3id.org/LCAO#LCAMetaData_Slab_1> <https://w3id.org/LCAO#hasLCAScenario> <https://w3id.org/LCAO#LCAScenario_Slab_1> .
+<https://w3id.org/LCAO#LCAScenario_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#LCAMetaData_Slab_1> <https://w3id.org/LCAO#hasLCIAMethod> <https://w3id.org/LCAO#LCIAMethod_Slab_1> .
+<https://w3id.org/LCAO#LCIAMethod_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#LCAMetaData_Slab_1> <https://w3id.org/LCAO#hasLCIMethod> <https://w3id.org/LCAO#LCIMethod_Slab_1> .
+<https://w3id.org/LCAO#LCIMethod_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/LCAO#LCAScenario_Beam_1
+<https://w3id.org/LCAO#LCAScenario_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#LCAScenario> .
+<https://w3id.org/LCAO#LCAScenario_Beam_1> <https://w3id.org/LCAO#isLCAScenarioEstimation> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/LCAO#LCAScenario_Beam_1> <https://w3id.org/LCAO#isLCAScenarioMeasurement> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/LCAO#LCAScenario_Beam_1> <https://w3id.org/LCAO#isLCAScenarioPrediction> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://w3id.org/LCAO#LCAScenario_Slab_1
+<https://w3id.org/LCAO#LCAScenario_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#LCAScenario> .
+<https://w3id.org/LCAO#LCAScenario_Slab_1> <https://w3id.org/LCAO#isLCAScenarioEstimation> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/LCAO#LCAScenario_Slab_1> <https://w3id.org/LCAO#isLCAScenarioMeasurement> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/LCAO#LCAScenario_Slab_1> <https://w3id.org/LCAO#isLCAScenarioPrediction> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://w3id.org/LCAO#LCAStudy_Beam_1
+<https://w3id.org/LCAO#LCAStudy_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#LCAStudy_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#LCAStudy> .
+<https://w3id.org/LCAO#LCAStudy_Beam_1> <https://w3id.org/LCAO#hasLCAMetaData> <https://w3id.org/LCAO#LCAMetaData_Beam_1> .
+<https://w3id.org/LCAO#LCAStudy_Beam_1> <https://w3id.org/LCAO#hasProcess> <https://w3id.org/COPO#Extraction_Beam_1> .
+<https://w3id.org/LCAO#LCAStudy_Beam_1> <https://w3id.org/LCAO#hasProcess> <https://w3id.org/COPO#Transfer_Beam_1> .
+<https://w3id.org/LCAO#LCAStudy_Beam_1> <https://w3id.org/LCAO#hasProcess> <https://w3id.org/COPO#Transport_Beam_1> .
+<https://w3id.org/LCAO#LCAStudy_Beam_1> <https://w3id.org/LCAO#isLinkedToProjectActivity> <https://w3id.org/COPO#LCA_Execution_1> .
+# 
+# https://w3id.org/LCAO#LCAStudy_Slab_1
+<https://w3id.org/LCAO#LCAStudy_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#LCAStudy_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#LCAStudy> .
+<https://w3id.org/LCAO#LCAStudy_Slab_1> <https://w3id.org/LCAO#hasLCAMetaData> <https://w3id.org/LCAO#LCAMetaData_Slab_1> .
+<https://w3id.org/LCAO#LCAStudy_Slab_1> <https://w3id.org/LCAO#hasProcess> <https://w3id.org/COPO#Extraction_Slab_1> .
+<https://w3id.org/LCAO#LCAStudy_Slab_1> <https://w3id.org/LCAO#hasProcess> <https://w3id.org/COPO#Transfer_Slab_1> .
+<https://w3id.org/LCAO#LCAStudy_Slab_1> <https://w3id.org/LCAO#hasProcess> <https://w3id.org/COPO#Transport_Slab_1> .
+<https://w3id.org/LCAO#LCAStudy_Slab_1> <https://w3id.org/LCAO#isLinkedToProjectActivity> <https://w3id.org/COPO#LCA_Execution_1> .
+# 
+# https://w3id.org/LCAO#LCIAMethod_Beam_1
+<https://w3id.org/LCAO#LCIAMethod_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#LCIAMethod> .
+<https://w3id.org/LCAO#LCIAMethod_Beam_1> <http://www.w3.org/2000/01/rdf-schema#comment> "Based on PEF 3.1 (Product Environmental Footprint)" .
+<https://w3id.org/LCAO#LCIAMethod_Beam_1> <https://w3id.org/LCMO#hasName> "DIN EN 15804" .
+# 
+# https://w3id.org/LCAO#LCIAMethod_Slab_1
+<https://w3id.org/LCAO#LCIAMethod_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#LCIAMethod> .
+<https://w3id.org/LCAO#LCIAMethod_Slab_1> <http://www.w3.org/2000/01/rdf-schema#comment> "Based on PEF 3.1 (Product Environmental Footprint)" .
+<https://w3id.org/LCAO#LCIAMethod_Slab_1> <https://w3id.org/LCMO#hasName> "DIN EN 15804" .
+# 
+# https://w3id.org/LCAO#LCIMethod_Beam_1
+<https://w3id.org/LCAO#LCIMethod_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#LCIMethod> .
+<https://w3id.org/LCAO#LCIMethod_Beam_1> <https://w3id.org/LCMO#hasName> "Allocation – mass" .
+# 
+# https://w3id.org/LCAO#LCIMethod_Slab_1
+<https://w3id.org/LCAO#LCIMethod_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#LCIMethod> .
+<https://w3id.org/LCAO#LCIMethod_Slab_1> <https://w3id.org/LCMO#hasName> "Allocation – mass" .
+# 
+# https://w3id.org/LCAO#PENRT_Extraction_Beam_1
+<https://w3id.org/LCAO#PENRT_Extraction_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#PENRT_Extraction_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessInventoryIndicator> .
+# 
+# https://w3id.org/LCAO#PENRT_Extraction_Literature_Beam_1
+<https://w3id.org/LCAO#PENRT_Extraction_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#PENRT_Extraction_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessInventoryIndicator> .
+<https://w3id.org/LCAO#PENRT_Extraction_Literature_Beam_1> <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." .
+<https://w3id.org/LCAO#PENRT_Extraction_Literature_Beam_1> <https://w3id.org/LCMO#hasValue> "10.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#PENRT_Extraction_Literature_Slab_1
+<https://w3id.org/LCAO#PENRT_Extraction_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#PENRT_Extraction_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessInventoryIndicator> .
+<https://w3id.org/LCAO#PENRT_Extraction_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." .
+<https://w3id.org/LCAO#PENRT_Extraction_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "4005.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#PENRT_Extraction_Slab_1
+<https://w3id.org/LCAO#PENRT_Extraction_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#PENRT_Extraction_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessInventoryIndicator> .
+<https://w3id.org/LCAO#PENRT_Extraction_Slab_1> <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." .
+<https://w3id.org/LCAO#PENRT_Extraction_Slab_1> <https://w3id.org/LCMO#hasValue> "76.859"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#PENRT_Transfer_Beam_1
+<https://w3id.org/LCAO#PENRT_Transfer_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#PENRT_Transfer_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessInventoryIndicator> .
+<https://w3id.org/LCAO#PENRT_Transfer_Beam_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+<https://w3id.org/LCAO#PENRT_Transfer_Beam_1> <https://w3id.org/LCMO#hasValue> "109"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#PENRT_Transfer_Literature_Beam_1
+<https://w3id.org/LCAO#PENRT_Transfer_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#PENRT_Transfer_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessInventoryIndicator> .
+<https://w3id.org/LCAO#PENRT_Transfer_Literature_Beam_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+<https://w3id.org/LCAO#PENRT_Transfer_Literature_Beam_1> <https://w3id.org/LCMO#hasValue> "418"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#PENRT_Transfer_Literature_Slab_1
+<https://w3id.org/LCAO#PENRT_Transfer_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#PENRT_Transfer_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessInventoryIndicator> .
+<https://w3id.org/LCAO#PENRT_Transfer_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+<https://w3id.org/LCAO#PENRT_Transfer_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "597"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#PENRT_Transfer_Slab_1
+<https://w3id.org/LCAO#PENRT_Transfer_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#PENRT_Transfer_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessInventoryIndicator> .
+<https://w3id.org/LCAO#PENRT_Transfer_Slab_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+<https://w3id.org/LCAO#PENRT_Transfer_Slab_1> <https://w3id.org/LCMO#hasValue> "109"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#PENRT_Transport_Beam_1
+<https://w3id.org/LCAO#PENRT_Transport_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#PENRT_Transport_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessInventoryIndicator> .
+<https://w3id.org/LCAO#PENRT_Transport_Beam_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+<https://w3id.org/LCAO#PENRT_Transport_Beam_1> <https://w3id.org/LCMO#hasValue> "15.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#PENRT_Transport_Literature_Beam_1
+<https://w3id.org/LCAO#PENRT_Transport_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#PENRT_Transport_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessInventoryIndicator> .
+<https://w3id.org/LCAO#PENRT_Transport_Literature_Beam_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+<https://w3id.org/LCAO#PENRT_Transport_Literature_Beam_1> <https://w3id.org/LCMO#hasValue> "147"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#PENRT_Transport_Literature_Slab_1
+<https://w3id.org/LCAO#PENRT_Transport_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#PENRT_Transport_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessInventoryIndicator> .
+<https://w3id.org/LCAO#PENRT_Transport_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+<https://w3id.org/LCAO#PENRT_Transport_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "195"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#PENRT_Transport_Slab_1
+<https://w3id.org/LCAO#PENRT_Transport_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#PENRT_Transport_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessInventoryIndicator> .
+<https://w3id.org/LCAO#PENRT_Transport_Slab_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+<https://w3id.org/LCAO#PENRT_Transport_Slab_1> <https://w3id.org/LCMO#hasValue> "22"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#PERT_Extraction_Beam_1
+<https://w3id.org/LCAO#PERT_Extraction_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#PERT_Extraction_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessInventoryIndicator> .
+# 
+# https://w3id.org/LCAO#PERT_Extraction_Literature_Beam_1
+<https://w3id.org/LCAO#PERT_Extraction_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#PERT_Extraction_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessInventoryIndicator> .
+<https://w3id.org/LCAO#PERT_Extraction_Literature_Beam_1> <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." .
+<https://w3id.org/LCAO#PERT_Extraction_Literature_Beam_1> <https://w3id.org/LCMO#hasValue> "6.83"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#PERT_Extraction_Literature_Slab_1
+<https://w3id.org/LCAO#PERT_Extraction_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#PERT_Extraction_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessInventoryIndicator> .
+<https://w3id.org/LCAO#PERT_Extraction_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." .
+<https://w3id.org/LCAO#PERT_Extraction_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "2624.83"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#PERT_Extraction_Slab_1
+<https://w3id.org/LCAO#PERT_Extraction_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#PERT_Extraction_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessInventoryIndicator> .
+<https://w3id.org/LCAO#PERT_Extraction_Slab_1> <https://w3id.org/LCMO#hasUnit> "kg CO2 eq." .
+<https://w3id.org/LCAO#PERT_Extraction_Slab_1> <https://w3id.org/LCMO#hasValue> "50.13"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#PERT_Transfer_Beam_1
+<https://w3id.org/LCAO#PERT_Transfer_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#PERT_Transfer_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessInventoryIndicator> .
+<https://w3id.org/LCAO#PERT_Transfer_Beam_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+<https://w3id.org/LCAO#PERT_Transfer_Beam_1> <https://w3id.org/LCMO#hasValue> "71.3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#PERT_Transfer_Literature_Beam_1
+<https://w3id.org/LCAO#PERT_Transfer_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#PERT_Transfer_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessInventoryIndicator> .
+<https://w3id.org/LCAO#PERT_Transfer_Literature_Beam_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+<https://w3id.org/LCAO#PERT_Transfer_Literature_Beam_1> <https://w3id.org/LCMO#hasValue> "273"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#PERT_Transfer_Literature_Slab_1
+<https://w3id.org/LCAO#PERT_Transfer_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#PERT_Transfer_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessInventoryIndicator> .
+<https://w3id.org/LCAO#PERT_Transfer_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+<https://w3id.org/LCAO#PERT_Transfer_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "390"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#PERT_Transfer_Slab_1
+<https://w3id.org/LCAO#PERT_Transfer_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#PERT_Transfer_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessInventoryIndicator> .
+<https://w3id.org/LCAO#PERT_Transfer_Slab_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+<https://w3id.org/LCAO#PERT_Transfer_Slab_1> <https://w3id.org/LCMO#hasValue> "71.4"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#PERT_Transport_Beam_1
+<https://w3id.org/LCAO#PERT_Transport_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#PERT_Transport_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessInventoryIndicator> .
+<https://w3id.org/LCAO#PERT_Transport_Beam_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+<https://w3id.org/LCAO#PERT_Transport_Beam_1> <https://w3id.org/LCMO#hasValue> "0.914"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#PERT_Transport_Literature_Beam_1
+<https://w3id.org/LCAO#PERT_Transport_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#PERT_Transport_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessInventoryIndicator> .
+<https://w3id.org/LCAO#PERT_Transport_Literature_Beam_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+<https://w3id.org/LCAO#PERT_Transport_Literature_Beam_1> <https://w3id.org/LCMO#hasValue> "8.52"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#PERT_Transport_Literature_Slab_1
+<https://w3id.org/LCAO#PERT_Transport_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#PERT_Transport_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessInventoryIndicator> .
+<https://w3id.org/LCAO#PERT_Transport_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+<https://w3id.org/LCAO#PERT_Transport_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "11.3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#PERT_Transport_Slab_1
+<https://w3id.org/LCAO#PERT_Transport_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#PERT_Transport_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/LCAO#ProcessInventoryIndicator> .
+<https://w3id.org/LCAO#PERT_Transport_Slab_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+<https://w3id.org/LCAO#PERT_Transport_Slab_1> <https://w3id.org/LCMO#hasValue> "1.28"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/LCAO#Process
+<https://w3id.org/LCAO#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/LCAO#Process> <https://w3id.org/LCAO#hasFlow> <https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Slab_1> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
