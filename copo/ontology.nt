@@ -1,0 +1,1412 @@
+<https://w3id.org/COPO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/COPO> <http://purl.org/dc/elements/1.1/contributor> _:genid1 .
+_:genid1 <https://schema.org/name> "Dr. Philipp Hagedorn" .
+_:genid1 <https://schema.org/memberOf> _:genid2 .
+_:genid2 <https://schema.org/name> "Ruhr University Bochum, DE" .
+_:genid2 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en> .
+_:genid1 <https://schema.org/identifier> <https://orcid.org/0000-0002-6249-243X> .
+_:genid1 <https://schema.org/email> <mailto:philipp.hagedorn-n6v@rub.de> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+<https://schema.org/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO> <http://purl.org/dc/elements/1.1/created> "2025-12-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/COPO> <http://purl.org/dc/elements/1.1/creator> _:genid3 .
+_:genid3 <https://schema.org/name> "Jonas Maibaum" .
+_:genid3 <https://schema.org/memberOf> _:genid4 .
+_:genid4 <https://schema.org/name> "Ruhr University Bochum, DE" .
+_:genid4 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/jonas_maibaum.html.en> .
+_:genid3 <https://schema.org/identifier> <https://orcid.org/0000-0001-5010-7904> .
+_:genid3 <https://schema.org/email> <mailto:jonas.maibaum@rub.de> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+<https://w3id.org/COPO> <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/COPO> <http://purl.org/dc/elements/1.1/source> "https://github.com/RUB-Informatik-im-Bauwesen/crc1683-ontologies/tree/main/copo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/COPO> <http://purl.org/vocab/vann/preferredNamespacePrefix> "copo" .
+<https://w3id.org/COPO> <http://www.w3.org/2000/01/rdf-schema#comment> "TODO: write description"@en .
+<https://w3id.org/COPO> <http://www.w3.org/2000/01/rdf-schema#label> "COPO Ontology" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/created
+<http://purl.org/dc/elements/1.1/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/email
+<https://schema.org/email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/identifier
+<https://schema.org/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/memberOf
+<https://schema.org/memberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/name
+<https://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/LCAO#hasProcessEnvironmentalIndicator
+<https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/LCAO#hasSubProcess
+<https://w3id.org/LCAO#hasSubProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/LCAO#isLCAScenarioMeasurement
+<https://w3id.org/LCAO#isLCAScenarioMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/LCAO#isLCAScenarioPrediction
+<https://w3id.org/LCAO#isLCAScenarioPrediction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/LCAO#isLCAScenarioPrediction> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/LCAO#isLCAScenarioMeasurement> .
+# 
+# https://w3id.org/LCMO#addressesConstructionObject
+<https://w3id.org/LCMO#addressesConstructionObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/LCMO#addressesConstructionProcess
+<https://w3id.org/LCMO#addressesConstructionProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/LCMO#concernsLifeCycleModule
+<https://w3id.org/LCMO#concernsLifeCycleModule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/LCMO#hasConstructionObjectDataObject
+<https://w3id.org/LCMO#hasConstructionObjectDataObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/LCMO#hasConstructionObjectProperty
+<https://w3id.org/LCMO#hasConstructionObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/LCMO#hasConstructionObjectPropertyGroup
+<https://w3id.org/LCMO#hasConstructionObjectPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/LCMO#hasConstructionProcessPropertyGroup
+<https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/LCMO#hasName
+<https://w3id.org/LCMO#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/LCMO#hasObjectType
+<https://w3id.org/LCMO#hasObjectType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/LCMO#hasPreviousConstructionProcess
+<https://w3id.org/LCMO#hasPreviousConstructionProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/LCMO#hasProcessResource
+<https://w3id.org/LCMO#hasProcessResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/LCMO#hasProjectActivity
+<https://w3id.org/LCMO#hasProjectActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/LCMO#hasResourceType
+<https://w3id.org/LCMO#hasResourceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/LCMO#hasSubsequentConstructionProcess
+<https://w3id.org/LCMO#hasSubsequentConstructionProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/LCMO#hasUnit
+<https://w3id.org/LCMO#hasUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/LCMO#hasUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/COPO#CapacityUtilization> .
+<https://w3id.org/LCMO#hasUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/COPO#Power> .
+<https://w3id.org/LCMO#hasUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/COPO#WorkingTime> .
+# 
+# https://w3id.org/LCMO#isLinkedToConstructionProduct
+<https://w3id.org/LCMO#isLinkedToConstructionProduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/LCMO#hasValue
+<https://w3id.org/LCMO#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/LCMO#hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/COPO#CapacityUtilization> .
+<https://w3id.org/LCMO#hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/COPO#Power> .
+<https://w3id.org/LCMO#hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/COPO#WorkingTime> .
+<https://w3id.org/LCMO#hasValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://schema.org/Person
+# 
+# https://w3id.org/COPO#BIM_Model
+<https://w3id.org/COPO#BIM_Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#BIM_Model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionObjectDataObject> .
+<https://w3id.org/LCMO#ConstructionObjectDataObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/COPO#Beam
+<https://w3id.org/COPO#Beam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Beam> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionObject> .
+<https://w3id.org/LCMO#ConstructionObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/COPO#C0_EoL_Planning
+<https://w3id.org/COPO#C0_EoL_Planning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#C0_EoL_Planning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#LifeCycleModule> .
+<https://w3id.org/LCMO#LifeCycleModule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/COPO#C1_Deconstruction
+<https://w3id.org/COPO#C1_Deconstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#C1_Deconstruction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#LifeCycleModule> .
+# 
+# https://w3id.org/COPO#C2_Transport
+<https://w3id.org/COPO#C2_Transport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#C2_Transport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#LifeCycleModule> .
+# 
+# https://w3id.org/COPO#C3_Recycling_WasteProcessing
+<https://w3id.org/COPO#C3_Recycling_WasteProcessing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#C3_Recycling_WasteProcessing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#LifeCycleModule> .
+# 
+# https://w3id.org/COPO#C4_Disposal
+<https://w3id.org/COPO#C4_Disposal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#C4_Disposal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#LifeCycleModule> .
+# 
+# https://w3id.org/COPO#CapacityUtilization
+<https://w3id.org/COPO#CapacityUtilization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#CapacityUtilization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionProcessProperty> .
+<https://w3id.org/LCMO#ConstructionProcessProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/COPO#Concrete
+<https://w3id.org/COPO#Concrete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Concrete> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ObjectType> .
+<https://w3id.org/LCMO#ObjectType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/COPO#Condition
+<https://w3id.org/COPO#Condition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Condition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionObjectPropertyGroup> .
+<https://w3id.org/LCMO#ConstructionObjectPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/COPO#ConditionGrade
+<https://w3id.org/COPO#ConditionGrade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#ConditionGrade> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/COPO#Condition> .
+<https://w3id.org/COPO#ConditionGrade> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionObjectProperty> .
+<https://w3id.org/LCMO#ConstructionObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/COPO#Crane
+<https://w3id.org/COPO#Crane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Crane> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ProcessResource> .
+<https://w3id.org/LCMO#ProcessResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/COPO#CuttingTorch
+<https://w3id.org/COPO#CuttingTorch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#CuttingTorch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ProcessResource> .
+# 
+# https://w3id.org/COPO#DEWALT_D25902K-QS
+<https://w3id.org/COPO#DEWALT_D25902K-QS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#DEWALT_D25902K-QS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ResourceType> .
+<https://w3id.org/LCMO#ResourceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/COPO#Damage
+<https://w3id.org/COPO#Damage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Damage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/COPO#Condition> .
+<https://w3id.org/COPO#Damage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionObjectProperty> .
+# 
+# https://w3id.org/COPO#DeconstructionProject
+<https://w3id.org/COPO#DeconstructionProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#DeconstructionProject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#Project> .
+<https://w3id.org/LCMO#Project> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/COPO#DeconstructionReport
+<https://w3id.org/COPO#DeconstructionReport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#DeconstructionReport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionProcessDataObject> .
+<https://w3id.org/LCMO#ConstructionProcessDataObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/COPO#Demag_AC100-4
+<https://w3id.org/COPO#Demag_AC100-4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Demag_AC100-4> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ResourceType> .
+# 
+# https://w3id.org/COPO#DemolitionHammer
+<https://w3id.org/COPO#DemolitionHammer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#DemolitionHammer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ProcessResource> .
+# 
+# https://w3id.org/COPO#Density
+<https://w3id.org/COPO#Density> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Density> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/COPO#Materiality> .
+<https://w3id.org/COPO#Density> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionObjectProperty> .
+# 
+# https://w3id.org/COPO#Drilling
+<https://w3id.org/COPO#Drilling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Drilling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionProcedure> .
+<https://w3id.org/LCMO#ConstructionProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Drilling> <http://www.w3.org/2000/01/rdf-schema#comment> "According to DIN 18007: Demolition works – Concepts, procedures, fields of application" .
+# 
+# https://w3id.org/COPO#EnergyConsumption
+<https://w3id.org/COPO#EnergyConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#EnergyConsumption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionProcessProperty> .
+# 
+# https://w3id.org/COPO#EnergyConsumptionLiterature
+<https://w3id.org/COPO#EnergyConsumptionLiterature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#EnergyConsumptionLiterature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionProcessPropertyGroup> .
+<https://w3id.org/LCMO#ConstructionProcessPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/COPO#EnergyConsumptionRecorded
+<https://w3id.org/COPO#EnergyConsumptionRecorded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#EnergyConsumptionRecorded> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionProcessPropertyGroup> .
+# 
+# https://w3id.org/COPO#Excavator
+<https://w3id.org/COPO#Excavator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Excavator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ProcessResource> .
+# 
+# https://w3id.org/COPO#Extraction
+<https://w3id.org/COPO#Extraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Extraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionProcess> .
+<https://w3id.org/LCMO#ConstructionProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/COPO#Geometry
+<https://w3id.org/COPO#Geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Geometry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionObjectPropertyGroup> .
+# 
+# https://w3id.org/COPO#HammerDrill
+<https://w3id.org/COPO#HammerDrill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#HammerDrill> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ProcessResource> .
+# 
+# https://w3id.org/COPO#Height
+<https://w3id.org/COPO#Height> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Height> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/COPO#Geometry> .
+<https://w3id.org/COPO#Height> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionObjectProperty> .
+# 
+# https://w3id.org/COPO#Hilti_DST_10-CA_
+<https://w3id.org/COPO#Hilti_DST_10-CA_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Hilti_DST_10-CA_> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ResourceType> .
+<https://w3id.org/COPO#Hilti_DST_10-CA_> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumptionRecorded_Slab_1> .
+# 
+# https://w3id.org/COPO#Hilti_DST_20-CA
+<https://w3id.org/COPO#Hilti_DST_20-CA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Hilti_DST_20-CA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ResourceType> .
+# 
+# https://w3id.org/COPO#Holcim_C2530
+<https://w3id.org/COPO#Holcim_C2530> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Holcim_C2530> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#TypeSpecification> .
+<https://w3id.org/LCMO#TypeSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/COPO#LCA_Execution
+<https://w3id.org/COPO#LCA_Execution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#LCA_Execution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ProjectActivity> .
+<https://w3id.org/LCMO#ProjectActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/COPO#LCI_DataProvision
+<https://w3id.org/COPO#LCI_DataProvision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#LCI_DataProvision> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#DataManagementActivity> .
+<https://w3id.org/LCMO#DataManagementActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/COPO#LTM_1200-5.1
+<https://w3id.org/COPO#LTM_1200-5.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#LTM_1200-5.1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ResourceType> .
+# 
+# https://w3id.org/COPO#Length
+<https://w3id.org/COPO#Length> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Length> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/COPO#Geometry> .
+<https://w3id.org/COPO#Length> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionObjectProperty> .
+# 
+# https://w3id.org/COPO#Materiality
+<https://w3id.org/COPO#Materiality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Materiality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionObjectPropertyGroup> .
+# 
+# https://w3id.org/COPO#Materialname
+<https://w3id.org/COPO#Materialname> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Materialname> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/COPO#Materiality> .
+<https://w3id.org/COPO#Materialname> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionObjectProperty> .
+# 
+# https://w3id.org/COPO#MechanicalProcedure
+<https://w3id.org/COPO#MechanicalProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#MechanicalProcedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionProcedure> .
+<https://w3id.org/COPO#MechanicalProcedure> <http://www.w3.org/2000/01/rdf-schema#comment> "According to DIN 18007: Demolition works – Concepts, procedures, fields of application" .
+# 
+# https://w3id.org/COPO#Mercedes-Benz_Actros_2653_LS
+<https://w3id.org/COPO#Mercedes-Benz_Actros_2653_LS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Mercedes-Benz_Actros_2653_LS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ResourceType> .
+# 
+# https://w3id.org/COPO#Pollutant
+<https://w3id.org/COPO#Pollutant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Pollutant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/COPO#Condition> .
+<https://w3id.org/COPO#Pollutant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionObjectProperty> .
+# 
+# https://w3id.org/COPO#Power
+<https://w3id.org/COPO#Power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Power> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionProcessProperty> .
+# 
+# https://w3id.org/COPO#Ratio
+<https://w3id.org/COPO#Ratio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Ratio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/COPO#Materiality> .
+<https://w3id.org/COPO#Ratio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionObjectProperty> .
+# 
+# https://w3id.org/COPO#Removal
+<https://w3id.org/COPO#Removal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Removal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionProcedure> .
+<https://w3id.org/COPO#Removal> <http://www.w3.org/2000/01/rdf-schema#comment> "According to DIN 18007: Demolition works – Concepts, procedures, fields of application" .
+# 
+# https://w3id.org/COPO#Saw
+<https://w3id.org/COPO#Saw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Saw> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ProcessResource> .
+# 
+# https://w3id.org/COPO#Sawing
+<https://w3id.org/COPO#Sawing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Sawing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionProcedure> .
+<https://w3id.org/COPO#Sawing> <http://www.w3.org/2000/01/rdf-schema#comment> "According to DIN 18007: Demolition works – Concepts, procedures, fields of application" .
+# 
+# https://w3id.org/COPO#ScrewedConnection
+<https://w3id.org/COPO#ScrewedConnection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#ScrewedConnection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ObjectConnectionType> .
+<https://w3id.org/LCMO#ObjectConnectionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/COPO#Slab
+<https://w3id.org/COPO#Slab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Slab> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionObject> .
+# 
+# https://w3id.org/COPO#SpecificCrane_Literature
+<https://w3id.org/COPO#SpecificCrane_Literature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#SpecificCrane_Literature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ResourceType> .
+# 
+# https://w3id.org/COPO#SpecificCuttingTorch_Literature
+<https://w3id.org/COPO#SpecificCuttingTorch_Literature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#SpecificCuttingTorch_Literature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ResourceType> .
+# 
+# https://w3id.org/COPO#SpecificExcavator_Literature
+<https://w3id.org/COPO#SpecificExcavator_Literature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#SpecificExcavator_Literature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ResourceType> .
+<https://w3id.org/COPO#SpecificExcavator_Literature> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1> .
+<https://w3id.org/COPO#SpecificExcavator_Literature> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumptionLiterature_Slab_1> .
+# 
+# https://w3id.org/COPO#SpecificHammerDrill_Literature
+<https://w3id.org/COPO#SpecificHammerDrill_Literature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#SpecificHammerDrill_Literature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ResourceType> .
+# 
+# https://w3id.org/COPO#SpecificTruck_Literature
+<https://w3id.org/COPO#SpecificTruck_Literature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#SpecificTruck_Literature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ResourceType> .
+<https://w3id.org/COPO#SpecificTruck_Literature> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1> .
+<https://w3id.org/COPO#SpecificTruck_Literature> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumptionLiterature_Slab_1> .
+# 
+# https://w3id.org/COPO#Steel
+<https://w3id.org/COPO#Steel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Steel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ObjectType> .
+# 
+# https://w3id.org/COPO#Transfer
+<https://w3id.org/COPO#Transfer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Transfer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionProcess> .
+# 
+# https://w3id.org/COPO#Transport
+<https://w3id.org/COPO#Transport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Transport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionProcess> .
+# 
+# https://w3id.org/COPO#Truck
+<https://w3id.org/COPO#Truck> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Truck> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ProcessResource> .
+# 
+# https://w3id.org/COPO#Width
+<https://w3id.org/COPO#Width> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#Width> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/COPO#Geometry> .
+<https://w3id.org/COPO#Width> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionObjectProperty> .
+# 
+# https://w3id.org/COPO#WorkingTime
+<https://w3id.org/COPO#WorkingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/COPO#WorkingTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionProcessProperty> .
+# 
+# https://w3id.org/LCMO#ConstructionObject
+# 
+# https://w3id.org/LCMO#ConstructionObjectDataObject
+# 
+# https://w3id.org/LCMO#ConstructionObjectProperty
+# 
+# https://w3id.org/LCMO#ConstructionObjectPropertyGroup
+# 
+# https://w3id.org/LCMO#ConstructionProcedure
+# 
+# https://w3id.org/LCMO#ConstructionProcess
+# 
+# https://w3id.org/LCMO#ConstructionProcessDataObject
+# 
+# https://w3id.org/LCMO#ConstructionProcessProperty
+# 
+# https://w3id.org/LCMO#ConstructionProcessPropertyGroup
+# 
+# https://w3id.org/LCMO#DataManagementActivity
+# 
+# https://w3id.org/LCMO#LifeCycleModule
+# 
+# https://w3id.org/LCMO#ObjectConnectionType
+# 
+# https://w3id.org/LCMO#ObjectType
+# 
+# https://w3id.org/LCMO#ProcessResource
+# 
+# https://w3id.org/LCMO#Project
+# 
+# https://w3id.org/LCMO#ProjectActivity
+# 
+# https://w3id.org/LCMO#ResourceType
+# 
+# https://w3id.org/LCMO#TypeSpecification
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/COPO#BIM_Model_Beam_1
+<https://w3id.org/COPO#BIM_Model_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#BIM_Model_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#BIM_Model> .
+# 
+# https://w3id.org/COPO#BIM_Model_Slab_1
+<https://w3id.org/COPO#BIM_Model_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#BIM_Model_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#BIM_Model> .
+# 
+# https://w3id.org/COPO#Beam_1
+<https://w3id.org/COPO#Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Beam> .
+<https://w3id.org/COPO#Beam_1> <https://w3id.org/LCMO#hasConstructionObjectDataObject> <https://w3id.org/COPO#BIM_Model_Beam_1> .
+<https://w3id.org/COPO#Beam_1> <https://w3id.org/LCMO#hasConstructionObjectPropertyGroup> <https://w3id.org/COPO#Condition_Beam_1> .
+<https://w3id.org/COPO#Beam_1> <https://w3id.org/LCMO#hasConstructionObjectPropertyGroup> <https://w3id.org/COPO#Geometry_Beam_1> .
+<https://w3id.org/COPO#Beam_1> <https://w3id.org/LCMO#hasObjectType> <https://w3id.org/COPO#Concrete_Beam_1> .
+<https://w3id.org/COPO#Beam_1> <https://w3id.org/LCMO#hasObjectType> <https://w3id.org/COPO#Steel_Beam_1> .
+# 
+# https://w3id.org/COPO#C1_Deconstruction_1
+<https://w3id.org/COPO#C1_Deconstruction_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#C1_Deconstruction_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#C1_Deconstruction> .
+<https://w3id.org/COPO#C1_Deconstruction_1> <https://w3id.org/LCMO#addressesConstructionObject> <https://w3id.org/COPO#Beam_1> .
+<https://w3id.org/COPO#C1_Deconstruction_1> <https://w3id.org/LCMO#addressesConstructionObject> <https://w3id.org/COPO#Slab_1> .
+<https://w3id.org/COPO#C1_Deconstruction_1> <https://w3id.org/LCMO#addressesConstructionProcess> <https://w3id.org/COPO#Extraction_Beam_1> .
+<https://w3id.org/COPO#C1_Deconstruction_1> <https://w3id.org/LCMO#addressesConstructionProcess> <https://w3id.org/COPO#Extraction_Slab_1> .
+<https://w3id.org/COPO#C1_Deconstruction_1> <https://w3id.org/LCMO#addressesConstructionProcess> <https://w3id.org/COPO#Transfer_Beam_1> .
+<https://w3id.org/COPO#C1_Deconstruction_1> <https://w3id.org/LCMO#addressesConstructionProcess> <https://w3id.org/COPO#Transfer_Slab_1> .
+# 
+# https://w3id.org/COPO#C2_Transport_1
+<https://w3id.org/COPO#C2_Transport_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#C2_Transport_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#C2_Transport> .
+<https://w3id.org/COPO#C2_Transport_1> <https://w3id.org/LCMO#addressesConstructionObject> <https://w3id.org/COPO#Beam_1> .
+<https://w3id.org/COPO#C2_Transport_1> <https://w3id.org/LCMO#addressesConstructionObject> <https://w3id.org/COPO#Slab_1> .
+<https://w3id.org/COPO#C2_Transport_1> <https://w3id.org/LCMO#addressesConstructionProcess> <https://w3id.org/COPO#Transport_Beam_1> .
+<https://w3id.org/COPO#C2_Transport_1> <https://w3id.org/LCMO#addressesConstructionProcess> <https://w3id.org/COPO#Transport_Slab_1> .
+# 
+# https://w3id.org/COPO#C3_Recycling_WasteProcessing_1
+<https://w3id.org/COPO#C3_Recycling_WasteProcessing_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#C3_Recycling_WasteProcessing_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#C3_Recycling_WasteProcessing> .
+# 
+# https://w3id.org/COPO#C4_Disposal_1
+<https://w3id.org/COPO#C4_Disposal_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#C4_Disposal_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#C4_Disposal> .
+# 
+# https://w3id.org/COPO#CapacityUtilization_Demag_AC100-4_Beam_1
+<https://w3id.org/COPO#CapacityUtilization_Demag_AC100-4_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#CapacityUtilization_Demag_AC100-4_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#CapacityUtilization> .
+<https://w3id.org/COPO#CapacityUtilization_Demag_AC100-4_Beam_1> <https://w3id.org/LCMO#hasValue> "0.75"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#CapacityUtilization_Demag_AC100-4_Beam_1> <https://w3id.org/LCMO#hasUnit> "-" .
+# 
+# https://w3id.org/COPO#CapacityUtilization_Demag_AC100-4_Slab_1
+<https://w3id.org/COPO#CapacityUtilization_Demag_AC100-4_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#CapacityUtilization_Demag_AC100-4_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#CapacityUtilization> .
+<https://w3id.org/COPO#CapacityUtilization_Demag_AC100-4_Slab_1> <https://w3id.org/LCMO#hasValue> "0.75"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#CapacityUtilization_Demag_AC100-4_Slab_1> <https://w3id.org/LCMO#hasUnit> "-" .
+# 
+# https://w3id.org/COPO#CapacityUtilization_Hilti_DST_10-CA_Beam_1
+<https://w3id.org/COPO#CapacityUtilization_Hilti_DST_10-CA_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#CapacityUtilization_Hilti_DST_10-CA_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#CapacityUtilization> .
+# 
+# https://w3id.org/COPO#CapacityUtilization_Hilti_DST_10-CA_Slab_1
+<https://w3id.org/COPO#CapacityUtilization_Hilti_DST_10-CA_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#CapacityUtilization_Hilti_DST_10-CA_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#CapacityUtilization> .
+<https://w3id.org/COPO#CapacityUtilization_Hilti_DST_10-CA_Slab_1> <https://w3id.org/LCMO#hasValue> "0.75"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#CapacityUtilization_Hilti_DST_10-CA_Slab_1> <https://w3id.org/LCMO#hasUnit> "-" .
+# 
+# https://w3id.org/COPO#CapacityUtilization_Hilti_DST_20-CA_Beam_1
+<https://w3id.org/COPO#CapacityUtilization_Hilti_DST_20-CA_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#CapacityUtilization_Hilti_DST_20-CA_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#CapacityUtilization> .
+# 
+# https://w3id.org/COPO#CapacityUtilization_Hilti_DST_20-CA_Slab_1
+<https://w3id.org/COPO#CapacityUtilization_Hilti_DST_20-CA_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#CapacityUtilization_Hilti_DST_20-CA_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#CapacityUtilization> .
+<https://w3id.org/COPO#CapacityUtilization_Hilti_DST_20-CA_Slab_1> <https://w3id.org/LCMO#hasValue> "0.75"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#CapacityUtilization_Hilti_DST_20-CA_Slab_1> <https://w3id.org/LCMO#hasUnit> "-" .
+# 
+# https://w3id.org/COPO#CapacityUtilization_Mercedes-Benz_Actros_2653_LS_Beam_1
+<https://w3id.org/COPO#CapacityUtilization_Mercedes-Benz_Actros_2653_LS_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#CapacityUtilization_Mercedes-Benz_Actros_2653_LS_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#CapacityUtilization> .
+# 
+# https://w3id.org/COPO#CapacityUtilization_Mercedes-Benz_Actros_2653_LS_Slab_1
+<https://w3id.org/COPO#CapacityUtilization_Mercedes-Benz_Actros_2653_LS_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#CapacityUtilization_Mercedes-Benz_Actros_2653_LS_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#CapacityUtilization> .
+# 
+# https://w3id.org/COPO#CapacityUtilization_SpecificCrane_Literature_Beam_1
+<https://w3id.org/COPO#CapacityUtilization_SpecificCrane_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#CapacityUtilization_SpecificCrane_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#CapacityUtilization> .
+<https://w3id.org/COPO#CapacityUtilization_SpecificCrane_Literature_Beam_1> <https://w3id.org/LCMO#hasValue> "0.75"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#CapacityUtilization_SpecificCrane_Literature_Beam_1> <https://w3id.org/LCMO#hasUnit> "-" .
+# 
+# https://w3id.org/COPO#CapacityUtilization_SpecificCrane_Literature_Slab_1
+<https://w3id.org/COPO#CapacityUtilization_SpecificCrane_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#CapacityUtilization_SpecificCrane_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#CapacityUtilization> .
+<https://w3id.org/COPO#CapacityUtilization_SpecificCrane_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "0.75"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#CapacityUtilization_SpecificCrane_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "-" .
+# 
+# https://w3id.org/COPO#CapacityUtilization_SpecificCuttingTorch_Literature_Beam_1
+<https://w3id.org/COPO#CapacityUtilization_SpecificCuttingTorch_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#CapacityUtilization_SpecificCuttingTorch_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#CapacityUtilization> .
+# 
+# https://w3id.org/COPO#CapacityUtilization_SpecificCuttingTorch_Literature_Slab_1
+<https://w3id.org/COPO#CapacityUtilization_SpecificCuttingTorch_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#CapacityUtilization_SpecificCuttingTorch_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#CapacityUtilization> .
+<https://w3id.org/COPO#CapacityUtilization_SpecificCuttingTorch_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#CapacityUtilization_SpecificCuttingTorch_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "-" .
+# 
+# https://w3id.org/COPO#CapacityUtilization_SpecificExcavator_Literature_Beam_1
+<https://w3id.org/COPO#CapacityUtilization_SpecificExcavator_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#CapacityUtilization_SpecificExcavator_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#CapacityUtilization> .
+<https://w3id.org/COPO#CapacityUtilization_SpecificExcavator_Literature_Beam_1> <https://w3id.org/LCMO#hasValue> "0.75"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#CapacityUtilization_SpecificExcavator_Literature_Beam_1> <https://w3id.org/LCMO#hasUnit> "-" .
+# 
+# https://w3id.org/COPO#CapacityUtilization_SpecificExcavator_Literature_Slab_1
+<https://w3id.org/COPO#CapacityUtilization_SpecificExcavator_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#CapacityUtilization_SpecificExcavator_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#CapacityUtilization> .
+<https://w3id.org/COPO#CapacityUtilization_SpecificExcavator_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "0.75"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#CapacityUtilization_SpecificExcavator_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "-" .
+# 
+# https://w3id.org/COPO#CapacityUtilization_SpecificHammerDrill_Literature_Beam_1
+<https://w3id.org/COPO#CapacityUtilization_SpecificHammerDrill_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#CapacityUtilization_SpecificHammerDrill_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#CapacityUtilization> .
+# 
+# https://w3id.org/COPO#CapacityUtilization_SpecificHammerDrill_Literature_Slab_1
+<https://w3id.org/COPO#CapacityUtilization_SpecificHammerDrill_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#CapacityUtilization_SpecificHammerDrill_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#CapacityUtilization> .
+<https://w3id.org/COPO#CapacityUtilization_SpecificHammerDrill_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "0.75"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#CapacityUtilization_SpecificHammerDrill_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "-" .
+# 
+# https://w3id.org/COPO#CapacityUtilization_SpecificTruck_Literature_Beam_1
+<https://w3id.org/COPO#CapacityUtilization_SpecificTruck_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#CapacityUtilization_SpecificTruck_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#CapacityUtilization> .
+# 
+# https://w3id.org/COPO#CapacityUtilization_SpecificTruck_Literature_Slab_1
+<https://w3id.org/COPO#CapacityUtilization_SpecificTruck_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#CapacityUtilization_SpecificTruck_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#CapacityUtilization> .
+# 
+# https://w3id.org/COPO#Concrete_Beam_1
+<https://w3id.org/COPO#Concrete_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Concrete_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Concrete> .
+<https://w3id.org/COPO#Concrete_Beam_1> <https://w3id.org/LCMO#hasConstructionObjectPropertyGroup> <https://w3id.org/COPO#Materiality_Concrete_Beam_1> .
+# 
+# https://w3id.org/COPO#Concrete_Slab_1
+<https://w3id.org/COPO#Concrete_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Concrete_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Concrete> .
+<https://w3id.org/COPO#Concrete_Slab_1> <https://w3id.org/LCMO#hasConstructionObjectPropertyGroup> <https://w3id.org/COPO#Materiality_Concrete_Slab_1> .
+# 
+# https://w3id.org/COPO#ConditionGrade_Beam_1
+<https://w3id.org/COPO#ConditionGrade_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#ConditionGrade_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#ConditionGrade> .
+# 
+# https://w3id.org/COPO#ConditionGrade_Slab_1
+<https://w3id.org/COPO#ConditionGrade_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#ConditionGrade_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#ConditionGrade> .
+# 
+# https://w3id.org/COPO#Condition_Beam_1
+<https://w3id.org/COPO#Condition_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Condition_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Condition> .
+<https://w3id.org/COPO#Condition_Beam_1> <https://w3id.org/LCMO#hasConstructionObjectProperty> <https://w3id.org/COPO#ConditionGrade_Beam_1> .
+<https://w3id.org/COPO#Condition_Beam_1> <https://w3id.org/LCMO#hasConstructionObjectProperty> <https://w3id.org/COPO#Damage_Beam_1> .
+<https://w3id.org/COPO#Condition_Beam_1> <https://w3id.org/LCMO#hasConstructionObjectProperty> <https://w3id.org/COPO#Pollutant_Beam_1> .
+# 
+# https://w3id.org/COPO#Condition_Slab_1
+<https://w3id.org/COPO#Condition_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Condition_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Condition> .
+<https://w3id.org/COPO#Condition_Slab_1> <https://w3id.org/LCMO#hasConstructionObjectProperty> <https://w3id.org/COPO#ConditionGrade_Slab_1> .
+<https://w3id.org/COPO#Condition_Slab_1> <https://w3id.org/LCMO#hasConstructionObjectProperty> <https://w3id.org/COPO#Damage_Slab_1> .
+<https://w3id.org/COPO#Condition_Slab_1> <https://w3id.org/LCMO#hasConstructionObjectProperty> <https://w3id.org/COPO#Pollutant_Slab_1> .
+# 
+# https://w3id.org/COPO#Crane_1
+<https://w3id.org/COPO#Crane_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Crane_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Crane> .
+<https://w3id.org/COPO#Crane_1> <http://www.w3.org/2000/01/rdf-schema#comment> "Transfer with Crane" .
+<https://w3id.org/COPO#Crane_1> <https://w3id.org/LCMO#hasResourceType> <https://w3id.org/COPO#Demag_AC100-4_1> .
+<https://w3id.org/COPO#Crane_1> <https://w3id.org/LCMO#hasResourceType> <https://w3id.org/COPO#SpecificCrane_Literature_1> .
+# 
+# https://w3id.org/COPO#CuttingTorch_1
+<https://w3id.org/COPO#CuttingTorch_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#CuttingTorch_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#CuttingTorch> .
+<https://w3id.org/COPO#CuttingTorch_1> <https://w3id.org/LCMO#hasResourceType> <https://w3id.org/COPO#SpecificCuttingTorch_Literature_1> .
+# 
+# https://w3id.org/COPO#DEWALT_D25902K-QS_1
+<https://w3id.org/COPO#DEWALT_D25902K-QS_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#DEWALT_D25902K-QS_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#DEWALT_D25902K-QS> .
+# 
+# https://w3id.org/COPO#Damage_Beam_1
+<https://w3id.org/COPO#Damage_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Damage_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Damage> .
+# 
+# https://w3id.org/COPO#Damage_Slab_1
+<https://w3id.org/COPO#Damage_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Damage_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Damage> .
+# 
+# https://w3id.org/COPO#DeconstructionProject_1
+<https://w3id.org/COPO#DeconstructionProject_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#DeconstructionProject_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#DeconstructionProject> .
+<https://w3id.org/COPO#DeconstructionProject_1> <https://w3id.org/LCMO#hasProjectActivity> <https://w3id.org/COPO#LCA_Execution_1> .
+# 
+# https://w3id.org/COPO#DeconstructionReport_1
+<https://w3id.org/COPO#DeconstructionReport_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#DeconstructionReport_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#DeconstructionReport> .
+# 
+# https://w3id.org/COPO#Demag_AC100-4_1
+<https://w3id.org/COPO#Demag_AC100-4_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Demag_AC100-4_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Demag_AC100-4> .
+<https://w3id.org/COPO#Demag_AC100-4_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#CapacityUtilization_Demag_AC100-4_Beam_1> .
+<https://w3id.org/COPO#Demag_AC100-4_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#CapacityUtilization_Demag_AC100-4_Slab_1> .
+<https://w3id.org/COPO#Demag_AC100-4_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumptionRecorded_Beam_1> .
+<https://w3id.org/COPO#Demag_AC100-4_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumptionRecorded_Slab_1> .
+<https://w3id.org/COPO#Demag_AC100-4_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumption_Demag_AC100-4_Beam_1> .
+<https://w3id.org/COPO#Demag_AC100-4_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumption_Demag_AC100-4_Slab_1> .
+<https://w3id.org/COPO#Demag_AC100-4_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#Power_Demag_AC100-4_Beam_1> .
+<https://w3id.org/COPO#Demag_AC100-4_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#Power_Demag_AC100-4_Slab_1> .
+<https://w3id.org/COPO#Demag_AC100-4_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#WorkingTime_Demag_AC100-4_Beam_1> .
+<https://w3id.org/COPO#Demag_AC100-4_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#WorkingTime_Demag_AC100-4_Slab_1> .
+# 
+# https://w3id.org/COPO#DemolitionHammer_1
+<https://w3id.org/COPO#DemolitionHammer_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#DemolitionHammer_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#DemolitionHammer> .
+<https://w3id.org/COPO#DemolitionHammer_1> <https://w3id.org/LCMO#hasResourceType> <https://w3id.org/COPO#Hilti_DST_10-CA__1> .
+# 
+# https://w3id.org/COPO#Density_Concrete_Beam_1
+<https://w3id.org/COPO#Density_Concrete_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Density_Concrete_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Density> .
+<https://w3id.org/COPO#Density_Concrete_Beam_1> <https://w3id.org/LCMO#hasValue> "2450"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#Density_Concrete_Beam_1> <https://w3id.org/LCMO#hasUnit> "kg/m3" .
+# 
+# https://w3id.org/COPO#Density_Concrete_Slab_1
+<https://w3id.org/COPO#Density_Concrete_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Density_Concrete_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Density> .
+<https://w3id.org/COPO#Density_Concrete_Slab_1> <https://w3id.org/LCMO#hasValue> "2450"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#Density_Concrete_Slab_1> <https://w3id.org/LCMO#hasUnit> "kg/m3" .
+# 
+# https://w3id.org/COPO#Density_Steel_Beam_1
+<https://w3id.org/COPO#Density_Steel_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Density_Steel_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Density> .
+<https://w3id.org/COPO#Density_Steel_Beam_1> <https://w3id.org/LCMO#hasValue> "7850"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#Density_Steel_Beam_1> <https://w3id.org/LCMO#hasUnit> "kg/m3" .
+# 
+# https://w3id.org/COPO#Density_Steel_Slab_1
+<https://w3id.org/COPO#Density_Steel_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Density_Steel_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Density> .
+<https://w3id.org/COPO#Density_Steel_Slab_1> <https://w3id.org/LCMO#hasValue> "7850"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#Density_Steel_Slab_1> <https://w3id.org/LCMO#hasUnit> "kg/m3" .
+# 
+# https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1
+<https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#EnergyConsumptionLiterature> .
+# 
+# https://w3id.org/COPO#EnergyConsumptionLiterature_Slab_1
+<https://w3id.org/COPO#EnergyConsumptionLiterature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#EnergyConsumptionLiterature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#EnergyConsumptionLiterature> .
+# 
+# https://w3id.org/COPO#EnergyConsumptionRecorded_Beam_1
+<https://w3id.org/COPO#EnergyConsumptionRecorded_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#EnergyConsumptionRecorded_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#EnergyConsumptionRecorded> .
+# 
+# https://w3id.org/COPO#EnergyConsumptionRecorded_Slab_1
+<https://w3id.org/COPO#EnergyConsumptionRecorded_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#EnergyConsumptionRecorded_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#EnergyConsumptionRecorded> .
+# 
+# https://w3id.org/COPO#EnergyConsumption_Demag_AC100-4_Beam_1
+<https://w3id.org/COPO#EnergyConsumption_Demag_AC100-4_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#EnergyConsumption_Demag_AC100-4_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#EnergyConsumption> .
+<https://w3id.org/COPO#EnergyConsumption_Demag_AC100-4_Beam_1> <https://w3id.org/LCMO#hasValue> "58.05"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#EnergyConsumption_Demag_AC100-4_Beam_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+# 
+# https://w3id.org/COPO#EnergyConsumption_Demag_AC100-4_Slab_1
+<https://w3id.org/COPO#EnergyConsumption_Demag_AC100-4_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#EnergyConsumption_Demag_AC100-4_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#EnergyConsumption> .
+<https://w3id.org/COPO#EnergyConsumption_Demag_AC100-4_Slab_1> <https://w3id.org/LCMO#hasValue> "58.17"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#EnergyConsumption_Demag_AC100-4_Slab_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+# 
+# https://w3id.org/COPO#EnergyConsumption_Hilti_DST_10-CA_Beam_1
+<https://w3id.org/COPO#EnergyConsumption_Hilti_DST_10-CA_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#EnergyConsumption_Hilti_DST_10-CA_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#EnergyConsumption> .
+# 
+# https://w3id.org/COPO#EnergyConsumption_Hilti_DST_10-CA_Slab_1
+<https://w3id.org/COPO#EnergyConsumption_Hilti_DST_10-CA_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#EnergyConsumption_Hilti_DST_10-CA_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#EnergyConsumption> .
+<https://w3id.org/COPO#EnergyConsumption_Hilti_DST_10-CA_Slab_1> <https://w3id.org/LCMO#hasValue> "0.35"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#EnergyConsumption_Hilti_DST_10-CA_Slab_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+# 
+# https://w3id.org/COPO#EnergyConsumption_Hilti_DST_20-CA_Beam_1
+<https://w3id.org/COPO#EnergyConsumption_Hilti_DST_20-CA_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#EnergyConsumption_Hilti_DST_20-CA_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#EnergyConsumption> .
+# 
+# https://w3id.org/COPO#EnergyConsumption_Hilti_DST_20-CA_Slab_1
+<https://w3id.org/COPO#EnergyConsumption_Hilti_DST_20-CA_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#EnergyConsumption_Hilti_DST_20-CA_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#EnergyConsumption> .
+<https://w3id.org/COPO#EnergyConsumption_Hilti_DST_20-CA_Slab_1> <https://w3id.org/LCMO#hasValue> "40.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#EnergyConsumption_Hilti_DST_20-CA_Slab_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+# 
+# https://w3id.org/COPO#EnergyConsumption_Mercedes-Benz_Actros_2653_LS_Beam_1
+<https://w3id.org/COPO#EnergyConsumption_Mercedes-Benz_Actros_2653_LS_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#EnergyConsumption_Mercedes-Benz_Actros_2653_LS_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#EnergyConsumption> .
+# 
+# https://w3id.org/COPO#EnergyConsumption_Mercedes-Benz_Actros_2653_LS_Slab_1
+<https://w3id.org/COPO#EnergyConsumption_Mercedes-Benz_Actros_2653_LS_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#EnergyConsumption_Mercedes-Benz_Actros_2653_LS_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#EnergyConsumption> .
+# 
+# https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Beam_1
+<https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#EnergyConsumption> .
+<https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Beam_1> <https://w3id.org/LCMO#hasValue> "222.27"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Beam_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+# 
+# https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Slab_1
+<https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#EnergyConsumption> .
+<https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "317.26"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+# 
+# https://w3id.org/COPO#EnergyConsumption_SpecificCuttingTorch_Literature_Beam_1
+<https://w3id.org/COPO#EnergyConsumption_SpecificCuttingTorch_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#EnergyConsumption_SpecificCuttingTorch_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#EnergyConsumption> .
+# 
+# https://w3id.org/COPO#EnergyConsumption_SpecificCuttingTorch_Literature_Slab_1
+<https://w3id.org/COPO#EnergyConsumption_SpecificCuttingTorch_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#EnergyConsumption_SpecificCuttingTorch_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#EnergyConsumption> .
+<https://w3id.org/COPO#EnergyConsumption_SpecificCuttingTorch_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "1978.56"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#EnergyConsumption_SpecificCuttingTorch_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+# 
+# https://w3id.org/COPO#EnergyConsumption_SpecificExcavator_Literature_Beam_1
+<https://w3id.org/COPO#EnergyConsumption_SpecificExcavator_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#EnergyConsumption_SpecificExcavator_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#EnergyConsumption> .
+<https://w3id.org/COPO#EnergyConsumption_SpecificExcavator_Literature_Beam_1> <https://w3id.org/LCMO#hasValue> "5.56"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#EnergyConsumption_SpecificExcavator_Literature_Beam_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+# 
+# https://w3id.org/COPO#EnergyConsumption_SpecificExcavator_Literature_Slab_1
+<https://w3id.org/COPO#EnergyConsumption_SpecificExcavator_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#EnergyConsumption_SpecificExcavator_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#EnergyConsumption> .
+<https://w3id.org/COPO#EnergyConsumption_SpecificExcavator_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "5.56"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#EnergyConsumption_SpecificExcavator_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+# 
+# https://w3id.org/COPO#EnergyConsumption_SpecificHammerDrill_Literature_Beam_1
+<https://w3id.org/COPO#EnergyConsumption_SpecificHammerDrill_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#EnergyConsumption_SpecificHammerDrill_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#EnergyConsumption> .
+# 
+# https://w3id.org/COPO#EnergyConsumption_SpecificHammerDrill_Literature_Slab_1
+<https://w3id.org/COPO#EnergyConsumption_SpecificHammerDrill_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#EnergyConsumption_SpecificHammerDrill_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#EnergyConsumption> .
+<https://w3id.org/COPO#EnergyConsumption_SpecificHammerDrill_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "145.94"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#EnergyConsumption_SpecificHammerDrill_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "MJ" .
+# 
+# https://w3id.org/COPO#EnergyConsumption_SpecificTruck_Literature_Beam_1
+<https://w3id.org/COPO#EnergyConsumption_SpecificTruck_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#EnergyConsumption_SpecificTruck_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#EnergyConsumption> .
+# 
+# https://w3id.org/COPO#EnergyConsumption_SpecificTruck_Literature_Slab_1
+<https://w3id.org/COPO#EnergyConsumption_SpecificTruck_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#EnergyConsumption_SpecificTruck_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#EnergyConsumption> .
+# 
+# https://w3id.org/COPO#Excavator_1
+<https://w3id.org/COPO#Excavator_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Excavator_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Excavator> .
+<https://w3id.org/COPO#Excavator_1> <https://w3id.org/LCMO#hasResourceType> <https://w3id.org/COPO#SpecificExcavator_Literature_1> .
+# 
+# https://w3id.org/COPO#Extraction_Beam_1
+<https://w3id.org/COPO#Extraction_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Extraction_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Extraction> .
+<https://w3id.org/COPO#Extraction_Beam_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#GWP_Extraction_Beam_1> .
+<https://w3id.org/COPO#Extraction_Beam_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#GWP_Extraction_Literature_Beam_1> .
+<https://w3id.org/COPO#Extraction_Beam_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#PENRT_Extraction_Beam_1> .
+<https://w3id.org/COPO#Extraction_Beam_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#PENRT_Extraction_Literature_Beam_1> .
+<https://w3id.org/COPO#Extraction_Beam_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#PERT_Extraction_Beam_1> .
+<https://w3id.org/COPO#Extraction_Beam_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#PERT_Extraction_Literature_Beam_1> .
+<https://w3id.org/COPO#Extraction_Beam_1> <https://w3id.org/LCMO#hasProcessResource> <https://w3id.org/COPO#Excavator_1> .
+<https://w3id.org/COPO#Extraction_Beam_1> <https://w3id.org/LCMO#hasSubsequentConstructionProcess> <https://w3id.org/COPO#Transfer_Beam_1> .
+<https://w3id.org/COPO#Extraction_Beam_1> <https://w3id.org/LCMO#isLinkedToConstructionProduct> <https://w3id.org/COPO#Beam_1> .
+# 
+# https://w3id.org/COPO#Extraction_Slab_1
+<https://w3id.org/COPO#Extraction_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Extraction_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Extraction> .
+<https://w3id.org/COPO#Extraction_Slab_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#GWP_Extraction_Literature_Slab_1> .
+<https://w3id.org/COPO#Extraction_Slab_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#GWP_Extraction_Slab_1> .
+<https://w3id.org/COPO#Extraction_Slab_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#PENRT_Extraction_Literature_Slab_1> .
+<https://w3id.org/COPO#Extraction_Slab_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#PENRT_Extraction_Slab_1> .
+<https://w3id.org/COPO#Extraction_Slab_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#PERT_Extraction_Literature_Slab_1> .
+<https://w3id.org/COPO#Extraction_Slab_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#PERT_Extraction_Slab_1> .
+<https://w3id.org/COPO#Extraction_Slab_1> <https://w3id.org/LCMO#hasProcessResource> <https://w3id.org/COPO#CuttingTorch_1> .
+<https://w3id.org/COPO#Extraction_Slab_1> <https://w3id.org/LCMO#hasProcessResource> <https://w3id.org/COPO#DemolitionHammer_1> .
+<https://w3id.org/COPO#Extraction_Slab_1> <https://w3id.org/LCMO#hasProcessResource> <https://w3id.org/COPO#Excavator_1> .
+<https://w3id.org/COPO#Extraction_Slab_1> <https://w3id.org/LCMO#hasProcessResource> <https://w3id.org/COPO#HammerDrill_1> .
+<https://w3id.org/COPO#Extraction_Slab_1> <https://w3id.org/LCMO#hasProcessResource> <https://w3id.org/COPO#Saw_1> .
+<https://w3id.org/COPO#Extraction_Slab_1> <https://w3id.org/LCMO#hasSubsequentConstructionProcess> <https://w3id.org/COPO#Transfer_Slab_1> .
+<https://w3id.org/COPO#Extraction_Slab_1> <https://w3id.org/LCMO#isLinkedToConstructionProduct> <https://w3id.org/COPO#Slab_1> .
+# 
+# https://w3id.org/COPO#Geometry_Beam_1
+<https://w3id.org/COPO#Geometry_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Geometry_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Geometry> .
+<https://w3id.org/COPO#Geometry_Beam_1> <https://w3id.org/LCMO#hasConstructionObjectProperty> <https://w3id.org/COPO#Height_Beam_1> .
+<https://w3id.org/COPO#Geometry_Beam_1> <https://w3id.org/LCMO#hasConstructionObjectProperty> <https://w3id.org/COPO#Length_Beam_1> .
+<https://w3id.org/COPO#Geometry_Beam_1> <https://w3id.org/LCMO#hasConstructionObjectProperty> <https://w3id.org/COPO#Width_Beam_1> .
+# 
+# https://w3id.org/COPO#Geometry_Slab_1
+<https://w3id.org/COPO#Geometry_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Geometry_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Geometry> .
+<https://w3id.org/COPO#Geometry_Slab_1> <https://w3id.org/LCMO#hasConstructionObjectProperty> <https://w3id.org/COPO#Height_Slab_1> .
+<https://w3id.org/COPO#Geometry_Slab_1> <https://w3id.org/LCMO#hasConstructionObjectProperty> <https://w3id.org/COPO#Length_Slab_1> .
+<https://w3id.org/COPO#Geometry_Slab_1> <https://w3id.org/LCMO#hasConstructionObjectProperty> <https://w3id.org/COPO#Width_Slab_1> .
+# 
+# https://w3id.org/COPO#HammerDrill_1
+<https://w3id.org/COPO#HammerDrill_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#HammerDrill_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#HammerDrill> .
+<https://w3id.org/COPO#HammerDrill_1> <https://w3id.org/LCMO#hasResourceType> <https://w3id.org/COPO#SpecificHammerDrill_Literature_1> .
+# 
+# https://w3id.org/COPO#Height_Beam_1
+<https://w3id.org/COPO#Height_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Height_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Height> .
+<https://w3id.org/COPO#Height_Beam_1> <https://w3id.org/LCMO#hasValue> "0.59"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#Height_Beam_1> <https://w3id.org/LCMO#hasUnit> "m" .
+# 
+# https://w3id.org/COPO#Height_Slab_1
+<https://w3id.org/COPO#Height_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Height_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Height> .
+<https://w3id.org/COPO#Height_Slab_1> <https://w3id.org/LCMO#hasValue> "0.37"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#Height_Slab_1> <https://w3id.org/LCMO#hasUnit> "m" .
+# 
+# https://w3id.org/COPO#Hilti_DST_10-CA__1
+<https://w3id.org/COPO#Hilti_DST_10-CA__1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Hilti_DST_10-CA__1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Hilti_DST_10-CA_> .
+<https://w3id.org/COPO#Hilti_DST_10-CA__1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#CapacityUtilization_Hilti_DST_10-CA_Beam_1> .
+<https://w3id.org/COPO#Hilti_DST_10-CA__1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#CapacityUtilization_Hilti_DST_10-CA_Slab_1> .
+<https://w3id.org/COPO#Hilti_DST_10-CA__1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumptionRecorded_Beam_1> .
+<https://w3id.org/COPO#Hilti_DST_10-CA__1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumptionRecorded_Slab_1> .
+<https://w3id.org/COPO#Hilti_DST_10-CA__1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumption_Hilti_DST_10-CA_Beam_1> .
+<https://w3id.org/COPO#Hilti_DST_10-CA__1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumption_Hilti_DST_10-CA_Slab_1> .
+<https://w3id.org/COPO#Hilti_DST_10-CA__1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#Power_Hilti_DST_10-CA_Beam_1> .
+<https://w3id.org/COPO#Hilti_DST_10-CA__1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#Power_Hilti_DST_10-CA_Slab_1> .
+<https://w3id.org/COPO#Hilti_DST_10-CA__1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#WorkingTime_Hilti_DST_10-CA_Beam_1> .
+<https://w3id.org/COPO#Hilti_DST_10-CA__1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#WorkingTime_Hilti_DST_10-CA_Slab_1> .
+# 
+# https://w3id.org/COPO#Hilti_DST_20-CA_1
+<https://w3id.org/COPO#Hilti_DST_20-CA_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Hilti_DST_20-CA_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Hilti_DST_20-CA> .
+<https://w3id.org/COPO#Hilti_DST_20-CA_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#CapacityUtilization_Hilti_DST_20-CA_Beam_1> .
+<https://w3id.org/COPO#Hilti_DST_20-CA_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#CapacityUtilization_Hilti_DST_20-CA_Slab_1> .
+<https://w3id.org/COPO#Hilti_DST_20-CA_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumptionRecorded_Beam_1> .
+<https://w3id.org/COPO#Hilti_DST_20-CA_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumptionRecorded_Slab_1> .
+<https://w3id.org/COPO#Hilti_DST_20-CA_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumption_Hilti_DST_20-CA_Beam_1> .
+<https://w3id.org/COPO#Hilti_DST_20-CA_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumption_Hilti_DST_20-CA_Slab_1> .
+<https://w3id.org/COPO#Hilti_DST_20-CA_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#Power_Hilti_DST_20-CA_Beam_1> .
+<https://w3id.org/COPO#Hilti_DST_20-CA_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#Power_Hilti_DST_20-CA_Slab_1> .
+<https://w3id.org/COPO#Hilti_DST_20-CA_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#WorkingTime_Hilti_DST_20-CA_Beam_1> .
+<https://w3id.org/COPO#Hilti_DST_20-CA_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#WorkingTime_Hilti_DST_20-CA_Slab_1> .
+# 
+# https://w3id.org/COPO#LCA_Execution_1
+<https://w3id.org/COPO#LCA_Execution_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#LCA_Execution_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#LCA_Execution> .
+# 
+# https://w3id.org/COPO#LCI_DataProvision_1
+<https://w3id.org/COPO#LCI_DataProvision_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#LCI_DataProvision_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#LCI_DataProvision> .
+<https://w3id.org/COPO#LCI_DataProvision_1> <http://www.w3.org/2000/01/rdf-schema#label> "Deconstruction of existing Building with focus on the reuse of reinforced concrete elements (Slab, beam etc.)" .
+<https://w3id.org/COPO#LCI_DataProvision_1> <https://w3id.org/LCMO#concernsLifeCycleModule> <https://w3id.org/COPO#C1_Deconstruction_1> .
+<https://w3id.org/COPO#LCI_DataProvision_1> <https://w3id.org/LCMO#concernsLifeCycleModule> <https://w3id.org/COPO#C2_Transport_1> .
+<https://w3id.org/COPO#LCI_DataProvision_1> <https://w3id.org/LCMO#concernsLifeCycleModule> <https://w3id.org/COPO#C3_Recycling_WasteProcessing_1> .
+<https://w3id.org/COPO#LCI_DataProvision_1> <https://w3id.org/LCMO#concernsLifeCycleModule> <https://w3id.org/COPO#C4_Disposal_1> .
+# 
+# https://w3id.org/COPO#LTM_1200-5.1_1
+<https://w3id.org/COPO#LTM_1200-5.1_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#LTM_1200-5.1_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#LTM_1200-5.1> .
+# 
+# https://w3id.org/COPO#Length_Beam_1
+<https://w3id.org/COPO#Length_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Length_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Length> .
+<https://w3id.org/COPO#Length_Beam_1> <https://w3id.org/LCMO#hasValue> "4"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#Length_Beam_1> <https://w3id.org/LCMO#hasUnit> "m" .
+# 
+# https://w3id.org/COPO#Length_Slab_1
+<https://w3id.org/COPO#Length_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Length_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Length> .
+<https://w3id.org/COPO#Length_Slab_1> <https://w3id.org/LCMO#hasValue> "3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#Length_Slab_1> <https://w3id.org/LCMO#hasUnit> "m" .
+# 
+# https://w3id.org/COPO#Materiality_Concrete_Beam_1
+<https://w3id.org/COPO#Materiality_Concrete_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Materiality_Concrete_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Materiality> .
+<https://w3id.org/COPO#Materiality_Concrete_Beam_1> <https://w3id.org/LCMO#hasConstructionObjectProperty> <https://w3id.org/COPO#Density_Concrete_Beam_1> .
+<https://w3id.org/COPO#Materiality_Concrete_Beam_1> <https://w3id.org/LCMO#hasConstructionObjectProperty> <https://w3id.org/COPO#Materialname_Concrete_Beam_1> .
+<https://w3id.org/COPO#Materiality_Concrete_Beam_1> <https://w3id.org/LCMO#hasConstructionObjectProperty> <https://w3id.org/COPO#Ratio_Concrete_Beam_1> .
+# 
+# https://w3id.org/COPO#Materiality_Concrete_Slab_1
+<https://w3id.org/COPO#Materiality_Concrete_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Materiality_Concrete_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Materiality> .
+<https://w3id.org/COPO#Materiality_Concrete_Slab_1> <https://w3id.org/LCMO#hasConstructionObjectProperty> <https://w3id.org/COPO#Density_Concrete_Slab_1> .
+<https://w3id.org/COPO#Materiality_Concrete_Slab_1> <https://w3id.org/LCMO#hasConstructionObjectProperty> <https://w3id.org/COPO#Materialname_Concrete_Slab_1> .
+<https://w3id.org/COPO#Materiality_Concrete_Slab_1> <https://w3id.org/LCMO#hasConstructionObjectProperty> <https://w3id.org/COPO#Ratio_Concrete_Slab_1> .
+# 
+# https://w3id.org/COPO#Materiality_Steel_Beam_1
+<https://w3id.org/COPO#Materiality_Steel_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Materiality_Steel_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Materiality> .
+<https://w3id.org/COPO#Materiality_Steel_Beam_1> <https://w3id.org/LCMO#hasConstructionObjectProperty> <https://w3id.org/COPO#Density_Steel_Beam_1> .
+<https://w3id.org/COPO#Materiality_Steel_Beam_1> <https://w3id.org/LCMO#hasConstructionObjectProperty> <https://w3id.org/COPO#Materialname_Steel_Beam_1> .
+<https://w3id.org/COPO#Materiality_Steel_Beam_1> <https://w3id.org/LCMO#hasConstructionObjectProperty> <https://w3id.org/COPO#Ratio_Steel_Beam_1> .
+# 
+# https://w3id.org/COPO#Materiality_Steel_Slab_1
+<https://w3id.org/COPO#Materiality_Steel_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Materiality_Steel_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Materiality> .
+<https://w3id.org/COPO#Materiality_Steel_Slab_1> <https://w3id.org/LCMO#hasConstructionObjectProperty> <https://w3id.org/COPO#Density_Steel_Slab_1> .
+<https://w3id.org/COPO#Materiality_Steel_Slab_1> <https://w3id.org/LCMO#hasConstructionObjectProperty> <https://w3id.org/COPO#Materialname_Steel_Slab_1> .
+<https://w3id.org/COPO#Materiality_Steel_Slab_1> <https://w3id.org/LCMO#hasConstructionObjectProperty> <https://w3id.org/COPO#Ratio_Steel_Slab_1> .
+# 
+# https://w3id.org/COPO#Materialname_Concrete_Beam_1
+<https://w3id.org/COPO#Materialname_Concrete_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Materialname_Concrete_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Materialname> .
+<https://w3id.org/COPO#Materialname_Concrete_Beam_1> <https://w3id.org/LCMO#hasName> "Concrete C20/25" .
+# 
+# https://w3id.org/COPO#Materialname_Concrete_Slab_1
+<https://w3id.org/COPO#Materialname_Concrete_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Materialname_Concrete_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Materialname> .
+<https://w3id.org/COPO#Materialname_Concrete_Slab_1> <https://w3id.org/LCMO#hasName> "Concrete C20/25" .
+# 
+# https://w3id.org/COPO#Materialname_Steel_Beam_1
+<https://w3id.org/COPO#Materialname_Steel_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Materialname_Steel_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Materialname> .
+<https://w3id.org/COPO#Materialname_Steel_Beam_1> <https://w3id.org/LCMO#hasName> "Steel S235" .
+# 
+# https://w3id.org/COPO#Materialname_Steel_Slab_1
+<https://w3id.org/COPO#Materialname_Steel_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Materialname_Steel_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Materialname> .
+<https://w3id.org/COPO#Materialname_Steel_Slab_1> <https://w3id.org/LCMO#hasName> "Steel S235" .
+# 
+# https://w3id.org/COPO#Mercedes-Benz_Actros_2653_LS_1
+<https://w3id.org/COPO#Mercedes-Benz_Actros_2653_LS_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Mercedes-Benz_Actros_2653_LS_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Mercedes-Benz_Actros_2653_LS> .
+<https://w3id.org/COPO#Mercedes-Benz_Actros_2653_LS_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#CapacityUtilization_Mercedes-Benz_Actros_2653_LS_Beam_1> .
+<https://w3id.org/COPO#Mercedes-Benz_Actros_2653_LS_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#CapacityUtilization_Mercedes-Benz_Actros_2653_LS_Slab_1> .
+<https://w3id.org/COPO#Mercedes-Benz_Actros_2653_LS_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumptionRecorded_Beam_1> .
+<https://w3id.org/COPO#Mercedes-Benz_Actros_2653_LS_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumptionRecorded_Slab_1> .
+<https://w3id.org/COPO#Mercedes-Benz_Actros_2653_LS_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumption_Mercedes-Benz_Actros_2653_LS_Beam_1> .
+<https://w3id.org/COPO#Mercedes-Benz_Actros_2653_LS_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumption_Mercedes-Benz_Actros_2653_LS_Slab_1> .
+<https://w3id.org/COPO#Mercedes-Benz_Actros_2653_LS_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#Power_Mercedes-Benz_Actros_2653_LS_Beam_1> .
+<https://w3id.org/COPO#Mercedes-Benz_Actros_2653_LS_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#Power_Mercedes-Benz_Actros_2653_LS_Slab_1> .
+<https://w3id.org/COPO#Mercedes-Benz_Actros_2653_LS_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#WorkingTime_Mercedes-Benz_Actros_2653_LS_Beam_1> .
+<https://w3id.org/COPO#Mercedes-Benz_Actros_2653_LS_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#WorkingTime_Mercedes-Benz_Actros_2653_LS_Slab_1> .
+# 
+# https://w3id.org/COPO#Pollutant_Beam_1
+<https://w3id.org/COPO#Pollutant_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Pollutant_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Pollutant> .
+# 
+# https://w3id.org/COPO#Pollutant_Slab_1
+<https://w3id.org/COPO#Pollutant_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Pollutant_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Pollutant> .
+# 
+# https://w3id.org/COPO#Power_Demag_AC100-4_Beam_1
+<https://w3id.org/COPO#Power_Demag_AC100-4_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Power_Demag_AC100-4_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Power> .
+<https://w3id.org/COPO#Power_Demag_AC100-4_Beam_1> <https://w3id.org/LCMO#hasValue> "129"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#Power_Demag_AC100-4_Beam_1> <https://w3id.org/LCMO#hasUnit> "kW" .
+# 
+# https://w3id.org/COPO#Power_Demag_AC100-4_Slab_1
+<https://w3id.org/COPO#Power_Demag_AC100-4_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Power_Demag_AC100-4_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Power> .
+<https://w3id.org/COPO#Power_Demag_AC100-4_Slab_1> <https://w3id.org/LCMO#hasValue> "129"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#Power_Demag_AC100-4_Slab_1> <https://w3id.org/LCMO#hasUnit> "kW" .
+# 
+# https://w3id.org/COPO#Power_Hilti_DST_10-CA_Beam_1
+<https://w3id.org/COPO#Power_Hilti_DST_10-CA_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Power_Hilti_DST_10-CA_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Power> .
+# 
+# https://w3id.org/COPO#Power_Hilti_DST_10-CA_Slab_1
+<https://w3id.org/COPO#Power_Hilti_DST_10-CA_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Power_Hilti_DST_10-CA_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Power> .
+<https://w3id.org/COPO#Power_Hilti_DST_10-CA_Slab_1> <https://w3id.org/LCMO#hasValue> "1.55"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#Power_Hilti_DST_10-CA_Slab_1> <https://w3id.org/LCMO#hasUnit> "kW" .
+# 
+# https://w3id.org/COPO#Power_Hilti_DST_20-CA_Beam_1
+<https://w3id.org/COPO#Power_Hilti_DST_20-CA_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Power_Hilti_DST_20-CA_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Power> .
+# 
+# https://w3id.org/COPO#Power_Hilti_DST_20-CA_Slab_1
+<https://w3id.org/COPO#Power_Hilti_DST_20-CA_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Power_Hilti_DST_20-CA_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Power> .
+<https://w3id.org/COPO#Power_Hilti_DST_20-CA_Slab_1> <https://w3id.org/LCMO#hasValue> "20"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#Power_Hilti_DST_20-CA_Slab_1> <https://w3id.org/LCMO#hasUnit> "kW" .
+# 
+# https://w3id.org/COPO#Power_Mercedes-Benz_Actros_2653_LS_Beam_1
+<https://w3id.org/COPO#Power_Mercedes-Benz_Actros_2653_LS_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Power_Mercedes-Benz_Actros_2653_LS_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Power> .
+# 
+# https://w3id.org/COPO#Power_Mercedes-Benz_Actros_2653_LS_Slab_1
+<https://w3id.org/COPO#Power_Mercedes-Benz_Actros_2653_LS_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Power_Mercedes-Benz_Actros_2653_LS_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Power> .
+# 
+# https://w3id.org/COPO#Power_SpecificCrane_Literature_Beam_1
+<https://w3id.org/COPO#Power_SpecificCrane_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Power_SpecificCrane_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Power> .
+<https://w3id.org/COPO#Power_SpecificCrane_Literature_Beam_1> <https://w3id.org/LCMO#hasValue> "149"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#Power_SpecificCrane_Literature_Beam_1> <https://w3id.org/LCMO#hasUnit> "kW" .
+# 
+# https://w3id.org/COPO#Power_SpecificCrane_Literature_Slab_1
+<https://w3id.org/COPO#Power_SpecificCrane_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Power_SpecificCrane_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Power> .
+<https://w3id.org/COPO#Power_SpecificCrane_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "149"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#Power_SpecificCrane_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "kW" .
+# 
+# https://w3id.org/COPO#Power_SpecificCuttingTorch_Literature_Beam_1
+<https://w3id.org/COPO#Power_SpecificCuttingTorch_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Power_SpecificCuttingTorch_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Power> .
+# 
+# https://w3id.org/COPO#Power_SpecificCuttingTorch_Literature_Slab_1
+<https://w3id.org/COPO#Power_SpecificCuttingTorch_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Power_SpecificCuttingTorch_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Power> .
+<https://w3id.org/COPO#Power_SpecificCuttingTorch_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "22.9"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#Power_SpecificCuttingTorch_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "kW" .
+# 
+# https://w3id.org/COPO#Power_SpecificExcavator_Literature_Beam_1
+<https://w3id.org/COPO#Power_SpecificExcavator_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Power_SpecificExcavator_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Power> .
+<https://w3id.org/COPO#Power_SpecificExcavator_Literature_Beam_1> <https://w3id.org/LCMO#hasValue> "10.3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#Power_SpecificExcavator_Literature_Beam_1> <https://w3id.org/LCMO#hasUnit> "kW" .
+# 
+# https://w3id.org/COPO#Power_SpecificExcavator_Literature_Slab_1
+<https://w3id.org/COPO#Power_SpecificExcavator_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Power_SpecificExcavator_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Power> .
+<https://w3id.org/COPO#Power_SpecificExcavator_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "10.3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#Power_SpecificExcavator_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "kW" .
+# 
+# https://w3id.org/COPO#Power_SpecificHammerDrill_Literature_Beam_1
+<https://w3id.org/COPO#Power_SpecificHammerDrill_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Power_SpecificHammerDrill_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Power> .
+# 
+# https://w3id.org/COPO#Power_SpecificHammerDrill_Literature_Slab_1
+<https://w3id.org/COPO#Power_SpecificHammerDrill_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Power_SpecificHammerDrill_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Power> .
+<https://w3id.org/COPO#Power_SpecificHammerDrill_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "1.15"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#Power_SpecificHammerDrill_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "kW" .
+# 
+# https://w3id.org/COPO#Power_SpecificTruck_Literature_Beam_1
+<https://w3id.org/COPO#Power_SpecificTruck_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Power_SpecificTruck_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Power> .
+# 
+# https://w3id.org/COPO#Power_SpecificTruck_Literature_Slab_1
+<https://w3id.org/COPO#Power_SpecificTruck_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Power_SpecificTruck_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Power> .
+# 
+# https://w3id.org/COPO#Ratio_Concrete_Beam_1
+<https://w3id.org/COPO#Ratio_Concrete_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Ratio_Concrete_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Ratio> .
+<https://w3id.org/COPO#Ratio_Concrete_Beam_1> <https://w3id.org/LCMO#hasValue> "0.98"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#Ratio_Concrete_Beam_1> <https://w3id.org/LCMO#hasUnit> "-" .
+# 
+# https://w3id.org/COPO#Ratio_Concrete_Slab_1
+<https://w3id.org/COPO#Ratio_Concrete_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Ratio_Concrete_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Ratio> .
+<https://w3id.org/COPO#Ratio_Concrete_Slab_1> <https://w3id.org/LCMO#hasValue> "0.98"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#Ratio_Concrete_Slab_1> <https://w3id.org/LCMO#hasUnit> "-" .
+# 
+# https://w3id.org/COPO#Ratio_Steel_Beam_1
+<https://w3id.org/COPO#Ratio_Steel_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Ratio_Steel_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Ratio> .
+<https://w3id.org/COPO#Ratio_Steel_Beam_1> <https://w3id.org/LCMO#hasValue> "0.02"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#Ratio_Steel_Beam_1> <https://w3id.org/LCMO#hasUnit> "-" .
+# 
+# https://w3id.org/COPO#Ratio_Steel_Slab_1
+<https://w3id.org/COPO#Ratio_Steel_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Ratio_Steel_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Ratio> .
+<https://w3id.org/COPO#Ratio_Steel_Slab_1> <https://w3id.org/LCMO#hasValue> "0.02"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#Ratio_Steel_Slab_1> <https://w3id.org/LCMO#hasUnit> "-" .
+# 
+# https://w3id.org/COPO#Saw_1
+<https://w3id.org/COPO#Saw_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Saw_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Saw> .
+<https://w3id.org/COPO#Saw_1> <https://w3id.org/LCMO#hasResourceType> <https://w3id.org/COPO#Hilti_DST_20-CA_1> .
+# 
+# https://w3id.org/COPO#Slab_1
+<https://w3id.org/COPO#Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Slab> .
+<https://w3id.org/COPO#Slab_1> <https://w3id.org/LCMO#hasConstructionObjectDataObject> <https://w3id.org/COPO#BIM_Model_Slab_1> .
+<https://w3id.org/COPO#Slab_1> <https://w3id.org/LCMO#hasConstructionObjectPropertyGroup> <https://w3id.org/COPO#Condition_Slab_1> .
+<https://w3id.org/COPO#Slab_1> <https://w3id.org/LCMO#hasConstructionObjectPropertyGroup> <https://w3id.org/COPO#Geometry_Slab_1> .
+<https://w3id.org/COPO#Slab_1> <https://w3id.org/LCMO#hasObjectType> <https://w3id.org/COPO#Concrete_Slab_1> .
+<https://w3id.org/COPO#Slab_1> <https://w3id.org/LCMO#hasObjectType> <https://w3id.org/COPO#Steel_Slab_1> .
+# 
+# https://w3id.org/COPO#SpecificCrane_Literature_1
+<https://w3id.org/COPO#SpecificCrane_Literature_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#SpecificCrane_Literature_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#SpecificCrane_Literature> .
+<https://w3id.org/COPO#SpecificCrane_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#CapacityUtilization_SpecificCrane_Literature_Beam_1> .
+<https://w3id.org/COPO#SpecificCrane_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#CapacityUtilization_SpecificCrane_Literature_Slab_1> .
+<https://w3id.org/COPO#SpecificCrane_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1> .
+<https://w3id.org/COPO#SpecificCrane_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumptionLiterature_Slab_1> .
+<https://w3id.org/COPO#SpecificCrane_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Beam_1> .
+<https://w3id.org/COPO#SpecificCrane_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Slab_1> .
+<https://w3id.org/COPO#SpecificCrane_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#Power_SpecificCrane_Literature_Beam_1> .
+<https://w3id.org/COPO#SpecificCrane_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#Power_SpecificCrane_Literature_Slab_1> .
+<https://w3id.org/COPO#SpecificCrane_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#WorkingTime_SpecificCrane_Literature_Beam_1> .
+<https://w3id.org/COPO#SpecificCrane_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#WorkingTime_SpecificCrane_Literature_Slab_1> .
+# 
+# https://w3id.org/COPO#SpecificCuttingTorch_Literature_1
+<https://w3id.org/COPO#SpecificCuttingTorch_Literature_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#SpecificCuttingTorch_Literature_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#SpecificCuttingTorch_Literature> .
+<https://w3id.org/COPO#SpecificCuttingTorch_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#CapacityUtilization_SpecificCuttingTorch_Literature_Beam_1> .
+<https://w3id.org/COPO#SpecificCuttingTorch_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#CapacityUtilization_SpecificCuttingTorch_Literature_Slab_1> .
+<https://w3id.org/COPO#SpecificCuttingTorch_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1> .
+<https://w3id.org/COPO#SpecificCuttingTorch_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumptionLiterature_Slab_1> .
+<https://w3id.org/COPO#SpecificCuttingTorch_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumption_SpecificCuttingTorch_Literature_Beam_1> .
+<https://w3id.org/COPO#SpecificCuttingTorch_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumption_SpecificCuttingTorch_Literature_Slab_1> .
+<https://w3id.org/COPO#SpecificCuttingTorch_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#Power_SpecificCuttingTorch_Literature_Beam_1> .
+<https://w3id.org/COPO#SpecificCuttingTorch_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#Power_SpecificCuttingTorch_Literature_Slab_1> .
+<https://w3id.org/COPO#SpecificCuttingTorch_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#WorkingTime_SpecificCuttingTorch_Literature_Beam_1> .
+<https://w3id.org/COPO#SpecificCuttingTorch_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#WorkingTime_SpecificCuttingTorch_Literature_Slab_1> .
+# 
+# https://w3id.org/COPO#SpecificExcavator_Literature_1
+<https://w3id.org/COPO#SpecificExcavator_Literature_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#SpecificExcavator_Literature_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#SpecificExcavator_Literature> .
+<https://w3id.org/COPO#SpecificExcavator_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#CapacityUtilization_SpecificExcavator_Literature_Beam_1> .
+<https://w3id.org/COPO#SpecificExcavator_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#CapacityUtilization_SpecificExcavator_Literature_Slab_1> .
+<https://w3id.org/COPO#SpecificExcavator_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1> .
+<https://w3id.org/COPO#SpecificExcavator_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumptionLiterature_Slab_1> .
+<https://w3id.org/COPO#SpecificExcavator_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumption_SpecificExcavator_Literature_Beam_1> .
+<https://w3id.org/COPO#SpecificExcavator_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumption_SpecificExcavator_Literature_Slab_1> .
+<https://w3id.org/COPO#SpecificExcavator_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#Power_SpecificExcavator_Literature_Beam_1> .
+<https://w3id.org/COPO#SpecificExcavator_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#Power_SpecificExcavator_Literature_Slab_1> .
+<https://w3id.org/COPO#SpecificExcavator_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#WorkingTime_SpecificExcavator_Literature_Beam_1> .
+<https://w3id.org/COPO#SpecificExcavator_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#WorkingTime_SpecificExcavator_Literature_Slab_1> .
+# 
+# https://w3id.org/COPO#SpecificHammerDrill_Literature_1
+<https://w3id.org/COPO#SpecificHammerDrill_Literature_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#SpecificHammerDrill_Literature_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#SpecificHammerDrill_Literature> .
+<https://w3id.org/COPO#SpecificHammerDrill_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#CapacityUtilization_SpecificHammerDrill_Literature_Beam_1> .
+<https://w3id.org/COPO#SpecificHammerDrill_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#CapacityUtilization_SpecificHammerDrill_Literature_Slab_1> .
+<https://w3id.org/COPO#SpecificHammerDrill_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1> .
+<https://w3id.org/COPO#SpecificHammerDrill_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumptionLiterature_Slab_1> .
+<https://w3id.org/COPO#SpecificHammerDrill_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumption_SpecificHammerDrill_Literature_Beam_1> .
+<https://w3id.org/COPO#SpecificHammerDrill_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumption_SpecificHammerDrill_Literature_Slab_1> .
+<https://w3id.org/COPO#SpecificHammerDrill_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#Power_SpecificHammerDrill_Literature_Beam_1> .
+<https://w3id.org/COPO#SpecificHammerDrill_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#Power_SpecificHammerDrill_Literature_Slab_1> .
+<https://w3id.org/COPO#SpecificHammerDrill_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#WorkingTime_SpecificHammerDrill_Literature_Beam_1> .
+<https://w3id.org/COPO#SpecificHammerDrill_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#WorkingTime_SpecificHammerDrill_Literature_Slab_1> .
+# 
+# https://w3id.org/COPO#SpecificTruck_Literature_1
+<https://w3id.org/COPO#SpecificTruck_Literature_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#SpecificTruck_Literature_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#SpecificTruck_Literature> .
+<https://w3id.org/COPO#SpecificTruck_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#CapacityUtilization_SpecificTruck_Literature_Beam_1> .
+<https://w3id.org/COPO#SpecificTruck_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#CapacityUtilization_SpecificTruck_Literature_Slab_1> .
+<https://w3id.org/COPO#SpecificTruck_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1> .
+<https://w3id.org/COPO#SpecificTruck_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumptionLiterature_Slab_1> .
+<https://w3id.org/COPO#SpecificTruck_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumption_SpecificTruck_Literature_Beam_1> .
+<https://w3id.org/COPO#SpecificTruck_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#EnergyConsumption_SpecificTruck_Literature_Slab_1> .
+<https://w3id.org/COPO#SpecificTruck_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#Power_SpecificTruck_Literature_Beam_1> .
+<https://w3id.org/COPO#SpecificTruck_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#Power_SpecificTruck_Literature_Slab_1> .
+<https://w3id.org/COPO#SpecificTruck_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#WorkingTime_SpecificTruck_Literature_Beam_1> .
+<https://w3id.org/COPO#SpecificTruck_Literature_1> <https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <https://w3id.org/COPO#WorkingTime_SpecificTruck_Literature_Slab_1> .
+# 
+# https://w3id.org/COPO#Steel_Beam_1
+<https://w3id.org/COPO#Steel_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Steel_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Steel> .
+<https://w3id.org/COPO#Steel_Beam_1> <https://w3id.org/LCMO#hasConstructionObjectPropertyGroup> <https://w3id.org/COPO#Materiality_Steel_Beam_1> .
+# 
+# https://w3id.org/COPO#Steel_Slab_1
+<https://w3id.org/COPO#Steel_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Steel_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Steel> .
+<https://w3id.org/COPO#Steel_Slab_1> <https://w3id.org/LCMO#hasConstructionObjectPropertyGroup> <https://w3id.org/COPO#Materiality_Steel_Slab_1> .
+# 
+# https://w3id.org/COPO#Transfer_Beam_1
+<https://w3id.org/COPO#Transfer_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Transfer_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Transfer> .
+<https://w3id.org/COPO#Transfer_Beam_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#GWP_Transfer_Beam_1> .
+<https://w3id.org/COPO#Transfer_Beam_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#GWP_Transfer_Literature_Beam_1> .
+<https://w3id.org/COPO#Transfer_Beam_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#PENRT_Transfer_Beam_1> .
+<https://w3id.org/COPO#Transfer_Beam_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#PENRT_Transfer_Literature_Beam_1> .
+<https://w3id.org/COPO#Transfer_Beam_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#PERT_Transfer_Beam_1> .
+<https://w3id.org/COPO#Transfer_Beam_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#PERT_Transfer_Literature_Beam_1> .
+<https://w3id.org/COPO#Transfer_Beam_1> <https://w3id.org/LCAO#hasSubProcess> <https://w3id.org/COPO#Crane_1> .
+<https://w3id.org/COPO#Transfer_Beam_1> <https://w3id.org/LCMO#hasPreviousConstructionProcess> <https://w3id.org/COPO#Extraction_Beam_1> .
+<https://w3id.org/COPO#Transfer_Beam_1> <https://w3id.org/LCMO#hasProcessResource> <https://w3id.org/COPO#Crane_1> .
+<https://w3id.org/COPO#Transfer_Beam_1> <https://w3id.org/LCMO#hasProcessResource> <https://w3id.org/COPO#Excavator_1> .
+<https://w3id.org/COPO#Transfer_Beam_1> <https://w3id.org/LCMO#hasSubsequentConstructionProcess> <https://w3id.org/COPO#Transport_Beam_1> .
+<https://w3id.org/COPO#Transfer_Beam_1> <https://w3id.org/LCMO#isLinkedToConstructionProduct> <https://w3id.org/COPO#Beam_1> .
+# 
+# https://w3id.org/COPO#Transfer_Slab_1
+<https://w3id.org/COPO#Transfer_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Transfer_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Transfer> .
+<https://w3id.org/COPO#Transfer_Slab_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#GWP_Transfer_Literature_Slab_1> .
+<https://w3id.org/COPO#Transfer_Slab_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#GWP_Transfer_Slab_1> .
+<https://w3id.org/COPO#Transfer_Slab_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#PENRT_Transfer_Literature_Slab_1> .
+<https://w3id.org/COPO#Transfer_Slab_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#PENRT_Transfer_Slab_1> .
+<https://w3id.org/COPO#Transfer_Slab_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#PERT_Transfer_Literature_Slab_1> .
+<https://w3id.org/COPO#Transfer_Slab_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#PERT_Transfer_Slab_1> .
+<https://w3id.org/COPO#Transfer_Slab_1> <https://w3id.org/LCMO#hasPreviousConstructionProcess> <https://w3id.org/COPO#Extraction_Slab_1> .
+<https://w3id.org/COPO#Transfer_Slab_1> <https://w3id.org/LCMO#hasProcessResource> <https://w3id.org/COPO#Crane_1> .
+<https://w3id.org/COPO#Transfer_Slab_1> <https://w3id.org/LCMO#hasSubsequentConstructionProcess> <https://w3id.org/COPO#Transport_Slab_1> .
+<https://w3id.org/COPO#Transfer_Slab_1> <https://w3id.org/LCMO#isLinkedToConstructionProduct> <https://w3id.org/COPO#Slab_1> .
+# 
+# https://w3id.org/COPO#Transport_Beam_1
+<https://w3id.org/COPO#Transport_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Transport_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Transport> .
+<https://w3id.org/COPO#Transport_Beam_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#GWP_Transport_Beam_1> .
+<https://w3id.org/COPO#Transport_Beam_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#GWP_Transport_Literature_Beam_1> .
+<https://w3id.org/COPO#Transport_Beam_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#PENRT_Transport_Beam_1> .
+<https://w3id.org/COPO#Transport_Beam_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#PENRT_Transport_Literature_Beam_1> .
+<https://w3id.org/COPO#Transport_Beam_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#PERT_Transport_Beam_1> .
+<https://w3id.org/COPO#Transport_Beam_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#PERT_Transport_Literature_Beam_1> .
+<https://w3id.org/COPO#Transport_Beam_1> <https://w3id.org/LCMO#hasPreviousConstructionProcess> <https://w3id.org/COPO#Transfer_Beam_1> .
+<https://w3id.org/COPO#Transport_Beam_1> <https://w3id.org/LCMO#hasProcessResource> <https://w3id.org/COPO#Truck_1> .
+<https://w3id.org/COPO#Transport_Beam_1> <https://w3id.org/LCMO#isLinkedToConstructionProduct> <https://w3id.org/COPO#Beam_1> .
+# 
+# https://w3id.org/COPO#Transport_Slab_1
+<https://w3id.org/COPO#Transport_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Transport_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Transport> .
+<https://w3id.org/COPO#Transport_Slab_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#GWP_Transport_Literature_Slab_1> .
+<https://w3id.org/COPO#Transport_Slab_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#GWP_Transport_Slab_1> .
+<https://w3id.org/COPO#Transport_Slab_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#PENRT_Transport_Literature_Slab_1> .
+<https://w3id.org/COPO#Transport_Slab_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#PENRT_Transport_Slab_1> .
+<https://w3id.org/COPO#Transport_Slab_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#PERT_Transport_Literature_Slab_1> .
+<https://w3id.org/COPO#Transport_Slab_1> <https://w3id.org/LCAO#hasProcessEnvironmentalIndicator> <https://w3id.org/LCAO#PERT_Transport_Slab_1> .
+<https://w3id.org/COPO#Transport_Slab_1> <https://w3id.org/LCMO#hasPreviousConstructionProcess> <https://w3id.org/COPO#Extraction_Slab_1> .
+<https://w3id.org/COPO#Transport_Slab_1> <https://w3id.org/LCMO#hasProcessResource> <https://w3id.org/COPO#Truck_1> .
+<https://w3id.org/COPO#Transport_Slab_1> <https://w3id.org/LCMO#isLinkedToConstructionProduct> <https://w3id.org/COPO#Slab_1> .
+# 
+# https://w3id.org/COPO#Truck_1
+<https://w3id.org/COPO#Truck_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Truck_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Truck> .
+<https://w3id.org/COPO#Truck_1> <https://w3id.org/LCMO#hasResourceType> <https://w3id.org/COPO#Mercedes-Benz_Actros_2653_LS_1> .
+<https://w3id.org/COPO#Truck_1> <https://w3id.org/LCMO#hasResourceType> <https://w3id.org/COPO#SpecificTruck_Literature_1> .
+# 
+# https://w3id.org/COPO#Width_Beam_1
+<https://w3id.org/COPO#Width_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Width_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Width> .
+<https://w3id.org/COPO#Width_Beam_1> <https://w3id.org/LCMO#hasValue> "0.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#Width_Beam_1> <https://w3id.org/LCMO#hasUnit> "m" .
+# 
+# https://w3id.org/COPO#Width_Slab_1
+<https://w3id.org/COPO#Width_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#Width_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#Width> .
+<https://w3id.org/COPO#Width_Slab_1> <https://w3id.org/LCMO#hasValue> "1.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#Width_Slab_1> <https://w3id.org/LCMO#hasUnit> "m" .
+# 
+# https://w3id.org/COPO#WorkingTime_Demag_AC100-4_Beam_1
+<https://w3id.org/COPO#WorkingTime_Demag_AC100-4_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#WorkingTime_Demag_AC100-4_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#WorkingTime> .
+<https://w3id.org/COPO#WorkingTime_Demag_AC100-4_Beam_1> <https://w3id.org/LCMO#hasValue> "0.167"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#WorkingTime_Demag_AC100-4_Beam_1> <https://w3id.org/LCMO#hasUnit> "h/km" .
+# 
+# https://w3id.org/COPO#WorkingTime_Demag_AC100-4_Slab_1
+<https://w3id.org/COPO#WorkingTime_Demag_AC100-4_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#WorkingTime_Demag_AC100-4_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#WorkingTime> .
+<https://w3id.org/COPO#WorkingTime_Demag_AC100-4_Slab_1> <https://w3id.org/LCMO#hasValue> "0.167"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#WorkingTime_Demag_AC100-4_Slab_1> <https://w3id.org/LCMO#hasUnit> "h/km" .
+# 
+# https://w3id.org/COPO#WorkingTime_Hilti_DST_10-CA_Beam_1
+<https://w3id.org/COPO#WorkingTime_Hilti_DST_10-CA_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#WorkingTime_Hilti_DST_10-CA_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#WorkingTime> .
+# 
+# https://w3id.org/COPO#WorkingTime_Hilti_DST_10-CA_Slab_1
+<https://w3id.org/COPO#WorkingTime_Hilti_DST_10-CA_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#WorkingTime_Hilti_DST_10-CA_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#WorkingTime> .
+<https://w3id.org/COPO#WorkingTime_Hilti_DST_10-CA_Slab_1> <https://w3id.org/LCMO#hasValue> "0.08"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#WorkingTime_Hilti_DST_10-CA_Slab_1> <https://w3id.org/LCMO#hasUnit> "h/km" .
+# 
+# https://w3id.org/COPO#WorkingTime_Hilti_DST_20-CA_Beam_1
+<https://w3id.org/COPO#WorkingTime_Hilti_DST_20-CA_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#WorkingTime_Hilti_DST_20-CA_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#WorkingTime> .
+# 
+# https://w3id.org/COPO#WorkingTime_Hilti_DST_20-CA_Slab_1
+<https://w3id.org/COPO#WorkingTime_Hilti_DST_20-CA_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#WorkingTime_Hilti_DST_20-CA_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#WorkingTime> .
+<https://w3id.org/COPO#WorkingTime_Hilti_DST_20-CA_Slab_1> <https://w3id.org/LCMO#hasValue> "0.75"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#WorkingTime_Hilti_DST_20-CA_Slab_1> <https://w3id.org/LCMO#hasUnit> "h/km" .
+# 
+# https://w3id.org/COPO#WorkingTime_Mercedes-Benz_Actros_2653_LS_Beam_1
+<https://w3id.org/COPO#WorkingTime_Mercedes-Benz_Actros_2653_LS_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#WorkingTime_Mercedes-Benz_Actros_2653_LS_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#WorkingTime> .
+<https://w3id.org/COPO#WorkingTime_Mercedes-Benz_Actros_2653_LS_Beam_1> <https://w3id.org/LCMO#hasValue> "3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#WorkingTime_Mercedes-Benz_Actros_2653_LS_Beam_1> <https://w3id.org/LCMO#hasUnit> "h/km" .
+# 
+# https://w3id.org/COPO#WorkingTime_Mercedes-Benz_Actros_2653_LS_Slab_1
+<https://w3id.org/COPO#WorkingTime_Mercedes-Benz_Actros_2653_LS_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#WorkingTime_Mercedes-Benz_Actros_2653_LS_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#WorkingTime> .
+<https://w3id.org/COPO#WorkingTime_Mercedes-Benz_Actros_2653_LS_Slab_1> <https://w3id.org/LCMO#hasValue> "3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#WorkingTime_Mercedes-Benz_Actros_2653_LS_Slab_1> <https://w3id.org/LCMO#hasUnit> "h/km" .
+# 
+# https://w3id.org/COPO#WorkingTime_SpecificCrane_Literature_Beam_1
+<https://w3id.org/COPO#WorkingTime_SpecificCrane_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#WorkingTime_SpecificCrane_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#WorkingTime> .
+<https://w3id.org/COPO#WorkingTime_SpecificCrane_Literature_Beam_1> <https://w3id.org/LCMO#hasValue> "0.79"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#WorkingTime_SpecificCrane_Literature_Beam_1> <https://w3id.org/LCMO#hasUnit> "h/km" .
+# 
+# https://w3id.org/COPO#WorkingTime_SpecificCrane_Literature_Slab_1
+<https://w3id.org/COPO#WorkingTime_SpecificCrane_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#WorkingTime_SpecificCrane_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#WorkingTime> .
+<https://w3id.org/COPO#WorkingTime_SpecificCrane_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "0.79"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#WorkingTime_SpecificCrane_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "h/km" .
+# 
+# https://w3id.org/COPO#WorkingTime_SpecificCuttingTorch_Literature_Beam_1
+<https://w3id.org/COPO#WorkingTime_SpecificCuttingTorch_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#WorkingTime_SpecificCuttingTorch_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#WorkingTime> .
+# 
+# https://w3id.org/COPO#WorkingTime_SpecificCuttingTorch_Literature_Slab_1
+<https://w3id.org/COPO#WorkingTime_SpecificCuttingTorch_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#WorkingTime_SpecificCuttingTorch_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#WorkingTime> .
+<https://w3id.org/COPO#WorkingTime_SpecificCuttingTorch_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "24"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#WorkingTime_SpecificCuttingTorch_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "h/km" .
+# 
+# https://w3id.org/COPO#WorkingTime_SpecificExcavator_Literature_Beam_1
+<https://w3id.org/COPO#WorkingTime_SpecificExcavator_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#WorkingTime_SpecificExcavator_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#WorkingTime> .
+<https://w3id.org/COPO#WorkingTime_SpecificExcavator_Literature_Beam_1> <https://w3id.org/LCMO#hasValue> "0.2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#WorkingTime_SpecificExcavator_Literature_Beam_1> <https://w3id.org/LCMO#hasUnit> "h/km" .
+# 
+# https://w3id.org/COPO#WorkingTime_SpecificExcavator_Literature_Slab_1
+<https://w3id.org/COPO#WorkingTime_SpecificExcavator_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#WorkingTime_SpecificExcavator_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#WorkingTime> .
+<https://w3id.org/COPO#WorkingTime_SpecificExcavator_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "0.2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#WorkingTime_SpecificExcavator_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "h/km" .
+# 
+# https://w3id.org/COPO#WorkingTime_SpecificHammerDrill_Literature_Beam_1
+<https://w3id.org/COPO#WorkingTime_SpecificHammerDrill_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#WorkingTime_SpecificHammerDrill_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#WorkingTime> .
+# 
+# https://w3id.org/COPO#WorkingTime_SpecificHammerDrill_Literature_Slab_1
+<https://w3id.org/COPO#WorkingTime_SpecificHammerDrill_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#WorkingTime_SpecificHammerDrill_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#WorkingTime> .
+<https://w3id.org/COPO#WorkingTime_SpecificHammerDrill_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "47"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#WorkingTime_SpecificHammerDrill_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "h/km" .
+# 
+# https://w3id.org/COPO#WorkingTime_SpecificTruck_Literature_Beam_1
+<https://w3id.org/COPO#WorkingTime_SpecificTruck_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#WorkingTime_SpecificTruck_Literature_Beam_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#WorkingTime> .
+<https://w3id.org/COPO#WorkingTime_SpecificTruck_Literature_Beam_1> <https://w3id.org/LCMO#hasValue> "30"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#WorkingTime_SpecificTruck_Literature_Beam_1> <https://w3id.org/LCMO#hasUnit> "h/km" .
+# 
+# https://w3id.org/COPO#WorkingTime_SpecificTruck_Literature_Slab_1
+<https://w3id.org/COPO#WorkingTime_SpecificTruck_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/COPO#WorkingTime_SpecificTruck_Literature_Slab_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/COPO#WorkingTime> .
+<https://w3id.org/COPO#WorkingTime_SpecificTruck_Literature_Slab_1> <https://w3id.org/LCMO#hasValue> "30"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/COPO#WorkingTime_SpecificTruck_Literature_Slab_1> <https://w3id.org/LCMO#hasUnit> "h/km" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

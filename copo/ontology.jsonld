@@ -1,0 +1,2458 @@
+[ {
+  "@id" : "_:genid1",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Person"
+  } ],
+  "https://schema.org/email" : [ {
+    "@id" : "mailto:philipp.hagedorn-n6v@rub.de"
+  } ],
+  "https://schema.org/identifier" : [ {
+    "@id" : "https://orcid.org/0000-0002-6249-243X"
+  } ],
+  "https://schema.org/memberOf" : [ {
+    "@id" : "_:genid2"
+  } ],
+  "https://schema.org/name" : [ {
+    "@value" : "Dr. Philipp Hagedorn"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "https://schema.org/identifier" : [ {
+    "@id" : "https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en"
+  } ],
+  "https://schema.org/name" : [ {
+    "@value" : "Ruhr University Bochum, DE"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Person"
+  } ],
+  "https://schema.org/email" : [ {
+    "@id" : "mailto:jonas.maibaum@rub.de"
+  } ],
+  "https://schema.org/identifier" : [ {
+    "@id" : "https://orcid.org/0000-0001-5010-7904"
+  } ],
+  "https://schema.org/memberOf" : [ {
+    "@id" : "_:genid4"
+  } ],
+  "https://schema.org/name" : [ {
+    "@value" : "Jonas Maibaum"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "https://schema.org/identifier" : [ {
+    "@id" : "https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/jonas_maibaum.html.en"
+  } ],
+  "https://schema.org/name" : [ {
+    "@value" : "Ruhr University Bochum, DE"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "https://schema.org/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://schema.org/email",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/memberOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/COPO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://purl.org/dc/elements/1.1/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-12-10"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "_:genid3"
+  } ],
+  "http://purl.org/dc/elements/1.1/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://github.com/RUB-Informatik-im-Bauwesen/crc1683-ontologies/tree/main/copo"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "copo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "TODO: write description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "COPO Ontology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#BIM_Model",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ConstructionObjectDataObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#BIM_Model_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#BIM_Model"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#BIM_Model_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#BIM_Model"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Beam",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ConstructionObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Beam"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionObjectDataObject" : [ {
+    "@id" : "https://w3id.org/COPO#BIM_Model_Beam_1"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionObjectPropertyGroup" : [ {
+    "@id" : "https://w3id.org/COPO#Condition_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Geometry_Beam_1"
+  } ],
+  "https://w3id.org/LCMO#hasObjectType" : [ {
+    "@id" : "https://w3id.org/COPO#Concrete_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Steel_Beam_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#C0_EoL_Planning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#LifeCycleModule"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#C1_Deconstruction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#LifeCycleModule"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#C1_Deconstruction_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#C1_Deconstruction"
+  } ],
+  "https://w3id.org/LCMO#addressesConstructionObject" : [ {
+    "@id" : "https://w3id.org/COPO#Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Slab_1"
+  } ],
+  "https://w3id.org/LCMO#addressesConstructionProcess" : [ {
+    "@id" : "https://w3id.org/COPO#Extraction_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Extraction_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Transfer_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Transfer_Slab_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#C2_Transport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#LifeCycleModule"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#C2_Transport_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#C2_Transport"
+  } ],
+  "https://w3id.org/LCMO#addressesConstructionObject" : [ {
+    "@id" : "https://w3id.org/COPO#Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Slab_1"
+  } ],
+  "https://w3id.org/LCMO#addressesConstructionProcess" : [ {
+    "@id" : "https://w3id.org/COPO#Transport_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Transport_Slab_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#C3_Recycling_WasteProcessing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#LifeCycleModule"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#C3_Recycling_WasteProcessing_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#C3_Recycling_WasteProcessing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#C4_Disposal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#LifeCycleModule"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#C4_Disposal_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#C4_Disposal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#CapacityUtilization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ConstructionProcessProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#CapacityUtilization_Demag_AC100-4_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "-"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.75"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#CapacityUtilization_Demag_AC100-4_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "-"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.75"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#CapacityUtilization_Hilti_DST_10-CA_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#CapacityUtilization_Hilti_DST_10-CA_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "-"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.75"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#CapacityUtilization_Hilti_DST_20-CA_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#CapacityUtilization_Hilti_DST_20-CA_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "-"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.75"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#CapacityUtilization_Mercedes-Benz_Actros_2653_LS_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#CapacityUtilization_Mercedes-Benz_Actros_2653_LS_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#CapacityUtilization_SpecificCrane_Literature_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "-"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.75"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#CapacityUtilization_SpecificCrane_Literature_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "-"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.75"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#CapacityUtilization_SpecificCuttingTorch_Literature_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#CapacityUtilization_SpecificCuttingTorch_Literature_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "-"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#CapacityUtilization_SpecificExcavator_Literature_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "-"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.75"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#CapacityUtilization_SpecificExcavator_Literature_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "-"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.75"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#CapacityUtilization_SpecificHammerDrill_Literature_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#CapacityUtilization_SpecificHammerDrill_Literature_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "-"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.75"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#CapacityUtilization_SpecificTruck_Literature_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#CapacityUtilization_SpecificTruck_Literature_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Concrete",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ObjectType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Concrete_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Concrete"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionObjectPropertyGroup" : [ {
+    "@id" : "https://w3id.org/COPO#Materiality_Concrete_Beam_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Concrete_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Concrete"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionObjectPropertyGroup" : [ {
+    "@id" : "https://w3id.org/COPO#Materiality_Concrete_Slab_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Condition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ConstructionObjectPropertyGroup"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#ConditionGrade",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/COPO#Condition"
+  }, {
+    "@id" : "https://w3id.org/LCMO#ConstructionObjectProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#ConditionGrade_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#ConditionGrade"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#ConditionGrade_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#ConditionGrade"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Condition_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Condition"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionObjectProperty" : [ {
+    "@id" : "https://w3id.org/COPO#ConditionGrade_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Damage_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Pollutant_Beam_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Condition_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Condition"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionObjectProperty" : [ {
+    "@id" : "https://w3id.org/COPO#ConditionGrade_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Damage_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Pollutant_Slab_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Crane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ProcessResource"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Crane_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Crane"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transfer with Crane"
+  } ],
+  "https://w3id.org/LCMO#hasResourceType" : [ {
+    "@id" : "https://w3id.org/COPO#Demag_AC100-4_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#SpecificCrane_Literature_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#CuttingTorch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ProcessResource"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#CuttingTorch_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#CuttingTorch"
+  } ],
+  "https://w3id.org/LCMO#hasResourceType" : [ {
+    "@id" : "https://w3id.org/COPO#SpecificCuttingTorch_Literature_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#DEWALT_D25902K-QS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ResourceType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#DEWALT_D25902K-QS_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#DEWALT_D25902K-QS"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Damage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/COPO#Condition"
+  }, {
+    "@id" : "https://w3id.org/LCMO#ConstructionObjectProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Damage_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Damage"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Damage_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Damage"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#DeconstructionProject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#Project"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#DeconstructionProject_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#DeconstructionProject"
+  } ],
+  "https://w3id.org/LCMO#hasProjectActivity" : [ {
+    "@id" : "https://w3id.org/COPO#LCA_Execution_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#DeconstructionReport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ConstructionProcessDataObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#DeconstructionReport_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#DeconstructionReport"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Demag_AC100-4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ResourceType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Demag_AC100-4_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Demag_AC100-4"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionProcessPropertyGroup" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization_Demag_AC100-4_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization_Demag_AC100-4_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionRecorded_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionRecorded_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption_Demag_AC100-4_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption_Demag_AC100-4_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Power_Demag_AC100-4_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Power_Demag_AC100-4_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#WorkingTime_Demag_AC100-4_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#WorkingTime_Demag_AC100-4_Slab_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#DemolitionHammer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ProcessResource"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#DemolitionHammer_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#DemolitionHammer"
+  } ],
+  "https://w3id.org/LCMO#hasResourceType" : [ {
+    "@id" : "https://w3id.org/COPO#Hilti_DST_10-CA__1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Density",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/COPO#Materiality"
+  }, {
+    "@id" : "https://w3id.org/LCMO#ConstructionObjectProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Density_Concrete_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Density"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "kg/m3"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "2450"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Density_Concrete_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Density"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "kg/m3"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "2450"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Density_Steel_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Density"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "kg/m3"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "7850"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Density_Steel_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Density"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "kg/m3"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "7850"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Drilling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "According to DIN 18007: Demolition works – Concepts, procedures, fields of application"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ConstructionProcedure"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#EnergyConsumption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ConstructionProcessProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#EnergyConsumptionLiterature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ConstructionProcessPropertyGroup"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionLiterature"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionLiterature"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#EnergyConsumptionRecorded",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ConstructionProcessPropertyGroup"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#EnergyConsumptionRecorded_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionRecorded"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#EnergyConsumptionRecorded_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionRecorded"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#EnergyConsumption_Demag_AC100-4_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "MJ"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "58.05"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#EnergyConsumption_Demag_AC100-4_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "MJ"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "58.17"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#EnergyConsumption_Hilti_DST_10-CA_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#EnergyConsumption_Hilti_DST_10-CA_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "MJ"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.35"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#EnergyConsumption_Hilti_DST_20-CA_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#EnergyConsumption_Hilti_DST_20-CA_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "MJ"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "40.5"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#EnergyConsumption_Mercedes-Benz_Actros_2653_LS_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#EnergyConsumption_Mercedes-Benz_Actros_2653_LS_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "MJ"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "222.27"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "MJ"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "317.26"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#EnergyConsumption_SpecificCuttingTorch_Literature_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#EnergyConsumption_SpecificCuttingTorch_Literature_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "MJ"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1978.56"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#EnergyConsumption_SpecificExcavator_Literature_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "MJ"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "5.56"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#EnergyConsumption_SpecificExcavator_Literature_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "MJ"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "5.56"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#EnergyConsumption_SpecificHammerDrill_Literature_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#EnergyConsumption_SpecificHammerDrill_Literature_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "MJ"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "145.94"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#EnergyConsumption_SpecificTruck_Literature_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#EnergyConsumption_SpecificTruck_Literature_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Excavator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ProcessResource"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Excavator_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Excavator"
+  } ],
+  "https://w3id.org/LCMO#hasResourceType" : [ {
+    "@id" : "https://w3id.org/COPO#SpecificExcavator_Literature_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Extraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ConstructionProcess"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Extraction_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Extraction"
+  } ],
+  "https://w3id.org/LCAO#hasProcessEnvironmentalIndicator" : [ {
+    "@id" : "https://w3id.org/LCAO#GWP_Extraction_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#GWP_Extraction_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#PENRT_Extraction_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#PENRT_Extraction_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#PERT_Extraction_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#PERT_Extraction_Literature_Beam_1"
+  } ],
+  "https://w3id.org/LCMO#hasProcessResource" : [ {
+    "@id" : "https://w3id.org/COPO#Excavator_1"
+  } ],
+  "https://w3id.org/LCMO#hasSubsequentConstructionProcess" : [ {
+    "@id" : "https://w3id.org/COPO#Transfer_Beam_1"
+  } ],
+  "https://w3id.org/LCMO#isLinkedToConstructionProduct" : [ {
+    "@id" : "https://w3id.org/COPO#Beam_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Extraction_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Extraction"
+  } ],
+  "https://w3id.org/LCAO#hasProcessEnvironmentalIndicator" : [ {
+    "@id" : "https://w3id.org/LCAO#GWP_Extraction_Literature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#GWP_Extraction_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#PENRT_Extraction_Literature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#PENRT_Extraction_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#PERT_Extraction_Literature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#PERT_Extraction_Slab_1"
+  } ],
+  "https://w3id.org/LCMO#hasProcessResource" : [ {
+    "@id" : "https://w3id.org/COPO#CuttingTorch_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#DemolitionHammer_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Excavator_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#HammerDrill_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Saw_1"
+  } ],
+  "https://w3id.org/LCMO#hasSubsequentConstructionProcess" : [ {
+    "@id" : "https://w3id.org/COPO#Transfer_Slab_1"
+  } ],
+  "https://w3id.org/LCMO#isLinkedToConstructionProduct" : [ {
+    "@id" : "https://w3id.org/COPO#Slab_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Geometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ConstructionObjectPropertyGroup"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Geometry_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Geometry"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionObjectProperty" : [ {
+    "@id" : "https://w3id.org/COPO#Height_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Length_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Width_Beam_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Geometry_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Geometry"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionObjectProperty" : [ {
+    "@id" : "https://w3id.org/COPO#Height_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Length_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Width_Slab_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#HammerDrill",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ProcessResource"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#HammerDrill_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#HammerDrill"
+  } ],
+  "https://w3id.org/LCMO#hasResourceType" : [ {
+    "@id" : "https://w3id.org/COPO#SpecificHammerDrill_Literature_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Height",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/COPO#Geometry"
+  }, {
+    "@id" : "https://w3id.org/LCMO#ConstructionObjectProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Height_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Height"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "m"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.59"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Height_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Height"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "m"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.37"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Hilti_DST_10-CA_",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ResourceType"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionProcessPropertyGroup" : [ {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionRecorded_Slab_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Hilti_DST_10-CA__1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Hilti_DST_10-CA_"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionProcessPropertyGroup" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization_Hilti_DST_10-CA_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization_Hilti_DST_10-CA_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionRecorded_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionRecorded_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption_Hilti_DST_10-CA_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption_Hilti_DST_10-CA_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Power_Hilti_DST_10-CA_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Power_Hilti_DST_10-CA_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#WorkingTime_Hilti_DST_10-CA_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#WorkingTime_Hilti_DST_10-CA_Slab_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Hilti_DST_20-CA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ResourceType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Hilti_DST_20-CA_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Hilti_DST_20-CA"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionProcessPropertyGroup" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization_Hilti_DST_20-CA_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization_Hilti_DST_20-CA_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionRecorded_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionRecorded_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption_Hilti_DST_20-CA_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption_Hilti_DST_20-CA_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Power_Hilti_DST_20-CA_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Power_Hilti_DST_20-CA_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#WorkingTime_Hilti_DST_20-CA_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#WorkingTime_Hilti_DST_20-CA_Slab_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Holcim_C2530",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#TypeSpecification"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#LCA_Execution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ProjectActivity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#LCA_Execution_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#LCA_Execution"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#LCI_DataProvision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#DataManagementActivity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#LCI_DataProvision_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#LCI_DataProvision"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Deconstruction of existing Building with focus on the reuse of reinforced concrete elements (Slab, beam etc.)"
+  } ],
+  "https://w3id.org/LCMO#concernsLifeCycleModule" : [ {
+    "@id" : "https://w3id.org/COPO#C1_Deconstruction_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#C2_Transport_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#C3_Recycling_WasteProcessing_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#C4_Disposal_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#LTM_1200-5.1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ResourceType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#LTM_1200-5.1_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#LTM_1200-5.1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Length",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/COPO#Geometry"
+  }, {
+    "@id" : "https://w3id.org/LCMO#ConstructionObjectProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Length_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Length"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "m"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Length_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Length"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "m"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "3"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Materiality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ConstructionObjectPropertyGroup"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Materiality_Concrete_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Materiality"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionObjectProperty" : [ {
+    "@id" : "https://w3id.org/COPO#Density_Concrete_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Materialname_Concrete_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Ratio_Concrete_Beam_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Materiality_Concrete_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Materiality"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionObjectProperty" : [ {
+    "@id" : "https://w3id.org/COPO#Density_Concrete_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Materialname_Concrete_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Ratio_Concrete_Slab_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Materiality_Steel_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Materiality"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionObjectProperty" : [ {
+    "@id" : "https://w3id.org/COPO#Density_Steel_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Materialname_Steel_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Ratio_Steel_Beam_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Materiality_Steel_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Materiality"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionObjectProperty" : [ {
+    "@id" : "https://w3id.org/COPO#Density_Steel_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Materialname_Steel_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Ratio_Steel_Slab_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Materialname",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/COPO#Materiality"
+  }, {
+    "@id" : "https://w3id.org/LCMO#ConstructionObjectProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Materialname_Concrete_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Materialname"
+  } ],
+  "https://w3id.org/LCMO#hasName" : [ {
+    "@value" : "Concrete C20/25"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Materialname_Concrete_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Materialname"
+  } ],
+  "https://w3id.org/LCMO#hasName" : [ {
+    "@value" : "Concrete C20/25"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Materialname_Steel_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Materialname"
+  } ],
+  "https://w3id.org/LCMO#hasName" : [ {
+    "@value" : "Steel S235"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Materialname_Steel_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Materialname"
+  } ],
+  "https://w3id.org/LCMO#hasName" : [ {
+    "@value" : "Steel S235"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#MechanicalProcedure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "According to DIN 18007: Demolition works – Concepts, procedures, fields of application"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ConstructionProcedure"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Mercedes-Benz_Actros_2653_LS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ResourceType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Mercedes-Benz_Actros_2653_LS_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Mercedes-Benz_Actros_2653_LS"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionProcessPropertyGroup" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization_Mercedes-Benz_Actros_2653_LS_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization_Mercedes-Benz_Actros_2653_LS_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionRecorded_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionRecorded_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption_Mercedes-Benz_Actros_2653_LS_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption_Mercedes-Benz_Actros_2653_LS_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Power_Mercedes-Benz_Actros_2653_LS_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Power_Mercedes-Benz_Actros_2653_LS_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#WorkingTime_Mercedes-Benz_Actros_2653_LS_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#WorkingTime_Mercedes-Benz_Actros_2653_LS_Slab_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Pollutant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/COPO#Condition"
+  }, {
+    "@id" : "https://w3id.org/LCMO#ConstructionObjectProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Pollutant_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Pollutant"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Pollutant_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Pollutant"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Power",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ConstructionProcessProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Power_Demag_AC100-4_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Power"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "kW"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "129"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Power_Demag_AC100-4_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Power"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "kW"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "129"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Power_Hilti_DST_10-CA_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Power"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Power_Hilti_DST_10-CA_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Power"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "kW"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.55"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Power_Hilti_DST_20-CA_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Power"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Power_Hilti_DST_20-CA_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Power"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "kW"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "20"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Power_Mercedes-Benz_Actros_2653_LS_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Power"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Power_Mercedes-Benz_Actros_2653_LS_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Power"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Power_SpecificCrane_Literature_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Power"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "kW"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "149"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Power_SpecificCrane_Literature_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Power"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "kW"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "149"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Power_SpecificCuttingTorch_Literature_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Power"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Power_SpecificCuttingTorch_Literature_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Power"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "kW"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "22.9"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Power_SpecificExcavator_Literature_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Power"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "kW"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "10.3"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Power_SpecificExcavator_Literature_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Power"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "kW"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "10.3"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Power_SpecificHammerDrill_Literature_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Power"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Power_SpecificHammerDrill_Literature_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Power"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "kW"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.15"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Power_SpecificTruck_Literature_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Power"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Power_SpecificTruck_Literature_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Power"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Ratio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/COPO#Materiality"
+  }, {
+    "@id" : "https://w3id.org/LCMO#ConstructionObjectProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Ratio_Concrete_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Ratio"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "-"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.98"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Ratio_Concrete_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Ratio"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "-"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.98"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Ratio_Steel_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Ratio"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "-"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.02"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Ratio_Steel_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Ratio"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "-"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.02"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Removal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "According to DIN 18007: Demolition works – Concepts, procedures, fields of application"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ConstructionProcedure"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Saw",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ProcessResource"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Saw_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Saw"
+  } ],
+  "https://w3id.org/LCMO#hasResourceType" : [ {
+    "@id" : "https://w3id.org/COPO#Hilti_DST_20-CA_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Sawing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "According to DIN 18007: Demolition works – Concepts, procedures, fields of application"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ConstructionProcedure"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#ScrewedConnection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ObjectConnectionType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Slab",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ConstructionObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Slab"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionObjectDataObject" : [ {
+    "@id" : "https://w3id.org/COPO#BIM_Model_Slab_1"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionObjectPropertyGroup" : [ {
+    "@id" : "https://w3id.org/COPO#Condition_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Geometry_Slab_1"
+  } ],
+  "https://w3id.org/LCMO#hasObjectType" : [ {
+    "@id" : "https://w3id.org/COPO#Concrete_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Steel_Slab_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#SpecificCrane_Literature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ResourceType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#SpecificCrane_Literature_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#SpecificCrane_Literature"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionProcessPropertyGroup" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization_SpecificCrane_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization_SpecificCrane_Literature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption_SpecificCrane_Literature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Power_SpecificCrane_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Power_SpecificCrane_Literature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#WorkingTime_SpecificCrane_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#WorkingTime_SpecificCrane_Literature_Slab_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#SpecificCuttingTorch_Literature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ResourceType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#SpecificCuttingTorch_Literature_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#SpecificCuttingTorch_Literature"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionProcessPropertyGroup" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization_SpecificCuttingTorch_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization_SpecificCuttingTorch_Literature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption_SpecificCuttingTorch_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption_SpecificCuttingTorch_Literature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Power_SpecificCuttingTorch_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Power_SpecificCuttingTorch_Literature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#WorkingTime_SpecificCuttingTorch_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#WorkingTime_SpecificCuttingTorch_Literature_Slab_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#SpecificExcavator_Literature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ResourceType"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionProcessPropertyGroup" : [ {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Slab_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#SpecificExcavator_Literature_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#SpecificExcavator_Literature"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionProcessPropertyGroup" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization_SpecificExcavator_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization_SpecificExcavator_Literature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption_SpecificExcavator_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption_SpecificExcavator_Literature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Power_SpecificExcavator_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Power_SpecificExcavator_Literature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#WorkingTime_SpecificExcavator_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#WorkingTime_SpecificExcavator_Literature_Slab_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#SpecificHammerDrill_Literature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ResourceType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#SpecificHammerDrill_Literature_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#SpecificHammerDrill_Literature"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionProcessPropertyGroup" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization_SpecificHammerDrill_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization_SpecificHammerDrill_Literature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption_SpecificHammerDrill_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption_SpecificHammerDrill_Literature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Power_SpecificHammerDrill_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Power_SpecificHammerDrill_Literature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#WorkingTime_SpecificHammerDrill_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#WorkingTime_SpecificHammerDrill_Literature_Slab_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#SpecificTruck_Literature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ResourceType"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionProcessPropertyGroup" : [ {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Slab_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#SpecificTruck_Literature_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#SpecificTruck_Literature"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionProcessPropertyGroup" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization_SpecificTruck_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization_SpecificTruck_Literature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumptionLiterature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption_SpecificTruck_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#EnergyConsumption_SpecificTruck_Literature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Power_SpecificTruck_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Power_SpecificTruck_Literature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#WorkingTime_SpecificTruck_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#WorkingTime_SpecificTruck_Literature_Slab_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Steel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ObjectType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Steel_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Steel"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionObjectPropertyGroup" : [ {
+    "@id" : "https://w3id.org/COPO#Materiality_Steel_Beam_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Steel_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Steel"
+  } ],
+  "https://w3id.org/LCMO#hasConstructionObjectPropertyGroup" : [ {
+    "@id" : "https://w3id.org/COPO#Materiality_Steel_Slab_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Transfer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ConstructionProcess"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Transfer_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Transfer"
+  } ],
+  "https://w3id.org/LCAO#hasProcessEnvironmentalIndicator" : [ {
+    "@id" : "https://w3id.org/LCAO#GWP_Transfer_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#GWP_Transfer_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#PENRT_Transfer_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#PENRT_Transfer_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#PERT_Transfer_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#PERT_Transfer_Literature_Beam_1"
+  } ],
+  "https://w3id.org/LCAO#hasSubProcess" : [ {
+    "@id" : "https://w3id.org/COPO#Crane_1"
+  } ],
+  "https://w3id.org/LCMO#hasPreviousConstructionProcess" : [ {
+    "@id" : "https://w3id.org/COPO#Extraction_Beam_1"
+  } ],
+  "https://w3id.org/LCMO#hasProcessResource" : [ {
+    "@id" : "https://w3id.org/COPO#Crane_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#Excavator_1"
+  } ],
+  "https://w3id.org/LCMO#hasSubsequentConstructionProcess" : [ {
+    "@id" : "https://w3id.org/COPO#Transport_Beam_1"
+  } ],
+  "https://w3id.org/LCMO#isLinkedToConstructionProduct" : [ {
+    "@id" : "https://w3id.org/COPO#Beam_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Transfer_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Transfer"
+  } ],
+  "https://w3id.org/LCAO#hasProcessEnvironmentalIndicator" : [ {
+    "@id" : "https://w3id.org/LCAO#GWP_Transfer_Literature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#GWP_Transfer_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#PENRT_Transfer_Literature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#PENRT_Transfer_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#PERT_Transfer_Literature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#PERT_Transfer_Slab_1"
+  } ],
+  "https://w3id.org/LCMO#hasPreviousConstructionProcess" : [ {
+    "@id" : "https://w3id.org/COPO#Extraction_Slab_1"
+  } ],
+  "https://w3id.org/LCMO#hasProcessResource" : [ {
+    "@id" : "https://w3id.org/COPO#Crane_1"
+  } ],
+  "https://w3id.org/LCMO#hasSubsequentConstructionProcess" : [ {
+    "@id" : "https://w3id.org/COPO#Transport_Slab_1"
+  } ],
+  "https://w3id.org/LCMO#isLinkedToConstructionProduct" : [ {
+    "@id" : "https://w3id.org/COPO#Slab_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Transport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ConstructionProcess"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Transport_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Transport"
+  } ],
+  "https://w3id.org/LCAO#hasProcessEnvironmentalIndicator" : [ {
+    "@id" : "https://w3id.org/LCAO#GWP_Transport_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#GWP_Transport_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#PENRT_Transport_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#PENRT_Transport_Literature_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#PERT_Transport_Beam_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#PERT_Transport_Literature_Beam_1"
+  } ],
+  "https://w3id.org/LCMO#hasPreviousConstructionProcess" : [ {
+    "@id" : "https://w3id.org/COPO#Transfer_Beam_1"
+  } ],
+  "https://w3id.org/LCMO#hasProcessResource" : [ {
+    "@id" : "https://w3id.org/COPO#Truck_1"
+  } ],
+  "https://w3id.org/LCMO#isLinkedToConstructionProduct" : [ {
+    "@id" : "https://w3id.org/COPO#Beam_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Transport_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Transport"
+  } ],
+  "https://w3id.org/LCAO#hasProcessEnvironmentalIndicator" : [ {
+    "@id" : "https://w3id.org/LCAO#GWP_Transport_Literature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#GWP_Transport_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#PENRT_Transport_Literature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#PENRT_Transport_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#PERT_Transport_Literature_Slab_1"
+  }, {
+    "@id" : "https://w3id.org/LCAO#PERT_Transport_Slab_1"
+  } ],
+  "https://w3id.org/LCMO#hasPreviousConstructionProcess" : [ {
+    "@id" : "https://w3id.org/COPO#Extraction_Slab_1"
+  } ],
+  "https://w3id.org/LCMO#hasProcessResource" : [ {
+    "@id" : "https://w3id.org/COPO#Truck_1"
+  } ],
+  "https://w3id.org/LCMO#isLinkedToConstructionProduct" : [ {
+    "@id" : "https://w3id.org/COPO#Slab_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Truck",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ProcessResource"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Truck_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Truck"
+  } ],
+  "https://w3id.org/LCMO#hasResourceType" : [ {
+    "@id" : "https://w3id.org/COPO#Mercedes-Benz_Actros_2653_LS_1"
+  }, {
+    "@id" : "https://w3id.org/COPO#SpecificTruck_Literature_1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Width",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/COPO#Geometry"
+  }, {
+    "@id" : "https://w3id.org/LCMO#ConstructionObjectProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Width_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Width"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "m"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.5"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#Width_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#Width"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "m"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.5"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#WorkingTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/LCMO#ConstructionProcessProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#WorkingTime_Demag_AC100-4_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#WorkingTime"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "h/km"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.167"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#WorkingTime_Demag_AC100-4_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#WorkingTime"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "h/km"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.167"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#WorkingTime_Hilti_DST_10-CA_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#WorkingTime"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#WorkingTime_Hilti_DST_10-CA_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#WorkingTime"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "h/km"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.08"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#WorkingTime_Hilti_DST_20-CA_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#WorkingTime"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#WorkingTime_Hilti_DST_20-CA_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#WorkingTime"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "h/km"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.75"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#WorkingTime_Mercedes-Benz_Actros_2653_LS_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#WorkingTime"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "h/km"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "3"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#WorkingTime_Mercedes-Benz_Actros_2653_LS_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#WorkingTime"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "h/km"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "3"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#WorkingTime_SpecificCrane_Literature_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#WorkingTime"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "h/km"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.79"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#WorkingTime_SpecificCrane_Literature_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#WorkingTime"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "h/km"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.79"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#WorkingTime_SpecificCuttingTorch_Literature_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#WorkingTime"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#WorkingTime_SpecificCuttingTorch_Literature_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#WorkingTime"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "h/km"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "24"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#WorkingTime_SpecificExcavator_Literature_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#WorkingTime"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "h/km"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.2"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#WorkingTime_SpecificExcavator_Literature_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#WorkingTime"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "h/km"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.2"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#WorkingTime_SpecificHammerDrill_Literature_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#WorkingTime"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#WorkingTime_SpecificHammerDrill_Literature_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#WorkingTime"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "h/km"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "47"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#WorkingTime_SpecificTruck_Literature_Beam_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#WorkingTime"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "h/km"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "30"
+  } ]
+}, {
+  "@id" : "https://w3id.org/COPO#WorkingTime_SpecificTruck_Literature_Slab_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/COPO#WorkingTime"
+  } ],
+  "https://w3id.org/LCMO#hasUnit" : [ {
+    "@value" : "h/km"
+  } ],
+  "https://w3id.org/LCMO#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "30"
+  } ]
+}, {
+  "@id" : "https://w3id.org/LCAO#hasProcessEnvironmentalIndicator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/LCAO#hasSubProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/LCAO#isLCAScenarioMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/LCAO#isLCAScenarioPrediction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/LCAO#isLCAScenarioMeasurement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/LCMO#ConstructionObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#ConstructionObjectDataObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#ConstructionObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#ConstructionObjectPropertyGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#ConstructionProcedure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#ConstructionProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#ConstructionProcessDataObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#ConstructionProcessProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#ConstructionProcessPropertyGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#DataManagementActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#LifeCycleModule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#ObjectConnectionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#ObjectType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#ProcessResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#Project",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#ProjectActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#ResourceType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#TypeSpecification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#addressesConstructionObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#addressesConstructionProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#concernsLifeCycleModule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#hasConstructionObjectDataObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#hasConstructionObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#hasConstructionObjectPropertyGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#hasConstructionProcessPropertyGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#hasName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#hasObjectType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#hasPreviousConstructionProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#hasProcessResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#hasProjectActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#hasResourceType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#hasSubsequentConstructionProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/LCMO#hasUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization"
+  }, {
+    "@id" : "https://w3id.org/COPO#Power"
+  }, {
+    "@id" : "https://w3id.org/COPO#WorkingTime"
+  } ]
+}, {
+  "@id" : "https://w3id.org/LCMO#hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/COPO#CapacityUtilization"
+  }, {
+    "@id" : "https://w3id.org/COPO#Power"
+  }, {
+    "@id" : "https://w3id.org/COPO#WorkingTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/LCMO#isLinkedToConstructionProduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]
