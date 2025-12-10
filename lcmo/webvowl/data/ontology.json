@@ -1,168 +1,394 @@
 {
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
-    "languages" : [ "en" ],
-    "baseIris" : [ "https://w3id.org/bot", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://example.org/LCMO" ],
-    "iri" : "http://example.org/LCMO"
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "https://schema.org", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/LCMO" ],
+    "iri" : "https://w3id.org/LCMO",
+    "author" : [ "_:genid2147483661" ],
+    "labels" : {
+      "undefined" : "LCMO Ontology"
+    },
+    "comments" : {
+      "en" : "TODO: write description"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "_:genid2147483661",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "_:genid2147483660",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2025-12-10",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "lcmo",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "undefined",
+        "value" : "https://github.com/RUB-Informatik-im-Bauwesen/crc1683-ontologies/tree/main/lcmo",
+        "type" : "label"
+      } ]
+    }
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "6",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "11",
-    "type" : "owl:Class"
-  }, {
-    "id" : "4",
-    "type" : "owl:Class"
-  }, {
-    "id" : "16",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "5",
-    "type" : "owl:Class"
-  }, {
-    "id" : "17",
-    "type" : "owl:Class"
-  }, {
-    "id" : "18",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
     "id" : "13",
     "type" : "owl:Class"
   }, {
-    "id" : "8",
+    "id" : "16",
     "type" : "owl:Class"
   }, {
-    "id" : "21",
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
     "type" : "owl:Class"
   }, {
     "id" : "2",
     "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "http://example.org/LCMO#LifeCycleStage",
-    "baseIri" : "http://example.org/LCMO",
+    "iri" : "https://w3id.org/LCMO#ConstructionObject",
+    "baseIri" : "https://w3id.org/LCMO",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "LifeCycleStage",
-      "en" : "Life Cycle Stage"
+      "IRI-based" : "ConstructionObject"
     },
-    "id" : "6"
+    "id" : "9"
   }, {
-    "iri" : "http://example.org/LCMO#ParameterGroup",
-    "baseIri" : "http://example.org/LCMO",
+    "iri" : "https://w3id.org/LCMO#ConstructionProcessPropertyGroup",
+    "baseIri" : "https://w3id.org/LCMO",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "ParameterGroup",
-      "en" : "Parameter Group"
+      "IRI-based" : "ConstructionProcessPropertyGroup"
     },
-    "id" : "1"
+    "subClasses" : [ "14" ],
+    "id" : "13"
   }, {
-    "iri" : "http://example.org/LCMO#Resource",
-    "baseIri" : "http://example.org/LCMO",
+    "iri" : "https://w3id.org/LCMO#ProcessResource",
+    "baseIri" : "https://w3id.org/LCMO",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Resource",
-      "en" : "Resource"
+      "IRI-based" : "ProcessResource"
     },
-    "id" : "11"
+    "id" : "16"
   }, {
-    "iri" : "http://example.org/LCMO#PropertyGroup",
-    "baseIri" : "http://example.org/LCMO",
+    "iri" : "https://w3id.org/LCMO#ConstructionProcess",
+    "baseIri" : "https://w3id.org/LCMO",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "PropertyGroup",
-      "en" : "Property Group"
+      "IRI-based" : "ConstructionProcess"
     },
     "id" : "4"
   }, {
-    "instances" : 0,
-    "union" : [ "18", "13", "11", "10" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "16"
-  }, {
-    "iri" : "http://example.org/LCMO#ProductElement",
-    "baseIri" : "http://example.org/LCMO",
+    "iri" : "https://w3id.org/LCMO#TypeSpecification",
+    "baseIri" : "https://w3id.org/LCMO",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "ProductElement",
-      "en" : "Product Element"
+      "IRI-based" : "TypeSpecification"
     },
-    "subClasses" : [ "21" ],
-    "id" : "10",
-    "superClasses" : [ "13" ]
+    "id" : "30"
   }, {
-    "iri" : "http://example.org/LCMO#Property",
-    "baseIri" : "http://example.org/LCMO",
+    "iri" : "https://w3id.org/LCMO#Project",
+    "baseIri" : "https://w3id.org/LCMO",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Property",
-      "en" : "Property"
+      "IRI-based" : "Project"
     },
-    "id" : "5"
+    "subClasses" : [ "31" ],
+    "id" : "19"
   }, {
-    "iri" : "http://example.org/LCMO#DataObject",
-    "baseIri" : "http://example.org/LCMO",
+    "iri" : "https://w3id.org/LCMO#ObjectConnectionType",
+    "baseIri" : "https://w3id.org/LCMO",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "DataObject",
-      "en" : "Data Object"
+      "IRI-based" : "ObjectConnectionType"
+    },
+    "id" : "34"
+  }, {
+    "iri" : "https://w3id.org/LCMO#ConstructionProcedure",
+    "baseIri" : "https://w3id.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConstructionProcedure"
+    },
+    "id" : "28"
+  }, {
+    "iri" : "https://w3id.org/LCMO#ResourceType",
+    "baseIri" : "https://w3id.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ResourceType"
     },
     "id" : "17"
   }, {
-    "iri" : "http://example.org/LCMO#Process",
-    "baseIri" : "http://example.org/LCMO",
+    "iri" : "https://w3id.org/LCMO#ConstructionProcessDataObject",
+    "baseIri" : "https://w3id.org/LCMO",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Process",
-      "en" : "Process"
-    },
-    "id" : "18"
-  }, {
-    "iri" : "http://example.org/LCMO#Product",
-    "baseIri" : "http://example.org/LCMO",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Product",
-      "en" : "Product"
-    },
-    "subClasses" : [ "10" ],
-    "id" : "13"
-  }, {
-    "iri" : "http://example.org/LCMO#Activity",
-    "baseIri" : "http://example.org/LCMO",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Activity",
-      "en" : "Activity"
-    },
-    "id" : "8"
-  }, {
-    "iri" : "https://w3id.org/bot#Element",
-    "baseIri" : "https://w3id.org/bot",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Element"
-    },
-    "attributes" : [ "external" ],
-    "id" : "21",
-    "superClasses" : [ "10" ]
-  }, {
-    "iri" : "http://example.org/LCMO#Parameter",
-    "baseIri" : "http://example.org/LCMO",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Parameter",
-      "en" : "Parameter"
+      "IRI-based" : "ConstructionProcessDataObject"
     },
     "id" : "2"
+  }, {
+    "instances" : 0,
+    "union" : [ "9", "4" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "27"
+  }, {
+    "instances" : 0,
+    "union" : [ "9", "36" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "45"
+  }, {
+    "instances" : 0,
+    "union" : [ "9", "36" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/LCMO#ConstructionObjectProperty",
+    "baseIri" : "https://w3id.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConstructionObjectProperty"
+    },
+    "id" : "44",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/LCMO#DataManagementActivity",
+    "baseIri" : "https://w3id.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataManagementActivity"
+    },
+    "id" : "47"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "24",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "16", "4" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "1"
+  }, {
+    "instances" : 0,
+    "union" : [ "44", "14" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "7"
+  }, {
+    "instances" : 0,
+    "union" : [ "9", "12", "30", "36" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://w3id.org/LCMO#ConstructionProcessProperty",
+    "baseIri" : "https://w3id.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConstructionProcessProperty"
+    },
+    "id" : "14",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "https://w3id.org/LCMO#ConstructionObjectPropertyGroup",
+    "baseIri" : "https://w3id.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConstructionObjectPropertyGroup"
+    },
+    "subClasses" : [ "44" ],
+    "id" : "12"
+  }, {
+    "instances" : 0,
+    "union" : [ "9", "30", "36" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "11"
+  }, {
+    "instances" : 0,
+    "union" : [ "17", "13", "4", "16" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://schema.org/Person",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "attributes" : [ "external" ],
+    "id" : "51"
+  }, {
+    "instances" : 0,
+    "union" : [ "34", "4" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "40"
+  }, {
+    "instances" : 0,
+    "union" : [ "17", "16", "4" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/LCMO#ConstructionObjectDataObject",
+    "baseIri" : "https://w3id.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConstructionObjectDataObject"
+    },
+    "id" : "54"
+  }, {
+    "iri" : "https://w3id.org/LCMO#ProjectMetaData",
+    "baseIri" : "https://w3id.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProjectMetaData"
+    },
+    "id" : "31",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "https://w3id.org/LCMO#LifeCycleModule",
+    "baseIri" : "https://w3id.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LifeCycleModule"
+    },
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/LCMO#ProjectActivity",
+    "baseIri" : "https://w3id.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProjectActivity"
+    },
+    "id" : "20"
+  }, {
+    "iri" : "https://w3id.org/LCMO#ObjectType",
+    "baseIri" : "https://w3id.org/LCMO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObjectType"
+    },
+    "id" : "36"
   } ],
   "property" : [ {
     "id" : "0",
@@ -171,141 +397,322 @@
     "id" : "3",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "7",
-    "type" : "owl:objectProperty"
+    "id" : "6",
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "9",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "12",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "14",
+    "id" : "10",
     "type" : "owl:objectProperty"
   }, {
     "id" : "15",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "19",
+    "id" : "18",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "20",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "22",
+    "id" : "21",
     "type" : "owl:objectProperty"
   }, {
     "id" : "23",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "http://example.org/LCMO#hasParameter",
-    "baseIri" : "http://example.org/LCMO",
+    "iri" : "https://w3id.org/LCMO#hasConstructionProcessDataObject",
+    "baseIri" : "https://w3id.org/LCMO",
     "range" : "2",
     "label" : {
-      "IRI-based" : "hasParameter",
-      "en" : "has parameter"
+      "IRI-based" : "hasConstructionProcessDataObject"
     },
     "domain" : "1",
     "attributes" : [ "object" ],
     "id" : "0"
   }, {
-    "iri" : "http://example.org/LCMO#hasProperty",
-    "baseIri" : "http://example.org/LCMO",
+    "iri" : "https://w3id.org/LCMO#belongsToLifeCycleModule",
+    "baseIri" : "https://w3id.org/LCMO",
     "range" : "5",
     "label" : {
-      "IRI-based" : "hasProperty",
-      "en" : "has property"
+      "IRI-based" : "belongsToLifeCycleModule"
     },
     "domain" : "4",
     "attributes" : [ "object" ],
     "id" : "3"
   }, {
-    "iri" : "http://example.org/LCMO#hasLifeCycleStage",
-    "baseIri" : "http://example.org/LCMO",
-    "range" : "6",
+    "iri" : "https://w3id.org/LCMO#hasUnit",
+    "baseIri" : "https://w3id.org/LCMO",
+    "range" : "8",
     "label" : {
-      "IRI-based" : "hasLifeCycleStage",
-      "en" : "has life cycle stage"
+      "IRI-based" : "hasUnit"
     },
-    "domain" : "8",
-    "attributes" : [ "object" ],
-    "id" : "7"
+    "domain" : "7",
+    "attributes" : [ "datatype" ],
+    "id" : "6"
   }, {
-    "iri" : "http://example.org/LCMO#hasParameterGroup",
-    "baseIri" : "http://example.org/LCMO",
-    "range" : "1",
+    "iri" : "https://w3id.org/LCMO#hasConstructionObjectPropertyGroup",
+    "baseIri" : "https://w3id.org/LCMO",
+    "range" : "12",
     "label" : {
-      "IRI-based" : "hasParameterGroup",
-      "en" : "has parameter group"
+      "IRI-based" : "hasConstructionObjectPropertyGroup"
     },
-    "domain" : "10",
+    "domain" : "11",
     "attributes" : [ "object" ],
-    "id" : "9"
+    "id" : "10"
   }, {
-    "range" : "13",
-    "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "12"
-  }, {
-    "iri" : "http://example.org/LCMO#hasProductElement",
-    "baseIri" : "http://example.org/LCMO",
-    "range" : "10",
-    "label" : {
-      "IRI-based" : "hasProductElement",
-      "en" : "has product element"
-    },
-    "domain" : "6",
-    "attributes" : [ "object" ],
-    "id" : "14"
-  }, {
-    "iri" : "http://example.org/LCMO#hasDataObject",
-    "baseIri" : "http://example.org/LCMO",
+    "iri" : "https://w3id.org/LCMO#hasResourceType",
+    "baseIri" : "https://w3id.org/LCMO",
     "range" : "17",
     "label" : {
-      "IRI-based" : "hasDataObject",
-      "en" : "has data object"
+      "IRI-based" : "hasResourceType"
     },
     "domain" : "16",
     "attributes" : [ "object" ],
     "id" : "15"
   }, {
-    "iri" : "http://example.org/LCMO#hasProcess",
-    "baseIri" : "http://example.org/LCMO",
-    "range" : "18",
+    "iri" : "https://w3id.org/LCMO#hasProjectActivity",
+    "baseIri" : "https://w3id.org/LCMO",
+    "range" : "20",
     "label" : {
-      "IRI-based" : "hasProcess",
-      "en" : "has process"
+      "IRI-based" : "hasProjectActivity"
     },
-    "domain" : "6",
+    "domain" : "19",
     "attributes" : [ "object" ],
-    "id" : "19"
+    "id" : "18"
   }, {
-    "range" : "10",
-    "domain" : "21",
+    "iri" : "https://w3id.org/LCMO#hasConstructionProcessPropertyGroup",
+    "baseIri" : "https://w3id.org/LCMO",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasConstructionProcessPropertyGroup"
+    },
+    "domain" : "22",
+    "attributes" : [ "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/LCMO#hasName",
+    "baseIri" : "https://w3id.org/LCMO",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasName"
+    },
+    "domain" : "24",
+    "attributes" : [ "datatype" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/LCMO#isLinkedToConstructionProcedure",
+    "baseIri" : "https://w3id.org/LCMO",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "isLinkedToConstructionProcedure"
+    },
+    "domain" : "27",
+    "attributes" : [ "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://w3id.org/LCMO#isLinkedToConstructionProduct",
+    "baseIri" : "https://w3id.org/LCMO",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "isLinkedToConstructionProduct"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://w3id.org/LCMO#hasObjectConnectionType",
+    "baseIri" : "https://w3id.org/LCMO",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasObjectConnectionType"
+    },
+    "domain" : "33",
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/LCMO#hasObjectType",
+    "baseIri" : "https://w3id.org/LCMO",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "hasObjectType"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://w3id.org/LCMO#hasConstructionProcessProperty",
+    "baseIri" : "https://w3id.org/LCMO",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasConstructionProcessProperty"
+    },
+    "domain" : "38",
+    "attributes" : [ "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://w3id.org/LCMO#needsConstructionProcedure",
+    "baseIri" : "https://w3id.org/LCMO",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "needsConstructionProcedure"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "range" : "19",
+    "domain" : "31",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "20"
+    "id" : "41"
   }, {
-    "iri" : "http://example.org/LCMO#hasResource",
-    "baseIri" : "http://example.org/LCMO",
-    "range" : "11",
+    "range" : "13",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "12",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://w3id.org/LCMO#addressesConstructionObject",
+    "baseIri" : "https://w3id.org/LCMO",
+    "range" : "9",
     "label" : {
-      "IRI-based" : "hasResource",
-      "en" : "has resource"
+      "IRI-based" : "addressesConstructionObject"
     },
-    "domain" : "18",
+    "domain" : "5",
     "attributes" : [ "object" ],
-    "id" : "22"
+    "id" : "46"
   }, {
-    "iri" : "http://example.org/LCMO#hasPropertyGroup",
-    "baseIri" : "http://example.org/LCMO",
+    "iri" : "https://w3id.org/LCMO#hasConstructionObjectProperty",
+    "baseIri" : "https://w3id.org/LCMO",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "hasConstructionObjectProperty"
+    },
+    "domain" : "49",
+    "attributes" : [ "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "https://w3id.org/LCMO#hasSubsequentConstructionProcess",
+    "baseIri" : "https://w3id.org/LCMO",
     "range" : "4",
     "label" : {
-      "IRI-based" : "hasPropertyGroup",
-      "en" : "has property group"
+      "IRI-based" : "hasSubsequentConstructionProcess"
     },
-    "domain" : "11",
+    "domain" : "4",
     "attributes" : [ "object" ],
-    "id" : "23"
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/LCMO#hasTypeSpecification",
+    "baseIri" : "https://w3id.org/LCMO",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "hasTypeSpecification"
+    },
+    "domain" : "36",
+    "attributes" : [ "object" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://w3id.org/LCMO#addressesConstructionProcess",
+    "baseIri" : "https://w3id.org/LCMO",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "addressesConstructionProcess"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://w3id.org/LCMO#hasProcessResource",
+    "baseIri" : "https://w3id.org/LCMO",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasProcessResource"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://w3id.org/LCMO#hasPreviousConstructionProcess",
+    "baseIri" : "https://w3id.org/LCMO",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasPreviousConstructionProcess"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "https://w3id.org/LCMO#concernsLifeCycleModule",
+    "baseIri" : "https://w3id.org/LCMO",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "concernsLifeCycleModule"
+    },
+    "domain" : "47",
+    "attributes" : [ "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://w3id.org/LCMO#hasConstructionObjectDataObject",
+    "baseIri" : "https://w3id.org/LCMO",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "hasConstructionObjectDataObject"
+    },
+    "domain" : "45",
+    "attributes" : [ "object" ],
+    "id" : "58"
   } ]
 }

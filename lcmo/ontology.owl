@@ -1,12 +1,158 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://example.org/LCMO#"
-     xml:base="http://example.org/LCMO"
+<rdf:RDF xmlns="https://w3id.org/LCMO#"
+     xml:base="https://w3id.org/LCMO"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://example.org/LCMO"/>
+     xmlns:LCMO="https://w3id.org/LCMO#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:schema="https://schema.org/">
+    <owl:Ontology rdf:about="https://w3id.org/LCMO">
+        <dc:contributor rdf:nodeID="genid1"/>
+        <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-10</dc:created>
+        <dc:creator rdf:nodeID="genid3"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/RUB-Informatik-im-Bauwesen/crc1683-ontologies/tree/main/lcmo</dc:source>
+        <vann:preferredNamespacePrefix>lcmo</vann:preferredNamespacePrefix>
+        <rdfs:comment xml:lang="en">TODO: write description</rdfs:comment>
+        <rdfs:label>LCMO Ontology</rdfs:label>
+    </owl:Ontology>
+    <rdf:Description rdf:nodeID="genid1">
+        <rdf:type rdf:resource="https://schema.org/Person"/>
+        <schema:email rdf:resource="mailto:philipp.hagedorn-n6v@rub.de"/>
+        <schema:identifier rdf:resource="https://orcid.org/0000-0002-6249-243X"/>
+        <schema:memberOf rdf:nodeID="genid2"/>
+        <schema:name>Dr. Philipp Hagedorn</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid3">
+        <rdf:type rdf:resource="https://schema.org/Person"/>
+        <schema:email rdf:resource="mailto:jonas.maibaum@rub.de"/>
+        <schema:identifier rdf:resource="https://orcid.org/0000-0001-5010-7904"/>
+        <schema:memberOf rdf:nodeID="genid4"/>
+        <schema:name>Jonas Maibaum</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid2">
+        <schema:identifier rdf:resource="https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en"/>
+        <schema:name>Ruhr University Bochum, DE</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid4">
+        <schema:identifier rdf:resource="https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/jonas_maibaum.html.en"/>
+        <schema:name>Ruhr University Bochum, DE</schema:name>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/created"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- https://schema.org/email -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/email"/>
+    
+
+
+    <!-- https://schema.org/identifier -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/identifier"/>
+    
+
+
+    <!-- https://schema.org/memberOf -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/memberOf"/>
+    
+
+
+    <!-- https://schema.org/name -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/name"/>
+    
+
+
+    <!-- https://w3id.org/LCMO#hasValue -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/LCMO#hasValue">
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ConstructionObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ConstructionProcessProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 
@@ -22,111 +168,260 @@
     
 
 
-    <!-- http://example.org/LCMO#hasDataObject -->
+    <!-- https://w3id.org/LCMO#addressesConstructionObject -->
 
 
-    <owl:ObjectProperty rdf:about="http://example.org/LCMO#hasDataObject">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://example.org/LCMO#Process"/>
-                    <rdf:Description rdf:about="http://example.org/LCMO#Product"/>
-                    <rdf:Description rdf:about="http://example.org/LCMO#ProductElement"/>
-                    <rdf:Description rdf:about="http://example.org/LCMO#Resource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://example.org/LCMO#DataObject"/>
-        <rdfs:label xml:lang="en">has data object</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCMO#addressesConstructionObject">
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#LifeCycleModule"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCMO#ConstructionObject"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://example.org/LCMO#hasLifeCycleStage -->
+    <!-- https://w3id.org/LCMO#addressesConstructionProcess -->
 
 
-    <owl:ObjectProperty rdf:about="http://example.org/LCMO#hasLifeCycleStage">
-        <rdfs:domain rdf:resource="http://example.org/LCMO#Activity"/>
-        <rdfs:range rdf:resource="http://example.org/LCMO#LifeCycleStage"/>
-        <rdfs:label xml:lang="en">has life cycle stage</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCMO#addressesConstructionProcess">
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ConstructionProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCMO#LifeCycleModule"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://example.org/LCMO#hasParameter -->
+    <!-- https://w3id.org/LCMO#belongsToLifeCycleModule -->
 
 
-    <owl:ObjectProperty rdf:about="http://example.org/LCMO#hasParameter">
-        <rdfs:domain rdf:resource="http://example.org/LCMO#ParameterGroup"/>
-        <rdfs:range rdf:resource="http://example.org/LCMO#Parameter"/>
-        <rdfs:label xml:lang="en">has parameter</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCMO#belongsToLifeCycleModule">
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ConstructionProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCMO#LifeCycleModule"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://example.org/LCMO#hasParameterGroup -->
+    <!-- https://w3id.org/LCMO#concernsLifeCycleModule -->
 
 
-    <owl:ObjectProperty rdf:about="http://example.org/LCMO#hasParameterGroup">
-        <rdfs:domain rdf:resource="http://example.org/LCMO#ProductElement"/>
-        <rdfs:range rdf:resource="http://example.org/LCMO#ParameterGroup"/>
-        <rdfs:label xml:lang="en">has parameter group</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCMO#concernsLifeCycleModule">
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#DataManagementActivity"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCMO#LifeCycleModule"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://example.org/LCMO#hasProcess -->
+    <!-- https://w3id.org/LCMO#hasConstructionObjectDataObject -->
 
 
-    <owl:ObjectProperty rdf:about="http://example.org/LCMO#hasProcess">
-        <rdfs:domain rdf:resource="http://example.org/LCMO#LifeCycleStage"/>
-        <rdfs:range rdf:resource="http://example.org/LCMO#Process"/>
-        <rdfs:label xml:lang="en">has process</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCMO#hasConstructionObjectDataObject">
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ConstructionObject"/>
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ObjectType"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCMO#ConstructionObjectDataObject"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://example.org/LCMO#hasProductElement -->
+    <!-- https://w3id.org/LCMO#hasConstructionObjectProperty -->
 
 
-    <owl:ObjectProperty rdf:about="http://example.org/LCMO#hasProductElement">
-        <rdfs:domain rdf:resource="http://example.org/LCMO#LifeCycleStage"/>
-        <rdfs:range rdf:resource="http://example.org/LCMO#ProductElement"/>
-        <rdfs:label xml:lang="en">has product element</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCMO#hasConstructionObjectProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ConstructionObject"/>
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ConstructionObjectPropertyGroup"/>
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ObjectType"/>
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#TypeSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCMO#ConstructionObjectProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://example.org/LCMO#hasProperty -->
+    <!-- https://w3id.org/LCMO#hasConstructionObjectPropertyGroup -->
 
 
-    <owl:ObjectProperty rdf:about="http://example.org/LCMO#hasProperty">
-        <rdfs:domain rdf:resource="http://example.org/LCMO#PropertyGroup"/>
-        <rdfs:range rdf:resource="http://example.org/LCMO#Property"/>
-        <rdfs:label xml:lang="en">has property</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCMO#hasConstructionObjectPropertyGroup">
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ConstructionObject"/>
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ObjectType"/>
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#TypeSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCMO#ConstructionObjectPropertyGroup"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://example.org/LCMO#hasPropertyGroup -->
+    <!-- https://w3id.org/LCMO#hasConstructionProcessDataObject -->
 
 
-    <owl:ObjectProperty rdf:about="http://example.org/LCMO#hasPropertyGroup">
-        <rdfs:domain rdf:resource="http://example.org/LCMO#Resource"/>
-        <rdfs:range rdf:resource="http://example.org/LCMO#PropertyGroup"/>
-        <rdfs:label xml:lang="en">has property group</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCMO#hasConstructionProcessDataObject">
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ConstructionProcess"/>
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ProcessResource"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCMO#ConstructionProcessDataObject"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://example.org/LCMO#hasResource -->
+    <!-- https://w3id.org/LCMO#hasConstructionProcessProperty -->
 
 
-    <owl:ObjectProperty rdf:about="http://example.org/LCMO#hasResource">
-        <rdfs:domain rdf:resource="http://example.org/LCMO#Process"/>
-        <rdfs:range rdf:resource="http://example.org/LCMO#Resource"/>
-        <rdfs:label xml:lang="en">has resource</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCMO#hasConstructionProcessProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ConstructionProcess"/>
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ConstructionProcessPropertyGroup"/>
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ProcessResource"/>
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ResourceType"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCMO#ConstructionProcessProperty"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCMO#hasConstructionProcessPropertyGroup -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCMO#hasConstructionProcessPropertyGroup">
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ConstructionProcess"/>
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ProcessResource"/>
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ResourceType"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCMO#ConstructionProcessPropertyGroup"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCMO#hasObjectConnectionType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCMO#hasObjectConnectionType">
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ConstructionObject"/>
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ObjectType"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCMO#ObjectConnectionType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCMO#hasObjectType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCMO#hasObjectType">
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ConstructionObject"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCMO#ObjectType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCMO#hasPreviousConstructionProcess -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCMO#hasPreviousConstructionProcess">
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ConstructionProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCMO#ConstructionProcess"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCMO#hasProcessResource -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCMO#hasProcessResource">
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ConstructionProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCMO#ProcessResource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCMO#hasProjectActivity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCMO#hasProjectActivity">
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#Project"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCMO#ProjectActivity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCMO#hasResourceType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCMO#hasResourceType">
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ProcessResource"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCMO#ResourceType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCMO#hasSubsequentConstructionProcess -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCMO#hasSubsequentConstructionProcess">
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ConstructionProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCMO#ConstructionProcess"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCMO#hasTypeSpecification -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCMO#hasTypeSpecification">
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ObjectType"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCMO#TypeSpecification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCMO#isLinkedToConstructionProcedure -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCMO#isLinkedToConstructionProcedure">
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ConstructionObject"/>
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ConstructionProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCMO#ConstructionProcedure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCMO#isLinkedToConstructionProduct -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCMO#isLinkedToConstructionProduct">
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ConstructionProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCMO#ConstructionObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/LCMO#needsConstructionProcedure -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/LCMO#needsConstructionProcedure">
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ConstructionProcess"/>
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ObjectConnectionType"/>
+        <rdfs:range rdf:resource="https://w3id.org/LCMO#ConstructionProcedure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/LCMO#hasName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/LCMO#hasName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/LCMO#hasUnit -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/LCMO#hasUnit">
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ConstructionObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/LCMO#ConstructionProcessProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -142,111 +437,180 @@
     
 
 
-    <!-- http://example.org/LCMO#Activity -->
+    <!-- https://schema.org/Person -->
 
 
-    <owl:Class rdf:about="http://example.org/LCMO#Activity">
-        <rdfs:label xml:lang="en">Activity</rdfs:label>
+    <owl:Class rdf:about="https://schema.org/Person"/>
+    
+
+
+    <!-- https://w3id.org/LCMO#ConstructionObject -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCMO#ConstructionObject">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
     
 
 
-    <!-- http://example.org/LCMO#DataObject -->
+    <!-- https://w3id.org/LCMO#ConstructionObjectDataObject -->
 
 
-    <owl:Class rdf:about="http://example.org/LCMO#DataObject">
-        <rdfs:label xml:lang="en">Data Object</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/LCMO#ConstructionObjectDataObject">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
     
 
 
-    <!-- http://example.org/LCMO#LifeCycleStage -->
+    <!-- https://w3id.org/LCMO#ConstructionObjectProperty -->
 
 
-    <owl:Class rdf:about="http://example.org/LCMO#LifeCycleStage">
-        <rdfs:label xml:lang="en">Life Cycle Stage</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/LCMO#ConstructionObjectProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/LCMO#ConstructionObjectPropertyGroup"/>
     </owl:Class>
     
 
 
-    <!-- http://example.org/LCMO#Parameter -->
+    <!-- https://w3id.org/LCMO#ConstructionObjectPropertyGroup -->
 
 
-    <owl:Class rdf:about="http://example.org/LCMO#Parameter">
-        <rdfs:label xml:lang="en">Parameter</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/LCMO#ConstructionObjectPropertyGroup">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
     
 
 
-    <!-- http://example.org/LCMO#ParameterGroup -->
+    <!-- https://w3id.org/LCMO#ConstructionProcedure -->
 
 
-    <owl:Class rdf:about="http://example.org/LCMO#ParameterGroup">
-        <rdfs:label xml:lang="en">Parameter Group</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/LCMO#ConstructionProcedure">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
     
 
 
-    <!-- http://example.org/LCMO#Process -->
+    <!-- https://w3id.org/LCMO#ConstructionProcess -->
 
 
-    <owl:Class rdf:about="http://example.org/LCMO#Process">
-        <rdfs:label xml:lang="en">Process</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/LCMO#ConstructionProcess">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
     
 
 
-    <!-- http://example.org/LCMO#Product -->
+    <!-- https://w3id.org/LCMO#ConstructionProcessDataObject -->
 
 
-    <owl:Class rdf:about="http://example.org/LCMO#Product">
-        <rdfs:label xml:lang="en">Product</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/LCMO#ConstructionProcessDataObject">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
     
 
 
-    <!-- http://example.org/LCMO#ProductElement -->
+    <!-- https://w3id.org/LCMO#ConstructionProcessProperty -->
 
 
-    <owl:Class rdf:about="http://example.org/LCMO#ProductElement">
-        <rdfs:subClassOf rdf:resource="http://example.org/LCMO#Product"/>
-        <rdfs:label xml:lang="en">Product Element</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/LCMO#ConstructionProcessProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/LCMO#ConstructionProcessPropertyGroup"/>
     </owl:Class>
     
 
 
-    <!-- http://example.org/LCMO#Property -->
+    <!-- https://w3id.org/LCMO#ConstructionProcessPropertyGroup -->
 
 
-    <owl:Class rdf:about="http://example.org/LCMO#Property">
-        <rdfs:label xml:lang="en">Property</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/LCMO#ConstructionProcessPropertyGroup">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
     
 
 
-    <!-- http://example.org/LCMO#PropertyGroup -->
+    <!-- https://w3id.org/LCMO#DataManagementActivity -->
 
 
-    <owl:Class rdf:about="http://example.org/LCMO#PropertyGroup">
-        <rdfs:label xml:lang="en">Property Group</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/LCMO#DataManagementActivity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
     
 
 
-    <!-- http://example.org/LCMO#Resource -->
+    <!-- https://w3id.org/LCMO#LifeCycleModule -->
 
 
-    <owl:Class rdf:about="http://example.org/LCMO#Resource">
-        <rdfs:label xml:lang="en">Resource</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/LCMO#LifeCycleModule">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/bot#Element -->
+    <!-- https://w3id.org/LCMO#ObjectConnectionType -->
 
 
-    <owl:Class rdf:about="https://w3id.org/bot#Element">
-        <rdfs:subClassOf rdf:resource="http://example.org/LCMO#ProductElement"/>
+    <owl:Class rdf:about="https://w3id.org/LCMO#ObjectConnectionType">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/LCMO#ObjectType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCMO#ObjectType">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/LCMO#ProcessResource -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCMO#ProcessResource">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/LCMO#Project -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCMO#Project">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/LCMO#ProjectActivity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCMO#ProjectActivity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/LCMO#ProjectMetaData -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCMO#ProjectMetaData">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/LCMO#Project"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/LCMO#ResourceType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCMO#ResourceType">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/LCMO#TypeSpecification -->
+
+
+    <owl:Class rdf:about="https://w3id.org/LCMO#TypeSpecification">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
 </rdf:RDF>
 

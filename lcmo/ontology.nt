@@ -1,4 +1,83 @@
-<http://example.org/LCMO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/LCMO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/LCMO> <http://purl.org/dc/elements/1.1/contributor> _:genid1 .
+_:genid1 <https://schema.org/name> "Dr. Philipp Hagedorn" .
+_:genid1 <https://schema.org/memberOf> _:genid2 .
+_:genid2 <https://schema.org/name> "Ruhr University Bochum, DE" .
+_:genid2 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en> .
+_:genid1 <https://schema.org/identifier> <https://orcid.org/0000-0002-6249-243X> .
+_:genid1 <https://schema.org/email> <mailto:philipp.hagedorn-n6v@rub.de> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+<https://schema.org/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCMO> <http://purl.org/dc/elements/1.1/created> "2025-12-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/LCMO> <http://purl.org/dc/elements/1.1/creator> _:genid3 .
+_:genid3 <https://schema.org/name> "Jonas Maibaum" .
+_:genid3 <https://schema.org/memberOf> _:genid4 .
+_:genid4 <https://schema.org/name> "Ruhr University Bochum, DE" .
+_:genid4 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/jonas_maibaum.html.en> .
+_:genid3 <https://schema.org/identifier> <https://orcid.org/0000-0001-5010-7904> .
+_:genid3 <https://schema.org/email> <mailto:jonas.maibaum@rub.de> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+<https://w3id.org/LCMO> <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/LCMO> <http://purl.org/dc/elements/1.1/source> "https://github.com/RUB-Informatik-im-Bauwesen/crc1683-ontologies/tree/main/lcmo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/LCMO> <http://purl.org/vocab/vann/preferredNamespacePrefix> "lcmo" .
+<https://w3id.org/LCMO> <http://www.w3.org/2000/01/rdf-schema#comment> "TODO: write description"@en .
+<https://w3id.org/LCMO> <http://www.w3.org/2000/01/rdf-schema#label> "LCMO Ontology" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/created
+<http://purl.org/dc/elements/1.1/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/email
+<https://schema.org/email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/identifier
+<https://schema.org/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/memberOf
+<https://schema.org/memberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/name
+<https://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/LCMO#hasValue
+<https://w3id.org/LCMO#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/LCMO#hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ConstructionObjectProperty> .
+<https://w3id.org/LCMO#hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ConstructionProcessProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
 # 
 # 
 # #################################################################
@@ -8,73 +87,144 @@
 # #################################################################
 # 
 # 
-# http://example.org/LCMO#hasDataObject
-<http://example.org/LCMO#hasDataObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://example.org/LCMO#hasDataObject> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
-_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://example.org/LCMO#Resource> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://example.org/LCMO#ProductElement> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://example.org/LCMO#Product> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://example.org/LCMO#Process> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://example.org/LCMO#hasDataObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/LCMO#DataObject> .
-<http://example.org/LCMO#hasDataObject> <http://www.w3.org/2000/01/rdf-schema#label> "has data object"@en .
+# https://w3id.org/LCMO#addressesConstructionObject
+<https://w3id.org/LCMO#addressesConstructionObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCMO#addressesConstructionObject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#LifeCycleModule> .
+<https://w3id.org/LCMO#addressesConstructionObject> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCMO#ConstructionObject> .
 # 
-# http://example.org/LCMO#hasLifeCycleStage
-<http://example.org/LCMO#hasLifeCycleStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://example.org/LCMO#hasLifeCycleStage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/LCMO#Activity> .
-<http://example.org/LCMO#hasLifeCycleStage> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/LCMO#LifeCycleStage> .
-<http://example.org/LCMO#hasLifeCycleStage> <http://www.w3.org/2000/01/rdf-schema#label> "has life cycle stage"@en .
+# https://w3id.org/LCMO#addressesConstructionProcess
+<https://w3id.org/LCMO#addressesConstructionProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCMO#addressesConstructionProcess> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ConstructionProcess> .
+<https://w3id.org/LCMO#addressesConstructionProcess> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCMO#LifeCycleModule> .
 # 
-# http://example.org/LCMO#hasParameter
-<http://example.org/LCMO#hasParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://example.org/LCMO#hasParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/LCMO#ParameterGroup> .
-<http://example.org/LCMO#hasParameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/LCMO#Parameter> .
-<http://example.org/LCMO#hasParameter> <http://www.w3.org/2000/01/rdf-schema#label> "has parameter"@en .
+# https://w3id.org/LCMO#belongsToLifeCycleModule
+<https://w3id.org/LCMO#belongsToLifeCycleModule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCMO#belongsToLifeCycleModule> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ConstructionProcess> .
+<https://w3id.org/LCMO#belongsToLifeCycleModule> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCMO#LifeCycleModule> .
 # 
-# http://example.org/LCMO#hasParameterGroup
-<http://example.org/LCMO#hasParameterGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://example.org/LCMO#hasParameterGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/LCMO#ProductElement> .
-<http://example.org/LCMO#hasParameterGroup> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/LCMO#ParameterGroup> .
-<http://example.org/LCMO#hasParameterGroup> <http://www.w3.org/2000/01/rdf-schema#label> "has parameter group"@en .
+# https://w3id.org/LCMO#concernsLifeCycleModule
+<https://w3id.org/LCMO#concernsLifeCycleModule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCMO#concernsLifeCycleModule> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#DataManagementActivity> .
+<https://w3id.org/LCMO#concernsLifeCycleModule> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCMO#LifeCycleModule> .
 # 
-# http://example.org/LCMO#hasProcess
-<http://example.org/LCMO#hasProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://example.org/LCMO#hasProcess> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/LCMO#LifeCycleStage> .
-<http://example.org/LCMO#hasProcess> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/LCMO#Process> .
-<http://example.org/LCMO#hasProcess> <http://www.w3.org/2000/01/rdf-schema#label> "has process"@en .
+# https://w3id.org/LCMO#hasConstructionObjectDataObject
+<https://w3id.org/LCMO#hasConstructionObjectDataObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCMO#hasConstructionObjectDataObject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ConstructionObject> .
+<https://w3id.org/LCMO#hasConstructionObjectDataObject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ObjectType> .
+<https://w3id.org/LCMO#hasConstructionObjectDataObject> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCMO#ConstructionObjectDataObject> .
 # 
-# http://example.org/LCMO#hasProductElement
-<http://example.org/LCMO#hasProductElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://example.org/LCMO#hasProductElement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/LCMO#LifeCycleStage> .
-<http://example.org/LCMO#hasProductElement> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/LCMO#ProductElement> .
-<http://example.org/LCMO#hasProductElement> <http://www.w3.org/2000/01/rdf-schema#label> "has product element"@en .
+# https://w3id.org/LCMO#hasConstructionObjectProperty
+<https://w3id.org/LCMO#hasConstructionObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCMO#hasConstructionObjectProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ConstructionObject> .
+<https://w3id.org/LCMO#hasConstructionObjectProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ConstructionObjectPropertyGroup> .
+<https://w3id.org/LCMO#hasConstructionObjectProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ObjectType> .
+<https://w3id.org/LCMO#hasConstructionObjectProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#TypeSpecification> .
+<https://w3id.org/LCMO#hasConstructionObjectProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCMO#ConstructionObjectProperty> .
 # 
-# http://example.org/LCMO#hasProperty
-<http://example.org/LCMO#hasProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://example.org/LCMO#hasProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/LCMO#PropertyGroup> .
-<http://example.org/LCMO#hasProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/LCMO#Property> .
-<http://example.org/LCMO#hasProperty> <http://www.w3.org/2000/01/rdf-schema#label> "has property"@en .
+# https://w3id.org/LCMO#hasConstructionObjectPropertyGroup
+<https://w3id.org/LCMO#hasConstructionObjectPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCMO#hasConstructionObjectPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ConstructionObject> .
+<https://w3id.org/LCMO#hasConstructionObjectPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ObjectType> .
+<https://w3id.org/LCMO#hasConstructionObjectPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#TypeSpecification> .
+<https://w3id.org/LCMO#hasConstructionObjectPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCMO#ConstructionObjectPropertyGroup> .
 # 
-# http://example.org/LCMO#hasPropertyGroup
-<http://example.org/LCMO#hasPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://example.org/LCMO#hasPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/LCMO#Resource> .
-<http://example.org/LCMO#hasPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/LCMO#PropertyGroup> .
-<http://example.org/LCMO#hasPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "has property group"@en .
+# https://w3id.org/LCMO#hasConstructionProcessDataObject
+<https://w3id.org/LCMO#hasConstructionProcessDataObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCMO#hasConstructionProcessDataObject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ConstructionProcess> .
+<https://w3id.org/LCMO#hasConstructionProcessDataObject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ProcessResource> .
+<https://w3id.org/LCMO#hasConstructionProcessDataObject> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCMO#ConstructionProcessDataObject> .
 # 
-# http://example.org/LCMO#hasResource
-<http://example.org/LCMO#hasResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://example.org/LCMO#hasResource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/LCMO#Process> .
-<http://example.org/LCMO#hasResource> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/LCMO#Resource> .
-<http://example.org/LCMO#hasResource> <http://www.w3.org/2000/01/rdf-schema#label> "has resource"@en .
+# https://w3id.org/LCMO#hasConstructionProcessProperty
+<https://w3id.org/LCMO#hasConstructionProcessProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCMO#hasConstructionProcessProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ConstructionProcess> .
+<https://w3id.org/LCMO#hasConstructionProcessProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ConstructionProcessPropertyGroup> .
+<https://w3id.org/LCMO#hasConstructionProcessProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ProcessResource> .
+<https://w3id.org/LCMO#hasConstructionProcessProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ResourceType> .
+<https://w3id.org/LCMO#hasConstructionProcessProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCMO#ConstructionProcessProperty> .
+# 
+# https://w3id.org/LCMO#hasConstructionProcessPropertyGroup
+<https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ConstructionProcess> .
+<https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ProcessResource> .
+<https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ResourceType> .
+<https://w3id.org/LCMO#hasConstructionProcessPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCMO#ConstructionProcessPropertyGroup> .
+# 
+# https://w3id.org/LCMO#hasObjectConnectionType
+<https://w3id.org/LCMO#hasObjectConnectionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCMO#hasObjectConnectionType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ConstructionObject> .
+<https://w3id.org/LCMO#hasObjectConnectionType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ObjectType> .
+<https://w3id.org/LCMO#hasObjectConnectionType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCMO#ObjectConnectionType> .
+# 
+# https://w3id.org/LCMO#hasObjectType
+<https://w3id.org/LCMO#hasObjectType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCMO#hasObjectType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ConstructionObject> .
+<https://w3id.org/LCMO#hasObjectType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCMO#ObjectType> .
+# 
+# https://w3id.org/LCMO#hasPreviousConstructionProcess
+<https://w3id.org/LCMO#hasPreviousConstructionProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCMO#hasPreviousConstructionProcess> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ConstructionProcess> .
+<https://w3id.org/LCMO#hasPreviousConstructionProcess> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCMO#ConstructionProcess> .
+# 
+# https://w3id.org/LCMO#hasProcessResource
+<https://w3id.org/LCMO#hasProcessResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCMO#hasProcessResource> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ConstructionProcess> .
+<https://w3id.org/LCMO#hasProcessResource> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCMO#ProcessResource> .
+# 
+# https://w3id.org/LCMO#hasProjectActivity
+<https://w3id.org/LCMO#hasProjectActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCMO#hasProjectActivity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#Project> .
+<https://w3id.org/LCMO#hasProjectActivity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCMO#ProjectActivity> .
+# 
+# https://w3id.org/LCMO#hasResourceType
+<https://w3id.org/LCMO#hasResourceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCMO#hasResourceType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ProcessResource> .
+<https://w3id.org/LCMO#hasResourceType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCMO#ResourceType> .
+# 
+# https://w3id.org/LCMO#hasSubsequentConstructionProcess
+<https://w3id.org/LCMO#hasSubsequentConstructionProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCMO#hasSubsequentConstructionProcess> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ConstructionProcess> .
+<https://w3id.org/LCMO#hasSubsequentConstructionProcess> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCMO#ConstructionProcess> .
+# 
+# https://w3id.org/LCMO#hasTypeSpecification
+<https://w3id.org/LCMO#hasTypeSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCMO#hasTypeSpecification> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ObjectType> .
+<https://w3id.org/LCMO#hasTypeSpecification> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCMO#TypeSpecification> .
+# 
+# https://w3id.org/LCMO#isLinkedToConstructionProcedure
+<https://w3id.org/LCMO#isLinkedToConstructionProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCMO#isLinkedToConstructionProcedure> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ConstructionObject> .
+<https://w3id.org/LCMO#isLinkedToConstructionProcedure> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ConstructionProcess> .
+<https://w3id.org/LCMO#isLinkedToConstructionProcedure> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCMO#ConstructionProcedure> .
+# 
+# https://w3id.org/LCMO#isLinkedToConstructionProduct
+<https://w3id.org/LCMO#isLinkedToConstructionProduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCMO#isLinkedToConstructionProduct> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ConstructionProcess> .
+<https://w3id.org/LCMO#isLinkedToConstructionProduct> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCMO#ConstructionObject> .
+# 
+# https://w3id.org/LCMO#needsConstructionProcedure
+<https://w3id.org/LCMO#needsConstructionProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/LCMO#needsConstructionProcedure> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ConstructionProcess> .
+<https://w3id.org/LCMO#needsConstructionProcedure> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ObjectConnectionType> .
+<https://w3id.org/LCMO#needsConstructionProcedure> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/LCMO#ConstructionProcedure> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/LCMO#hasName
+<https://w3id.org/LCMO#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/LCMO#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/LCMO#hasUnit
+<https://w3id.org/LCMO#hasUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/LCMO#hasUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ConstructionObjectProperty> .
+<https://w3id.org/LCMO#hasUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/LCMO#ConstructionProcessProperty> .
+<https://w3id.org/LCMO#hasUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 # 
 # 
 # 
@@ -85,53 +235,82 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # #################################################################
 # 
 # 
-# http://example.org/LCMO#Activity
-<http://example.org/LCMO#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://example.org/LCMO#Activity> <http://www.w3.org/2000/01/rdf-schema#label> "Activity"@en .
+# https://schema.org/Person
 # 
-# http://example.org/LCMO#DataObject
-<http://example.org/LCMO#DataObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://example.org/LCMO#DataObject> <http://www.w3.org/2000/01/rdf-schema#label> "Data Object"@en .
+# https://w3id.org/LCMO#ConstructionObject
+<https://w3id.org/LCMO#ConstructionObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCMO#ConstructionObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 # 
-# http://example.org/LCMO#LifeCycleStage
-<http://example.org/LCMO#LifeCycleStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://example.org/LCMO#LifeCycleStage> <http://www.w3.org/2000/01/rdf-schema#label> "Life Cycle Stage"@en .
+# https://w3id.org/LCMO#ConstructionObjectDataObject
+<https://w3id.org/LCMO#ConstructionObjectDataObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCMO#ConstructionObjectDataObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 # 
-# http://example.org/LCMO#Parameter
-<http://example.org/LCMO#Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://example.org/LCMO#Parameter> <http://www.w3.org/2000/01/rdf-schema#label> "Parameter"@en .
+# https://w3id.org/LCMO#ConstructionObjectProperty
+<https://w3id.org/LCMO#ConstructionObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCMO#ConstructionObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionObjectPropertyGroup> .
 # 
-# http://example.org/LCMO#ParameterGroup
-<http://example.org/LCMO#ParameterGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://example.org/LCMO#ParameterGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Parameter Group"@en .
+# https://w3id.org/LCMO#ConstructionObjectPropertyGroup
+<https://w3id.org/LCMO#ConstructionObjectPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCMO#ConstructionObjectPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 # 
-# http://example.org/LCMO#Process
-<http://example.org/LCMO#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://example.org/LCMO#Process> <http://www.w3.org/2000/01/rdf-schema#label> "Process"@en .
+# https://w3id.org/LCMO#ConstructionProcedure
+<https://w3id.org/LCMO#ConstructionProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCMO#ConstructionProcedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 # 
-# http://example.org/LCMO#Product
-<http://example.org/LCMO#Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://example.org/LCMO#Product> <http://www.w3.org/2000/01/rdf-schema#label> "Product"@en .
+# https://w3id.org/LCMO#ConstructionProcess
+<https://w3id.org/LCMO#ConstructionProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCMO#ConstructionProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 # 
-# http://example.org/LCMO#ProductElement
-<http://example.org/LCMO#ProductElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://example.org/LCMO#ProductElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/LCMO#Product> .
-<http://example.org/LCMO#ProductElement> <http://www.w3.org/2000/01/rdf-schema#label> "Product Element"@en .
+# https://w3id.org/LCMO#ConstructionProcessDataObject
+<https://w3id.org/LCMO#ConstructionProcessDataObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCMO#ConstructionProcessDataObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 # 
-# http://example.org/LCMO#Property
-<http://example.org/LCMO#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://example.org/LCMO#Property> <http://www.w3.org/2000/01/rdf-schema#label> "Property"@en .
+# https://w3id.org/LCMO#ConstructionProcessProperty
+<https://w3id.org/LCMO#ConstructionProcessProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCMO#ConstructionProcessProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#ConstructionProcessPropertyGroup> .
 # 
-# http://example.org/LCMO#PropertyGroup
-<http://example.org/LCMO#PropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://example.org/LCMO#PropertyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Property Group"@en .
+# https://w3id.org/LCMO#ConstructionProcessPropertyGroup
+<https://w3id.org/LCMO#ConstructionProcessPropertyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCMO#ConstructionProcessPropertyGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 # 
-# http://example.org/LCMO#Resource
-<http://example.org/LCMO#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://example.org/LCMO#Resource> <http://www.w3.org/2000/01/rdf-schema#label> "Resource"@en .
+# https://w3id.org/LCMO#DataManagementActivity
+<https://w3id.org/LCMO#DataManagementActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCMO#DataManagementActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 # 
-# https://w3id.org/bot#Element
-<https://w3id.org/bot#Element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/bot#Element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/LCMO#ProductElement> .
+# https://w3id.org/LCMO#LifeCycleModule
+<https://w3id.org/LCMO#LifeCycleModule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCMO#LifeCycleModule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/LCMO#ObjectConnectionType
+<https://w3id.org/LCMO#ObjectConnectionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCMO#ObjectConnectionType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/LCMO#ObjectType
+<https://w3id.org/LCMO#ObjectType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCMO#ObjectType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/LCMO#ProcessResource
+<https://w3id.org/LCMO#ProcessResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCMO#ProcessResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/LCMO#Project
+<https://w3id.org/LCMO#Project> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCMO#Project> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/LCMO#ProjectActivity
+<https://w3id.org/LCMO#ProjectActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCMO#ProjectActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/LCMO#ProjectMetaData
+<https://w3id.org/LCMO#ProjectMetaData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCMO#ProjectMetaData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/LCMO#Project> .
+# 
+# https://w3id.org/LCMO#ResourceType
+<https://w3id.org/LCMO#ResourceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCMO#ResourceType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/LCMO#TypeSpecification
+<https://w3id.org/LCMO#TypeSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/LCMO#TypeSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,149 +1,359 @@
-@prefix : <http://example.org/LCMO#> .
+@prefix : <https://w3id.org/LCMO#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://example.org/LCMO#> .
+@base <https://w3id.org/LCMO#> .
 
-<http://example.org/LCMO> rdf:type owl:Ontology .
+<https://w3id.org/LCMO> rdf:type owl:Ontology ;
+                         <http://purl.org/dc/elements/1.1/contributor> _:genid1 ;
+                         <http://purl.org/dc/elements/1.1/created> "2025-12-10"^^xsd:date ;
+                         <http://purl.org/dc/elements/1.1/creator> _:genid3 ;
+                         <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                         <http://purl.org/dc/elements/1.1/source> "https://github.com/RUB-Informatik-im-Bauwesen/crc1683-ontologies/tree/main/lcmo"^^xsd:anyURI ;
+                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "lcmo" ;
+                         rdfs:comment "TODO: write description"@en ;
+                         rdfs:label "LCMO Ontology" .
+
+_:genid1 rdf:type <https://schema.org/Person> ;
+          <https://schema.org/email> <mailto:philipp.hagedorn-n6v@rub.de> ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0002-6249-243X> ;
+          <https://schema.org/memberOf> _:genid2 ;
+          <https://schema.org/name> "Dr. Philipp Hagedorn" .
+
+_:genid3 rdf:type <https://schema.org/Person> ;
+          <https://schema.org/email> <mailto:jonas.maibaum@rub.de> ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0001-5010-7904> ;
+          <https://schema.org/memberOf> _:genid4 ;
+          <https://schema.org/name> "Jonas Maibaum" .
+
+_:genid2 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en> ;
+          <https://schema.org/name> "Ruhr University Bochum, DE" .
+
+_:genid4 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/jonas_maibaum.html.en> ;
+          <https://schema.org/name> "Ruhr University Bochum, DE" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/created
+<http://purl.org/dc/elements/1.1/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/email
+<https://schema.org/email> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/identifier
+<https://schema.org/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/memberOf
+<https://schema.org/memberOf> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/name
+<https://schema.org/name> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/LCMO#hasValue
+:hasValue rdf:type owl:AnnotationProperty ;
+          rdfs:domain :ConstructionObjectProperty ,
+                      :ConstructionProcessProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://example.org/LCMO#hasDataObject
-:hasDataObject rdf:type owl:ObjectProperty ;
-               rdfs:domain [ rdf:type owl:Class ;
-                             owl:unionOf ( :Process
-                                           :Product
-                                           :ProductElement
-                                           :Resource
-                                         )
-                           ] ;
-               rdfs:range :DataObject ;
-               rdfs:label "has data object"@en .
+###  https://w3id.org/LCMO#addressesConstructionObject
+:addressesConstructionObject rdf:type owl:ObjectProperty ;
+                             rdfs:domain :LifeCycleModule ;
+                             rdfs:range :ConstructionObject .
 
 
-###  http://example.org/LCMO#hasLifeCycleStage
-:hasLifeCycleStage rdf:type owl:ObjectProperty ;
-                   rdfs:domain :Activity ;
-                   rdfs:range :LifeCycleStage ;
-                   rdfs:label "has life cycle stage"@en .
+###  https://w3id.org/LCMO#addressesConstructionProcess
+:addressesConstructionProcess rdf:type owl:ObjectProperty ;
+                              rdfs:domain :ConstructionProcess ;
+                              rdfs:range :LifeCycleModule .
 
 
-###  http://example.org/LCMO#hasParameter
-:hasParameter rdf:type owl:ObjectProperty ;
-              rdfs:domain :ParameterGroup ;
-              rdfs:range :Parameter ;
-              rdfs:label "has parameter"@en .
+###  https://w3id.org/LCMO#belongsToLifeCycleModule
+:belongsToLifeCycleModule rdf:type owl:ObjectProperty ;
+                          rdfs:domain :ConstructionProcess ;
+                          rdfs:range :LifeCycleModule .
 
 
-###  http://example.org/LCMO#hasParameterGroup
-:hasParameterGroup rdf:type owl:ObjectProperty ;
-                   rdfs:domain :ProductElement ;
-                   rdfs:range :ParameterGroup ;
-                   rdfs:label "has parameter group"@en .
+###  https://w3id.org/LCMO#concernsLifeCycleModule
+:concernsLifeCycleModule rdf:type owl:ObjectProperty ;
+                         rdfs:domain :DataManagementActivity ;
+                         rdfs:range :LifeCycleModule .
 
 
-###  http://example.org/LCMO#hasProcess
-:hasProcess rdf:type owl:ObjectProperty ;
-            rdfs:domain :LifeCycleStage ;
-            rdfs:range :Process ;
-            rdfs:label "has process"@en .
+###  https://w3id.org/LCMO#hasConstructionObjectDataObject
+:hasConstructionObjectDataObject rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :ConstructionObject ,
+                                             :ObjectType ;
+                                 rdfs:range :ConstructionObjectDataObject .
 
 
-###  http://example.org/LCMO#hasProductElement
-:hasProductElement rdf:type owl:ObjectProperty ;
-                   rdfs:domain :LifeCycleStage ;
-                   rdfs:range :ProductElement ;
-                   rdfs:label "has product element"@en .
+###  https://w3id.org/LCMO#hasConstructionObjectProperty
+:hasConstructionObjectProperty rdf:type owl:ObjectProperty ;
+                               rdfs:domain :ConstructionObject ,
+                                           :ConstructionObjectPropertyGroup ,
+                                           :ObjectType ,
+                                           :TypeSpecification ;
+                               rdfs:range :ConstructionObjectProperty .
 
 
-###  http://example.org/LCMO#hasProperty
-:hasProperty rdf:type owl:ObjectProperty ;
-             rdfs:domain :PropertyGroup ;
-             rdfs:range :Property ;
-             rdfs:label "has property"@en .
+###  https://w3id.org/LCMO#hasConstructionObjectPropertyGroup
+:hasConstructionObjectPropertyGroup rdf:type owl:ObjectProperty ;
+                                    rdfs:domain :ConstructionObject ,
+                                                :ObjectType ,
+                                                :TypeSpecification ;
+                                    rdfs:range :ConstructionObjectPropertyGroup .
 
 
-###  http://example.org/LCMO#hasPropertyGroup
-:hasPropertyGroup rdf:type owl:ObjectProperty ;
-                  rdfs:domain :Resource ;
-                  rdfs:range :PropertyGroup ;
-                  rdfs:label "has property group"@en .
+###  https://w3id.org/LCMO#hasConstructionProcessDataObject
+:hasConstructionProcessDataObject rdf:type owl:ObjectProperty ;
+                                  rdfs:domain :ConstructionProcess ,
+                                              :ProcessResource ;
+                                  rdfs:range :ConstructionProcessDataObject .
 
 
-###  http://example.org/LCMO#hasResource
-:hasResource rdf:type owl:ObjectProperty ;
-             rdfs:domain :Process ;
-             rdfs:range :Resource ;
-             rdfs:label "has resource"@en .
+###  https://w3id.org/LCMO#hasConstructionProcessProperty
+:hasConstructionProcessProperty rdf:type owl:ObjectProperty ;
+                                rdfs:domain :ConstructionProcess ,
+                                            :ConstructionProcessPropertyGroup ,
+                                            :ProcessResource ,
+                                            :ResourceType ;
+                                rdfs:range :ConstructionProcessProperty .
+
+
+###  https://w3id.org/LCMO#hasConstructionProcessPropertyGroup
+:hasConstructionProcessPropertyGroup rdf:type owl:ObjectProperty ;
+                                     rdfs:domain :ConstructionProcess ,
+                                                 :ProcessResource ,
+                                                 :ResourceType ;
+                                     rdfs:range :ConstructionProcessPropertyGroup .
+
+
+###  https://w3id.org/LCMO#hasObjectConnectionType
+:hasObjectConnectionType rdf:type owl:ObjectProperty ;
+                         rdfs:domain :ConstructionObject ,
+                                     :ObjectType ;
+                         rdfs:range :ObjectConnectionType .
+
+
+###  https://w3id.org/LCMO#hasObjectType
+:hasObjectType rdf:type owl:ObjectProperty ;
+               rdfs:domain :ConstructionObject ;
+               rdfs:range :ObjectType .
+
+
+###  https://w3id.org/LCMO#hasPreviousConstructionProcess
+:hasPreviousConstructionProcess rdf:type owl:ObjectProperty ;
+                                rdfs:domain :ConstructionProcess ;
+                                rdfs:range :ConstructionProcess .
+
+
+###  https://w3id.org/LCMO#hasProcessResource
+:hasProcessResource rdf:type owl:ObjectProperty ;
+                    rdfs:domain :ConstructionProcess ;
+                    rdfs:range :ProcessResource .
+
+
+###  https://w3id.org/LCMO#hasProjectActivity
+:hasProjectActivity rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Project ;
+                    rdfs:range :ProjectActivity .
+
+
+###  https://w3id.org/LCMO#hasResourceType
+:hasResourceType rdf:type owl:ObjectProperty ;
+                 rdfs:domain :ProcessResource ;
+                 rdfs:range :ResourceType .
+
+
+###  https://w3id.org/LCMO#hasSubsequentConstructionProcess
+:hasSubsequentConstructionProcess rdf:type owl:ObjectProperty ;
+                                  rdfs:domain :ConstructionProcess ;
+                                  rdfs:range :ConstructionProcess .
+
+
+###  https://w3id.org/LCMO#hasTypeSpecification
+:hasTypeSpecification rdf:type owl:ObjectProperty ;
+                      rdfs:domain :ObjectType ;
+                      rdfs:range :TypeSpecification .
+
+
+###  https://w3id.org/LCMO#isLinkedToConstructionProcedure
+:isLinkedToConstructionProcedure rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :ConstructionObject ,
+                                             :ConstructionProcess ;
+                                 rdfs:range :ConstructionProcedure .
+
+
+###  https://w3id.org/LCMO#isLinkedToConstructionProduct
+:isLinkedToConstructionProduct rdf:type owl:ObjectProperty ;
+                               rdfs:domain :ConstructionProcess ;
+                               rdfs:range :ConstructionObject .
+
+
+###  https://w3id.org/LCMO#needsConstructionProcedure
+:needsConstructionProcedure rdf:type owl:ObjectProperty ;
+                            rdfs:domain :ConstructionProcess ,
+                                        :ObjectConnectionType ;
+                            rdfs:range :ConstructionProcedure .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/LCMO#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:range xsd:string .
+
+
+###  https://w3id.org/LCMO#hasUnit
+:hasUnit rdf:type owl:DatatypeProperty ;
+         rdfs:domain :ConstructionObjectProperty ,
+                     :ConstructionProcessProperty ;
+         rdfs:range xsd:string .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://example.org/LCMO#Activity
-:Activity rdf:type owl:Class ;
-          rdfs:label "Activity"@en .
+###  https://schema.org/Person
+<https://schema.org/Person> rdf:type owl:Class .
 
 
-###  http://example.org/LCMO#DataObject
-:DataObject rdf:type owl:Class ;
-            rdfs:label "Data Object"@en .
+###  https://w3id.org/LCMO#ConstructionObject
+:ConstructionObject rdf:type owl:Class ;
+                    rdfs:subClassOf owl:Thing .
 
 
-###  http://example.org/LCMO#LifeCycleStage
-:LifeCycleStage rdf:type owl:Class ;
-                rdfs:label "Life Cycle Stage"@en .
+###  https://w3id.org/LCMO#ConstructionObjectDataObject
+:ConstructionObjectDataObject rdf:type owl:Class ;
+                              rdfs:subClassOf owl:Thing .
 
 
-###  http://example.org/LCMO#Parameter
-:Parameter rdf:type owl:Class ;
-           rdfs:label "Parameter"@en .
+###  https://w3id.org/LCMO#ConstructionObjectProperty
+:ConstructionObjectProperty rdf:type owl:Class ;
+                            rdfs:subClassOf :ConstructionObjectPropertyGroup .
 
 
-###  http://example.org/LCMO#ParameterGroup
-:ParameterGroup rdf:type owl:Class ;
-                rdfs:label "Parameter Group"@en .
+###  https://w3id.org/LCMO#ConstructionObjectPropertyGroup
+:ConstructionObjectPropertyGroup rdf:type owl:Class ;
+                                 rdfs:subClassOf owl:Thing .
 
 
-###  http://example.org/LCMO#Process
-:Process rdf:type owl:Class ;
-         rdfs:label "Process"@en .
+###  https://w3id.org/LCMO#ConstructionProcedure
+:ConstructionProcedure rdf:type owl:Class ;
+                       rdfs:subClassOf owl:Thing .
 
 
-###  http://example.org/LCMO#Product
-:Product rdf:type owl:Class ;
-         rdfs:label "Product"@en .
+###  https://w3id.org/LCMO#ConstructionProcess
+:ConstructionProcess rdf:type owl:Class ;
+                     rdfs:subClassOf owl:Thing .
 
 
-###  http://example.org/LCMO#ProductElement
-:ProductElement rdf:type owl:Class ;
-                rdfs:subClassOf :Product ;
-                rdfs:label "Product Element"@en .
+###  https://w3id.org/LCMO#ConstructionProcessDataObject
+:ConstructionProcessDataObject rdf:type owl:Class ;
+                               rdfs:subClassOf owl:Thing .
 
 
-###  http://example.org/LCMO#Property
-:Property rdf:type owl:Class ;
-          rdfs:label "Property"@en .
+###  https://w3id.org/LCMO#ConstructionProcessProperty
+:ConstructionProcessProperty rdf:type owl:Class ;
+                             rdfs:subClassOf :ConstructionProcessPropertyGroup .
 
 
-###  http://example.org/LCMO#PropertyGroup
-:PropertyGroup rdf:type owl:Class ;
-               rdfs:label "Property Group"@en .
+###  https://w3id.org/LCMO#ConstructionProcessPropertyGroup
+:ConstructionProcessPropertyGroup rdf:type owl:Class ;
+                                  rdfs:subClassOf owl:Thing .
 
 
-###  http://example.org/LCMO#Resource
-:Resource rdf:type owl:Class ;
-          rdfs:label "Resource"@en .
+###  https://w3id.org/LCMO#DataManagementActivity
+:DataManagementActivity rdf:type owl:Class ;
+                        rdfs:subClassOf owl:Thing .
 
 
-###  https://w3id.org/bot#Element
-<https://w3id.org/bot#Element> rdf:type owl:Class ;
-                               rdfs:subClassOf :ProductElement .
+###  https://w3id.org/LCMO#LifeCycleModule
+:LifeCycleModule rdf:type owl:Class ;
+                 rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/LCMO#ObjectConnectionType
+:ObjectConnectionType rdf:type owl:Class ;
+                      rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/LCMO#ObjectType
+:ObjectType rdf:type owl:Class ;
+            rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/LCMO#ProcessResource
+:ProcessResource rdf:type owl:Class ;
+                 rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/LCMO#Project
+:Project rdf:type owl:Class ;
+         rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/LCMO#ProjectActivity
+:ProjectActivity rdf:type owl:Class ;
+                 rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/LCMO#ProjectMetaData
+:ProjectMetaData rdf:type owl:Class ;
+                 rdfs:subClassOf :Project .
+
+
+###  https://w3id.org/LCMO#ResourceType
+:ResourceType rdf:type owl:Class ;
+              rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/LCMO#TypeSpecification
+:TypeSpecification rdf:type owl:Class ;
+                   rdfs:subClassOf owl:Thing .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
