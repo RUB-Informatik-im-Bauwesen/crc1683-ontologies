@@ -1,0 +1,45 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX LCMO: <http://example.org/LCMO#>
+PREFIX COPO: <https://w3id.org/COPO#>
+
+SELECT ?LCMO_Class (COUNT(DISTINCT ?copoClass) AS ?Number_of_COPO_Classes)
+WHERE {
+  {
+    ?copoClass rdfs:subClassOf+ LCMO:ConstructionObject .
+    FILTER(STRSTARTS(STR(?copoClass), STR(COPO:)))
+    BIND(LCMO:ConstructionObject AS ?LCMO_Class)
+  }
+  UNION
+  {
+    ?copoClass rdfs:subClassOf+ LCMO:ObjectType .
+    FILTER(STRSTARTS(STR(?copoClass), STR(COPO:)))
+    BIND(LCMO:ObjectType AS ?LCMO_Class)
+  }
+  UNION
+  {
+    ?copoClass rdfs:subClassOf+ LCMO:TypeSpecification .
+    FILTER(STRSTARTS(STR(?copoClass), STR(COPO:)))
+    BIND(LCMO:TypeSpecification AS ?LCMO_Class)
+  }
+  UNION
+  {
+    ?copoClass rdfs:subClassOf+ LCMO:ConstructionProcess .
+    FILTER(STRSTARTS(STR(?copoClass), STR(COPO:)))
+    BIND(LCMO:ConstructionProcess AS ?LCMO_Class)
+  }
+  UNION
+  {
+    ?copoClass rdfs:subClassOf+ LCMO:ProcessResource .
+    FILTER(STRSTARTS(STR(?copoClass), STR(COPO:)))
+    BIND(LCMO:ProcessResource AS ?LCMO_Class)
+  }
+  UNION
+  {
+    ?copoClass rdfs:subClassOf+ LCMO:ResourceType .
+    FILTER(STRSTARTS(STR(?copoClass), STR(COPO:)))
+    BIND(LCMO:ResourceType AS ?LCMO_Class)
+  }
+}
+GROUP BY ?LCMO_Class
+ORDER BY ?LCMO_Class

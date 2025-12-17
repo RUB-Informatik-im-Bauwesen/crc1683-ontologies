@@ -1,0 +1,20 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX LCMO: <http://example.org/LCMO#>
+PREFIX COPO: <https://w3id.org/COPO#>
+
+SELECT DISTINCT ?LCMO_Class ?COPO_Class
+WHERE {
+  {
+    ?COPO_Class rdfs:subClassOf+ LCMO:ConstructionObjectDataObject .
+    FILTER(STRSTARTS(STR(?COPO_Class), STR(COPO:)))
+    BIND(LCMO:ConstructionObjectDataObject AS ?LCMO_Class)
+  }
+  UNION
+  {
+    ?COPO_Class rdfs:subClassOf+ LCMO:ConstructionProcessDataObject .
+    FILTER(STRSTARTS(STR(?COPO_Class), STR(COPO:)))
+    BIND(LCMO:ConstructionProcessDataObject AS ?LCMO_Class)
+  }
+}
+ORDER BY ?LCMO_Class ?COPO_Class

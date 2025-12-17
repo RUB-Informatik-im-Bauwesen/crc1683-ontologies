@@ -1,0 +1,44 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX LCMO: <http://example.org/LCMO#>
+PREFIX COPO: <https://w3id.org/COPO#>
+
+SELECT DISTINCT
+  ?LCMO_DomainClass             
+  ?COPO_DomainClass              
+  ?LCMO_PropertyGroupClass       
+  ?COPO_PropertyGroupClass       
+WHERE {
+  {
+    ?obj rdf:type ?COPO_ObjectClass .
+    ?COPO_ObjectClass rdfs:subClassOf+ LCMO:ConstructionObject .
+    FILTER(STRSTARTS(STR(?COPO_ObjectClass), STR(COPO:)))
+
+    ?obj LCMO:hasConstructionObjectPropertyGroup ?pg .
+
+    ?pg rdf:type ?COPO_PropertyGroupClass .
+    ?COPO_PropertyGroupClass rdfs:subClassOf+ LCMO:ConstructionObjectPropertyGroup .
+    FILTER(STRSTARTS(STR(?COPO_PropertyGroupClass), STR(COPO:)))
+
+    BIND(LCMO:ConstructionObject AS ?LCMO_DomainClass)
+    BIND(?COPO_ObjectClass AS ?COPO_DomainClass)
+    BIND(LCMO:ConstructionObjectPropertyGroup AS ?LCMO_PropertyGroupClass)
+  }
+  UNION
+  {
+    ?obj rdf:type ?COPO_ObjectTypeClass .
+    ?COPO_ObjectTypeClass rdfs:subClassOf+ LCMO:ObjectType .
+    FILTER(STRSTARTS(STR(?COPO_ObjectTypeClass), STR(COPO:)))
+
+    ?obj LCMO:hasConstructionObjectPropertyGroup ?pg .
+
+    ?pg rdf:type ?COPO_PropertyGroupClass .
+    ?COPO_PropertyGroupClass rdfs:subClassOf+ LCMO:ConstructionObjectPropertyGroup .
+    FILTER(STRSTARTS(STR(?COPO_PropertyGroupClass), STR(COPO:)))
+
+    BIND(LCMO:ObjectType AS ?LCMO_DomainClass)
+    BIND(?COPO_ObjectTypeClass AS ?COPO_DomainClass)
+    BIND(LCMO:ConstructionObjectPropertyGroup AS ?LCMO_PropertyGroupClass)
+  }
+}
+ORDER BY ?LCMO_DomainClass ?COPO_DomainClass ?COPO_PropertyGroupClass

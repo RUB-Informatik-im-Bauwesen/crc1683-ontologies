@@ -1,0 +1,31 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+PREFIX LCMO: <http://example.org/LCMO#>
+PREFIX COPO: <https://w3id.org/COPO#>
+PREFIX LCAO: <https://w3id.org/LCAO#>
+
+SELECT DISTINCT
+  ?ConstructionObject          # COPO:Beam_1 / COPO:Slab_1
+  ?LCIAMethod                  # LCAO:LCIAMethod_...
+  ?LCIAMethodName              # e.g. "PEF 3.1 (Product Environmental Footprint)"
+  ?LCIAMethodComment           # rdfs:comment to LCIA method
+  ?LCIMethod                   # LCAO:LCIMethod_...
+  ?LCIMethodName               # e.g. "Allocation – mass"
+WHERE {
+  ?LCAStudy rdf:type LCAO:LCAStudy ;
+            LCAO:hasProcess ?Process ;
+            LCAO:hasLCAMetaData ?MetaData .
+
+  ?Process LCMO:isLinkedToConstructionProduct ?ConstructionObject .
+  FILTER(?ConstructionObject IN (COPO:Beam_1, COPO:Slab_1))
+
+  ?MetaData LCAO:hasLCIAMethod ?LCIAMethod .
+  OPTIONAL { ?LCIAMethod LCMO:hasName ?LCIAMethodName }
+  OPTIONAL { ?LCIAMethod rdfs:comment ?LCIAMethodComment }
+
+  ?MetaData LCAO:hasLCIMethod ?LCIMethod .
+  OPTIONAL { ?LCIMethod LCMO:hasName ?LCIMethodName }
+}
+ORDER BY ?ConstructionObject

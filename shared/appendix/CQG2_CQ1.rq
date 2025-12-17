@@ -1,0 +1,32 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX LCMO: <http://example.org/LCMO#>
+PREFIX COPO: <https://w3id.org/COPO#>
+
+SELECT DISTINCT
+  ?LifeCycleModuleClass      # z.B. COPO:C1_Deconstruction
+  ?LifeCycleModule           # z.B. COPO:C1_Deconstruction_1
+  ?ConstructionProcessClass  # z.B. COPO:Extraction
+  ?ConstructionProcess       # z.B. COPO:Extraction_Slab_1 / _Beam_1
+  ?ConstructionObject        # COPO:Slab_1 / COPO:Beam_1
+WHERE {
+  ?LifeCycleModule rdf:type ?LifeCycleModuleClass .
+  ?LifeCycleModuleClass rdfs:subClassOf+ LCMO:LifeCycleModule .
+  FILTER(?LifeCycleModuleClass = COPO:C1_Deconstruction)
+
+  ?LifeCycleModule LCMO:addressesConstructionProcess ?ConstructionProcess .
+  FILTER(STRSTARTS(STR(?ConstructionProcess), STR(COPO:)))
+
+  ?ConstructionProcess rdf:type ?ConstructionProcessClass .
+  ?ConstructionProcessClass rdfs:subClassOf+ LCMO:ConstructionProcess .
+  FILTER(?ConstructionProcessClass = COPO:Extraction)
+
+  ?ConstructionProcess LCMO:isLinkedToConstructionProduct ?ConstructionObject .
+  FILTER(?ConstructionObject IN (COPO:Slab_1, COPO:Beam_1))
+}
+ORDER BY
+  ?LifeCycleModuleClass
+  ?LifeCycleModule
+  ?ConstructionProcessClass
+  ?ConstructionProcess
+  ?ConstructionObject

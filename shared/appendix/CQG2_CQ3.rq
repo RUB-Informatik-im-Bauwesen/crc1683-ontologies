@@ -1,0 +1,60 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+PREFIX LCMO: <http://example.org/LCMO#>
+PREFIX COPO: <https://w3id.org/COPO#>
+
+SELECT
+  ?constructionObject
+  ?constructionObjectClass
+  (SUM(?massPart) AS ?mass_kg)
+WHERE {
+  ?constructionObject rdf:type ?constructionObjectClass .
+  ?constructionObjectClass rdfs:subClassOf+ LCMO:ConstructionObject .
+  FILTER(STRSTARTS(STR(?constructionObjectClass), STR(COPO:)))
+  FILTER(?constructionObject IN (COPO:Slab_1, COPO:Beam_1, COPO:Beam_2, COPO:Slab_2))
+
+  ?constructionObject LCMO:hasConstructionObjectPropertyGroup ?geomPg .
+  ?geomPg rdf:type COPO:Geometry .
+
+  ?geomPg LCMO:hasConstructionObjectProperty ?hProp .
+  ?hProp rdf:type COPO:Height ;
+         LCMO:hasValue ?hVal .
+
+  ?geomPg LCMO:hasConstructionObjectProperty ?wProp .
+  ?wProp rdf:type COPO:Width ;
+         LCMO:hasValue ?wVal .
+
+  ?geomPg LCMO:hasConstructionObjectProperty ?lProp .
+  ?lProp rdf:type COPO:Length ;
+         LCMO:hasValue ?lVal .
+
+  BIND(xsd:double(?hVal) * xsd:double(?wVal) * xsd:double(?lVal) AS ?volume_m3)
+
+  {
+    ?constructionObject LCMO:hasObjectType ?objectTypeInstance .
+    ?objectTypeInstance LCMO:hasConstructionObjectPropertyGroup ?matPg .
+  }
+  UNION
+  {
+    ?constructionObject LCMO:hasConstructionObjectPropertyGroup ?matPg .
+  }
+
+  ?matPg rdf:type COPO:Materiality .
+
+  ?matPg LCMO:hasConstructionObjectProperty ?densityProp .
+  ?densityProp rdf:type COPO:Density ;
+               LCMO:hasValue ?densityVal .
+
+  ?matPg LCMO:hasConstructionObjectProperty ?ratioProp .
+  ?ratioProp rdf:type COPO:Ratio ;
+             LCMO:hasValue ?ratioVal .
+
+  BIND(
+    xsd:double(?densityVal) * xsd:double(?ratioVal) * ?volume_m3
+    AS ?massPart
+  )
+}
+GROUP BY ?constructionObject ?constructionObjectClass
+ORDER BY DESC(?mass_kg)

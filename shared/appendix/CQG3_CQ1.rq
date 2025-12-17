@@ -1,0 +1,38 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+PREFIX LCMO: <http://example.org/LCMO#>
+PREFIX COPO: <https://w3id.org/COPO#>
+PREFIX LCAO: <https://w3id.org/LCAO#>
+
+SELECT DISTINCT
+  ?LifeCycleModule         # e.g. COPO:C2_Transport_1
+  ?ConstructionObject      # e.g. COPO:Beam_1 / COPO:Slab_1
+  ?Process                 # Transport Process
+  ?Indicator               # PENRT_... or PERT_...
+  ?IndicatorType           # PENRT or PERT
+  ?Value
+  ?Unit
+WHERE {
+  ?LifeCycleModule rdf:type COPO:C2_Transport .
+  ?LifeCycleModule LCMO:addressesConstructionProcess ?Process .
+
+  ?LCAStudy rdf:type LCAO:LCAStudy ;
+            LCAO:hasProcess ?Process .
+
+  ?Process rdf:type COPO:Transport .
+
+  ?Process LCMO:isLinkedToConstructionProduct ?ConstructionObject .
+
+  ?Process LCAO:hasEnvironmentalIndicator ?Indicator .
+  ?Indicator rdf:type LCAO:InventoryIndicator .
+
+  BIND(STRAFTER(STR(?Indicator), "#") AS ?_IndName)
+  BIND(STRBEFORE(?_IndName, "_") AS ?IndicatorType)
+  FILTER(?IndicatorType IN ("PENRT", "PERT"))
+
+  ?Indicator LCMO:hasValue ?Value .
+  OPTIONAL { ?Indicator LCMO:hasUnit ?Unit }
+}
+ORDER BY ?LifeCycleModule ?ConstructionObject ?IndicatorType ?Process

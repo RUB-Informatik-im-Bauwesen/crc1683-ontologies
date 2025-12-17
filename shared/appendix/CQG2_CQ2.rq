@@ -1,0 +1,44 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+PREFIX LCMO: <http://example.org/LCMO#>
+PREFIX COPO: <https://w3id.org/COPO#>
+
+SELECT
+  ?EnergyConsumptionPropertyGroupClass     # COPO:EnergyConsumptionRecorded / COPO:EnergyConsumptionLiterature
+  ?EnergyConsumptionPropertyGroup          # COPO:EnergyConsumptionRecorded/Literature_..._Beam_1/Slab_1
+  ?ConstructionObject                      # COPO:Beam_1 / COPO:Slab_1
+  (SUM(xsd:decimal(?Value)) AS ?Energy)
+  (SAMPLE(?Unit) AS ?Unit)
+WHERE {
+  ?EnergyConsumptionPropertyGroup rdf:type ?EnergyConsumptionPropertyGroupClass .
+  FILTER(?EnergyConsumptionPropertyGroupClass IN (COPO:EnergyConsumptionRecorded,
+                                                  COPO:EnergyConsumptionLiterature))
+    
+  ?ResourceType LCMO:hasConstructionProcessPropertyGroup ?EnergyConsumptionPropertyGroup .
+
+  ?ResourceType LCMO:hasConstructionProcessPropertyGroup ?EnergyConsumptionInstance .
+  ?EnergyConsumptionInstance rdf:type COPO:EnergyConsumption .
+  ?EnergyConsumptionInstance LCMO:hasValue ?Value .
+  OPTIONAL { ?EnergyConsumptionInstance LCMO:hasUnit ?Unit }
+
+  BIND(STRAFTER(STR(?EnergyConsumptionPropertyGroup), "#") AS ?GroupName)
+  BIND(STRAFTER(STR(?EnergyConsumptionInstance), "#") AS ?InstanceName)
+
+  BIND(
+    IF(CONTAINS(?GroupName, "Beam_1"), "Beam_1",
+       IF(CONTAINS(?GroupName, "Slab_1"), "Slab_1", "")
+    ) AS ?ElementName
+  )
+  FILTER(?ElementName != "")
+
+  FILTER(CONTAINS(?InstanceName, ?ElementName))
+
+  BIND(
+    IF(?ElementName = "Beam_1", COPO:Beam_1, COPO:Slab_1)
+    AS ?ConstructionObject
+  )
+}
+GROUP BY ?EnergyConsumptionPropertyGroupClass ?EnergyConsumptionPropertyGroup ?ConstructionObject
+ORDER BY ?EnergyConsumptionPropertyGroupClass ?ConstructionObject

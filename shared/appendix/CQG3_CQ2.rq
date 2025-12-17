@@ -1,0 +1,38 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+PREFIX LCMO: <http://example.org/LCMO#>
+PREFIX COPO: <https://w3id.org/COPO#>
+PREFIX LCAO: <https://w3id.org/LCAO#>
+
+SELECT
+  ?ConstructionObject                # COPO:Beam_1 / COPO:Slab_1
+  ?Source                            # "Literature" / "Recorded"
+  (SUM(xsd:decimal(?val)) AS ?GWP_sum)
+  (SAMPLE(?unit) AS ?Unit)          
+WHERE {
+  VALUES ?ConstructionObject { COPO:Beam_1 COPO:Slab_1 }
+
+  ?Process LCMO:isLinkedToConstructionProduct ?ConstructionObject .
+  ?Process rdf:type ?ProcessClass .
+  FILTER(?ProcessClass IN (COPO:Extraction, COPO:Transfer))
+
+  ?Process LCAO:hasEnvironmentalIndicator ?Indicator .
+  ?Indicator rdf:type LCAO:ImpactIndicator .
+
+  BIND(STRAFTER(STR(?Indicator), "#") AS ?indName)
+  FILTER(STRSTARTS(?indName, "GWP_"))
+
+  BIND(
+    IF(CONTAINS(?indName, "Literature"),
+       "Literature",
+       "Recorded"
+    ) AS ?Source
+  )
+
+  ?Indicator LCMO:hasValue ?val .
+  OPTIONAL { ?Indicator LCMO:hasUnit ?unit }
+}
+GROUP BY ?ConstructionObject ?Source
+ORDER BY ?ConstructionObject ?Source
