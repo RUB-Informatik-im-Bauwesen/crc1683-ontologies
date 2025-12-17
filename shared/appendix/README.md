@@ -12,5 +12,5 @@
   * [CQG3_CQ3](CQG3_CQ3.rq)
 
 * ABOX files generated for the case study
-  * [COPO KG](//copo/ontology.ttl)
+  * [COPO KG](../../copo/ontology.ttl)
 
