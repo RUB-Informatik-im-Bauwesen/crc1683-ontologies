@@ -1,0 +1,2123 @@
+@prefix : <https://w3id.org/cero#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/cero#> .
+
+<https://w3id.org/cero> rdf:type owl:Ontology ;
+                         owl:versionIRI <https://w3id.org/cero> ;
+                         <http://purl.org/dc/terms/created> "2026-01-01"^^xsd:date ;
+                         <http://purl.org/dc/terms/creator> _:genid1 ,
+                                                            _:genid3 ,
+                                                            _:genid5 ;
+                         <http://purl.org/dc/terms/issued> "2021-12-06"^^xsd:date ;
+                         <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                         <http://purl.org/dc/terms/modified> "2025-01-15"^^xsd:date ;
+                         <http://purl.org/dc/terms/publisher> _:genid7 ;
+                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "cero" ;
+                         <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
+                         rdfs:comment """
+To be defined...
+""" ;
+                         rdfs:label "Construction Element Reuse Ontology (CERO)" ;
+                         owl:versionInfo "0.1" ;
+                         <http://www.w3.org/2004/02/skos/core#historyNote> """
+v0.1: initial ontology
+  """ ;
+                         <https://schema.org/codeRepository> <https://github.com/RUB-Informatik-im-Bauwesen/crc1683-ontologies/tree/main/cero> .
+
+_:genid1 rdf:type <https://schema.org/Person> ;
+          <https://schema.org/email> <mailto:lukas.guntermann@rub.de> ;
+          <https://schema.org/identifier> <https://orcid.org/0009-0006-6615-6018> ;
+          <https://schema.org/memberOf> _:genid2 ;
+          <https://schema.org/name> "Lukas Guntermann" .
+
+_:genid3 rdf:type <https://schema.org/Person> ;
+          <https://schema.org/email> <mailto:nina.krautgartner@rub.de> ;
+          <https://schema.org/identifier> <https://orcid.org/0009-0007-3836-1177> ;
+          <https://schema.org/memberOf> _:genid4 ;
+          <https://schema.org/name> "Nina Krautgartner" .
+
+_:genid5 rdf:type <https://schema.org/Person> ;
+          <https://schema.org/email> <mailto:philipp.hagedorn-n6v@rub.de> ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0002-6249-243X> ;
+          <https://schema.org/memberOf> _:genid6 ;
+          <https://schema.org/name> "Philipp Hagedorn" .
+
+_:genid7 rdf:type <https://schema.org/Organization> ;
+          <https://schema.org/identifier> <https://www.inf.bi.rub.de> ;
+          <https://schema.org/name> "Chair of Computing in Engineering, Ruhr University Bochum" ;
+          <https://schema.org/parentOrganization> _:genid8 .
+
+_:genid2 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/lukas_guntermann.html.en> ;
+          <https://schema.org/name> "Ruhr University Bochum" .
+
+_:genid4 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/nina_krautgartner.html.en> ;
+          <https://schema.org/name> "Ruhr University Bochum" .
+
+_:genid6 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en> ;
+          <https://schema.org/name> "Ruhr University Bochum" .
+
+_:genid8 rdf:type <https://schema.org/Organization> ;
+          <https://schema.org/name> "Ruhr University Bochum, Germany" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#hasUnit
+<http://w3id.org/nfdi4ing/metadata4ing#hasUnit> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#historyNote
+<http://www.w3.org/2004/02/skos/core#historyNote> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#distribution
+<http://www.w3.org/ns/dcat#distribution> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/codeRepository
+<https://schema.org/codeRepository> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/email
+<https://schema.org/email> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/identifier
+<https://schema.org/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/memberOf
+<https://schema.org/memberOf> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/name
+<https://schema.org/name> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/parentOrganization
+<https://schema.org/parentOrganization> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/isoprops#categoryOfGroupOfProperties
+<https://w3id.org/isoprops#categoryOfGroupOfProperties> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/isoprops#countryOfOrigin
+<https://w3id.org/isoprops#countryOfOrigin> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/isoprops#countryOfUse
+<https://w3id.org/isoprops#countryOfUse> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/isoprops#creatorsLanguage
+<https://w3id.org/isoprops#creatorsLanguage> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/isoprops#dataType
+<https://w3id.org/isoprops#dataType> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/isoprops#dateOfActivation
+<https://w3id.org/isoprops#dateOfActivation> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/isoprops#dateOfCreation
+<https://w3id.org/isoprops#dateOfCreation> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/isoprops#dateOfLastChange
+<https://w3id.org/isoprops#dateOfLastChange> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/isoprops#dateOfRevision
+<https://w3id.org/isoprops#dateOfRevision> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/isoprops#dateOfVersion
+<https://w3id.org/isoprops#dateOfVersion> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/isoprops#dynamicProperty
+<https://w3id.org/isoprops#dynamicProperty> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/isoprops#exampleInLanguage
+<https://w3id.org/isoprops#exampleInLanguage> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/isoprops#globallyUniqueIdentifier
+<https://w3id.org/isoprops#globallyUniqueIdentifier> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/isoprops#hasDictionaryReferenceDocument
+<https://w3id.org/isoprops#hasDictionaryReferenceDocument> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/isoprops#hasDictionarySubset
+<https://w3id.org/isoprops#hasDictionarySubset> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/isoprops#hasGroupOfProperties
+<https://w3id.org/isoprops#hasGroupOfProperties> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/isoprops#hasNameInLanguage
+<https://w3id.org/isoprops#hasNameInLanguage> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/isoprops#hasParentGroupOfProperties
+<https://w3id.org/isoprops#hasParentGroupOfProperties> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/isoprops#hasPropertyGroupReference
+<https://w3id.org/isoprops#hasPropertyGroupReference> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/isoprops#hasUnit
+<https://w3id.org/isoprops#hasUnit> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/isoprops#revisionNumber
+<https://w3id.org/isoprops#revisionNumber> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/isoprops#status
+<https://w3id.org/isoprops#status> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/isoprops#versionNumber
+<https://w3id.org/isoprops#versionNumber> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/cero#accessibility
+:accessibility rdf:type owl:DatatypeProperty ;
+               rdfs:domain <https://w3id.org/bot#Element> ;
+               rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#anchorPoints
+:anchorPoints rdf:type owl:DatatypeProperty ;
+              rdfs:domain <https://w3id.org/bot#Element> ;
+              rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#carbonationDepth
+:carbonationDepth rdf:type owl:DatatypeProperty ;
+                  rdfs:domain <https://w3id.org/bot#Element> ;
+                  rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/cero#chlorideContent
+:chlorideContent rdf:type owl:DatatypeProperty ;
+                 rdfs:domain <https://w3id.org/bot#Element> ;
+                 rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#color
+:color rdf:type owl:DatatypeProperty ;
+       rdfs:domain <https://w3id.org/bot#Element> ;
+       rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#compressiveStrength
+:compressiveStrength rdf:type owl:DatatypeProperty ;
+                     rdfs:domain <https://w3id.org/bot#Element> ;
+                     rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/cero#concreteCompressiveStrength
+:concreteCompressiveStrength rdf:type owl:DatatypeProperty ;
+                             rdfs:domain <https://w3id.org/bot#Element> .
+
+
+###  https://w3id.org/cero#concreteCover
+:concreteCover rdf:type owl:DatatypeProperty ;
+               rdfs:domain <https://w3id.org/bot#Element> ;
+               rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/cero#concreteStiffness
+:concreteStiffness rdf:type owl:DatatypeProperty ;
+                   rdfs:domain <https://w3id.org/bot#Element> .
+
+
+###  https://w3id.org/cero#connectionType
+:connectionType rdf:type owl:DatatypeProperty ;
+                rdfs:domain <https://w3id.org/bot#Element> ;
+                rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#crackWidth
+:crackWidth rdf:type owl:DatatypeProperty ;
+            rdfs:domain <https://w3id.org/bot#Element> ;
+            rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/cero#cracks
+:cracks rdf:type owl:DatatypeProperty ;
+        rdfs:domain <https://w3id.org/bot#Element> ;
+        rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#crossSection
+:crossSection rdf:type owl:DatatypeProperty ;
+              rdfs:domain <https://w3id.org/bot#Element> ;
+              rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#damageClass
+:damageClass rdf:type owl:DatatypeProperty ;
+             rdfs:domain <https://w3id.org/bot#Element> ;
+             rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#dceClassification
+:dceClassification rdf:type owl:DatatypeProperty ;
+                   rdfs:domain <https://w3id.org/bot#Element> ;
+                   rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#density
+:density rdf:type owl:DatatypeProperty ;
+         rdfs:domain <https://w3id.org/bot#Element> ;
+         rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/cero#diameter
+:diameter rdf:type owl:DatatypeProperty ;
+          rdfs:domain <https://w3id.org/bot#Element> ;
+          rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/cero#elementDimensions
+:elementDimensions rdf:type owl:DatatypeProperty ;
+                   rdfs:domain <https://w3id.org/bot#Element> ;
+                   rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#elementType
+:elementType rdf:type owl:DatatypeProperty ;
+             rdfs:domain <https://w3id.org/bot#Element> ;
+             rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#energyConsumed
+:energyConsumed rdf:type owl:DatatypeProperty ;
+                rdfs:domain <https://w3id.org/bot#Element> ;
+                rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/cero#environmentalActions
+:environmentalActions rdf:type owl:DatatypeProperty ;
+                      rdfs:domain <https://w3id.org/bot#Element> ;
+                      rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#environmentalImpact
+:environmentalImpact rdf:type owl:DatatypeProperty ;
+                     rdfs:domain <https://w3id.org/bot#Element> ;
+                     rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#exposureClass
+:exposureClass rdf:type owl:DatatypeProperty ;
+               rdfs:domain <https://w3id.org/bot#Element> ;
+               rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#extraordinaryDamage
+:extraordinaryDamage rdf:type owl:DatatypeProperty ;
+                     rdfs:domain <https://w3id.org/bot#Element> ;
+                     rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#finishing
+:finishing rdf:type owl:DatatypeProperty ;
+           rdfs:domain <https://w3id.org/bot#Element> ;
+           rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#height
+:height rdf:type owl:DatatypeProperty ;
+        rdfs:domain <https://w3id.org/bot#Element> ;
+        rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/cero#identifier
+:identifier rdf:type owl:DatatypeProperty ;
+            rdfs:domain <https://w3id.org/bot#Element> ;
+            rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#initialFunction
+:initialFunction rdf:type owl:DatatypeProperty ;
+                 rdfs:domain <https://w3id.org/bot#Element> ;
+                 rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#initialProject
+:initialProject rdf:type owl:DatatypeProperty ;
+                rdfs:domain <https://w3id.org/bot#Element> ;
+                rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#internalDefects
+:internalDefects rdf:type owl:DatatypeProperty ;
+                 rdfs:domain <https://w3id.org/bot#Element> ;
+                 rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#length
+:length rdf:type owl:DatatypeProperty ;
+        rdfs:domain <https://w3id.org/bot#Element> ;
+        rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/cero#loadBearingCapacity
+:loadBearingCapacity rdf:type owl:DatatypeProperty ;
+                     rdfs:domain <https://w3id.org/bot#Element> ;
+                     rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#loadHistory
+:loadHistory rdf:type owl:DatatypeProperty ;
+             rdfs:domain <https://w3id.org/bot#Element> ;
+             rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#location
+:location rdf:type owl:DatatypeProperty ;
+          rdfs:domain <https://w3id.org/bot#Element> ;
+          rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#machineResources
+:machineResources rdf:type owl:DatatypeProperty ;
+                  rdfs:domain <https://w3id.org/bot#Element> ;
+                  rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#materialResources
+:materialResources rdf:type owl:DatatypeProperty ;
+                   rdfs:domain <https://w3id.org/bot#Element> ;
+                   rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#origin
+:origin rdf:type owl:DatatypeProperty ;
+        rdfs:domain <https://w3id.org/bot#Element> ;
+        rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#photo
+:photo rdf:type owl:DatatypeProperty ;
+       rdfs:domain <https://w3id.org/bot#Element> .
+
+
+###  https://w3id.org/cero#reinforcementLayout
+:reinforcementLayout rdf:type owl:DatatypeProperty ;
+                     rdfs:domain <https://w3id.org/bot#Element> ;
+                     rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#reinforcementMass
+:reinforcementMass rdf:type owl:DatatypeProperty ;
+                   rdfs:domain <https://w3id.org/bot#Element> ;
+                   rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/cero#reinforcementRatio
+:reinforcementRatio rdf:type owl:DatatypeProperty ;
+                    rdfs:domain <https://w3id.org/bot#Element> ;
+                    rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#reinforcementTensileStrength
+:reinforcementTensileStrength rdf:type owl:DatatypeProperty ;
+                              rdfs:domain <https://w3id.org/bot#Element> ;
+                              rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/cero#reinforcementYoungModulus
+:reinforcementYoungModulus rdf:type owl:DatatypeProperty ;
+                           rdfs:domain <https://w3id.org/bot#Element> ;
+                           rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/cero#reinforcingSteelTensileStrength
+:reinforcingSteelTensileStrength rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain <https://w3id.org/bot#Element> ;
+                                 rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/cero#remainingServiceLife
+:remainingServiceLife rdf:type owl:DatatypeProperty ;
+                      rdfs:domain <https://w3id.org/bot#Element> ;
+                      rdfs:range xsd:integer .
+
+
+###  https://w3id.org/cero#shapeCategory
+:shapeCategory rdf:type owl:DatatypeProperty ;
+               rdfs:domain <https://w3id.org/bot#Element> ;
+               rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#toxicSubstances
+:toxicSubstances rdf:type owl:DatatypeProperty ;
+                 rdfs:domain <https://w3id.org/bot#Element> ;
+                 rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#transportDistance
+:transportDistance rdf:type owl:DatatypeProperty ;
+                   rdfs:domain <https://w3id.org/bot#Element> ;
+                   rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/cero#volume
+:volume rdf:type owl:DatatypeProperty ;
+        rdfs:domain <https://w3id.org/bot#Element> ;
+        rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/cero#weight
+:weight rdf:type owl:DatatypeProperty ;
+        rdfs:domain <https://w3id.org/bot#Element> ;
+        rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/cero#width
+:width rdf:type owl:DatatypeProperty ;
+       rdfs:domain <https://w3id.org/bot#Element> ;
+       rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/cero#workingHours
+:workingHours rdf:type owl:DatatypeProperty ;
+              rdfs:domain <https://w3id.org/bot#Element> ;
+              rdfs:range xsd:string .
+
+
+###  https://w3id.org/cero#youngModulus
+:youngModulus rdf:type owl:DatatypeProperty ;
+              rdfs:domain <https://w3id.org/bot#Element> ;
+              rdfs:range xsd:decimal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable
+<http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> rdf:type owl:Class .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#TextVariable
+<http://w3id.org/nfdi4ing/metadata4ing#TextVariable> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Organization
+<http://www.w3.org/ns/prov#Organization> rdf:type owl:Class .
+
+
+###  https://schema.org/Organization
+<https://schema.org/Organization> rdf:type owl:Class .
+
+
+###  https://schema.org/Person
+<https://schema.org/Person> rdf:type owl:Class .
+
+
+###  https://w3id.org/bot#Element
+<https://w3id.org/bot#Element> rdf:type owl:Class .
+
+
+###  https://w3id.org/isoprops#Dictionary
+<https://w3id.org/isoprops#Dictionary> rdf:type owl:Class .
+
+
+###  https://w3id.org/isoprops#DictionaryReferenceDocument
+<https://w3id.org/isoprops#DictionaryReferenceDocument> rdf:type owl:Class .
+
+
+###  https://w3id.org/isoprops#DictionarySubset
+<https://w3id.org/isoprops#DictionarySubset> rdf:type owl:Class .
+
+
+###  https://w3id.org/isoprops#GroupOfProperties
+<https://w3id.org/isoprops#GroupOfProperties> rdf:type owl:Class .
+
+
+###  https://w3id.org/isoprops#Property
+<https://w3id.org/isoprops#Property> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/cero#Group_1_GeneralInformation
+:Group_1_GeneralInformation rdf:type owl:NamedIndividual ,
+                                     <https://w3id.org/isoprops#GroupOfProperties> ;
+                            rdfs:label "Section 1: General Element and Project Information" ;
+                            <https://w3id.org/isoprops#categoryOfGroupOfProperties> "Domain" ;
+                            <https://w3id.org/isoprops#hasParentGroupOfProperties> :Ref_1_Form .
+
+
+###  https://w3id.org/cero#Group_1_Identification
+:Group_1_Identification rdf:type owl:NamedIndividual ,
+                                 <https://w3id.org/isoprops#GroupOfProperties> ;
+                        rdfs:label "Identification" ;
+                        <https://w3id.org/isoprops#categoryOfGroupOfProperties> "Domain" ;
+                        <https://w3id.org/isoprops#hasParentGroupOfProperties> :Ref_2_FactSheet .
+
+
+###  https://w3id.org/cero#Group_2_1_MechanicalProperties
+:Group_2_1_MechanicalProperties rdf:type owl:NamedIndividual ,
+                                         <https://w3id.org/isoprops#GroupOfProperties> ;
+                                rdfs:label "Section 2.1: Mechanical Properties" ;
+                                <https://w3id.org/isoprops#categoryOfGroupOfProperties> "Domain" ;
+                                <https://w3id.org/isoprops#hasParentGroupOfProperties> :Group_2_ConditionAssessment .
+
+
+###  https://w3id.org/cero#Group_2_2_GeometryDamage
+:Group_2_2_GeometryDamage rdf:type owl:NamedIndividual ,
+                                   <https://w3id.org/isoprops#GroupOfProperties> ;
+                          rdfs:label "Section 2.2: Geometry and damage" ;
+                          <https://w3id.org/isoprops#categoryOfGroupOfProperties> "Domain" ;
+                          <https://w3id.org/isoprops#hasParentGroupOfProperties> :Group_2_ConditionAssessment .
+
+
+###  https://w3id.org/cero#Group_2_ConditionAssessment
+:Group_2_ConditionAssessment rdf:type owl:NamedIndividual ,
+                                      <https://w3id.org/isoprops#GroupOfProperties> ;
+                             rdfs:label "Section 2: Condition Assessment" ;
+                             <https://w3id.org/isoprops#categoryOfGroupOfProperties> "Domain" ;
+                             <https://w3id.org/isoprops#hasParentGroupOfProperties> :Ref_1_Form .
+
+
+###  https://w3id.org/cero#Group_2_Geometric
+:Group_2_Geometric rdf:type owl:NamedIndividual ,
+                            <https://w3id.org/isoprops#GroupOfProperties> ;
+                   rdfs:label "Geometric" ;
+                   <https://w3id.org/isoprops#categoryOfGroupOfProperties> "Domain" ;
+                   <https://w3id.org/isoprops#hasParentGroupOfProperties> :Ref_2_FactSheet .
+
+
+###  https://w3id.org/cero#Group_3_Durability
+:Group_3_Durability rdf:type owl:NamedIndividual ,
+                             <https://w3id.org/isoprops#GroupOfProperties> ;
+                    rdfs:label "Section 3: Durability and Remaining Service Life" ;
+                    <https://w3id.org/isoprops#categoryOfGroupOfProperties> "Domain" ;
+                    <https://w3id.org/isoprops#hasParentGroupOfProperties> :Ref_1_Form .
+
+
+###  https://w3id.org/cero#Group_3_PhysicalAndMaterial
+:Group_3_PhysicalAndMaterial rdf:type owl:NamedIndividual ,
+                                      <https://w3id.org/isoprops#GroupOfProperties> ;
+                             rdfs:label "Physical & Material" ;
+                             <https://w3id.org/isoprops#categoryOfGroupOfProperties> "Domain" ;
+                             <https://w3id.org/isoprops#hasParentGroupOfProperties> :Ref_2_FactSheet .
+
+
+###  https://w3id.org/cero#Group_4_ConditionAndAssessment
+:Group_4_ConditionAndAssessment rdf:type owl:NamedIndividual ,
+                                         <https://w3id.org/isoprops#GroupOfProperties> ;
+                                rdfs:label "Condition & Assessment" ;
+                                <https://w3id.org/isoprops#categoryOfGroupOfProperties> "Domain" ;
+                                <https://w3id.org/isoprops#hasParentGroupOfProperties> :Ref_2_FactSheet .
+
+
+###  https://w3id.org/cero#Group_5_ProcessAndLifecycle
+:Group_5_ProcessAndLifecycle rdf:type owl:NamedIndividual ,
+                                      <https://w3id.org/isoprops#GroupOfProperties> ;
+                             rdfs:label "Process & Lifecycle" ;
+                             <https://w3id.org/isoprops#categoryOfGroupOfProperties> "Domain" ;
+                             <https://w3id.org/isoprops#hasParentGroupOfProperties> :Ref_2_FactSheet .
+
+
+###  https://w3id.org/cero#InspectionCertificateProperties
+:InspectionCertificateProperties rdf:type owl:NamedIndividual ,
+                                          <https://w3id.org/isoprops#DictionarySubset> ;
+                                 rdfs:label "Inspection certificate properties" ;
+                                 <http://www.w3.org/ns/dcat#distribution> :InspectionReport ;
+                                 <https://w3id.org/isoprops#hasDictionaryReferenceDocument> :InspectionReport .
+
+
+###  https://w3id.org/cero#InspectionReport
+:InspectionReport rdf:type owl:NamedIndividual ,
+                           <https://w3id.org/isoprops#DictionaryReferenceDocument> ;
+                  rdfs:label "Properties related to the inspection report" ;
+                  <https://w3id.org/isoprops#hasPropertyGroupReference> :Ref_1_Form .
+
+
+###  https://w3id.org/cero#Organization_CRC1883
+:Organization_CRC1883 rdf:type owl:NamedIndividual ,
+                               <http://www.w3.org/ns/prov#Organization> ;
+                      rdfs:label "Organization CRC1883" .
+
+
+###  https://w3id.org/cero#Ref_1_Form
+:Ref_1_Form rdf:type owl:NamedIndividual ,
+                     <https://w3id.org/isoprops#GroupOfProperties> ;
+            rdfs:label "Inspection form" ;
+            <https://w3id.org/isoprops#categoryOfGroupOfProperties> "Reference document" .
+
+
+###  https://w3id.org/cero#Ref_2_FactSheet
+:Ref_2_FactSheet rdf:type owl:NamedIndividual ,
+                          <https://w3id.org/isoprops#GroupOfProperties> ;
+                 rdfs:label "Factsheet" ;
+                 <https://w3id.org/isoprops#categoryOfGroupOfProperties> "Reference document" .
+
+
+###  https://w3id.org/cero#ReuseProperties
+:ReuseProperties rdf:type owl:NamedIndividual ,
+                          <https://w3id.org/isoprops#Dictionary> ;
+                 <http://purl.org/dc/terms/publisher> :Organization_CRC1883 ;
+                 <http://purl.org/dc/terms/title> "Reuse properties of CRC1683" ;
+                 rdfs:label "Reuse properties of CRC1683" ;
+                 <https://w3id.org/isoprops#hasDictionarySubset> :InspectionCertificateProperties ,
+                                                                 :SustainabilityAssessmentProperties .
+
+
+###  https://w3id.org/cero#SustainabilityAssessmentProperties
+:SustainabilityAssessmentProperties rdf:type owl:NamedIndividual ,
+                                             <https://w3id.org/isoprops#DictionarySubset> ;
+                                    rdfs:label "Sustainability assessment properties" ;
+                                    <http://www.w3.org/ns/dcat#distribution> :SustainabilityAssessmentReport ;
+                                    <https://w3id.org/isoprops#hasDictionaryReferenceDocument> :SustainabilityAssessmentReport .
+
+
+###  https://w3id.org/cero#SustainabilityAssessmentReport
+:SustainabilityAssessmentReport rdf:type owl:NamedIndividual ,
+                                         <https://w3id.org/isoprops#DictionaryReferenceDocument> ;
+                                rdfs:label "Properties related to the sustainability assessment " ;
+                                <https://w3id.org/isoprops#hasPropertyGroupReference> :Ref_2_FactSheet .
+
+
+###  https://w3id.org/cero#accessibility
+:accessibility rdf:type owl:NamedIndividual ,
+                        <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                        <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#anchorPoints
+:anchorPoints rdf:type owl:NamedIndividual ,
+                       <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                       <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#carbonationDepth
+:carbonationDepth rdf:type owl:NamedIndividual ,
+                           <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                           <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#chlorideContent
+:chlorideContent rdf:type owl:NamedIndividual ,
+                          <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                          <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#color
+:color rdf:type owl:NamedIndividual ,
+                <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#compressiveStrength
+:compressiveStrength rdf:type owl:NamedIndividual ,
+                              <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                              <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#concreteCompressiveStrength
+:concreteCompressiveStrength rdf:type owl:NamedIndividual ,
+                                      <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                                      <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#concreteCover
+:concreteCover rdf:type owl:NamedIndividual ,
+                        <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                        <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#concreteStiffness
+:concreteStiffness rdf:type owl:NamedIndividual ,
+                            <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                            <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#connectionType
+:connectionType rdf:type owl:NamedIndividual ,
+                         <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                         <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#crackWidth
+:crackWidth rdf:type owl:NamedIndividual ,
+                     <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                     <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#cracks
+:cracks rdf:type owl:NamedIndividual ,
+                 <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                 <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#crossSection
+:crossSection rdf:type owl:NamedIndividual ,
+                       <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                       <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#damageClass
+:damageClass rdf:type owl:NamedIndividual ,
+                      <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                      <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#dceClassification
+:dceClassification rdf:type owl:NamedIndividual ,
+                            <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                            <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#density
+:density rdf:type owl:NamedIndividual ,
+                  <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                  <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#diameter
+:diameter rdf:type owl:NamedIndividual ,
+                   <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                   <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#elementDimensions
+:elementDimensions rdf:type owl:NamedIndividual ,
+                            <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                            <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#elementType
+:elementType rdf:type owl:NamedIndividual ,
+                      <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                      <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#energyConsumed
+:energyConsumed rdf:type owl:NamedIndividual ,
+                         <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                         <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#environmentalActions
+:environmentalActions rdf:type owl:NamedIndividual ,
+                               <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                               <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#environmentalImpact
+:environmentalImpact rdf:type owl:NamedIndividual ,
+                              <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                              <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#exposureClass
+:exposureClass rdf:type owl:NamedIndividual ,
+                        <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                        <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#extraordinaryDamage
+:extraordinaryDamage rdf:type owl:NamedIndividual ,
+                              <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                              <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#finishing
+:finishing rdf:type owl:NamedIndividual ,
+                    <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                    <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#height
+:height rdf:type owl:NamedIndividual ,
+                 <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                 <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#identifier
+:identifier rdf:type owl:NamedIndividual ,
+                     <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                     <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#initialFunction
+:initialFunction rdf:type owl:NamedIndividual ,
+                          <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                          <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#initialProject
+:initialProject rdf:type owl:NamedIndividual ,
+                         <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                         <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#internalDefects
+:internalDefects rdf:type owl:NamedIndividual ,
+                          <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                          <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#length
+:length rdf:type owl:NamedIndividual ,
+                 <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                 <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#loadBearingCapacity
+:loadBearingCapacity rdf:type owl:NamedIndividual ,
+                              <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                              <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#loadHistory
+:loadHistory rdf:type owl:NamedIndividual ,
+                      <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                      <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#location
+:location rdf:type owl:NamedIndividual ,
+                   <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                   <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#machineResources
+:machineResources rdf:type owl:NamedIndividual ,
+                           <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                           <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#materialResources
+:materialResources rdf:type owl:NamedIndividual ,
+                            <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                            <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#origin
+:origin rdf:type owl:NamedIndividual ,
+                 <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                 <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#photo
+:photo rdf:type owl:NamedIndividual ,
+                <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#reinforcementLayout
+:reinforcementLayout rdf:type owl:NamedIndividual ,
+                              <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                              <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#reinforcementMass
+:reinforcementMass rdf:type owl:NamedIndividual ,
+                            <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                            <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#reinforcementRatio
+:reinforcementRatio rdf:type owl:NamedIndividual ,
+                             <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                             <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#reinforcementTensileStrength
+:reinforcementTensileStrength rdf:type owl:NamedIndividual ,
+                                       <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                                       <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#reinforcementYoungModulus
+:reinforcementYoungModulus rdf:type owl:NamedIndividual ,
+                                    <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                                    <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#reinforcingSteelTensileStrength
+:reinforcingSteelTensileStrength rdf:type owl:NamedIndividual ,
+                                          <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                                          <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#remainingServiceLife
+:remainingServiceLife rdf:type owl:NamedIndividual ,
+                               <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                               <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#shapeCategory
+:shapeCategory rdf:type owl:NamedIndividual ,
+                        <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                        <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#toxicSubstances
+:toxicSubstances rdf:type owl:NamedIndividual ,
+                          <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                          <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#transportDistance
+:transportDistance rdf:type owl:NamedIndividual ,
+                            <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                            <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#volume
+:volume rdf:type owl:NamedIndividual ,
+                 <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                 <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#weight
+:weight rdf:type owl:NamedIndividual ,
+                 <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                 <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#width
+:width rdf:type owl:NamedIndividual ,
+                <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#workingHours
+:workingHours rdf:type owl:NamedIndividual ,
+                       <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                       <https://w3id.org/isoprops#Property> .
+
+
+###  https://w3id.org/cero#youngModulus
+:youngModulus rdf:type owl:NamedIndividual ,
+                       <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                       <https://w3id.org/isoprops#Property> .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:accessibility rdfs:label "Accessibility" ;
+               <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+               <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+               <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+               <https://w3id.org/isoprops#dataType> "STRING" ;
+               <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+               <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+               <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+               <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+               <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+               <https://w3id.org/isoprops#dynamicProperty> "no" ;
+               <https://w3id.org/isoprops#globallyUniqueIdentifier> "c6fd0bae-6a8a-4935-9aaa-7125f47f9840" ;
+               <https://w3id.org/isoprops#hasGroupOfProperties> :Group_1_Identification ;
+               <https://w3id.org/isoprops#hasNameInLanguage> "Accessibility"@en ;
+               <https://w3id.org/isoprops#revisionNumber> 0 ;
+               <https://w3id.org/isoprops#status> "active" ;
+               <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:anchorPoints rdfs:label "Anchor points" ;
+              <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+              <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+              <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+              <https://w3id.org/isoprops#dataType> "STRING" ;
+              <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+              <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+              <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+              <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+              <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+              <https://w3id.org/isoprops#dynamicProperty> "no" ;
+              <https://w3id.org/isoprops#globallyUniqueIdentifier> "d8ac1178-efca-490a-beed-0af6a712f8c3" ;
+              <https://w3id.org/isoprops#hasGroupOfProperties> :Group_1_Identification ;
+              <https://w3id.org/isoprops#hasNameInLanguage> "Anchor points"@en ;
+              <https://w3id.org/isoprops#revisionNumber> 0 ;
+              <https://w3id.org/isoprops#status> "active" ;
+              <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:carbonationDepth <http://w3id.org/nfdi4ing/metadata4ing#hasUnit> <http://qudt.org/vocab/unit#MilliM> ;
+                  rdfs:label "Carbonation depth" ;
+                  <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                  <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                  <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                  <https://w3id.org/isoprops#dataType> "DECIMAL" ;
+                  <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                  <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                  <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                  <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                  <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                  <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                  <https://w3id.org/isoprops#globallyUniqueIdentifier> "f199609b-804f-4bcd-807d-8654a68b7302" ;
+                  <https://w3id.org/isoprops#hasGroupOfProperties> :Group_3_Durability ,
+                                                                   :Group_4_ConditionAndAssessment ;
+                  <https://w3id.org/isoprops#hasNameInLanguage> "Carbonation depth"@en ;
+                  <https://w3id.org/isoprops#hasUnit> <http://qudt.org/vocab/unit#MilliM> ;
+                  <https://w3id.org/isoprops#revisionNumber> 0 ;
+                  <https://w3id.org/isoprops#status> "active" ;
+                  <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:chlorideContent <http://w3id.org/nfdi4ing/metadata4ing#hasUnit> <http://qudt.org/vocab/unit#PERCENT> ;
+                 rdfs:label "Chloride content" ;
+                 <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                 <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                 <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                 <https://w3id.org/isoprops#dataType> "DECIMAL" ;
+                 <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                 <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                 <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                 <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                 <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                 <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                 <https://w3id.org/isoprops#globallyUniqueIdentifier> "e9b2a9cb-0d2a-4d99-af4c-6f3c5e677c35" ;
+                 <https://w3id.org/isoprops#hasGroupOfProperties> :Group_DurabilityAndRemainingServiceLife ;
+                 <https://w3id.org/isoprops#hasNameInLanguage> "Chloride content"@en ;
+                 <https://w3id.org/isoprops#hasUnit> <http://qudt.org/vocab/unit#PERCENT> ;
+                 <https://w3id.org/isoprops#revisionNumber> 0 ;
+                 <https://w3id.org/isoprops#status> "active" ;
+                 <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:color rdfs:label "Color" ;
+       <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+       <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+       <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+       <https://w3id.org/isoprops#dataType> "STRING" ;
+       <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+       <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+       <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+       <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+       <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+       <https://w3id.org/isoprops#dynamicProperty> "no" ;
+       <https://w3id.org/isoprops#globallyUniqueIdentifier> "98c1da90-334e-4356-a5c1-15f636cf5347" ;
+       <https://w3id.org/isoprops#hasGroupOfProperties> :Group_1_Identification ;
+       <https://w3id.org/isoprops#hasNameInLanguage> "Color"@en ;
+       <https://w3id.org/isoprops#revisionNumber> 0 ;
+       <https://w3id.org/isoprops#status> "active" ;
+       <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:compressiveStrength <http://w3id.org/nfdi4ing/metadata4ing#hasUnit> <http://qudt.org/vocab/unit#MPa> ;
+                     rdfs:label "Compressive strength" ;
+                     <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                     <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                     <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                     <https://w3id.org/isoprops#dataType> "DECIMAL" ;
+                     <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                     <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                     <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                     <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                     <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                     <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                     <https://w3id.org/isoprops#globallyUniqueIdentifier> "55f61124-0b79-4bb0-8d72-35cd39ea1c30" ;
+                     <https://w3id.org/isoprops#hasGroupOfProperties> :Group_3_PhysicalAndMaterial ;
+                     <https://w3id.org/isoprops#hasNameInLanguage> "Compressive strength"@en ;
+                     <https://w3id.org/isoprops#hasUnit> <http://qudt.org/vocab/unit#MPa> ;
+                     <https://w3id.org/isoprops#revisionNumber> 0 ;
+                     <https://w3id.org/isoprops#status> "active" ;
+                     <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:concreteCompressiveStrength <http://w3id.org/nfdi4ing/metadata4ing#hasUnit> <http://qudt.org/vocab/unit#MPa> ;
+                             rdfs:label "Concrete compressive strength" ;
+                             <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                             <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                             <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                             <https://w3id.org/isoprops#dataType> "DECIMAL" ;
+                             <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                             <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                             <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                             <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                             <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                             <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                             <https://w3id.org/isoprops#globallyUniqueIdentifier> "d2ca34ec-34c5-4f4d-bdf3-23cfe5d67080" ;
+                             <https://w3id.org/isoprops#hasGroupOfProperties> :Group_MechanicalProperties ;
+                             <https://w3id.org/isoprops#hasNameInLanguage> "Concrete compressive strength"@en ;
+                             <https://w3id.org/isoprops#hasUnit> <http://qudt.org/vocab/unit#MPa> ;
+                             <https://w3id.org/isoprops#revisionNumber> 0 ;
+                             <https://w3id.org/isoprops#status> "active" ;
+                             <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:concreteCover <http://w3id.org/nfdi4ing/metadata4ing#hasUnit> <http://qudt.org/vocab/unit#MilliM> ;
+               rdfs:label "Concrete cover" ;
+               <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+               <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+               <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+               <https://w3id.org/isoprops#dataType> "DECIMAL" ;
+               <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+               <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+               <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+               <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+               <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+               <https://w3id.org/isoprops#dynamicProperty> "no" ;
+               <https://w3id.org/isoprops#globallyUniqueIdentifier> "c88bf120-ce5f-4d58-9429-1ea4340e6412" ;
+               <https://w3id.org/isoprops#hasGroupOfProperties> :Group_GeometryAndDamage ;
+               <https://w3id.org/isoprops#hasNameInLanguage> "Concrete cover"@en ;
+               <https://w3id.org/isoprops#hasUnit> <http://qudt.org/vocab/unit#MilliM> ;
+               <https://w3id.org/isoprops#revisionNumber> 0 ;
+               <https://w3id.org/isoprops#status> "active" ;
+               <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:concreteStiffness <http://w3id.org/nfdi4ing/metadata4ing#hasUnit> <http://qudt.org/vocab/unit#GPa> ;
+                   rdfs:label "Concrete stiffness" ;
+                   <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                   <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                   <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                   <https://w3id.org/isoprops#dataType> "DECIMAL" ;
+                   <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                   <https://w3id.org/isoprops#globallyUniqueIdentifier> "55c48fb4-34fd-44ab-b021-25e51c7bd4e5" ;
+                   <https://w3id.org/isoprops#hasGroupOfProperties> :Group_MechanicalProperties ;
+                   <https://w3id.org/isoprops#hasNameInLanguage> "Concrete stiffness"@en ;
+                   <https://w3id.org/isoprops#hasUnit> <http://qudt.org/vocab/unit#GPa> ;
+                   <https://w3id.org/isoprops#revisionNumber> 0 ;
+                   <https://w3id.org/isoprops#status> "active" ;
+                   <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:connectionType rdfs:label "Connection type" ;
+                <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                <https://w3id.org/isoprops#dataType> "STRING" ;
+                <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                <https://w3id.org/isoprops#globallyUniqueIdentifier> "0a1e5fcd-23e6-40e8-8a56-ed559242beed" ;
+                <https://w3id.org/isoprops#hasGroupOfProperties> :Group_1_Identification ;
+                <https://w3id.org/isoprops#hasNameInLanguage> "Connection type"@en ;
+                <https://w3id.org/isoprops#revisionNumber> 0 ;
+                <https://w3id.org/isoprops#status> "active" ;
+                <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:crackWidth <http://w3id.org/nfdi4ing/metadata4ing#hasUnit> <http://qudt.org/vocab/unit#MilliM> ;
+            rdfs:label "Crack width" ;
+            <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+            <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+            <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+            <https://w3id.org/isoprops#dataType> "DECIMAL" ;
+            <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+            <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+            <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+            <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+            <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+            <https://w3id.org/isoprops#dynamicProperty> "no" ;
+            <https://w3id.org/isoprops#globallyUniqueIdentifier> "03168145-52f3-4d27-8bc8-4d440e7282be" ;
+            <https://w3id.org/isoprops#hasGroupOfProperties> :Group_4_ConditionAndAssessment ;
+            <https://w3id.org/isoprops#hasNameInLanguage> "Crack width"@en ;
+            <https://w3id.org/isoprops#hasUnit> <http://qudt.org/vocab/unit#MilliM> ;
+            <https://w3id.org/isoprops#revisionNumber> 0 ;
+            <https://w3id.org/isoprops#status> "active" ;
+            <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:cracks rdfs:label "Cracks" ;
+        <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+        <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+        <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+        <https://w3id.org/isoprops#dataType> "STRING" ;
+        <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dynamicProperty> "no" ;
+        <https://w3id.org/isoprops#globallyUniqueIdentifier> "6d0d2646-048a-4fd5-a934-1d8245bdfce8" ;
+        <https://w3id.org/isoprops#hasGroupOfProperties> :Group_GeometryAndDamage ;
+        <https://w3id.org/isoprops#hasNameInLanguage> "Cracks"@en ;
+        <https://w3id.org/isoprops#revisionNumber> 0 ;
+        <https://w3id.org/isoprops#status> "active" ;
+        <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:crossSection rdfs:label "Cross section" ;
+              <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+              <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+              <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+              <https://w3id.org/isoprops#dataType> "STRING" ;
+              <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+              <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+              <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+              <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+              <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+              <https://w3id.org/isoprops#dynamicProperty> "no" ;
+              <https://w3id.org/isoprops#globallyUniqueIdentifier> "d392dd82-0322-4160-a82d-d18788b7dd24" ;
+              <https://w3id.org/isoprops#hasGroupOfProperties> :Group_2_Geometric ;
+              <https://w3id.org/isoprops#hasNameInLanguage> "Cross section"@en ;
+              <https://w3id.org/isoprops#revisionNumber> 0 ;
+              <https://w3id.org/isoprops#status> "active" ;
+              <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:damageClass rdfs:label "Damage class" ;
+             <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+             <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+             <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+             <https://w3id.org/isoprops#dataType> "STRING" ;
+             <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+             <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+             <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+             <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+             <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+             <https://w3id.org/isoprops#dynamicProperty> "no" ;
+             <https://w3id.org/isoprops#globallyUniqueIdentifier> "a727f8cb-59a8-41c6-bdc0-143dd3f36e67" ;
+             <https://w3id.org/isoprops#hasGroupOfProperties> :Group_4_ConditionAndAssessment ;
+             <https://w3id.org/isoprops#hasNameInLanguage> "Damage class"@en ;
+             <https://w3id.org/isoprops#revisionNumber> 0 ;
+             <https://w3id.org/isoprops#status> "active" ;
+             <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:dceClassification rdfs:label "DCE Classification" ;
+                   <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                   <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                   <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                   <https://w3id.org/isoprops#dataType> "STRING" ;
+                   <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                   <https://w3id.org/isoprops#globallyUniqueIdentifier> "65ca931f-a338-4bb1-9af0-1be0d94952dd" ;
+                   <https://w3id.org/isoprops#hasGroupOfProperties> :Group_DurabilityAndRemainingServiceLife ;
+                   <https://w3id.org/isoprops#hasNameInLanguage> "DCE Classification"@en ;
+                   <https://w3id.org/isoprops#revisionNumber> 0 ;
+                   <https://w3id.org/isoprops#status> "active" ;
+                   <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:density <http://w3id.org/nfdi4ing/metadata4ing#hasUnit> <http://qudt.org/vocab/unit#KilogramPerCubicMeter> ;
+         rdfs:label "Density" ;
+         <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+         <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+         <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+         <https://w3id.org/isoprops#dataType> "DECIMAL" ;
+         <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+         <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+         <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+         <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+         <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+         <https://w3id.org/isoprops#dynamicProperty> "no" ;
+         <https://w3id.org/isoprops#globallyUniqueIdentifier> "a21e317e-fbf5-4507-b2e7-568cf964f4ac" ;
+         <https://w3id.org/isoprops#hasGroupOfProperties> :Group_3_PhysicalAndMaterial ;
+         <https://w3id.org/isoprops#hasNameInLanguage> "Density"@en ;
+         <https://w3id.org/isoprops#hasUnit> <http://qudt.org/vocab/unit#KilogramPerCubicMeter> ;
+         <https://w3id.org/isoprops#revisionNumber> 0 ;
+         <https://w3id.org/isoprops#status> "active" ;
+         <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:diameter <http://w3id.org/nfdi4ing/metadata4ing#hasUnit> <http://qudt.org/vocab/unit#Meter> ;
+          rdfs:label "Diameter" ;
+          <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+          <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+          <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+          <https://w3id.org/isoprops#dataType> "DECIMAL" ;
+          <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+          <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+          <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+          <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+          <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+          <https://w3id.org/isoprops#dynamicProperty> "no" ;
+          <https://w3id.org/isoprops#globallyUniqueIdentifier> "7b4f6745-8ca5-44b5-ac48-0a1a98892c50" ;
+          <https://w3id.org/isoprops#hasGroupOfProperties> :Group_2_Geometric ;
+          <https://w3id.org/isoprops#hasNameInLanguage> "Diameter"@en ;
+          <https://w3id.org/isoprops#hasUnit> <http://qudt.org/vocab/unit#Meter> ;
+          <https://w3id.org/isoprops#revisionNumber> 0 ;
+          <https://w3id.org/isoprops#status> "active" ;
+          <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:elementDimensions rdfs:label "element dimensions" ;
+                   <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                   <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                   <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                   <https://w3id.org/isoprops#dataType> "STRING" ;
+                   <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T16:52:09.887"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T16:52:08.136"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T16:52:05.183"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T16:52:03.38"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T16:52:00.477"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                   <https://w3id.org/isoprops#exampleInLanguage> "Rectangular cross-section 300 mm × 500 mm; column height per storey 3.20 m." ;
+                   <https://w3id.org/isoprops#globallyUniqueIdentifier> "1cd45c88-af74-41a6-8b0b-38d0bae64beb" ;
+                   <https://w3id.org/isoprops#hasGroupOfProperties> :Group_1_GeneralInformation ;
+                   <https://w3id.org/isoprops#hasNameInLanguage> "Overall dimensions"@en ;
+                   <https://w3id.org/isoprops#revisionNumber> 0 ;
+                   <https://w3id.org/isoprops#status> "active" ;
+                   <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:elementType rdfs:label "element type" ;
+             <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+             <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+             <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+             <https://w3id.org/isoprops#dataType> "STRING" ;
+             <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T16:52:09.887"^^xsd:dateTime ;
+             <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T16:52:08.136"^^xsd:dateTime ;
+             <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T16:52:05.183"^^xsd:dateTime ;
+             <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T16:52:03.38"^^xsd:dateTime ;
+             <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T16:52:00.477"^^xsd:dateTime ;
+             <https://w3id.org/isoprops#dynamicProperty> "no" ;
+             <https://w3id.org/isoprops#exampleInLanguage> "Reinforced concrete column in interior area (load-bearing)." ;
+             <https://w3id.org/isoprops#globallyUniqueIdentifier> "a07102e4-f60e-442d-9051-a59f4990dd50" ;
+             <https://w3id.org/isoprops#hasGroupOfProperties> :Group_1_GeneralInformation ;
+             <https://w3id.org/isoprops#hasNameInLanguage> "Element type"@en ;
+             <https://w3id.org/isoprops#revisionNumber> 0 ;
+             <https://w3id.org/isoprops#status> "active" ;
+             <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:energyConsumed <http://w3id.org/nfdi4ing/metadata4ing#hasUnit> <http://qudt.org/vocab/unit#KiloW-HR> ;
+                rdfs:label "Energy consumed" ;
+                <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                <https://w3id.org/isoprops#dataType> "DECIMAL" ;
+                <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                <https://w3id.org/isoprops#globallyUniqueIdentifier> "ae62eb0e-2c64-4857-98a9-8c1e3cd96a50" ;
+                <https://w3id.org/isoprops#hasGroupOfProperties> :Group_5_ProcessAndLifecycle ;
+                <https://w3id.org/isoprops#hasNameInLanguage> "Energy consumed"@en ;
+                <https://w3id.org/isoprops#hasUnit> <http://qudt.org/vocab/unit#KiloW-HR> ;
+                <https://w3id.org/isoprops#revisionNumber> 0 ;
+                <https://w3id.org/isoprops#status> "active" ;
+                <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:environmentalActions rdfs:label "environmental actions" ;
+                      <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                      <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                      <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                      <https://w3id.org/isoprops#dataType> "STRING" ;
+                      <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T16:52:09.887"^^xsd:dateTime ;
+                      <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T16:52:08.136"^^xsd:dateTime ;
+                      <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T16:52:05.183"^^xsd:dateTime ;
+                      <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T16:52:03.38"^^xsd:dateTime ;
+                      <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T16:52:00.477"^^xsd:dateTime ;
+                      <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                      <https://w3id.org/isoprops#exampleInLanguage> "XC1"@en ,
+                                                                    "XC2"@en ;
+                      <https://w3id.org/isoprops#globallyUniqueIdentifier> "a6a59a4e-9c42-423d-b857-9f72e6ef17c3" ;
+                      <https://w3id.org/isoprops#hasGroupOfProperties> :Group_1_GeneralInformation ;
+                      <https://w3id.org/isoprops#hasNameInLanguage> "Environmental actions"@en ;
+                      <https://w3id.org/isoprops#revisionNumber> 0 ;
+                      <https://w3id.org/isoprops#status> "active" ;
+                      <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:environmentalImpact rdfs:label "environmental impact" ;
+                     <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                     <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                     <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                     <https://w3id.org/isoprops#dataType> "STRING" ;
+                     <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T16:52:09.887"^^xsd:dateTime ;
+                     <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T16:52:08.136"^^xsd:dateTime ;
+                     <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T16:52:05.183"^^xsd:dateTime ;
+                     <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T16:52:03.38"^^xsd:dateTime ;
+                     <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T16:52:00.477"^^xsd:dateTime ;
+                     <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                     <https://w3id.org/isoprops#exampleInLanguage> "Low chloride exposure (indoor use)"@en ,
+                                                                   "No freeze-thaw cycles"@en ,
+                                                                   "carbonation"@en ,
+                                                                   "no chemical industrial environment"@en ;
+                     <https://w3id.org/isoprops#globallyUniqueIdentifier> "a6a59a4e-9c42-423d-b857-9f72e6ef17c3" ;
+                     <https://w3id.org/isoprops#hasGroupOfProperties> :Group_1_GeneralInformation ;
+                     <https://w3id.org/isoprops#hasNameInLanguage> "Environmental impacts"@en ;
+                     <https://w3id.org/isoprops#revisionNumber> 0 ;
+                     <https://w3id.org/isoprops#status> "active" ;
+                     <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:exposureClass rdfs:label "Exposure class" ;
+               <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+               <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+               <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+               <https://w3id.org/isoprops#dataType> "STRING" ;
+               <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+               <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+               <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+               <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+               <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+               <https://w3id.org/isoprops#dynamicProperty> "no" ;
+               <https://w3id.org/isoprops#globallyUniqueIdentifier> "2110def2-0456-4271-88d7-6ebc55f15aee" ;
+               <https://w3id.org/isoprops#hasGroupOfProperties> :Group_3_PhysicalAndMaterial ;
+               <https://w3id.org/isoprops#hasNameInLanguage> "Exposure class"@en ;
+               <https://w3id.org/isoprops#revisionNumber> 0 ;
+               <https://w3id.org/isoprops#status> "active" ;
+               <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:extraordinaryDamage rdfs:label "Extraordinary damage" ;
+                     <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                     <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                     <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                     <https://w3id.org/isoprops#dataType> "STRING" ;
+                     <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                     <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                     <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                     <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                     <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                     <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                     <https://w3id.org/isoprops#globallyUniqueIdentifier> "eea15d83-8382-43e9-9fc3-cca76ad32c0e" ;
+                     <https://w3id.org/isoprops#hasGroupOfProperties> :Group_4_ConditionAndAssessment ;
+                     <https://w3id.org/isoprops#hasNameInLanguage> "Extraordinary damage"@en ;
+                     <https://w3id.org/isoprops#revisionNumber> 0 ;
+                     <https://w3id.org/isoprops#status> "active" ;
+                     <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:finishing rdfs:label "Finishing" ;
+           <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+           <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+           <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+           <https://w3id.org/isoprops#dataType> "STRING" ;
+           <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+           <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+           <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+           <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+           <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+           <https://w3id.org/isoprops#dynamicProperty> "no" ;
+           <https://w3id.org/isoprops#globallyUniqueIdentifier> "1574e832-e36c-4292-b82b-6680d19354bb" ;
+           <https://w3id.org/isoprops#hasGroupOfProperties> :Group_1_Identification ;
+           <https://w3id.org/isoprops#hasNameInLanguage> "Finishing"@en ;
+           <https://w3id.org/isoprops#revisionNumber> 0 ;
+           <https://w3id.org/isoprops#status> "active" ;
+           <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:height <http://w3id.org/nfdi4ing/metadata4ing#hasUnit> <http://qudt.org/vocab/unit#Meter> ;
+        rdfs:label "Height" ;
+        <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+        <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+        <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+        <https://w3id.org/isoprops#dataType> "DECIMAL" ;
+        <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dynamicProperty> "no" ;
+        <https://w3id.org/isoprops#globallyUniqueIdentifier> "afd17c85-3a27-4833-bcb8-adda95448b81" ;
+        <https://w3id.org/isoprops#hasGroupOfProperties> :Group_2_Geometric ;
+        <https://w3id.org/isoprops#hasNameInLanguage> "Height"@en ;
+        <https://w3id.org/isoprops#hasUnit> <http://qudt.org/vocab/unit#Meter> ;
+        <https://w3id.org/isoprops#revisionNumber> 0 ;
+        <https://w3id.org/isoprops#status> "active" ;
+        <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:identifier rdfs:label "identifier" ;
+            <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+            <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+            <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+            <https://w3id.org/isoprops#dataType> "STRING" ;
+            <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T16:52:09.887"^^xsd:dateTime ;
+            <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T16:52:08.136"^^xsd:dateTime ;
+            <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T16:52:05.183"^^xsd:dateTime ;
+            <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T16:52:03.38"^^xsd:dateTime ;
+            <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T16:52:00.477"^^xsd:dateTime ;
+            <https://w3id.org/isoprops#dynamicProperty> "no" ;
+            <https://w3id.org/isoprops#exampleInLanguage> "WLSwfSU53UaRo5zmD7y3ww=="@en ;
+            <https://w3id.org/isoprops#globallyUniqueIdentifier> "0063cf43-1665-4052-9ca6-6e995c8944ed" ;
+            <https://w3id.org/isoprops#hasGroupOfProperties> :Group_1_GeneralInformation ,
+                                                             :Group_1_Identification ;
+            <https://w3id.org/isoprops#hasNameInLanguage> "ID"@en ;
+            <https://w3id.org/isoprops#revisionNumber> 0 ;
+            <https://w3id.org/isoprops#status> "active" ;
+            <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:initialFunction rdfs:label "Initial function" ;
+                 <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                 <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                 <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                 <https://w3id.org/isoprops#dataType> "STRING" ;
+                 <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                 <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                 <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                 <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                 <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                 <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                 <https://w3id.org/isoprops#globallyUniqueIdentifier> "5bde0805-9a62-4941-90d0-edb319f351eb" ;
+                 <https://w3id.org/isoprops#hasGroupOfProperties> :Group_1_Identification ;
+                 <https://w3id.org/isoprops#hasNameInLanguage> "Initial function"@en ;
+                 <https://w3id.org/isoprops#revisionNumber> 0 ;
+                 <https://w3id.org/isoprops#status> "active" ;
+                 <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:initialProject rdfs:label "Initial project" ;
+                <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                <https://w3id.org/isoprops#dataType> "STRING" ;
+                <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                <https://w3id.org/isoprops#globallyUniqueIdentifier> "cf914f22-388d-431c-9610-d84cc451ee1b" ;
+                <https://w3id.org/isoprops#hasGroupOfProperties> :Group_1_Identification ;
+                <https://w3id.org/isoprops#hasNameInLanguage> "Initial project"@en ;
+                <https://w3id.org/isoprops#revisionNumber> 0 ;
+                <https://w3id.org/isoprops#status> "active" ;
+                <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:internalDefects rdfs:label "Internal defects" ;
+                 <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                 <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                 <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                 <https://w3id.org/isoprops#dataType> "STRING" ;
+                 <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                 <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                 <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                 <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                 <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                 <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                 <https://w3id.org/isoprops#globallyUniqueIdentifier> "92bec128-a24e-4f7d-8bf7-cf7d26eecd86" ;
+                 <https://w3id.org/isoprops#hasGroupOfProperties> :Group_GeometryAndDamage ;
+                 <https://w3id.org/isoprops#hasNameInLanguage> "Internal defects"@en ;
+                 <https://w3id.org/isoprops#revisionNumber> 0 ;
+                 <https://w3id.org/isoprops#status> "active" ;
+                 <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:length <http://w3id.org/nfdi4ing/metadata4ing#hasUnit> <http://qudt.org/vocab/unit#Meter> ;
+        rdfs:label "Length" ;
+        <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+        <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+        <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+        <https://w3id.org/isoprops#dataType> "DECIMAL" ;
+        <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dynamicProperty> "no" ;
+        <https://w3id.org/isoprops#globallyUniqueIdentifier> "baa321e2-2a97-4c85-bb4b-4e40873d14cd" ;
+        <https://w3id.org/isoprops#hasGroupOfProperties> :Group_2_Geometric ;
+        <https://w3id.org/isoprops#hasNameInLanguage> "Length"@en ;
+        <https://w3id.org/isoprops#hasUnit> <http://qudt.org/vocab/unit#Meter> ;
+        <https://w3id.org/isoprops#revisionNumber> 0 ;
+        <https://w3id.org/isoprops#status> "active" ;
+        <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:loadBearingCapacity rdfs:label "load bearing capacity" ;
+                     <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                     <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                     <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                     <https://w3id.org/isoprops#dataType> "STRING" ;
+                     <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T16:52:09.887"^^xsd:dateTime ;
+                     <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T16:52:08.136"^^xsd:dateTime ;
+                     <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T16:52:05.183"^^xsd:dateTime ;
+                     <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T16:52:03.38"^^xsd:dateTime ;
+                     <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T16:52:00.477"^^xsd:dateTime ;
+                     <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                     <https://w3id.org/isoprops#exampleInLanguage> "Rated normal force approx. 1500 kN" ;
+                     <https://w3id.org/isoprops#globallyUniqueIdentifier> "fbeb5924-65a5-493a-b785-2833267e3a47" ;
+                     <https://w3id.org/isoprops#hasGroupOfProperties> :Group_1_GeneralInformation ;
+                     <https://w3id.org/isoprops#hasNameInLanguage> "Load-bearing capacity"@en ;
+                     <https://w3id.org/isoprops#revisionNumber> 0 ;
+                     <https://w3id.org/isoprops#status> "active" ;
+                     <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:loadHistory rdfs:label "Load history" ;
+             <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+             <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+             <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+             <https://w3id.org/isoprops#dataType> "STRING" ;
+             <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+             <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+             <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+             <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+             <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+             <https://w3id.org/isoprops#dynamicProperty> "no" ;
+             <https://w3id.org/isoprops#globallyUniqueIdentifier> "3292c394-bb71-4b6e-9985-f212261b5331" ;
+             <https://w3id.org/isoprops#hasGroupOfProperties> :Group_4_ConditionAndAssessment ;
+             <https://w3id.org/isoprops#hasNameInLanguage> "Load history"@en ;
+             <https://w3id.org/isoprops#revisionNumber> 0 ;
+             <https://w3id.org/isoprops#status> "active" ;
+             <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:location rdfs:label "Location" ;
+          <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+          <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+          <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+          <https://w3id.org/isoprops#dataType> "STRING" ;
+          <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+          <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+          <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+          <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+          <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+          <https://w3id.org/isoprops#dynamicProperty> "no" ;
+          <https://w3id.org/isoprops#globallyUniqueIdentifier> "a544883c-7bf2-44ab-8875-5f1c2cf82829" ;
+          <https://w3id.org/isoprops#hasGroupOfProperties> :Group_5_ProcessAndLifecycle ;
+          <https://w3id.org/isoprops#hasNameInLanguage> "Location"@en ;
+          <https://w3id.org/isoprops#revisionNumber> 0 ;
+          <https://w3id.org/isoprops#status> "active" ;
+          <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:machineResources rdfs:label "Machine resources" ;
+                  <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                  <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                  <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                  <https://w3id.org/isoprops#dataType> "STRING" ;
+                  <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                  <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                  <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                  <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                  <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                  <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                  <https://w3id.org/isoprops#globallyUniqueIdentifier> "0080d99b-92fa-4500-8dc6-52e8bec0f4b5" ;
+                  <https://w3id.org/isoprops#hasGroupOfProperties> :Group_5_ProcessAndLifecycle ;
+                  <https://w3id.org/isoprops#hasNameInLanguage> "Machine resources"@en ;
+                  <https://w3id.org/isoprops#revisionNumber> 0 ;
+                  <https://w3id.org/isoprops#status> "active" ;
+                  <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:materialResources rdfs:label "Material resources" ;
+                   <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                   <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                   <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                   <https://w3id.org/isoprops#dataType> "STRING" ;
+                   <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                   <https://w3id.org/isoprops#globallyUniqueIdentifier> "2c7e2bad-9b13-4f07-bc78-b9a64434ffd7" ;
+                   <https://w3id.org/isoprops#hasGroupOfProperties> :Group_5_ProcessAndLifecycle ;
+                   <https://w3id.org/isoprops#hasNameInLanguage> "Material resources"@en ;
+                   <https://w3id.org/isoprops#revisionNumber> 0 ;
+                   <https://w3id.org/isoprops#status> "active" ;
+                   <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:origin rdfs:label "origin" ;
+        <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+        <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+        <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+        <https://w3id.org/isoprops#dataType> "STRING" ;
+        <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T16:52:09.887"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T16:52:08.136"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T16:52:05.183"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T16:52:03.38"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T16:52:00.477"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dynamicProperty> "no" ;
+        <https://w3id.org/isoprops#exampleInLanguage> "In-situ concrete, existing building stock, year of construction 2005." ;
+        <https://w3id.org/isoprops#globallyUniqueIdentifier> "0edcd316-494a-4120-942e-8b1af34fcf3b" ;
+        <https://w3id.org/isoprops#hasGroupOfProperties> :Group_1_GeneralInformation ;
+        <https://w3id.org/isoprops#hasNameInLanguage> "Origin"@en ;
+        <https://w3id.org/isoprops#revisionNumber> 0 ;
+        <https://w3id.org/isoprops#status> "active" ;
+        <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:photo rdfs:label "Photo" ;
+       <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+       <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+       <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+       <https://w3id.org/isoprops#dataType> "URI" ;
+       <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+       <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+       <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+       <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+       <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+       <https://w3id.org/isoprops#dynamicProperty> "no" ;
+       <https://w3id.org/isoprops#globallyUniqueIdentifier> "c5653e35-a0c8-4be1-b676-4edba77db686" ;
+       <https://w3id.org/isoprops#hasGroupOfProperties> :Group_1_Identification ;
+       <https://w3id.org/isoprops#hasNameInLanguage> "Photo"@en ;
+       <https://w3id.org/isoprops#revisionNumber> 0 ;
+       <https://w3id.org/isoprops#status> "active" ;
+       <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:reinforcementLayout rdfs:label "Reinforcement layout" ;
+                     <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                     <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                     <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                     <https://w3id.org/isoprops#dataType> "STRING" ;
+                     <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                     <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                     <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                     <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                     <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                     <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                     <https://w3id.org/isoprops#globallyUniqueIdentifier> "430c3659-3c19-475e-a656-39c896b5de2a" ;
+                     <https://w3id.org/isoprops#hasGroupOfProperties> :Group_GeometryAndDamage ;
+                     <https://w3id.org/isoprops#hasNameInLanguage> "Reinforcement layout"@en ;
+                     <https://w3id.org/isoprops#revisionNumber> 0 ;
+                     <https://w3id.org/isoprops#status> "active" ;
+                     <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:reinforcementMass rdfs:label "Reinforcement mass" ;
+                   <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                   <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                   <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                   <https://w3id.org/isoprops#dataType> "DECIMAL" ;
+                   <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                   <https://w3id.org/isoprops#globallyUniqueIdentifier> "0ab15cfe-5b4f-40d0-9f66-4bdea3eacf5e" ;
+                   <https://w3id.org/isoprops#hasGroupOfProperties> :Group_3_PhysicalAndMaterial ;
+                   <https://w3id.org/isoprops#hasNameInLanguage> "Reinforcement mass"@en ;
+                   <https://w3id.org/isoprops#revisionNumber> 0 ;
+                   <https://w3id.org/isoprops#status> "active" ;
+                   <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:reinforcementRatio rdfs:label "Reinforcement ratio" ;
+                    <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                    <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                    <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                    <https://w3id.org/isoprops#dataType> "STRING" ;
+                    <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                    <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                    <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                    <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                    <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                    <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                    <https://w3id.org/isoprops#globallyUniqueIdentifier> "40bb8cd7-4f03-4e3e-8ecd-e78782524077" ;
+                    <https://w3id.org/isoprops#hasGroupOfProperties> :Group_3_PhysicalAndMaterial ;
+                    <https://w3id.org/isoprops#hasNameInLanguage> "Reinforcement ratio"@en ;
+                    <https://w3id.org/isoprops#revisionNumber> 0 ;
+                    <https://w3id.org/isoprops#status> "active" ;
+                    <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:reinforcementTensileStrength rdfs:label "Reinforcement tensile strength" ;
+                              <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                              <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                              <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                              <https://w3id.org/isoprops#dataType> "DECIMAL" ;
+                              <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                              <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                              <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                              <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                              <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                              <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                              <https://w3id.org/isoprops#globallyUniqueIdentifier> "5413f874-e30e-4cb3-9320-be8feba03d42" ;
+                              <https://w3id.org/isoprops#hasGroupOfProperties> :Group_3_PhysicalAndMaterial ;
+                              <https://w3id.org/isoprops#hasNameInLanguage> "Reinforcement tensile strength"@en ;
+                              <https://w3id.org/isoprops#revisionNumber> 0 ;
+                              <https://w3id.org/isoprops#status> "active" ;
+                              <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:reinforcementYoungModulus <http://w3id.org/nfdi4ing/metadata4ing#hasUnit> <http://qudt.org/vocab/unit#GPa> ;
+                           rdfs:label "Reinforcement young modulus" ;
+                           <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                           <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                           <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                           <https://w3id.org/isoprops#dataType> "DECIMAL" ;
+                           <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                           <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                           <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                           <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                           <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                           <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                           <https://w3id.org/isoprops#globallyUniqueIdentifier> "73f15fe7-2d4a-4c2b-b5e3-9c9087a6b028" ;
+                           <https://w3id.org/isoprops#hasGroupOfProperties> :Group_3_PhysicalAndMaterial ;
+                           <https://w3id.org/isoprops#hasNameInLanguage> "Reinforcement young modulus"@en ;
+                           <https://w3id.org/isoprops#hasUnit> <http://qudt.org/vocab/unit#GPa> ;
+                           <https://w3id.org/isoprops#revisionNumber> 0 ;
+                           <https://w3id.org/isoprops#status> "active" ;
+                           <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:reinforcingSteelTensileStrength rdfs:label "Reinforcing steel tensile strength" ;
+                                 <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                                 <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                                 <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                                 <https://w3id.org/isoprops#dataType> "DECIMAL" ;
+                                 <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                                 <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                                 <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                                 <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                                 <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                                 <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                                 <https://w3id.org/isoprops#globallyUniqueIdentifier> "b2655449-330f-4673-9ace-4107fbe1c522" ;
+                                 <https://w3id.org/isoprops#hasGroupOfProperties> :Group_MechanicalProperties ;
+                                 <https://w3id.org/isoprops#hasNameInLanguage> "Reinforcing steel tensile strength"@en ;
+                                 <https://w3id.org/isoprops#revisionNumber> 0 ;
+                                 <https://w3id.org/isoprops#status> "active" ;
+                                 <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:remainingServiceLife rdfs:label "Remaining service life" ;
+                      <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                      <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                      <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                      <https://w3id.org/isoprops#dataType> "INTEGER" ;
+                      <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                      <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                      <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                      <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                      <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
+                      <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                      <https://w3id.org/isoprops#globallyUniqueIdentifier> "8a4e8993-7513-406a-98de-3473a82688ec" ;
+                      <https://w3id.org/isoprops#hasGroupOfProperties> :Group_DurabilityAndRemainingServiceLife ;
+                      <https://w3id.org/isoprops#hasNameInLanguage> "Remaining service life"@en ;
+                      <https://w3id.org/isoprops#revisionNumber> 0 ;
+                      <https://w3id.org/isoprops#status> "active" ;
+                      <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:shapeCategory rdfs:label "Shape category" ;
+               <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+               <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+               <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+               <https://w3id.org/isoprops#dataType> "STRING" ;
+               <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+               <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+               <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+               <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+               <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+               <https://w3id.org/isoprops#dynamicProperty> "no" ;
+               <https://w3id.org/isoprops#globallyUniqueIdentifier> "fd2299ae-3017-4dd7-a30d-c2075ae9d4a2" ;
+               <https://w3id.org/isoprops#hasGroupOfProperties> :Group_1_Identification ;
+               <https://w3id.org/isoprops#hasNameInLanguage> "Shape category"@en ;
+               <https://w3id.org/isoprops#revisionNumber> 0 ;
+               <https://w3id.org/isoprops#status> "active" ;
+               <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:toxicSubstances rdfs:label "Toxic substances" ;
+                 <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                 <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                 <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                 <https://w3id.org/isoprops#dataType> "STRING" ;
+                 <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                 <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                 <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                 <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                 <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                 <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                 <https://w3id.org/isoprops#globallyUniqueIdentifier> "eb16258a-8d45-409b-aa35-1e3141378661" ;
+                 <https://w3id.org/isoprops#hasGroupOfProperties> :Group_4_ConditionAndAssessment ;
+                 <https://w3id.org/isoprops#hasNameInLanguage> "Toxic substances"@en ;
+                 <https://w3id.org/isoprops#revisionNumber> 0 ;
+                 <https://w3id.org/isoprops#status> "active" ;
+                 <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:transportDistance rdfs:label "Transport distance" ;
+                   <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+                   <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+                   <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+                   <https://w3id.org/isoprops#dataType> "DECIMAL" ;
+                   <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+                   <https://w3id.org/isoprops#dynamicProperty> "no" ;
+                   <https://w3id.org/isoprops#globallyUniqueIdentifier> "4bdf5207-6049-42aa-894b-bcdca0166802" ;
+                   <https://w3id.org/isoprops#hasGroupOfProperties> :Group_5_ProcessAndLifecycle ;
+                   <https://w3id.org/isoprops#hasNameInLanguage> "Transport distance"@en ;
+                   <https://w3id.org/isoprops#revisionNumber> 0 ;
+                   <https://w3id.org/isoprops#status> "active" ;
+                   <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:volume rdfs:label "Volume" ;
+        <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+        <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+        <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+        <https://w3id.org/isoprops#dataType> "DECIMAL" ;
+        <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dynamicProperty> "no" ;
+        <https://w3id.org/isoprops#globallyUniqueIdentifier> "6410e8c7-198c-4f40-bd95-3ad26e30b8e4" ;
+        <https://w3id.org/isoprops#hasGroupOfProperties> :Group_2_Geometric ;
+        <https://w3id.org/isoprops#hasNameInLanguage> "Volume"@en ;
+        <https://w3id.org/isoprops#revisionNumber> 0 ;
+        <https://w3id.org/isoprops#status> "active" ;
+        <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:weight rdfs:label "Weight" ;
+        <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+        <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+        <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+        <https://w3id.org/isoprops#dataType> "DECIMAL" ;
+        <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+        <https://w3id.org/isoprops#dynamicProperty> "no" ;
+        <https://w3id.org/isoprops#globallyUniqueIdentifier> "12a1af7d-a016-4207-91cf-704c3ef9f776" ;
+        <https://w3id.org/isoprops#hasGroupOfProperties> :Group_3_PhysicalAndMaterial ;
+        <https://w3id.org/isoprops#hasNameInLanguage> "Weight"@en ;
+        <https://w3id.org/isoprops#revisionNumber> 0 ;
+        <https://w3id.org/isoprops#status> "active" ;
+        <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:width rdfs:label "Width" ;
+       <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+       <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+       <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+       <https://w3id.org/isoprops#dataType> "DECIMAL" ;
+       <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+       <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+       <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+       <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+       <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+       <https://w3id.org/isoprops#dynamicProperty> "no" ;
+       <https://w3id.org/isoprops#globallyUniqueIdentifier> "afdd4ba1-1da5-420b-a61b-614bc3bc16d0" ;
+       <https://w3id.org/isoprops#hasGroupOfProperties> :Group_2_Geometric ;
+       <https://w3id.org/isoprops#hasNameInLanguage> "Width"@en ;
+       <https://w3id.org/isoprops#revisionNumber> 0 ;
+       <https://w3id.org/isoprops#status> "active" ;
+       <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:workingHours rdfs:label "Working hours" ;
+              <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+              <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+              <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+              <https://w3id.org/isoprops#dataType> "STRING" ;
+              <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+              <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+              <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+              <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+              <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+              <https://w3id.org/isoprops#dynamicProperty> "no" ;
+              <https://w3id.org/isoprops#globallyUniqueIdentifier> "223a717f-fb74-40a4-8434-7364a5c7fa33" ;
+              <https://w3id.org/isoprops#hasGroupOfProperties> :Group_5_ProcessAndLifecycle ;
+              <https://w3id.org/isoprops#hasNameInLanguage> "Working hours"@en ;
+              <https://w3id.org/isoprops#revisionNumber> 0 ;
+              <https://w3id.org/isoprops#status> "active" ;
+              <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+:youngModulus <http://w3id.org/nfdi4ing/metadata4ing#hasUnit> <http://qudt.org/vocab/unit#GPa> ;
+              rdfs:label "Young modulus" ;
+              <https://w3id.org/isoprops#countryOfOrigin> "Germany" ;
+              <https://w3id.org/isoprops#countryOfUse> "Germany" ;
+              <https://w3id.org/isoprops#creatorsLanguage> "{@en}" ;
+              <https://w3id.org/isoprops#dataType> "DECIMAL" ;
+              <https://w3id.org/isoprops#dateOfActivation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+              <https://w3id.org/isoprops#dateOfCreation> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+              <https://w3id.org/isoprops#dateOfLastChange> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+              <https://w3id.org/isoprops#dateOfRevision> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+              <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:00:00.000"^^xsd:dateTime ;
+              <https://w3id.org/isoprops#dynamicProperty> "no" ;
+              <https://w3id.org/isoprops#globallyUniqueIdentifier> "a276c788-12e5-47c6-97c0-fb4ffef76d92" ;
+              <https://w3id.org/isoprops#hasGroupOfProperties> :Group_3_PhysicalAndMaterial ;
+              <https://w3id.org/isoprops#hasNameInLanguage> "Young modulus"@en ;
+              <https://w3id.org/isoprops#hasUnit> <http://qudt.org/vocab/unit#GPa> ;
+              <https://w3id.org/isoprops#revisionNumber> 0 ;
+              <https://w3id.org/isoprops#status> "active" ;
+              <https://w3id.org/isoprops#versionNumber> 1 .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

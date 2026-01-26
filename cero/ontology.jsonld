@@ -1,0 +1,4550 @@
+[ {
+  "@id" : "_:genid1",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Person"
+  } ],
+  "https://schema.org/email" : [ {
+    "@id" : "mailto:lukas.guntermann@rub.de"
+  } ],
+  "https://schema.org/identifier" : [ {
+    "@id" : "https://orcid.org/0009-0006-6615-6018"
+  } ],
+  "https://schema.org/memberOf" : [ {
+    "@id" : "_:genid2"
+  } ],
+  "https://schema.org/name" : [ {
+    "@value" : "Lukas Guntermann"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "https://schema.org/identifier" : [ {
+    "@id" : "https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/lukas_guntermann.html.en"
+  } ],
+  "https://schema.org/name" : [ {
+    "@value" : "Ruhr University Bochum"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Person"
+  } ],
+  "https://schema.org/email" : [ {
+    "@id" : "mailto:nina.krautgartner@rub.de"
+  } ],
+  "https://schema.org/identifier" : [ {
+    "@id" : "https://orcid.org/0009-0007-3836-1177"
+  } ],
+  "https://schema.org/memberOf" : [ {
+    "@id" : "_:genid4"
+  } ],
+  "https://schema.org/name" : [ {
+    "@value" : "Nina Krautgartner"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "https://schema.org/identifier" : [ {
+    "@id" : "https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/nina_krautgartner.html.en"
+  } ],
+  "https://schema.org/name" : [ {
+    "@value" : "Ruhr University Bochum"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Person"
+  } ],
+  "https://schema.org/email" : [ {
+    "@id" : "mailto:philipp.hagedorn-n6v@rub.de"
+  } ],
+  "https://schema.org/identifier" : [ {
+    "@id" : "https://orcid.org/0000-0002-6249-243X"
+  } ],
+  "https://schema.org/memberOf" : [ {
+    "@id" : "_:genid6"
+  } ],
+  "https://schema.org/name" : [ {
+    "@value" : "Philipp Hagedorn"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "https://schema.org/identifier" : [ {
+    "@id" : "https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en"
+  } ],
+  "https://schema.org/name" : [ {
+    "@value" : "Ruhr University Bochum"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Organization"
+  } ],
+  "https://schema.org/identifier" : [ {
+    "@id" : "https://www.inf.bi.rub.de"
+  } ],
+  "https://schema.org/name" : [ {
+    "@value" : "Chair of Computing in Engineering, Ruhr University Bochum"
+  } ],
+  "https://schema.org/parentOrganization" : [ {
+    "@id" : "_:genid8"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Organization"
+  } ],
+  "https://schema.org/name" : [ {
+    "@value" : "Ruhr University Bochum, Germany"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/nfdi4ing/metadata4ing#hasUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#historyNote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#distribution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://schema.org/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://schema.org/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://schema.org/codeRepository",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/email",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/memberOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/parentOrganization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/bot#Element",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/cero",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-01-01"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid5"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2021-12-06"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-01-15"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "_:genid7"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "cero"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "https://w3id.org/cero#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "\r\nTo be defined...\r\n"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Construction Element Reuse Ontology (CERO)"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/cero"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.1"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#historyNote" : [ {
+    "@value" : "\r\nv0.1: initial ontology\r\n  "
+  } ],
+  "https://schema.org/codeRepository" : [ {
+    "@id" : "https://github.com/RUB-Informatik-im-Bauwesen/crc1683-ontologies/tree/main/cero"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#Group_1_GeneralInformation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/isoprops#GroupOfProperties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Section 1: General Element and Project Information"
+  } ],
+  "https://w3id.org/isoprops#categoryOfGroupOfProperties" : [ {
+    "@value" : "Domain"
+  } ],
+  "https://w3id.org/isoprops#hasParentGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Ref_1_Form"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#Group_1_Identification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/isoprops#GroupOfProperties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Identification"
+  } ],
+  "https://w3id.org/isoprops#categoryOfGroupOfProperties" : [ {
+    "@value" : "Domain"
+  } ],
+  "https://w3id.org/isoprops#hasParentGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Ref_2_FactSheet"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#Group_2_1_MechanicalProperties",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/isoprops#GroupOfProperties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Section 2.1: Mechanical Properties"
+  } ],
+  "https://w3id.org/isoprops#categoryOfGroupOfProperties" : [ {
+    "@value" : "Domain"
+  } ],
+  "https://w3id.org/isoprops#hasParentGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_2_ConditionAssessment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#Group_2_2_GeometryDamage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/isoprops#GroupOfProperties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Section 2.2: Geometry and damage"
+  } ],
+  "https://w3id.org/isoprops#categoryOfGroupOfProperties" : [ {
+    "@value" : "Domain"
+  } ],
+  "https://w3id.org/isoprops#hasParentGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_2_ConditionAssessment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#Group_2_ConditionAssessment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/isoprops#GroupOfProperties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Section 2: Condition Assessment"
+  } ],
+  "https://w3id.org/isoprops#categoryOfGroupOfProperties" : [ {
+    "@value" : "Domain"
+  } ],
+  "https://w3id.org/isoprops#hasParentGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Ref_1_Form"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#Group_2_Geometric",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/isoprops#GroupOfProperties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Geometric"
+  } ],
+  "https://w3id.org/isoprops#categoryOfGroupOfProperties" : [ {
+    "@value" : "Domain"
+  } ],
+  "https://w3id.org/isoprops#hasParentGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Ref_2_FactSheet"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#Group_3_Durability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/isoprops#GroupOfProperties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Section 3: Durability and Remaining Service Life"
+  } ],
+  "https://w3id.org/isoprops#categoryOfGroupOfProperties" : [ {
+    "@value" : "Domain"
+  } ],
+  "https://w3id.org/isoprops#hasParentGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Ref_1_Form"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#Group_3_PhysicalAndMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/isoprops#GroupOfProperties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Physical & Material"
+  } ],
+  "https://w3id.org/isoprops#categoryOfGroupOfProperties" : [ {
+    "@value" : "Domain"
+  } ],
+  "https://w3id.org/isoprops#hasParentGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Ref_2_FactSheet"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#Group_4_ConditionAndAssessment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/isoprops#GroupOfProperties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Condition & Assessment"
+  } ],
+  "https://w3id.org/isoprops#categoryOfGroupOfProperties" : [ {
+    "@value" : "Domain"
+  } ],
+  "https://w3id.org/isoprops#hasParentGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Ref_2_FactSheet"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#Group_5_ProcessAndLifecycle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/isoprops#GroupOfProperties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Process & Lifecycle"
+  } ],
+  "https://w3id.org/isoprops#categoryOfGroupOfProperties" : [ {
+    "@value" : "Domain"
+  } ],
+  "https://w3id.org/isoprops#hasParentGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Ref_2_FactSheet"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#InspectionCertificateProperties",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/isoprops#DictionarySubset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Inspection certificate properties"
+  } ],
+  "http://www.w3.org/ns/dcat#distribution" : [ {
+    "@id" : "https://w3id.org/cero#InspectionReport"
+  } ],
+  "https://w3id.org/isoprops#hasDictionaryReferenceDocument" : [ {
+    "@id" : "https://w3id.org/cero#InspectionReport"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#InspectionReport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/isoprops#DictionaryReferenceDocument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Properties related to the inspection report"
+  } ],
+  "https://w3id.org/isoprops#hasPropertyGroupReference" : [ {
+    "@id" : "https://w3id.org/cero#Ref_1_Form"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#Organization_CRC1883",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Organization CRC1883"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#Ref_1_Form",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/isoprops#GroupOfProperties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Inspection form"
+  } ],
+  "https://w3id.org/isoprops#categoryOfGroupOfProperties" : [ {
+    "@value" : "Reference document"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#Ref_2_FactSheet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/isoprops#GroupOfProperties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Factsheet"
+  } ],
+  "https://w3id.org/isoprops#categoryOfGroupOfProperties" : [ {
+    "@value" : "Reference document"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#ReuseProperties",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://w3id.org/cero#Organization_CRC1883"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "Reuse properties of CRC1683"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/isoprops#Dictionary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Reuse properties of CRC1683"
+  } ],
+  "https://w3id.org/isoprops#hasDictionarySubset" : [ {
+    "@id" : "https://w3id.org/cero#InspectionCertificateProperties"
+  }, {
+    "@id" : "https://w3id.org/cero#SustainabilityAssessmentProperties"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#SustainabilityAssessmentProperties",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/isoprops#DictionarySubset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Sustainability assessment properties"
+  } ],
+  "http://www.w3.org/ns/dcat#distribution" : [ {
+    "@id" : "https://w3id.org/cero#SustainabilityAssessmentReport"
+  } ],
+  "https://w3id.org/isoprops#hasDictionaryReferenceDocument" : [ {
+    "@id" : "https://w3id.org/cero#SustainabilityAssessmentReport"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#SustainabilityAssessmentReport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/isoprops#DictionaryReferenceDocument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Properties related to the sustainability assessment "
+  } ],
+  "https://w3id.org/isoprops#hasPropertyGroupReference" : [ {
+    "@id" : "https://w3id.org/cero#Ref_2_FactSheet"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#accessibility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Accessibility"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "c6fd0bae-6a8a-4935-9aaa-7125f47f9840"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_1_Identification"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Accessibility"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#anchorPoints",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Anchor points"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "d8ac1178-efca-490a-beed-0af6a712f8c3"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_1_Identification"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Anchor points"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#carbonationDepth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://w3id.org/nfdi4ing/metadata4ing#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#MilliM"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Carbonation depth"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "DECIMAL"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "f199609b-804f-4bcd-807d-8654a68b7302"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_3_Durability"
+  }, {
+    "@id" : "https://w3id.org/cero#Group_4_ConditionAndAssessment"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Carbonation depth"
+  } ],
+  "https://w3id.org/isoprops#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#MilliM"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#chlorideContent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://w3id.org/nfdi4ing/metadata4ing#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#PERCENT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Chloride content"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "DECIMAL"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "e9b2a9cb-0d2a-4d99-af4c-6f3c5e677c35"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_DurabilityAndRemainingServiceLife"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Chloride content"
+  } ],
+  "https://w3id.org/isoprops#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#PERCENT"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#color",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Color"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "98c1da90-334e-4356-a5c1-15f636cf5347"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_1_Identification"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Color"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#compressiveStrength",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://w3id.org/nfdi4ing/metadata4ing#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#MPa"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Compressive strength"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "DECIMAL"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "55f61124-0b79-4bb0-8d72-35cd39ea1c30"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_3_PhysicalAndMaterial"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Compressive strength"
+  } ],
+  "https://w3id.org/isoprops#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#MPa"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#concreteCompressiveStrength",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://w3id.org/nfdi4ing/metadata4ing#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#MPa"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Concrete compressive strength"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "DECIMAL"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "d2ca34ec-34c5-4f4d-bdf3-23cfe5d67080"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_MechanicalProperties"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Concrete compressive strength"
+  } ],
+  "https://w3id.org/isoprops#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#MPa"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#concreteCover",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://w3id.org/nfdi4ing/metadata4ing#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#MilliM"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Concrete cover"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "DECIMAL"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "c88bf120-ce5f-4d58-9429-1ea4340e6412"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_GeometryAndDamage"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Concrete cover"
+  } ],
+  "https://w3id.org/isoprops#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#MilliM"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#concreteStiffness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://w3id.org/nfdi4ing/metadata4ing#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#GPa"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Concrete stiffness"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "DECIMAL"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "55c48fb4-34fd-44ab-b021-25e51c7bd4e5"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_MechanicalProperties"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Concrete stiffness"
+  } ],
+  "https://w3id.org/isoprops#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#GPa"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#connectionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Connection type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "0a1e5fcd-23e6-40e8-8a56-ed559242beed"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_1_Identification"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Connection type"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#crackWidth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://w3id.org/nfdi4ing/metadata4ing#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#MilliM"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Crack width"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "DECIMAL"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "03168145-52f3-4d27-8bc8-4d440e7282be"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_4_ConditionAndAssessment"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Crack width"
+  } ],
+  "https://w3id.org/isoprops#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#MilliM"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#cracks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cracks"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "6d0d2646-048a-4fd5-a934-1d8245bdfce8"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_GeometryAndDamage"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Cracks"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#crossSection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cross section"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "d392dd82-0322-4160-a82d-d18788b7dd24"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_2_Geometric"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Cross section"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#damageClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Damage class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "a727f8cb-59a8-41c6-bdc0-143dd3f36e67"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_4_ConditionAndAssessment"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Damage class"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#dceClassification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DCE Classification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "65ca931f-a338-4bb1-9af0-1be0d94952dd"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_DurabilityAndRemainingServiceLife"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "DCE Classification"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#density",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://w3id.org/nfdi4ing/metadata4ing#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#KilogramPerCubicMeter"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Density"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "DECIMAL"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "a21e317e-fbf5-4507-b2e7-568cf964f4ac"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_3_PhysicalAndMaterial"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Density"
+  } ],
+  "https://w3id.org/isoprops#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#KilogramPerCubicMeter"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#diameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://w3id.org/nfdi4ing/metadata4ing#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#Meter"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Diameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "DECIMAL"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "7b4f6745-8ca5-44b5-ac48-0a1a98892c50"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_2_Geometric"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Diameter"
+  } ],
+  "https://w3id.org/isoprops#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#Meter"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#elementDimensions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "element dimensions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:09.887"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:08.136"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:05.183"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:03.38"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:00.477"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#exampleInLanguage" : [ {
+    "@value" : "Rectangular cross-section 300 mm × 500 mm; column height per storey 3.20 m."
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "1cd45c88-af74-41a6-8b0b-38d0bae64beb"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_1_GeneralInformation"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Overall dimensions"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#elementType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "element type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:09.887"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:08.136"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:05.183"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:03.38"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:00.477"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#exampleInLanguage" : [ {
+    "@value" : "Reinforced concrete column in interior area (load-bearing)."
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "a07102e4-f60e-442d-9051-a59f4990dd50"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_1_GeneralInformation"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Element type"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#energyConsumed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://w3id.org/nfdi4ing/metadata4ing#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#KiloW-HR"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Energy consumed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "DECIMAL"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "ae62eb0e-2c64-4857-98a9-8c1e3cd96a50"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_5_ProcessAndLifecycle"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Energy consumed"
+  } ],
+  "https://w3id.org/isoprops#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#KiloW-HR"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#environmentalActions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "environmental actions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:09.887"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:08.136"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:05.183"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:03.38"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:00.477"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#exampleInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "XC1"
+  }, {
+    "@language" : "en",
+    "@value" : "XC2"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "a6a59a4e-9c42-423d-b857-9f72e6ef17c3"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_1_GeneralInformation"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Environmental actions"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#environmentalImpact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "environmental impact"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:09.887"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:08.136"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:05.183"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:03.38"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:00.477"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#exampleInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Low chloride exposure (indoor use)"
+  }, {
+    "@language" : "en",
+    "@value" : "No freeze-thaw cycles"
+  }, {
+    "@language" : "en",
+    "@value" : "carbonation"
+  }, {
+    "@language" : "en",
+    "@value" : "no chemical industrial environment"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "a6a59a4e-9c42-423d-b857-9f72e6ef17c3"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_1_GeneralInformation"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Environmental impacts"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#exposureClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Exposure class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "2110def2-0456-4271-88d7-6ebc55f15aee"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_3_PhysicalAndMaterial"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Exposure class"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#extraordinaryDamage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Extraordinary damage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "eea15d83-8382-43e9-9fc3-cca76ad32c0e"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_4_ConditionAndAssessment"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Extraordinary damage"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#finishing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Finishing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "1574e832-e36c-4292-b82b-6680d19354bb"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_1_Identification"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Finishing"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#height",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://w3id.org/nfdi4ing/metadata4ing#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#Meter"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Height"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "DECIMAL"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "afd17c85-3a27-4833-bcb8-adda95448b81"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_2_Geometric"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Height"
+  } ],
+  "https://w3id.org/isoprops#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#Meter"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:09.887"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:08.136"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:05.183"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:03.38"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:00.477"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#exampleInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "WLSwfSU53UaRo5zmD7y3ww=="
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "0063cf43-1665-4052-9ca6-6e995c8944ed"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_1_GeneralInformation"
+  }, {
+    "@id" : "https://w3id.org/cero#Group_1_Identification"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "ID"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#initialFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Initial function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "5bde0805-9a62-4941-90d0-edb319f351eb"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_1_Identification"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Initial function"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#initialProject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Initial project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "cf914f22-388d-431c-9610-d84cc451ee1b"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_1_Identification"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Initial project"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#internalDefects",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Internal defects"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "92bec128-a24e-4f7d-8bf7-cf7d26eecd86"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_GeometryAndDamage"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Internal defects"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#length",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://w3id.org/nfdi4ing/metadata4ing#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#Meter"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Length"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "DECIMAL"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "baa321e2-2a97-4c85-bb4b-4e40873d14cd"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_2_Geometric"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Length"
+  } ],
+  "https://w3id.org/isoprops#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#Meter"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#loadBearingCapacity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "load bearing capacity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:09.887"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:08.136"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:05.183"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:03.38"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:00.477"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#exampleInLanguage" : [ {
+    "@value" : "Rated normal force approx. 1500 kN"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "fbeb5924-65a5-493a-b785-2833267e3a47"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_1_GeneralInformation"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Load-bearing capacity"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#loadHistory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Load history"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "3292c394-bb71-4b6e-9985-f212261b5331"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_4_ConditionAndAssessment"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Load history"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "a544883c-7bf2-44ab-8875-5f1c2cf82829"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_5_ProcessAndLifecycle"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Location"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#machineResources",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Machine resources"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "0080d99b-92fa-4500-8dc6-52e8bec0f4b5"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_5_ProcessAndLifecycle"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Machine resources"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#materialResources",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Material resources"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "2c7e2bad-9b13-4f07-bc78-b9a64434ffd7"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_5_ProcessAndLifecycle"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Material resources"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#origin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "origin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:09.887"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:08.136"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:05.183"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:03.38"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T16:52:00.477"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#exampleInLanguage" : [ {
+    "@value" : "In-situ concrete, existing building stock, year of construction 2005."
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "0edcd316-494a-4120-942e-8b1af34fcf3b"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_1_GeneralInformation"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Origin"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#photo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Photo"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "URI"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "c5653e35-a0c8-4be1-b676-4edba77db686"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_1_Identification"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Photo"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#reinforcementLayout",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Reinforcement layout"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "430c3659-3c19-475e-a656-39c896b5de2a"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_GeometryAndDamage"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Reinforcement layout"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#reinforcementMass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Reinforcement mass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "DECIMAL"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "0ab15cfe-5b4f-40d0-9f66-4bdea3eacf5e"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_3_PhysicalAndMaterial"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Reinforcement mass"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#reinforcementRatio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Reinforcement ratio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "40bb8cd7-4f03-4e3e-8ecd-e78782524077"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_3_PhysicalAndMaterial"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Reinforcement ratio"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#reinforcementTensileStrength",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Reinforcement tensile strength"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "DECIMAL"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "5413f874-e30e-4cb3-9320-be8feba03d42"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_3_PhysicalAndMaterial"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Reinforcement tensile strength"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#reinforcementYoungModulus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://w3id.org/nfdi4ing/metadata4ing#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#GPa"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Reinforcement young modulus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "DECIMAL"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "73f15fe7-2d4a-4c2b-b5e3-9c9087a6b028"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_3_PhysicalAndMaterial"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Reinforcement young modulus"
+  } ],
+  "https://w3id.org/isoprops#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#GPa"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#reinforcingSteelTensileStrength",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Reinforcing steel tensile strength"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "DECIMAL"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "b2655449-330f-4673-9ace-4107fbe1c522"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_MechanicalProperties"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Reinforcing steel tensile strength"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#remainingServiceLife",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Remaining service life"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "INTEGER"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:30:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "8a4e8993-7513-406a-98de-3473a82688ec"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_DurabilityAndRemainingServiceLife"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Remaining service life"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#shapeCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Shape category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "fd2299ae-3017-4dd7-a30d-c2075ae9d4a2"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_1_Identification"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Shape category"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#toxicSubstances",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Toxic substances"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "eb16258a-8d45-409b-aa35-1e3141378661"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_4_ConditionAndAssessment"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Toxic substances"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#transportDistance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Transport distance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "DECIMAL"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "4bdf5207-6049-42aa-894b-bcdca0166802"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_5_ProcessAndLifecycle"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Transport distance"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#volume",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Volume"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "DECIMAL"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "6410e8c7-198c-4f40-bd95-3ad26e30b8e4"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_2_Geometric"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Volume"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#weight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Weight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "DECIMAL"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "12a1af7d-a016-4207-91cf-704c3ef9f776"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_3_PhysicalAndMaterial"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Weight"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#width",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Width"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "DECIMAL"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "afdd4ba1-1da5-420b-a61b-614bc3bc16d0"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_2_Geometric"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Width"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#workingHours",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#TextVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Working hours"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "STRING"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "223a717f-fb74-40a4-8434-7364a5c7fa33"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_5_ProcessAndLifecycle"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Working hours"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cero#youngModulus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://w3id.org/nfdi4ing/metadata4ing#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#GPa"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"
+  }, {
+    "@id" : "https://w3id.org/isoprops#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Young modulus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://w3id.org/isoprops#countryOfOrigin" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#countryOfUse" : [ {
+    "@value" : "Germany"
+  } ],
+  "https://w3id.org/isoprops#creatorsLanguage" : [ {
+    "@value" : "{@en}"
+  } ],
+  "https://w3id.org/isoprops#dataType" : [ {
+    "@value" : "DECIMAL"
+  } ],
+  "https://w3id.org/isoprops#dateOfActivation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfCreation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfLastChange" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfRevision" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dateOfVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2026-01-26T17:00:00.000"
+  } ],
+  "https://w3id.org/isoprops#dynamicProperty" : [ {
+    "@value" : "no"
+  } ],
+  "https://w3id.org/isoprops#globallyUniqueIdentifier" : [ {
+    "@value" : "a276c788-12e5-47c6-97c0-fb4ffef76d92"
+  } ],
+  "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
+    "@id" : "https://w3id.org/cero#Group_3_PhysicalAndMaterial"
+  } ],
+  "https://w3id.org/isoprops#hasNameInLanguage" : [ {
+    "@language" : "en",
+    "@value" : "Young modulus"
+  } ],
+  "https://w3id.org/isoprops#hasUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit#GPa"
+  } ],
+  "https://w3id.org/isoprops#revisionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/isoprops#status" : [ {
+    "@value" : "active"
+  } ],
+  "https://w3id.org/isoprops#versionNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/isoprops#Dictionary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#DictionaryReferenceDocument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#DictionarySubset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#GroupOfProperties",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#Property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#categoryOfGroupOfProperties",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#countryOfOrigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#countryOfUse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#creatorsLanguage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#dataType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#dateOfActivation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#dateOfCreation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#dateOfLastChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#dateOfRevision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#dateOfVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#dynamicProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#exampleInLanguage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#globallyUniqueIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#hasDictionaryReferenceDocument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#hasDictionarySubset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#hasGroupOfProperties",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#hasNameInLanguage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#hasParentGroupOfProperties",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#hasPropertyGroupReference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#hasUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#revisionNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/isoprops#versionNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]
