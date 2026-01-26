@@ -229,7 +229,7 @@
     "@id" : "https://w3id.org/isoprops#GroupOfProperties"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Section 1: General Element and Project Information"
+    "@value" : "Section 1: General Element and Project Information"
   } ],
   "https://w3id.org/isoprops#categoryOfGroupOfProperties" : [ {
     "@value" : "Domain"
@@ -259,7 +259,7 @@
     "@id" : "https://w3id.org/isoprops#GroupOfProperties"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Section 2.1: Mechanical Properties"
+    "@value" : "Section 2.1: Mechanical Properties"
   } ],
   "https://w3id.org/isoprops#categoryOfGroupOfProperties" : [ {
     "@value" : "Domain"
@@ -289,7 +289,7 @@
     "@id" : "https://w3id.org/isoprops#GroupOfProperties"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Section 2: Condition Assessment"
+    "@value" : "Section 2: Condition Assessment"
   } ],
   "https://w3id.org/isoprops#categoryOfGroupOfProperties" : [ {
     "@value" : "Domain"
@@ -319,7 +319,7 @@
     "@id" : "https://w3id.org/isoprops#GroupOfProperties"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Section 3: Durability and Remaining Service Life"
+    "@value" : "Section 3: Durability and Remaining Service Life"
   } ],
   "https://w3id.org/isoprops#categoryOfGroupOfProperties" : [ {
     "@value" : "Domain"
@@ -765,7 +765,7 @@
     "@value" : "e9b2a9cb-0d2a-4d99-af4c-6f3c5e677c35"
   } ],
   "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
-    "@id" : "https://w3id.org/cero#Group_DurabilityAndRemainingServiceLife"
+    "@id" : "https://w3id.org/cero#Group_3_Durability"
   } ],
   "https://w3id.org/isoprops#hasNameInLanguage" : [ {
     "@language" : "en",
@@ -993,7 +993,7 @@
     "@value" : "d2ca34ec-34c5-4f4d-bdf3-23cfe5d67080"
   } ],
   "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
-    "@id" : "https://w3id.org/cero#Group_MechanicalProperties"
+    "@id" : "https://w3id.org/cero#Group_2_1_MechanicalProperties"
   } ],
   "https://w3id.org/isoprops#hasNameInLanguage" : [ {
     "@language" : "en",
@@ -1072,7 +1072,7 @@
     "@value" : "c88bf120-ce5f-4d58-9429-1ea4340e6412"
   } ],
   "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
-    "@id" : "https://w3id.org/cero#Group_GeometryAndDamage"
+    "@id" : "https://w3id.org/cero#Group_2_2_GeometryDamage"
   } ],
   "https://w3id.org/isoprops#hasNameInLanguage" : [ {
     "@language" : "en",
@@ -1148,7 +1148,7 @@
     "@value" : "55c48fb4-34fd-44ab-b021-25e51c7bd4e5"
   } ],
   "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
-    "@id" : "https://w3id.org/cero#Group_MechanicalProperties"
+    "@id" : "https://w3id.org/cero#Group_2_1_MechanicalProperties"
   } ],
   "https://w3id.org/isoprops#hasNameInLanguage" : [ {
     "@language" : "en",
@@ -1376,7 +1376,7 @@
     "@value" : "6d0d2646-048a-4fd5-a934-1d8245bdfce8"
   } ],
   "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
-    "@id" : "https://w3id.org/cero#Group_GeometryAndDamage"
+    "@id" : "https://w3id.org/cero#Group_2_2_GeometryDamage"
   } ],
   "https://w3id.org/isoprops#hasNameInLanguage" : [ {
     "@language" : "en",
@@ -1595,7 +1595,7 @@
     "@value" : "65ca931f-a338-4bb1-9af0-1be0d94952dd"
   } ],
   "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
-    "@id" : "https://w3id.org/cero#Group_DurabilityAndRemainingServiceLife"
+    "@id" : "https://w3id.org/cero#Group_3_Durability"
   } ],
   "https://w3id.org/isoprops#hasNameInLanguage" : [ {
     "@language" : "en",
@@ -2746,7 +2746,7 @@
     "@value" : "92bec128-a24e-4f7d-8bf7-cf7d26eecd86"
   } ],
   "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
-    "@id" : "https://w3id.org/cero#Group_GeometryAndDamage"
+    "@id" : "https://w3id.org/cero#Group_2_2_GeometryDamage"
   } ],
   "https://w3id.org/isoprops#hasNameInLanguage" : [ {
     "@language" : "en",
@@ -3412,7 +3412,7 @@
     "@value" : "430c3659-3c19-475e-a656-39c896b5de2a"
   } ],
   "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
-    "@id" : "https://w3id.org/cero#Group_GeometryAndDamage"
+    "@id" : "https://w3id.org/cero#Group_2_2_GeometryDamage"
   } ],
   "https://w3id.org/isoprops#hasNameInLanguage" : [ {
     "@language" : "en",
@@ -3783,7 +3783,7 @@
     "@value" : "b2655449-330f-4673-9ace-4107fbe1c522"
   } ],
   "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
-    "@id" : "https://w3id.org/cero#Group_MechanicalProperties"
+    "@id" : "https://w3id.org/cero#Group_2_1_MechanicalProperties"
   } ],
   "https://w3id.org/isoprops#hasNameInLanguage" : [ {
     "@language" : "en",
@@ -3856,7 +3856,7 @@
     "@value" : "8a4e8993-7513-406a-98de-3473a82688ec"
   } ],
   "https://w3id.org/isoprops#hasGroupOfProperties" : [ {
-    "@id" : "https://w3id.org/cero#Group_DurabilityAndRemainingServiceLife"
+    "@id" : "https://w3id.org/cero#Group_3_Durability"
   } ],
   "https://w3id.org/isoprops#hasNameInLanguage" : [ {
     "@language" : "en",

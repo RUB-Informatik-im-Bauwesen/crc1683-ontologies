@@ -25,12 +25,6 @@ Markdown documentation created by [pyLODE](http://github.com/rdflib/pyLODE) 2.4
   * 2021-12-06
 * **Version Information**
   * 0.1
-* **Version IRI**
-  * [https://w3id.org/cero](https://w3id.org/cero)
-* **Imports**
-  * [bot:](https://w3id.org/bot#)
-  * [https://w3id.org/isoprops](https://w3id.org/isoprops)
-  * [metadata4ing:](http://w3id.org/nfdi4ing/metadata4ing#)
 * **License**
   * [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)
 * **Ontology RDF**
@@ -481,14 +475,20 @@ Range(s) |[xsd:decimal](http://www.w3.org/2001/XMLSchema#decimal) (c)<br />
 [Factsheet](#Factsheet),
 [Geometric](#Geometric),
 [Identification](#Identification),
+[Inspection certificate properties](#Inspectioncertificateproperties),
 [Inspection form](#Inspectionform),
+[Organization CRC1883](#OrganizationCRC1883),
 [Physical & Material](#PhysicalMaterial),
 [Process & Lifecycle](#ProcessLifecycle),
+[Properties related to the inspection report](#Propertiesrelatedtotheinspectionreport),
+[Properties related to the sustainability assessment ](#Propertiesrelatedtothesustainabilityassessment),
+[Reuse properties of CRC1683](#ReusepropertiesofCRC1683),
 [Section 1: General Element and Project Information](#Section1:GeneralElementandProjectInformation),
 [Section 2.1: Mechanical Properties](#Section2.1:MechanicalProperties),
 [Section 2.2: Geometry and damage](#Section2.2:Geometryanddamage),
 [Section 2: Condition Assessment](#Section2:ConditionAssessment),
 [Section 3: Durability and Remaining Service Life](#Section3:DurabilityandRemainingServiceLife),
+[Sustainability assessment properties](#Sustainabilityassessmentproperties),
 ### Section 1: General Element and Project Information <sup>c</sup>
 Property | Value
 --- | ---
@@ -549,6 +549,24 @@ Property | Value
 IRI | `https://w3id.org/cero#Group_5_ProcessAndLifecycle`
 * **Contributor(s)**
   * [isoprops:GroupOfProperties](https://w3id.org/isoprops#GroupOfProperties)
+### Inspection certificate properties <sup>c</sup>
+Property | Value
+--- | ---
+IRI | `https://w3id.org/cero#InspectionCertificateProperties`
+* **Contributor(s)**
+  * [isoprops:DictionarySubset](https://w3id.org/isoprops#DictionarySubset)
+### Properties related to the inspection report <sup>c</sup>
+Property | Value
+--- | ---
+IRI | `https://w3id.org/cero#InspectionReport`
+* **Contributor(s)**
+  * [isoprops:DictionaryReferenceDocument](https://w3id.org/isoprops#DictionaryReferenceDocument)
+### Organization CRC1883 <sup>c</sup>
+Property | Value
+--- | ---
+IRI | `https://w3id.org/cero#Organization_CRC1883`
+* **Contributor(s)**
+  * [prov:Organization](http://www.w3.org/ns/prov#Organization)
 ### Inspection form <sup>c</sup>
 Property | Value
 --- | ---
@@ -561,6 +579,24 @@ Property | Value
 IRI | `https://w3id.org/cero#Ref_2_FactSheet`
 * **Contributor(s)**
   * [isoprops:GroupOfProperties](https://w3id.org/isoprops#GroupOfProperties)
+### Reuse properties of CRC1683 <sup>c</sup>
+Property | Value
+--- | ---
+IRI | `https://w3id.org/cero#ReuseProperties`
+* **Contributor(s)**
+  * [isoprops:Dictionary](https://w3id.org/isoprops#Dictionary)
+### Sustainability assessment properties <sup>c</sup>
+Property | Value
+--- | ---
+IRI | `https://w3id.org/cero#SustainabilityAssessmentProperties`
+* **Contributor(s)**
+  * [isoprops:DictionarySubset](https://w3id.org/isoprops#DictionarySubset)
+### Properties related to the sustainability assessment  <sup>c</sup>
+Property | Value
+--- | ---
+IRI | `https://w3id.org/cero#SustainabilityAssessmentReport`
+* **Contributor(s)**
+  * [isoprops:DictionaryReferenceDocument](https://w3id.org/isoprops#DictionaryReferenceDocument)
 ## Namespaces
 * **default (:)**
   * `https://w3id.org/cero#`

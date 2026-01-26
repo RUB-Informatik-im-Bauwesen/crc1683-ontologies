@@ -511,7 +511,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/O
 # https://w3id.org/cero#Group_1_GeneralInformation
 <https://w3id.org/cero#Group_1_GeneralInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#Group_1_GeneralInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#GroupOfProperties> .
-<https://w3id.org/cero#Group_1_GeneralInformation> <http://www.w3.org/2000/01/rdf-schema#label> "Section 1: General Element and Project Information" .
+<https://w3id.org/cero#Group_1_GeneralInformation> <http://www.w3.org/2000/01/rdf-schema#label> "Section 1: General Element and Project Information" .
 <https://w3id.org/cero#Group_1_GeneralInformation> <https://w3id.org/isoprops#categoryOfGroupOfProperties> "Domain" .
 <https://w3id.org/cero#Group_1_GeneralInformation> <https://w3id.org/isoprops#hasParentGroupOfProperties> <https://w3id.org/cero#Ref_1_Form> .
 # 
@@ -525,7 +525,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/O
 # https://w3id.org/cero#Group_2_1_MechanicalProperties
 <https://w3id.org/cero#Group_2_1_MechanicalProperties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#Group_2_1_MechanicalProperties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#GroupOfProperties> .
-<https://w3id.org/cero#Group_2_1_MechanicalProperties> <http://www.w3.org/2000/01/rdf-schema#label> "Section 2.1: Mechanical Properties" .
+<https://w3id.org/cero#Group_2_1_MechanicalProperties> <http://www.w3.org/2000/01/rdf-schema#label> "Section 2.1: Mechanical Properties" .
 <https://w3id.org/cero#Group_2_1_MechanicalProperties> <https://w3id.org/isoprops#categoryOfGroupOfProperties> "Domain" .
 <https://w3id.org/cero#Group_2_1_MechanicalProperties> <https://w3id.org/isoprops#hasParentGroupOfProperties> <https://w3id.org/cero#Group_2_ConditionAssessment> .
 # 
@@ -539,7 +539,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/O
 # https://w3id.org/cero#Group_2_ConditionAssessment
 <https://w3id.org/cero#Group_2_ConditionAssessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#Group_2_ConditionAssessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#GroupOfProperties> .
-<https://w3id.org/cero#Group_2_ConditionAssessment> <http://www.w3.org/2000/01/rdf-schema#label> "Section 2: Condition Assessment" .
+<https://w3id.org/cero#Group_2_ConditionAssessment> <http://www.w3.org/2000/01/rdf-schema#label> "Section 2: Condition Assessment" .
 <https://w3id.org/cero#Group_2_ConditionAssessment> <https://w3id.org/isoprops#categoryOfGroupOfProperties> "Domain" .
 <https://w3id.org/cero#Group_2_ConditionAssessment> <https://w3id.org/isoprops#hasParentGroupOfProperties> <https://w3id.org/cero#Ref_1_Form> .
 # 
@@ -553,7 +553,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/O
 # https://w3id.org/cero#Group_3_Durability
 <https://w3id.org/cero#Group_3_Durability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#Group_3_Durability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#GroupOfProperties> .
-<https://w3id.org/cero#Group_3_Durability> <http://www.w3.org/2000/01/rdf-schema#label> "Section 3: Durability and Remaining Service Life" .
+<https://w3id.org/cero#Group_3_Durability> <http://www.w3.org/2000/01/rdf-schema#label> "Section 3: Durability and Remaining Service Life" .
 <https://w3id.org/cero#Group_3_Durability> <https://w3id.org/isoprops#categoryOfGroupOfProperties> "Domain" .
 <https://w3id.org/cero#Group_3_Durability> <https://w3id.org/isoprops#hasParentGroupOfProperties> <https://w3id.org/cero#Ref_1_Form> .
 # 
@@ -974,7 +974,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/O
 <https://w3id.org/cero#chlorideContent> <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/cero#chlorideContent> <https://w3id.org/isoprops#dynamicProperty> "no" .
 <https://w3id.org/cero#chlorideContent> <https://w3id.org/isoprops#globallyUniqueIdentifier> "e9b2a9cb-0d2a-4d99-af4c-6f3c5e677c35" .
-<https://w3id.org/cero#chlorideContent> <https://w3id.org/isoprops#hasGroupOfProperties> <https://w3id.org/cero#Group_DurabilityAndRemainingServiceLife> .
+<https://w3id.org/cero#chlorideContent> <https://w3id.org/isoprops#hasGroupOfProperties> <https://w3id.org/cero#Group_3_Durability> .
 <https://w3id.org/cero#chlorideContent> <https://w3id.org/isoprops#hasNameInLanguage> "Chloride content"@en .
 <https://w3id.org/cero#chlorideContent> <https://w3id.org/isoprops#hasUnit> <http://qudt.org/vocab/unit#PERCENT> .
 <https://w3id.org/cero#chlorideContent> <https://w3id.org/isoprops#revisionNumber> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
@@ -1032,7 +1032,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/O
 <https://w3id.org/cero#concreteCompressiveStrength> <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/cero#concreteCompressiveStrength> <https://w3id.org/isoprops#dynamicProperty> "no" .
 <https://w3id.org/cero#concreteCompressiveStrength> <https://w3id.org/isoprops#globallyUniqueIdentifier> "d2ca34ec-34c5-4f4d-bdf3-23cfe5d67080" .
-<https://w3id.org/cero#concreteCompressiveStrength> <https://w3id.org/isoprops#hasGroupOfProperties> <https://w3id.org/cero#Group_MechanicalProperties> .
+<https://w3id.org/cero#concreteCompressiveStrength> <https://w3id.org/isoprops#hasGroupOfProperties> <https://w3id.org/cero#Group_2_1_MechanicalProperties> .
 <https://w3id.org/cero#concreteCompressiveStrength> <https://w3id.org/isoprops#hasNameInLanguage> "Concrete compressive strength"@en .
 <https://w3id.org/cero#concreteCompressiveStrength> <https://w3id.org/isoprops#hasUnit> <http://qudt.org/vocab/unit#MPa> .
 <https://w3id.org/cero#concreteCompressiveStrength> <https://w3id.org/isoprops#revisionNumber> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
@@ -1052,7 +1052,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/O
 <https://w3id.org/cero#concreteCover> <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/cero#concreteCover> <https://w3id.org/isoprops#dynamicProperty> "no" .
 <https://w3id.org/cero#concreteCover> <https://w3id.org/isoprops#globallyUniqueIdentifier> "c88bf120-ce5f-4d58-9429-1ea4340e6412" .
-<https://w3id.org/cero#concreteCover> <https://w3id.org/isoprops#hasGroupOfProperties> <https://w3id.org/cero#Group_GeometryAndDamage> .
+<https://w3id.org/cero#concreteCover> <https://w3id.org/isoprops#hasGroupOfProperties> <https://w3id.org/cero#Group_2_2_GeometryDamage> .
 <https://w3id.org/cero#concreteCover> <https://w3id.org/isoprops#hasNameInLanguage> "Concrete cover"@en .
 <https://w3id.org/cero#concreteCover> <https://w3id.org/isoprops#hasUnit> <http://qudt.org/vocab/unit#MilliM> .
 <https://w3id.org/cero#concreteCover> <https://w3id.org/isoprops#revisionNumber> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
@@ -1072,7 +1072,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/O
 <https://w3id.org/cero#concreteStiffness> <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/cero#concreteStiffness> <https://w3id.org/isoprops#dynamicProperty> "no" .
 <https://w3id.org/cero#concreteStiffness> <https://w3id.org/isoprops#globallyUniqueIdentifier> "55c48fb4-34fd-44ab-b021-25e51c7bd4e5" .
-<https://w3id.org/cero#concreteStiffness> <https://w3id.org/isoprops#hasGroupOfProperties> <https://w3id.org/cero#Group_MechanicalProperties> .
+<https://w3id.org/cero#concreteStiffness> <https://w3id.org/isoprops#hasGroupOfProperties> <https://w3id.org/cero#Group_2_1_MechanicalProperties> .
 <https://w3id.org/cero#concreteStiffness> <https://w3id.org/isoprops#hasNameInLanguage> "Concrete stiffness"@en .
 <https://w3id.org/cero#concreteStiffness> <https://w3id.org/isoprops#hasUnit> <http://qudt.org/vocab/unit#GPa> .
 <https://w3id.org/cero#concreteStiffness> <https://w3id.org/isoprops#revisionNumber> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
@@ -1129,7 +1129,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/O
 <https://w3id.org/cero#cracks> <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/cero#cracks> <https://w3id.org/isoprops#dynamicProperty> "no" .
 <https://w3id.org/cero#cracks> <https://w3id.org/isoprops#globallyUniqueIdentifier> "6d0d2646-048a-4fd5-a934-1d8245bdfce8" .
-<https://w3id.org/cero#cracks> <https://w3id.org/isoprops#hasGroupOfProperties> <https://w3id.org/cero#Group_GeometryAndDamage> .
+<https://w3id.org/cero#cracks> <https://w3id.org/isoprops#hasGroupOfProperties> <https://w3id.org/cero#Group_2_2_GeometryDamage> .
 <https://w3id.org/cero#cracks> <https://w3id.org/isoprops#hasNameInLanguage> "Cracks"@en .
 <https://w3id.org/cero#cracks> <https://w3id.org/isoprops#revisionNumber> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://w3id.org/cero#cracks> <https://w3id.org/isoprops#status> "active" .
@@ -1183,7 +1183,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/O
 <https://w3id.org/cero#dceClassification> <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/cero#dceClassification> <https://w3id.org/isoprops#dynamicProperty> "no" .
 <https://w3id.org/cero#dceClassification> <https://w3id.org/isoprops#globallyUniqueIdentifier> "65ca931f-a338-4bb1-9af0-1be0d94952dd" .
-<https://w3id.org/cero#dceClassification> <https://w3id.org/isoprops#hasGroupOfProperties> <https://w3id.org/cero#Group_DurabilityAndRemainingServiceLife> .
+<https://w3id.org/cero#dceClassification> <https://w3id.org/isoprops#hasGroupOfProperties> <https://w3id.org/cero#Group_3_Durability> .
 <https://w3id.org/cero#dceClassification> <https://w3id.org/isoprops#hasNameInLanguage> "DCE Classification"@en .
 <https://w3id.org/cero#dceClassification> <https://w3id.org/isoprops#revisionNumber> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://w3id.org/cero#dceClassification> <https://w3id.org/isoprops#status> "active" .
@@ -1471,7 +1471,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/O
 <https://w3id.org/cero#internalDefects> <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/cero#internalDefects> <https://w3id.org/isoprops#dynamicProperty> "no" .
 <https://w3id.org/cero#internalDefects> <https://w3id.org/isoprops#globallyUniqueIdentifier> "92bec128-a24e-4f7d-8bf7-cf7d26eecd86" .
-<https://w3id.org/cero#internalDefects> <https://w3id.org/isoprops#hasGroupOfProperties> <https://w3id.org/cero#Group_GeometryAndDamage> .
+<https://w3id.org/cero#internalDefects> <https://w3id.org/isoprops#hasGroupOfProperties> <https://w3id.org/cero#Group_2_2_GeometryDamage> .
 <https://w3id.org/cero#internalDefects> <https://w3id.org/isoprops#hasNameInLanguage> "Internal defects"@en .
 <https://w3id.org/cero#internalDefects> <https://w3id.org/isoprops#revisionNumber> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://w3id.org/cero#internalDefects> <https://w3id.org/isoprops#status> "active" .
@@ -1637,7 +1637,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/O
 <https://w3id.org/cero#reinforcementLayout> <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/cero#reinforcementLayout> <https://w3id.org/isoprops#dynamicProperty> "no" .
 <https://w3id.org/cero#reinforcementLayout> <https://w3id.org/isoprops#globallyUniqueIdentifier> "430c3659-3c19-475e-a656-39c896b5de2a" .
-<https://w3id.org/cero#reinforcementLayout> <https://w3id.org/isoprops#hasGroupOfProperties> <https://w3id.org/cero#Group_GeometryAndDamage> .
+<https://w3id.org/cero#reinforcementLayout> <https://w3id.org/isoprops#hasGroupOfProperties> <https://w3id.org/cero#Group_2_2_GeometryDamage> .
 <https://w3id.org/cero#reinforcementLayout> <https://w3id.org/isoprops#hasNameInLanguage> "Reinforcement layout"@en .
 <https://w3id.org/cero#reinforcementLayout> <https://w3id.org/isoprops#revisionNumber> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://w3id.org/cero#reinforcementLayout> <https://w3id.org/isoprops#status> "active" .
@@ -1729,7 +1729,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/O
 <https://w3id.org/cero#reinforcingSteelTensileStrength> <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/cero#reinforcingSteelTensileStrength> <https://w3id.org/isoprops#dynamicProperty> "no" .
 <https://w3id.org/cero#reinforcingSteelTensileStrength> <https://w3id.org/isoprops#globallyUniqueIdentifier> "b2655449-330f-4673-9ace-4107fbe1c522" .
-<https://w3id.org/cero#reinforcingSteelTensileStrength> <https://w3id.org/isoprops#hasGroupOfProperties> <https://w3id.org/cero#Group_MechanicalProperties> .
+<https://w3id.org/cero#reinforcingSteelTensileStrength> <https://w3id.org/isoprops#hasGroupOfProperties> <https://w3id.org/cero#Group_2_1_MechanicalProperties> .
 <https://w3id.org/cero#reinforcingSteelTensileStrength> <https://w3id.org/isoprops#hasNameInLanguage> "Reinforcing steel tensile strength"@en .
 <https://w3id.org/cero#reinforcingSteelTensileStrength> <https://w3id.org/isoprops#revisionNumber> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://w3id.org/cero#reinforcingSteelTensileStrength> <https://w3id.org/isoprops#status> "active" .
@@ -1747,7 +1747,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/O
 <https://w3id.org/cero#remainingServiceLife> <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/cero#remainingServiceLife> <https://w3id.org/isoprops#dynamicProperty> "no" .
 <https://w3id.org/cero#remainingServiceLife> <https://w3id.org/isoprops#globallyUniqueIdentifier> "8a4e8993-7513-406a-98de-3473a82688ec" .
-<https://w3id.org/cero#remainingServiceLife> <https://w3id.org/isoprops#hasGroupOfProperties> <https://w3id.org/cero#Group_DurabilityAndRemainingServiceLife> .
+<https://w3id.org/cero#remainingServiceLife> <https://w3id.org/isoprops#hasGroupOfProperties> <https://w3id.org/cero#Group_3_Durability> .
 <https://w3id.org/cero#remainingServiceLife> <https://w3id.org/isoprops#hasNameInLanguage> "Remaining service life"@en .
 <https://w3id.org/cero#remainingServiceLife> <https://w3id.org/isoprops#revisionNumber> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://w3id.org/cero#remainingServiceLife> <https://w3id.org/isoprops#status> "active" .

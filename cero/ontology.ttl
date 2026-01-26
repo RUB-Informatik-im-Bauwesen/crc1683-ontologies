@@ -613,7 +613,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/cero#Group_1_GeneralInformation
 :Group_1_GeneralInformation rdf:type owl:NamedIndividual ,
                                      <https://w3id.org/isoprops#GroupOfProperties> ;
-                            rdfs:label "Section 1: General Element and Project Information" ;
+                            rdfs:label "Section 1: General Element and Project Information" ;
                             <https://w3id.org/isoprops#categoryOfGroupOfProperties> "Domain" ;
                             <https://w3id.org/isoprops#hasParentGroupOfProperties> :Ref_1_Form .
 
@@ -629,7 +629,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/cero#Group_2_1_MechanicalProperties
 :Group_2_1_MechanicalProperties rdf:type owl:NamedIndividual ,
                                          <https://w3id.org/isoprops#GroupOfProperties> ;
-                                rdfs:label "Section 2.1: Mechanical Properties" ;
+                                rdfs:label "Section 2.1: Mechanical Properties" ;
                                 <https://w3id.org/isoprops#categoryOfGroupOfProperties> "Domain" ;
                                 <https://w3id.org/isoprops#hasParentGroupOfProperties> :Group_2_ConditionAssessment .
 
@@ -645,7 +645,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/cero#Group_2_ConditionAssessment
 :Group_2_ConditionAssessment rdf:type owl:NamedIndividual ,
                                       <https://w3id.org/isoprops#GroupOfProperties> ;
-                             rdfs:label "Section 2: Condition Assessment" ;
+                             rdfs:label "Section 2: Condition Assessment" ;
                              <https://w3id.org/isoprops#categoryOfGroupOfProperties> "Domain" ;
                              <https://w3id.org/isoprops#hasParentGroupOfProperties> :Ref_1_Form .
 
@@ -661,7 +661,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/cero#Group_3_Durability
 :Group_3_Durability rdf:type owl:NamedIndividual ,
                              <https://w3id.org/isoprops#GroupOfProperties> ;
-                    rdfs:label "Section 3: Durability and Remaining Service Life" ;
+                    rdfs:label "Section 3: Durability and Remaining Service Life" ;
                     <https://w3id.org/isoprops#categoryOfGroupOfProperties> "Domain" ;
                     <https://w3id.org/isoprops#hasParentGroupOfProperties> :Ref_1_Form .
 
@@ -1145,7 +1145,7 @@ xsd:date rdf:type rdfs:Datatype .
                  <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
                  <https://w3id.org/isoprops#dynamicProperty> "no" ;
                  <https://w3id.org/isoprops#globallyUniqueIdentifier> "e9b2a9cb-0d2a-4d99-af4c-6f3c5e677c35" ;
-                 <https://w3id.org/isoprops#hasGroupOfProperties> :Group_DurabilityAndRemainingServiceLife ;
+                 <https://w3id.org/isoprops#hasGroupOfProperties> :Group_3_Durability ;
                  <https://w3id.org/isoprops#hasNameInLanguage> "Chloride content"@en ;
                  <https://w3id.org/isoprops#hasUnit> <http://qudt.org/vocab/unit#PERCENT> ;
                  <https://w3id.org/isoprops#revisionNumber> 0 ;
@@ -1206,7 +1206,7 @@ xsd:date rdf:type rdfs:Datatype .
                              <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
                              <https://w3id.org/isoprops#dynamicProperty> "no" ;
                              <https://w3id.org/isoprops#globallyUniqueIdentifier> "d2ca34ec-34c5-4f4d-bdf3-23cfe5d67080" ;
-                             <https://w3id.org/isoprops#hasGroupOfProperties> :Group_MechanicalProperties ;
+                             <https://w3id.org/isoprops#hasGroupOfProperties> :Group_2_1_MechanicalProperties ;
                              <https://w3id.org/isoprops#hasNameInLanguage> "Concrete compressive strength"@en ;
                              <https://w3id.org/isoprops#hasUnit> <http://qudt.org/vocab/unit#MPa> ;
                              <https://w3id.org/isoprops#revisionNumber> 0 ;
@@ -1227,7 +1227,7 @@ xsd:date rdf:type rdfs:Datatype .
                <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
                <https://w3id.org/isoprops#dynamicProperty> "no" ;
                <https://w3id.org/isoprops#globallyUniqueIdentifier> "c88bf120-ce5f-4d58-9429-1ea4340e6412" ;
-               <https://w3id.org/isoprops#hasGroupOfProperties> :Group_GeometryAndDamage ;
+               <https://w3id.org/isoprops#hasGroupOfProperties> :Group_2_2_GeometryDamage ;
                <https://w3id.org/isoprops#hasNameInLanguage> "Concrete cover"@en ;
                <https://w3id.org/isoprops#hasUnit> <http://qudt.org/vocab/unit#MilliM> ;
                <https://w3id.org/isoprops#revisionNumber> 0 ;
@@ -1248,7 +1248,7 @@ xsd:date rdf:type rdfs:Datatype .
                    <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
                    <https://w3id.org/isoprops#dynamicProperty> "no" ;
                    <https://w3id.org/isoprops#globallyUniqueIdentifier> "55c48fb4-34fd-44ab-b021-25e51c7bd4e5" ;
-                   <https://w3id.org/isoprops#hasGroupOfProperties> :Group_MechanicalProperties ;
+                   <https://w3id.org/isoprops#hasGroupOfProperties> :Group_2_1_MechanicalProperties ;
                    <https://w3id.org/isoprops#hasNameInLanguage> "Concrete stiffness"@en ;
                    <https://w3id.org/isoprops#hasUnit> <http://qudt.org/vocab/unit#GPa> ;
                    <https://w3id.org/isoprops#revisionNumber> 0 ;
@@ -1308,7 +1308,7 @@ xsd:date rdf:type rdfs:Datatype .
         <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
         <https://w3id.org/isoprops#dynamicProperty> "no" ;
         <https://w3id.org/isoprops#globallyUniqueIdentifier> "6d0d2646-048a-4fd5-a934-1d8245bdfce8" ;
-        <https://w3id.org/isoprops#hasGroupOfProperties> :Group_GeometryAndDamage ;
+        <https://w3id.org/isoprops#hasGroupOfProperties> :Group_2_2_GeometryDamage ;
         <https://w3id.org/isoprops#hasNameInLanguage> "Cracks"@en ;
         <https://w3id.org/isoprops#revisionNumber> 0 ;
         <https://w3id.org/isoprops#status> "active" ;
@@ -1365,7 +1365,7 @@ xsd:date rdf:type rdfs:Datatype .
                    <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
                    <https://w3id.org/isoprops#dynamicProperty> "no" ;
                    <https://w3id.org/isoprops#globallyUniqueIdentifier> "65ca931f-a338-4bb1-9af0-1be0d94952dd" ;
-                   <https://w3id.org/isoprops#hasGroupOfProperties> :Group_DurabilityAndRemainingServiceLife ;
+                   <https://w3id.org/isoprops#hasGroupOfProperties> :Group_3_Durability ;
                    <https://w3id.org/isoprops#hasNameInLanguage> "DCE Classification"@en ;
                    <https://w3id.org/isoprops#revisionNumber> 0 ;
                    <https://w3id.org/isoprops#status> "active" ;
@@ -1668,7 +1668,7 @@ xsd:date rdf:type rdfs:Datatype .
                  <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
                  <https://w3id.org/isoprops#dynamicProperty> "no" ;
                  <https://w3id.org/isoprops#globallyUniqueIdentifier> "92bec128-a24e-4f7d-8bf7-cf7d26eecd86" ;
-                 <https://w3id.org/isoprops#hasGroupOfProperties> :Group_GeometryAndDamage ;
+                 <https://w3id.org/isoprops#hasGroupOfProperties> :Group_2_2_GeometryDamage ;
                  <https://w3id.org/isoprops#hasNameInLanguage> "Internal defects"@en ;
                  <https://w3id.org/isoprops#revisionNumber> 0 ;
                  <https://w3id.org/isoprops#status> "active" ;
@@ -1843,7 +1843,7 @@ xsd:date rdf:type rdfs:Datatype .
                      <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
                      <https://w3id.org/isoprops#dynamicProperty> "no" ;
                      <https://w3id.org/isoprops#globallyUniqueIdentifier> "430c3659-3c19-475e-a656-39c896b5de2a" ;
-                     <https://w3id.org/isoprops#hasGroupOfProperties> :Group_GeometryAndDamage ;
+                     <https://w3id.org/isoprops#hasGroupOfProperties> :Group_2_2_GeometryDamage ;
                      <https://w3id.org/isoprops#hasNameInLanguage> "Reinforcement layout"@en ;
                      <https://w3id.org/isoprops#revisionNumber> 0 ;
                      <https://w3id.org/isoprops#status> "active" ;
@@ -1940,7 +1940,7 @@ xsd:date rdf:type rdfs:Datatype .
                                  <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
                                  <https://w3id.org/isoprops#dynamicProperty> "no" ;
                                  <https://w3id.org/isoprops#globallyUniqueIdentifier> "b2655449-330f-4673-9ace-4107fbe1c522" ;
-                                 <https://w3id.org/isoprops#hasGroupOfProperties> :Group_MechanicalProperties ;
+                                 <https://w3id.org/isoprops#hasGroupOfProperties> :Group_2_1_MechanicalProperties ;
                                  <https://w3id.org/isoprops#hasNameInLanguage> "Reinforcing steel tensile strength"@en ;
                                  <https://w3id.org/isoprops#revisionNumber> 0 ;
                                  <https://w3id.org/isoprops#status> "active" ;
@@ -1959,7 +1959,7 @@ xsd:date rdf:type rdfs:Datatype .
                       <https://w3id.org/isoprops#dateOfVersion> "2026-01-26T17:30:00.000"^^xsd:dateTime ;
                       <https://w3id.org/isoprops#dynamicProperty> "no" ;
                       <https://w3id.org/isoprops#globallyUniqueIdentifier> "8a4e8993-7513-406a-98de-3473a82688ec" ;
-                      <https://w3id.org/isoprops#hasGroupOfProperties> :Group_DurabilityAndRemainingServiceLife ;
+                      <https://w3id.org/isoprops#hasGroupOfProperties> :Group_3_Durability ;
                       <https://w3id.org/isoprops#hasNameInLanguage> "Remaining service life"@en ;
                       <https://w3id.org/isoprops#revisionNumber> 0 ;
                       <https://w3id.org/isoprops#status> "active" ;

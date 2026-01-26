@@ -308,14 +308,6 @@
         <dd>2021-12-06</dd>
         <dt>Version Information</dt>
         <dd>0.1</dd>
-        <dt>Version IRI</dt>
-        <dd><a href="https://w3id.org/cero">https://w3id.org/cero</a></dd>
-        <dt>Imports</dt>
-        <dd>
-            <a href="http://w3id.org/nfdi4ing/metadata4ing#">metadata4ing:</a><br/>
-            <a href="https://w3id.org/bot#">bot:</a><br/>
-            <a href="https://w3id.org/isoprops">https://w3id.org/isoprops</a><br/>
-        </dd>
         <dt>License</dt>
         <dd><a href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a></dd>
         <dt>Ontology RDF</dt>
@@ -1518,14 +1510,20 @@
         <li><a href="#Factsheet">Factsheet</a></li>
         <li><a href="#Geometric">Geometric</a></li>
         <li><a href="#Identification">Identification</a></li>
+        <li><a href="#Inspectioncertificateproperties">Inspection certificate properties</a></li>
         <li><a href="#Inspectionform">Inspection form</a></li>
+        <li><a href="#OrganizationCRC1883">Organization CRC1883</a></li>
         <li><a href="#PhysicalMaterial">Physical & Material</a></li>
         <li><a href="#ProcessLifecycle">Process & Lifecycle</a></li>
+        <li><a href="#Propertiesrelatedtotheinspectionreport">Properties related to the inspection report</a></li>
+        <li><a href="#Propertiesrelatedtothesustainabilityassessment">Properties related to the sustainability assessment </a></li>
+        <li><a href="#ReusepropertiesofCRC1683">Reuse properties of CRC1683</a></li>
         <li><a href="#Section1:GeneralElementandProjectInformation">Section 1: General Element and Project Information</a></li>
         <li><a href="#Section2.1:MechanicalProperties">Section 2.1: Mechanical Properties</a></li>
         <li><a href="#Section2.2:Geometryanddamage">Section 2.2: Geometry and damage</a></li>
         <li><a href="#Section2:ConditionAssessment">Section 2: Condition Assessment</a></li>
         <li><a href="#Section3:DurabilityandRemainingServiceLife">Section 3: Durability and Remaining Service Life</a></li>
+        <li><a href="#Sustainabilityassessmentproperties">Sustainability assessment properties</a></li>
     </ul>
     <div class="entity named_individual" id="Section1:GeneralElementandProjectInformation">
         <h3>Section 1: General Element and Project Information<sup title="named individual" class="sup-ni">ni</sup></h3>
@@ -1707,6 +1705,60 @@
             </dd>
         </table>
     </div>
+    <div class="entity named_individual" id="Inspectioncertificateproperties">
+        <h3>Inspection certificate properties<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td>
+                  <code>
+                      https://w3id.org/cero#InspectionCertificateProperties
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Classes(s)</dt>
+            <dd>
+                <a href="https://w3id.org/isoprops#DictionarySubset">isoprops:DictionarySubset</a><br/>
+            </dd>
+        </table>
+    </div>
+    <div class="entity named_individual" id="Propertiesrelatedtotheinspectionreport">
+        <h3>Properties related to the inspection report<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td>
+                  <code>
+                      https://w3id.org/cero#InspectionReport
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Classes(s)</dt>
+            <dd>
+                <a href="https://w3id.org/isoprops#DictionaryReferenceDocument">isoprops:DictionaryReferenceDocument</a><br/>
+            </dd>
+        </table>
+    </div>
+    <div class="entity named_individual" id="OrganizationCRC1883">
+        <h3>Organization CRC1883<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td>
+                  <code>
+                      https://w3id.org/cero#Organization_CRC1883
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Classes(s)</dt>
+            <dd>
+                <a href="http://www.w3.org/ns/prov#Organization">prov:Organization</a><br/>
+            </dd>
+        </table>
+    </div>
     <div class="entity named_individual" id="Inspectionform">
         <h3>Inspection form<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
@@ -1740,6 +1792,60 @@
             <dt>Classes(s)</dt>
             <dd>
                 <a href="https://w3id.org/isoprops#GroupOfProperties">isoprops:GroupOfProperties</a><br/>
+            </dd>
+        </table>
+    </div>
+    <div class="entity named_individual" id="ReusepropertiesofCRC1683">
+        <h3>Reuse properties of CRC1683<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td>
+                  <code>
+                      https://w3id.org/cero#ReuseProperties
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Classes(s)</dt>
+            <dd>
+                <a href="https://w3id.org/isoprops#Dictionary">isoprops:Dictionary</a><br/>
+            </dd>
+        </table>
+    </div>
+    <div class="entity named_individual" id="Sustainabilityassessmentproperties">
+        <h3>Sustainability assessment properties<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td>
+                  <code>
+                      https://w3id.org/cero#SustainabilityAssessmentProperties
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Classes(s)</dt>
+            <dd>
+                <a href="https://w3id.org/isoprops#DictionarySubset">isoprops:DictionarySubset</a><br/>
+            </dd>
+        </table>
+    </div>
+    <div class="entity named_individual" id="Propertiesrelatedtothesustainabilityassessment">
+        <h3>Properties related to the sustainability assessment <sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td>
+                  <code>
+                      https://w3id.org/cero#SustainabilityAssessmentReport
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Classes(s)</dt>
+            <dd>
+                <a href="https://w3id.org/isoprops#DictionaryReferenceDocument">isoprops:DictionaryReferenceDocument</a><br/>
             </dd>
         </table>
     </div>
