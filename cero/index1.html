@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Construction Element Reuse Ontology (CERO)</title>
+    <title>Concrete Element Reuse Ontology (CERO)</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     
     <style>
@@ -205,7 +205,7 @@
     ],
     "https://schema.org/name": [
       {
-        "@value": "Construction Element Reuse Ontology (CERO)"
+        "@value": "Concrete Element Reuse Ontology (CERO)"
       }
     ]
   }
@@ -217,7 +217,7 @@
     <span style="color:#329545;">p</span><span style="color:#f9cb33;">y</span>LODE</a>
     <span style="font-size:smaller;">2.4</span>
   </div>
-  <h1>Construction Element Reuse Ontology (CERO)</h1>
+  <h1>Concrete Element Reuse Ontology (CERO)</h1>
 <section id="metadata">
     <h2 style="display:none;">Metadata</h2>
     <dl>
@@ -308,6 +308,14 @@
         <dd>2021-12-06</dd>
         <dt>Version Information</dt>
         <dd>0.1</dd>
+        <dt>Version IRI</dt>
+        <dd><a href="https://w3id.org/cero">https://w3id.org/cero</a></dd>
+        <dt>Imports</dt>
+        <dd>
+            <a href="http://w3id.org/nfdi4ing/metadata4ing#">metadata4ing:</a><br/>
+            <a href="https://w3id.org/bot#">bot:</a><br/>
+            <a href="https://w3id.org/isoprops">https://w3id.org/isoprops</a><br/>
+        </dd>
         <dt>License</dt>
         <dd><a href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a></dd>
         <dt>Ontology RDF</dt>
@@ -324,6 +332,7 @@
 <section id="toc">
     <h2>Table of Contents</h2>
     <ol>
+        <li><a href="#classes">Classes</a></li>
         <li><a href="#datatypeproperties">Datatype Properties</a></li>
         <li><a href="#namedindividuals">Named Individuals</a></li>
         <li><a href="#namespaces">Namespaces</a></li>
@@ -340,7 +349,147 @@
   <section id="classes">
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
+        <li><a href="#Element">Element</a></li>
+        <li><a href="#GroupOfProperties">GroupOfProperties</a></li>
+        <li><a href="#NumericalVariable">NumericalVariable</a></li>
+        <li><a href="#Property">Property</a></li>
+        <li><a href="#Property1">Property</a></li>
+        <li><a href="#TextVariable">TextVariable</a></li>
+        <li><a href="#VariableSet">VariableSet</a></li>
     </ul>
+    <div class="entity class" id="NumericalVariable">
+        <h3>NumericalVariable<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="TextVariable">
+        <h3>TextVariable<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://w3id.org/nfdi4ing/metadata4ing#TextVariable</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="https://w3id.org/isoprops#Property">isoprops:Property</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="VariableSet">
+        <h3>VariableSet<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://w3id.org/nfdi4ing/metadata4ing#VariableSet</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Property">
+        <h3>Property<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://www.molmod.info/semantics/pims-ii.ttl#Property</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Element">
+        <h3>Element<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>https://w3id.org/bot#Element</code></td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#Machineresources">cero:machineResources</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#environmentalimpact">cero:environmentalImpact</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Damageclass">cero:damageClass</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Shapecategory">cero:shapeCategory</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#environmentalactions">cero:environmentalActions</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Chloridecontent">cero:chlorideContent</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Crackwidth">cero:crackWidth</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Reinforcingsteeltensilestrength">cero:reinforcingSteelTensileStrength</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Anchorpoints">cero:anchorPoints</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Transportdistance">cero:transportDistance</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Reinforcementlayout">cero:reinforcementLayout</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Compressivestrength">cero:compressiveStrength</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#elementtype">cero:elementType</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Toxicsubstances">cero:toxicSubstances</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Youngmodulus">cero:youngModulus</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Photo">cero:photo</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Reinforcementmass">cero:reinforcementMass</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Height">cero:height</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Connectiontype">cero:connectionType</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Reinforcementtensilestrength">cero:reinforcementTensileStrength</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Volume">cero:volume</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Color">cero:color</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Internaldefects">cero:internalDefects</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Length">cero:length</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Workinghours">cero:workingHours</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Finishing">cero:finishing</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Cracks">cero:cracks</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Concretecover">cero:concreteCover</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Location">cero:location</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#elementdimensions">cero:elementDimensions</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Initialproject">cero:initialProject</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#identifier">cero:identifier</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Concretecompressivestrength">cero:concreteCompressiveStrength</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Initialfunction">cero:initialFunction</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Diameter">cero:diameter</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Accessibility">cero:accessibility</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Reinforcementyoungmodulus">cero:reinforcementYoungModulus</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Remainingservicelife">cero:remainingServiceLife</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Concretestiffness">cero:concreteStiffness</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Exposureclass">cero:exposureClass</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Crosssection">cero:crossSection</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Energyconsumed">cero:energyConsumed</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Extraordinarydamage">cero:extraordinaryDamage</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Loadhistory">cero:loadHistory</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#origin">cero:origin</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Weight">cero:weight</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Reinforcementratio">cero:reinforcementRatio</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Density">cero:density</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Materialresources">cero:materialResources</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#loadbearingcapacity">cero:loadBearingCapacity</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Width">cero:width</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Carbonationdepth">cero:carbonationDepth</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#DCEClassification">cero:dceClassification</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="GroupOfProperties">
+        <h3>GroupOfProperties<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>https://w3id.org/isoprops#GroupOfProperties</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Property1">
+        <h3>Property<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>https://w3id.org/isoprops#Property</code></td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="http://w3id.org/nfdi4ing/metadata4ing#TextVariable">metadata4ing:TextVariable</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
 </section>
 <section id="datatypeproperties">
     <h2>Datatype Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>

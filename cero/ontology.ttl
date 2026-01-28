@@ -21,7 +21,7 @@
                          rdfs:comment """
 To be defined...
 """ ;
-                         rdfs:label "Construction Element Reuse Ontology (CERO)" ;
+                         rdfs:label "Concrete Element Reuse Ontology (CERO)" ;
                          owl:versionInfo "0.1" ;
                          <http://www.w3.org/2004/02/skos/core#historyNote> """
 v0.1: initial ontology
@@ -567,7 +567,18 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 ###  http://w3id.org/nfdi4ing/metadata4ing#TextVariable
-<http://w3id.org/nfdi4ing/metadata4ing#TextVariable> rdf:type owl:Class .
+<http://w3id.org/nfdi4ing/metadata4ing#TextVariable> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <https://w3id.org/isoprops#Property> .
+
+
+###  http://w3id.org/nfdi4ing/metadata4ing#VariableSet
+<http://w3id.org/nfdi4ing/metadata4ing#VariableSet> rdf:type owl:Class ;
+                                                    owl:equivalentClass <https://w3id.org/isoprops#GroupOfProperties> .
+
+
+###  http://www.molmod.info/semantics/pims-ii.ttl#Property
+<http://www.molmod.info/semantics/pims-ii.ttl#Property> rdf:type owl:Class ;
+                                                        owl:equivalentClass <https://w3id.org/isoprops#Property> .
 
 
 ###  http://www.w3.org/ns/prov#Organization
@@ -753,318 +764,371 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/cero#accessibility
 :accessibility rdf:type owl:NamedIndividual ,
                         <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                        <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                         <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#anchorPoints
 :anchorPoints rdf:type owl:NamedIndividual ,
                        <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                       <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                        <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#carbonationDepth
 :carbonationDepth rdf:type owl:NamedIndividual ,
                            <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                           <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                            <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#chlorideContent
 :chlorideContent rdf:type owl:NamedIndividual ,
                           <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                          <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                           <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#color
 :color rdf:type owl:NamedIndividual ,
                 <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                 <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#compressiveStrength
 :compressiveStrength rdf:type owl:NamedIndividual ,
                               <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                              <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                               <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#concreteCompressiveStrength
 :concreteCompressiveStrength rdf:type owl:NamedIndividual ,
                                       <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                                      <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                                       <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#concreteCover
 :concreteCover rdf:type owl:NamedIndividual ,
                         <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                        <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                         <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#concreteStiffness
 :concreteStiffness rdf:type owl:NamedIndividual ,
                             <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                            <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                             <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#connectionType
 :connectionType rdf:type owl:NamedIndividual ,
                          <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                         <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                          <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#crackWidth
 :crackWidth rdf:type owl:NamedIndividual ,
                      <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                     <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                      <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#cracks
 :cracks rdf:type owl:NamedIndividual ,
                  <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                 <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                  <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#crossSection
 :crossSection rdf:type owl:NamedIndividual ,
                        <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                       <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                        <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#damageClass
 :damageClass rdf:type owl:NamedIndividual ,
                       <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                      <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                       <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#dceClassification
 :dceClassification rdf:type owl:NamedIndividual ,
                             <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                            <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                             <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#density
 :density rdf:type owl:NamedIndividual ,
                   <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                  <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                   <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#diameter
 :diameter rdf:type owl:NamedIndividual ,
                    <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                   <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                    <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#elementDimensions
 :elementDimensions rdf:type owl:NamedIndividual ,
                             <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                            <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                             <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#elementType
 :elementType rdf:type owl:NamedIndividual ,
                       <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                      <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                       <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#energyConsumed
 :energyConsumed rdf:type owl:NamedIndividual ,
                          <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                         <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                          <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#environmentalActions
 :environmentalActions rdf:type owl:NamedIndividual ,
                                <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                               <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                                <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#environmentalImpact
 :environmentalImpact rdf:type owl:NamedIndividual ,
                               <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                              <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                               <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#exposureClass
 :exposureClass rdf:type owl:NamedIndividual ,
                         <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                        <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                         <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#extraordinaryDamage
 :extraordinaryDamage rdf:type owl:NamedIndividual ,
                               <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                              <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                               <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#finishing
 :finishing rdf:type owl:NamedIndividual ,
                     <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                    <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                     <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#height
 :height rdf:type owl:NamedIndividual ,
                  <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                 <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                  <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#identifier
 :identifier rdf:type owl:NamedIndividual ,
                      <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                     <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                      <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#initialFunction
 :initialFunction rdf:type owl:NamedIndividual ,
                           <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                          <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                           <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#initialProject
 :initialProject rdf:type owl:NamedIndividual ,
                          <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                         <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                          <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#internalDefects
 :internalDefects rdf:type owl:NamedIndividual ,
                           <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                          <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                           <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#length
 :length rdf:type owl:NamedIndividual ,
                  <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                 <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                  <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#loadBearingCapacity
 :loadBearingCapacity rdf:type owl:NamedIndividual ,
                               <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                              <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                               <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#loadHistory
 :loadHistory rdf:type owl:NamedIndividual ,
                       <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                      <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                       <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#location
 :location rdf:type owl:NamedIndividual ,
                    <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                   <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                    <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#machineResources
 :machineResources rdf:type owl:NamedIndividual ,
                            <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                           <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                            <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#materialResources
 :materialResources rdf:type owl:NamedIndividual ,
                             <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                            <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                             <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#origin
 :origin rdf:type owl:NamedIndividual ,
                  <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                 <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                  <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#photo
 :photo rdf:type owl:NamedIndividual ,
                 <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                 <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#reinforcementLayout
 :reinforcementLayout rdf:type owl:NamedIndividual ,
                               <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                              <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                               <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#reinforcementMass
 :reinforcementMass rdf:type owl:NamedIndividual ,
                             <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                            <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                             <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#reinforcementRatio
 :reinforcementRatio rdf:type owl:NamedIndividual ,
                              <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                             <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                              <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#reinforcementTensileStrength
 :reinforcementTensileStrength rdf:type owl:NamedIndividual ,
                                        <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                                       <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                                        <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#reinforcementYoungModulus
 :reinforcementYoungModulus rdf:type owl:NamedIndividual ,
                                     <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                                    <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                                     <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#reinforcingSteelTensileStrength
 :reinforcingSteelTensileStrength rdf:type owl:NamedIndividual ,
                                           <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                                          <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                                           <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#remainingServiceLife
 :remainingServiceLife rdf:type owl:NamedIndividual ,
                                <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                               <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                                <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#shapeCategory
 :shapeCategory rdf:type owl:NamedIndividual ,
                         <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                        <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                         <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#toxicSubstances
 :toxicSubstances rdf:type owl:NamedIndividual ,
                           <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                          <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                           <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#transportDistance
 :transportDistance rdf:type owl:NamedIndividual ,
                             <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                            <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                             <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#volume
 :volume rdf:type owl:NamedIndividual ,
                  <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                 <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                  <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#weight
 :weight rdf:type owl:NamedIndividual ,
                  <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                 <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                  <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#width
 :width rdf:type owl:NamedIndividual ,
                 <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                 <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#workingHours
 :workingHours rdf:type owl:NamedIndividual ,
                        <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> ,
+                       <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                        <https://w3id.org/isoprops#Property> .
 
 
 ###  https://w3id.org/cero#youngModulus
 :youngModulus rdf:type owl:NamedIndividual ,
                        <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> ,
+                       <http://www.molmod.info/semantics/pims-ii.ttl#Property> ,
                        <https://w3id.org/isoprops#Property> .
 
 

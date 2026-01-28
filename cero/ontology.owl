@@ -28,7 +28,7 @@
         <rdfs:comment>
 To be defined...
 </rdfs:comment>
-        <rdfs:label>Construction Element Reuse Ontology (CERO)</rdfs:label>
+        <rdfs:label>Concrete Element Reuse Ontology (CERO)</rdfs:label>
         <owl:versionInfo>0.1</owl:versionInfo>
         <skos:historyNote>
 v0.1: initial ontology
@@ -960,7 +960,27 @@ v0.1: initial ontology
     <!-- http://w3id.org/nfdi4ing/metadata4ing#TextVariable -->
 
 
-    <owl:Class rdf:about="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+    <owl:Class rdf:about="http://w3id.org/nfdi4ing/metadata4ing#TextVariable">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/isoprops#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/nfdi4ing/metadata4ing#VariableSet -->
+
+
+    <owl:Class rdf:about="http://w3id.org/nfdi4ing/metadata4ing#VariableSet">
+        <owl:equivalentClass rdf:resource="https://w3id.org/isoprops#GroupOfProperties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.molmod.info/semantics/pims-ii.ttl#Property -->
+
+
+    <owl:Class rdf:about="http://www.molmod.info/semantics/pims-ii.ttl#Property">
+        <owl:equivalentClass rdf:resource="https://w3id.org/isoprops#Property"/>
+    </owl:Class>
     
 
 
@@ -1256,6 +1276,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#accessibility">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1266,6 +1287,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#anchorPoints">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1276,6 +1298,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#carbonationDepth">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1286,6 +1309,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#chlorideContent">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1296,6 +1320,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#color">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1306,6 +1331,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#compressiveStrength">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1316,6 +1342,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#concreteCompressiveStrength">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1326,6 +1353,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#concreteCover">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1336,6 +1364,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#concreteStiffness">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1346,6 +1375,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#connectionType">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1356,6 +1386,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#crackWidth">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1366,6 +1397,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#cracks">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1376,6 +1408,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#crossSection">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1386,6 +1419,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#damageClass">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1396,6 +1430,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#dceClassification">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1406,6 +1441,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#density">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1416,6 +1452,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#diameter">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1426,6 +1463,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#elementDimensions">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1436,6 +1474,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#elementType">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1446,6 +1485,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#energyConsumed">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1456,6 +1496,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#environmentalActions">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1466,6 +1507,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#environmentalImpact">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1476,6 +1518,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#exposureClass">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1486,6 +1529,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#extraordinaryDamage">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1496,6 +1540,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#finishing">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1506,6 +1551,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#height">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1516,6 +1562,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#identifier">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1526,6 +1573,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#initialFunction">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1536,6 +1584,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#initialProject">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1546,6 +1595,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#internalDefects">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1556,6 +1606,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#length">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1566,6 +1617,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#loadBearingCapacity">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1576,6 +1628,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#loadHistory">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1586,6 +1639,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#location">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1596,6 +1650,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#machineResources">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1606,6 +1661,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#materialResources">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1616,6 +1672,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#origin">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1626,6 +1683,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#photo">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1636,6 +1694,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#reinforcementLayout">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1646,6 +1705,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#reinforcementMass">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1656,6 +1716,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#reinforcementRatio">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1666,6 +1727,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#reinforcementTensileStrength">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1676,6 +1738,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#reinforcementYoungModulus">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1686,6 +1749,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#reinforcingSteelTensileStrength">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1696,6 +1760,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#remainingServiceLife">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1706,6 +1771,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#shapeCategory">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1716,6 +1782,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#toxicSubstances">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1726,6 +1793,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#transportDistance">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1736,6 +1804,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#volume">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1746,6 +1815,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#weight">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1756,6 +1826,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#width">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1766,6 +1837,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#workingHours">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#TextVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     
@@ -1776,6 +1848,7 @@ v0.1: initial ontology
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cero#youngModulus">
         <rdf:type rdf:resource="http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable"/>
+        <rdf:type rdf:resource="http://www.molmod.info/semantics/pims-ii.ttl#Property"/>
         <rdf:type rdf:resource="https://w3id.org/isoprops#Property"/>
     </owl:NamedIndividual>
     

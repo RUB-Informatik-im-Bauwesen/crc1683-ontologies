@@ -40,7 +40,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/O
 <https://w3id.org/cero> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cero" .
 <https://w3id.org/cero> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/cero#> .
 <https://w3id.org/cero> <http://www.w3.org/2000/01/rdf-schema#comment> "\r\nTo be defined...\r\n" .
-<https://w3id.org/cero> <http://www.w3.org/2000/01/rdf-schema#label> "Construction Element Reuse Ontology (CERO)" .
+<https://w3id.org/cero> <http://www.w3.org/2000/01/rdf-schema#label> "Concrete Element Reuse Ontology (CERO)" .
 <https://w3id.org/cero> <http://www.w3.org/2002/07/owl#versionInfo> "0.1" .
 <https://w3id.org/cero> <http://www.w3.org/2004/02/skos/core#historyNote> "\r\nv0.1: initial ontology\r\n  " .
 <https://w3id.org/cero> <https://schema.org/codeRepository> <https://github.com/RUB-Informatik-im-Bauwesen/crc1683-ontologies/tree/main/cero> .
@@ -200,7 +200,6 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/O
 # https://w3id.org/cero#accessibility
 <https://w3id.org/cero#accessibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/cero#accessibility> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bot#Element> .
-<https://w3id.org/bot#Element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/cero#accessibility> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 # 
 # https://w3id.org/cero#anchorPoints
@@ -474,6 +473,15 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/O
 # 
 # http://w3id.org/nfdi4ing/metadata4ing#TextVariable
 <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/nfdi4ing/metadata4ing#TextVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/isoprops#Property> .
+# 
+# http://w3id.org/nfdi4ing/metadata4ing#VariableSet
+<http://w3id.org/nfdi4ing/metadata4ing#VariableSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/nfdi4ing/metadata4ing#VariableSet> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/isoprops#GroupOfProperties> .
+# 
+# http://www.molmod.info/semantics/pims-ii.ttl#Property
+<http://www.molmod.info/semantics/pims-ii.ttl#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.molmod.info/semantics/pims-ii.ttl#Property> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/isoprops#Property> .
 # 
 # http://www.w3.org/ns/prov#Organization
 <http://www.w3.org/ns/prov#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -483,6 +491,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/O
 # https://schema.org/Person
 # 
 # https://w3id.org/bot#Element
+<https://w3id.org/bot#Element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/isoprops#Dictionary
 <https://w3id.org/isoprops#Dictionary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -633,266 +642,319 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/O
 # https://w3id.org/cero#accessibility
 <https://w3id.org/cero#accessibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#accessibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#accessibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#accessibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#anchorPoints
 <https://w3id.org/cero#anchorPoints> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#anchorPoints> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#anchorPoints> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#anchorPoints> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#carbonationDepth
 <https://w3id.org/cero#carbonationDepth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#carbonationDepth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> .
+<https://w3id.org/cero#carbonationDepth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#carbonationDepth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#chlorideContent
 <https://w3id.org/cero#chlorideContent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#chlorideContent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> .
+<https://w3id.org/cero#chlorideContent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#chlorideContent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#color
 <https://w3id.org/cero#color> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#color> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#color> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#color> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#compressiveStrength
 <https://w3id.org/cero#compressiveStrength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#compressiveStrength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> .
+<https://w3id.org/cero#compressiveStrength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#compressiveStrength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#concreteCompressiveStrength
 <https://w3id.org/cero#concreteCompressiveStrength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#concreteCompressiveStrength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> .
+<https://w3id.org/cero#concreteCompressiveStrength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#concreteCompressiveStrength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#concreteCover
 <https://w3id.org/cero#concreteCover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#concreteCover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> .
+<https://w3id.org/cero#concreteCover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#concreteCover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#concreteStiffness
 <https://w3id.org/cero#concreteStiffness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#concreteStiffness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> .
+<https://w3id.org/cero#concreteStiffness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#concreteStiffness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#connectionType
 <https://w3id.org/cero#connectionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#connectionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#connectionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#connectionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#crackWidth
 <https://w3id.org/cero#crackWidth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#crackWidth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> .
+<https://w3id.org/cero#crackWidth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#crackWidth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#cracks
 <https://w3id.org/cero#cracks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#cracks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#cracks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#cracks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#crossSection
 <https://w3id.org/cero#crossSection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#crossSection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#crossSection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#crossSection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#damageClass
 <https://w3id.org/cero#damageClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#damageClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#damageClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#damageClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#dceClassification
 <https://w3id.org/cero#dceClassification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#dceClassification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#dceClassification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#dceClassification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#density
 <https://w3id.org/cero#density> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#density> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> .
+<https://w3id.org/cero#density> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#density> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#diameter
 <https://w3id.org/cero#diameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#diameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> .
+<https://w3id.org/cero#diameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#diameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#elementDimensions
 <https://w3id.org/cero#elementDimensions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#elementDimensions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#elementDimensions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#elementDimensions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#elementType
 <https://w3id.org/cero#elementType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#elementType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#elementType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#elementType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#energyConsumed
 <https://w3id.org/cero#energyConsumed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#energyConsumed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> .
+<https://w3id.org/cero#energyConsumed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#energyConsumed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#environmentalActions
 <https://w3id.org/cero#environmentalActions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#environmentalActions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#environmentalActions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#environmentalActions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#environmentalImpact
 <https://w3id.org/cero#environmentalImpact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#environmentalImpact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#environmentalImpact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#environmentalImpact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#exposureClass
 <https://w3id.org/cero#exposureClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#exposureClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#exposureClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#exposureClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#extraordinaryDamage
 <https://w3id.org/cero#extraordinaryDamage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#extraordinaryDamage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#extraordinaryDamage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#extraordinaryDamage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#finishing
 <https://w3id.org/cero#finishing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#finishing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#finishing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#finishing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#height
 <https://w3id.org/cero#height> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#height> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> .
+<https://w3id.org/cero#height> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#height> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#identifier
 <https://w3id.org/cero#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#initialFunction
 <https://w3id.org/cero#initialFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#initialFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#initialFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#initialFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#initialProject
 <https://w3id.org/cero#initialProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#initialProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#initialProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#initialProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#internalDefects
 <https://w3id.org/cero#internalDefects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#internalDefects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#internalDefects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#internalDefects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#length
 <https://w3id.org/cero#length> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#length> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> .
+<https://w3id.org/cero#length> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#length> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#loadBearingCapacity
 <https://w3id.org/cero#loadBearingCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#loadBearingCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#loadBearingCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#loadBearingCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#loadHistory
 <https://w3id.org/cero#loadHistory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#loadHistory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#loadHistory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#loadHistory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#location
 <https://w3id.org/cero#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#machineResources
 <https://w3id.org/cero#machineResources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#machineResources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#machineResources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#machineResources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#materialResources
 <https://w3id.org/cero#materialResources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#materialResources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#materialResources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#materialResources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#origin
 <https://w3id.org/cero#origin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#origin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#origin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#origin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#photo
 <https://w3id.org/cero#photo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#photo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#photo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#photo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#reinforcementLayout
 <https://w3id.org/cero#reinforcementLayout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#reinforcementLayout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#reinforcementLayout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#reinforcementLayout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#reinforcementMass
 <https://w3id.org/cero#reinforcementMass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#reinforcementMass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> .
+<https://w3id.org/cero#reinforcementMass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#reinforcementMass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#reinforcementRatio
 <https://w3id.org/cero#reinforcementRatio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#reinforcementRatio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#reinforcementRatio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#reinforcementRatio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#reinforcementTensileStrength
 <https://w3id.org/cero#reinforcementTensileStrength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#reinforcementTensileStrength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> .
+<https://w3id.org/cero#reinforcementTensileStrength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#reinforcementTensileStrength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#reinforcementYoungModulus
 <https://w3id.org/cero#reinforcementYoungModulus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#reinforcementYoungModulus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> .
+<https://w3id.org/cero#reinforcementYoungModulus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#reinforcementYoungModulus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#reinforcingSteelTensileStrength
 <https://w3id.org/cero#reinforcingSteelTensileStrength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#reinforcingSteelTensileStrength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> .
+<https://w3id.org/cero#reinforcingSteelTensileStrength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#reinforcingSteelTensileStrength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#remainingServiceLife
 <https://w3id.org/cero#remainingServiceLife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#remainingServiceLife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> .
+<https://w3id.org/cero#remainingServiceLife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#remainingServiceLife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#shapeCategory
 <https://w3id.org/cero#shapeCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#shapeCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#shapeCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#shapeCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#toxicSubstances
 <https://w3id.org/cero#toxicSubstances> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#toxicSubstances> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#toxicSubstances> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#toxicSubstances> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#transportDistance
 <https://w3id.org/cero#transportDistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#transportDistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> .
+<https://w3id.org/cero#transportDistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#transportDistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#volume
 <https://w3id.org/cero#volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> .
+<https://w3id.org/cero#volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#weight
 <https://w3id.org/cero#weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> .
+<https://w3id.org/cero#weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#width
 <https://w3id.org/cero#width> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#width> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> .
+<https://w3id.org/cero#width> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#width> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#workingHours
 <https://w3id.org/cero#workingHours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#workingHours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#TextVariable> .
+<https://w3id.org/cero#workingHours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#workingHours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # https://w3id.org/cero#youngModulus
 <https://w3id.org/cero#youngModulus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cero#youngModulus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable> .
+<https://w3id.org/cero#youngModulus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.molmod.info/semantics/pims-ii.ttl#Property> .
 <https://w3id.org/cero#youngModulus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/isoprops#Property> .
 # 
 # 

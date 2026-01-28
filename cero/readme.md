@@ -1,6 +1,6 @@
 Markdown documentation created by [pyLODE](http://github.com/rdflib/pyLODE) 2.4
 
-# Construction Element Reuse Ontology (CERO)
+# Concrete Element Reuse Ontology (CERO)
 
 ## Metadata
 * **IRI**
@@ -25,6 +25,12 @@ Markdown documentation created by [pyLODE](http://github.com/rdflib/pyLODE) 2.4
   * 2021-12-06
 * **Version Information**
   * 0.1
+* **Version IRI**
+  * [https://w3id.org/cero](https://w3id.org/cero)
+* **Imports**
+  * [bot:](https://w3id.org/bot#)
+  * [https://w3id.org/isoprops](https://w3id.org/isoprops)
+  * [metadata4ing:](http://w3id.org/nfdi4ing/metadata4ing#)
 * **License**
   * [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)
 * **Ontology RDF**
@@ -36,6 +42,7 @@ Markdown documentation created by [pyLODE](http://github.com/rdflib/pyLODE) 2.4
 * **History Note:** <p>v0.1: initial ontology</p>
 
 ## Table of Contents
+1. [Classes](#classes)
 1. [Datatype Properties](#datatypeproperties)
 1. [Named Individuals](#namedindividuals)
 1. [Namespaces](#namespaces)
@@ -46,6 +53,44 @@ Markdown documentation created by [pyLODE](http://github.com/rdflib/pyLODE) 2.4
 
 **Figure 1:** Ontology overview
 ## Classes
+[Element](#Element),
+[GroupOfProperties](#GroupOfProperties),
+[NumericalVariable](#NumericalVariable),
+[Property](#Property),
+[Property](#Property1),
+[TextVariable](#TextVariable),
+[VariableSet](#VariableSet),
+### NumericalVariable
+Property | Value
+--- | ---
+IRI | `http://w3id.org/nfdi4ing/metadata4ing#NumericalVariable`
+### TextVariable
+Property | Value
+--- | ---
+IRI | `http://w3id.org/nfdi4ing/metadata4ing#TextVariable`
+Super-classes |[isoprops:Property](https://w3id.org/isoprops#Property) (c)<br />
+### VariableSet
+Property | Value
+--- | ---
+IRI | `http://w3id.org/nfdi4ing/metadata4ing#VariableSet`
+### Property
+Property | Value
+--- | ---
+IRI | `http://www.molmod.info/semantics/pims-ii.ttl#Property`
+### Element
+Property | Value
+--- | ---
+IRI | `https://w3id.org/bot#Element`
+In domain of |[cero:initialProject](Initialproject) (dp)<br />[cero:volume](Volume) (dp)<br />[cero:concreteStiffness](Concretestiffness) (dp)<br />[cero:connectionType](Connectiontype) (dp)<br />[cero:chlorideContent](Chloridecontent) (dp)<br />[cero:anchorPoints](Anchorpoints) (dp)<br />[cero:concreteCompressiveStrength](Concretecompressivestrength) (dp)<br />[cero:extraordinaryDamage](Extraordinarydamage) (dp)<br />[cero:transportDistance](Transportdistance) (dp)<br />[cero:weight](Weight) (dp)<br />[cero:elementType](elementtype) (dp)<br />[cero:origin](origin) (dp)<br />[cero:energyConsumed](Energyconsumed) (dp)<br />[cero:elementDimensions](elementdimensions) (dp)<br />[cero:density](Density) (dp)<br />[cero:cracks](Cracks) (dp)<br />[cero:photo](Photo) (dp)<br />[cero:accessibility](Accessibility) (dp)<br />[cero:compressiveStrength](Compressivestrength) (dp)<br />[cero:remainingServiceLife](Remainingservicelife) (dp)<br />[cero:diameter](Diameter) (dp)<br />[cero:loadBearingCapacity](loadbearingcapacity) (dp)<br />[cero:materialResources](Materialresources) (dp)<br />[cero:reinforcingSteelTensileStrength](Reinforcingsteeltensilestrength) (dp)<br />[cero:length](Length) (dp)<br />[cero:location](Location) (dp)<br />[cero:concreteCover](Concretecover) (dp)<br />[cero:youngModulus](Youngmodulus) (dp)<br />[cero:dceClassification](DCEClassification) (dp)<br />[cero:exposureClass](Exposureclass) (dp)<br />[cero:initialFunction](Initialfunction) (dp)<br />[cero:loadHistory](Loadhistory) (dp)<br />[cero:shapeCategory](Shapecategory) (dp)<br />[cero:workingHours](Workinghours) (dp)<br />[cero:width](Width) (dp)<br />[cero:damageClass](Damageclass) (dp)<br />[cero:crossSection](Crosssection) (dp)<br />[cero:reinforcementTensileStrength](Reinforcementtensilestrength) (dp)<br />[cero:color](Color) (dp)<br />[cero:machineResources](Machineresources) (dp)<br />[cero:carbonationDepth](Carbonationdepth) (dp)<br />[cero:reinforcementLayout](Reinforcementlayout) (dp)<br />[cero:reinforcementYoungModulus](Reinforcementyoungmodulus) (dp)<br />[cero:reinforcementMass](Reinforcementmass) (dp)<br />[cero:finishing](Finishing) (dp)<br />[cero:reinforcementRatio](Reinforcementratio) (dp)<br />[cero:height](Height) (dp)<br />[cero:crackWidth](Crackwidth) (dp)<br />[cero:identifier](identifier) (dp)<br />[cero:environmentalActions](environmentalactions) (dp)<br />[cero:internalDefects](Internaldefects) (dp)<br />[cero:environmentalImpact](environmentalimpact) (dp)<br />[cero:toxicSubstances](Toxicsubstances) (dp)<br />
+### GroupOfProperties
+Property | Value
+--- | ---
+IRI | `https://w3id.org/isoprops#GroupOfProperties`
+### Property
+Property | Value
+--- | ---
+IRI | `https://w3id.org/isoprops#Property`
+Sub-classes |[metadata4ing:TextVariable](http://w3id.org/nfdi4ing/metadata4ing#TextVariable) (c)<br />
 
 ## Datatype Properties
 [Accessibility](#Accessibility),
