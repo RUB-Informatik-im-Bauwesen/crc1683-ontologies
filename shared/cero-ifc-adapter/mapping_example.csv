@@ -1,0 +1,9 @@
+ifc_class,pset,property,measure,term,unit,fit,note
+*,Structural,Concrete_fck,IfcPressureMeasure,cero:compressiveStrength,MPa,close,characteristic design value rather than a measured strength
+*,Dimensions,Volume,IfcVolumeMeasure,cero:volume,m3,exact,CERO declares no unit; m3 assumed
+IfcBeam,Dimensions,Span,IfcPositiveLengthMeasure,cero:length,m,exact,
+IfcBeam,Dimensions,Width,IfcLengthMeasure,cero:width,m,exact,CERO declares no unit; m assumed
+IfcBeam,Dimensions,Height,IfcLengthMeasure,cero:height,m,exact,
+IfcBeam,Structural,MomentResistance_MRd,IfcTorqueMeasure,https://example.org/reuse#momentResistance,kNm,extension,cero:loadBearingCapacity is free text
+IfcBeam,Structural,ShearResistance_VRd,IfcForceMeasure,https://example.org/reuse#shearResistance,kN,extension,cero:loadBearingCapacity is free text
+*,Pset_*Common,LoadBearing,IfcBoolean,https://example.org/reuse#loadBearing,,extension,
