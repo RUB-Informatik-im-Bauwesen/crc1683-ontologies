@@ -1,0 +1,10 @@
+ifc_class,pset,property,measure,term,unit,fit,note
+*,Qto_*BaseQuantities,Length,IfcQuantityLength,cero:length,m,exact,
+*,Qto_*BaseQuantities,Width,IfcQuantityLength,cero:width,m,exact,CERO declares no unit; m assumed
+*,Qto_*BaseQuantities,Height,IfcQuantityLength,cero:height,m,exact,
+IfcSlab,Qto_SlabBaseQuantities,Depth,IfcQuantityLength,cero:height,m,close,slab thickness; CERO has no thickness property
+*,Qto_*BaseQuantities,NetVolume,IfcQuantityVolume,cero:volume,m3,exact,CERO declares no unit; m3 assumed
+*,Qto_*BaseQuantities,NetWeight,IfcQuantityWeight,cero:weight,kg,exact,CERO declares no unit; kg assumed
+*,Pset_ConcreteElementGeneral,ConcreteCover,IfcPositiveLengthMeasure,cero:concreteCover,mm,exact,
+*,Pset_ConcreteElementGeneral,ExposureClass,IfcLabel,cero:exposureClass,,exact,
+IfcBeam,Pset_BeamCommon,Span,IfcPositiveLengthMeasure,cero:length,m,close,clear span; used if the base quantities are missing
