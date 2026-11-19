@@ -6,3 +6,4 @@
 
 # crc1683-ontologies - shared resources
 * [Appendix for publication of COPO,LCAO,LCMO](shared/appendix/) 
+* [CERO <-> IFC adapter](shared/cero-ifc-adapter/)
