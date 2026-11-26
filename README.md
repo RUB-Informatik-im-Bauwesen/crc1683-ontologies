@@ -1,8 +1,8 @@
 # crc1683-ontologies
-* [COPO](copo/)
+* [RC-COPO](rc-copo/)
 * [LCAO](lcao/)
-* [LCMO](lcmo/) 
+* [LCDMO](lcdmo/) 
 * [CERO](cero/) 
 
 # crc1683-ontologies - shared resources
-* [Appendix for publication of COPO,LCAO,LCMO](shared/appendix/) 
+* [Appendix for publication of RC-COPO,LCDAO,LCMO](shared/appendix/) 
