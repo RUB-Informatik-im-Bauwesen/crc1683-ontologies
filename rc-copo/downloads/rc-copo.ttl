@@ -21,12 +21,12 @@
   owl:imports <http://w3id.org/lcdmo> ;
   owl:imports <https://w3id.org/beo#> ;
   owl:imports <https://w3id.org/isoprops> ;
-<http://purl.org/dc/elements/1.1/contributor> _:genid1 ;
-                         <http://purl.org/dc/elements/1.1/created> "2025-12-10"^^xsd:date ;
-                         <http://purl.org/dc/elements/1.1/modified> "2026-11-26"^^xsd:date ;
-                         <http://purl.org/dc/elements/1.1/creator> _:genid3 ;
-                         <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> ;
-                         <http://purl.org/dc/elements/1.1/source> "https://github.com/RUB-Informatik-im-Bauwesen/crc1683-ontologies/tree/main/rc-copo"^^xsd:anyURI ;
+<http://purl.org/dc/terms/contributor> _:genid1 ;
+                         <http://purl.org/dc/terms/created> "2025-12-10"^^xsd:date ;
+                         <http://purl.org/dc/terms/modified> "2026-11-26"^^xsd:date ;
+                         <http://purl.org/dc/terms/creator> _:genid3 ;
+                         <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                         <http://purl.org/dc/terms/source> "https://github.com/RUB-Informatik-im-Bauwesen/crc1683-ontologies/tree/main/rc-copo"^^xsd:anyURI ;
                          <http://purl.org/vocab/vann/preferredNamespacePrefix> "rc-copo" ;
                          rdfs:comment "RC-COPO represents domain-specific knowledge concerning the end-of-life processes of reinforced concrete elements, focusing on slabs and beams. It describes relevant object properties, process sequences, equipment, and resource consumption to support the consistent modelling of deconstruction, handling, and transport activities."@en ;
                          rdfs:label "RC-COPO Ontology" .
