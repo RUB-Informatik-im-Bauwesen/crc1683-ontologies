@@ -118,16 +118,19 @@ lcdmo:ResourceTypeProperty
 .
 lcdmo:comesFromDataObject
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain lcdmo:ConstructionProcessProperty ;
   rdfs:range lcdmo:DataObject ;
 .
 lcdmo:hasConstruction
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain lcdmo:ConstructionProject ;
   rdfs:range lcdmo:Construction ;
 .
 lcdmo:hasConstructionObject
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain lcdmo:Construction ;
   rdfs:range lcdmo:ConstructionObject ;
 .
@@ -139,16 +142,19 @@ lcdmo:hasConstructionObjectProperty
 .
 lcdmo:hasConstructionObjectPropertyState
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain lcdmo:ConstructionObjectProperty ;
   rdfs:range lcdmo:ConstructionObjectPropertyState ;
 .
 lcdmo:hasConstructionProcess
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain lcdmo:ConstructionObject ;
   rdfs:range lcdmo:ConstructionProcess ;
 .
 lcdmo:hasConstructionProcessExchanges
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain lcdmo:ConstructionProcess ;
   rdfs:range lcdmo:ConstructionProcessExchanges ;
 .
@@ -166,27 +172,33 @@ lcdmo:hasConstructionProcessProperty
 .
 lcdmo:hasGUID
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:range xsd:string ;
 .
 lcdmo:hasID
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
 .
 lcdmo:hasIFC-ID
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:range xsd:string ;
 .
 lcdmo:hasPrecedingProcess
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain lcdmo:ConstructionProcess ;
   rdfs:range lcdmo:ConstructionProcess ;
 .
 lcdmo:hasProcessExchangeDeterminationType
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain lcdmo:ConstructionProcess ;
   rdfs:range lcdmo:ProcessExchangeDeterminationType ;
 .
 lcdmo:hasProcessResource
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain lcdmo:ConstructionProcess ;
   rdfs:range lcdmo:ProcessResource ;
 .
@@ -198,6 +210,7 @@ lcdmo:hasProcessResourceProperty
 .
 lcdmo:hasPropertySet
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain lcdmo:ConstructionObject ;
   rdfs:range lcdmo:ConstructionObjectPropertySet ;
 .
@@ -215,6 +228,7 @@ lcdmo:hasResourceFlowProperty
 .
 lcdmo:hasResourceType
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain lcdmo:ProcessResource ;
   rdfs:range lcdmo:ResourceType ;
 .
@@ -226,25 +240,31 @@ lcdmo:hasResourceTypeProperty
 .
 lcdmo:hasState
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:range xsd:string ;
 .
 lcdmo:hasSubsequentProcess
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain lcdmo:ConstructionProcess ;
   rdfs:range lcdmo:ConstructionProcess ;
 .
 lcdmo:hasUncertainty
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
 .
 lcdmo:hasUnit
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:range xsd:string ;
 .
 lcdmo:hasValue
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
 .
 lcdmo:isComposedOf
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain lcdmo:ConstructionProcessOccurence ;
   rdfs:range lcdmo:ConstructionObject ;
   rdfs:range lcdmo:ConstructionProcess ;
@@ -252,11 +272,13 @@ lcdmo:isComposedOf
 .
 lcdmo:isDetectedBy
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain lcdmo:ConstructionProcessProperty ;
   rdfs:range lcdmo:DataDetectionDevice ;
 .
 lcdmo:isOfDataGenerationType
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:domain lcdmo:ConstructionProcessProperty ;
   rdfs:range [
       rdf:type rdfs:Datatype ;
@@ -271,11 +293,13 @@ lcdmo:isOfDataGenerationType
 .
 lcdmo:requiresPrecedingProcess
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain lcdmo:ConstructionProcess ;
   rdfs:range lcdmo:ConstructionProcess ;
 .
 lcdmo:requiresSubsequentProcess
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain lcdmo:ConstructionProcess ;
   rdfs:range lcdmo:ConstructionProcess ;
 .

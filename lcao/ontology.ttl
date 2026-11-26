@@ -2,6 +2,8 @@
 # imports: http://example.org/lcdmo
 # prefix: lcao
 
+@prefix annsrc: <urn:ontology-annotation:source:> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix lcao: <http://example.org/lcao#> .
 @prefix lcdmo: <http://example.org/lcdmo#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -16,10 +18,23 @@
 .
 lcao:Author
   rdf:type owl:Class ;
+  dcterms:description "Person oder Organisation, die Ökobilanzdaten erstellt oder fachlich verantwortet."@de ;
+  dcterms:description "Person or organisation creating or taking technical responsibility for life cycle assessment data."@en ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
+  rdfs:label "Autor der Ökobilanzdaten"@de ;
+  rdfs:label "LCA data author"@en ;
+  rdfs:seeAlso <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_ContactDataSet.html> ;
+  rdfs:seeAlso <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/processDataSet.html> ;
   rdfs:subClassOf owl:Thing ;
 .
 lcao:Contact
   rdf:type owl:Class ;
+  dcterms:description "Data set identifying a person or organisation referenced or contacted in a life cycle assessment context."@en ;
+  dcterms:description "Datensatz mit Angaben zu einer Person oder Organisation, die im Ökobilanzkontext kontaktiert oder referenziert wird."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_ContactDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
+  rdfs:label "LCA contact data set"@en ;
+  rdfs:label "LCA-Kontaktdatensatz"@de ;
   rdfs:subClassOf lcao:LCA-DataSet ;
   rdfs:subClassOf owl:Thing ;
 .
@@ -32,15 +47,33 @@ lcao:Contact_1
 .
 lcao:Exchange
   rdf:type owl:Class ;
+  dcterms:description "Ein- oder Ausgangseintrag eines Prozesses mit Flussreferenz, Richtung und quantifizierter Menge."@de ;
+  dcterms:description "Process input or output entry specifying a referenced flow, its direction and its quantified amount."@en ;
+  dcterms:source <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/ExchangeType.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
+  rdfs:label "Process exchange"@en ;
+  rdfs:label "Prozessbezogener Flusseintrag"@de ;
   rdfs:subClassOf owl:Thing ;
 .
 lcao:Flow
   rdf:type owl:Class ;
+  dcterms:description "Data set identifying and describing a material, energy, product, service or waste flow."@en ;
+  dcterms:description "Datensatz zur Identifikation und Beschreibung eines Stoff-, Energie-, Produkt-, Dienstleistungs- oder Abfallflusses."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_FlowDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
+  rdfs:label "LCA flow data set"@en ;
+  rdfs:label "LCA-Flussdatensatz"@de ;
   rdfs:subClassOf lcao:LCA-DataSet ;
   rdfs:subClassOf owl:Thing ;
 .
 lcao:FlowProperty
   rdf:type owl:Class ;
+  dcterms:description "Data set defining a quantitative property used to express flow amounts, such as mass, volume or energy."@en ;
+  dcterms:description "Datensatz einer quantitativen Bezugsgröße zur Angabe von Flussmengen, etwa Masse, Volumen oder Energie."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_FlowPropertyDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
+  rdfs:label "Flow property data set"@en ;
+  rdfs:label "Flusseigenschaftsdatensatz"@de ;
   rdfs:subClassOf lcao:LCA-DataSet ;
   rdfs:subClassOf owl:Thing ;
 .
@@ -80,6 +113,13 @@ lcao:Flow_2
 .
 lcao:GeographicalContext
   rdf:type owl:Class ;
+  dcterms:description "Geographical area represented by the described process data."@en ;
+  dcterms:description "Räumlicher Geltungsbereich der beschriebenen Prozessdaten."@de ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
+  rdfs:label "Geografischer Bezug"@de ;
+  rdfs:label "Geographical context"@en ;
+  rdfs:seeAlso <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/processDataSet.html> ;
+  rdfs:seeAlso <https://www.iso.org/standard/38498.html> ;
   rdfs:subClassOf owl:Thing ;
 .
 lcao:GeographicalContext_1
@@ -88,10 +128,23 @@ lcao:GeographicalContext_1
 .
 lcao:LCA-DataSet
   rdf:type owl:Class ;
+  dcterms:description "Structured, identifiable collection of information used to model, document or evaluate a life cycle assessment."@en ;
+  dcterms:description "Strukturierte, identifizierbare Zusammenstellung von Informationen zur Modellierung, Dokumentation oder Auswertung einer Ökobilanz."@de ;
+  dcterms:source <https://eplca.pages.code.europa.eu/ilcd_docs/> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
+  rdfs:label "LCA data set"@en ;
+  rdfs:label "Ökobilanzdatensatz"@de ;
   rdfs:subClassOf owl:Thing ;
 .
 lcao:LCA-Study
   rdf:type owl:Class ;
+  dcterms:description "Investigation of a product system's potential environmental impacts according to a defined goal and scope."@en ;
+  dcterms:description "Untersuchung potenzieller Umweltwirkungen eines Produktsystems anhand festgelegter Ziele und eines festgelegten Untersuchungsrahmens."@de ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
+  rdfs:label "Life cycle assessment study"@en ;
+  rdfs:label "Ökobilanzstudie"@de ;
+  rdfs:seeAlso <https://www.iso.org/standard/37456.html> ;
+  rdfs:seeAlso <https://www.iso.org/standard/38498.html> ;
   rdfs:subClassOf owl:Thing ;
 .
 lcao:LCA-Study_1
@@ -107,6 +160,13 @@ lcao:LCA-Study_1
 .
 lcao:LCI-Method
   rdf:type owl:Class ;
+  dcterms:description "Methodischer Ansatz zur Erstellung der Sachbilanz einschließlich des Modellierungsprinzips und der Behandlung von Mehrfunktionalität."@de ;
+  dcterms:description "Methodological approach to compiling the inventory, including the modelling principle and treatment of multifunctionality."@en ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
+  rdfs:label "Life cycle inventory modelling approach"@en ;
+  rdfs:label "Sachbilanzmodellierung"@de ;
+  rdfs:seeAlso <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/LCIMethodAndAllocationType.html> ;
+  rdfs:seeAlso <https://www.iso.org/standard/38498.html> ;
   rdfs:subClassOf owl:Thing ;
 .
 lcao:LCI-Method_1
@@ -116,6 +176,13 @@ lcao:LCI-Method_1
 .
 lcao:LCI-Result
   rdf:type owl:Class ;
+  dcterms:description "Quantified inventory-based indicator, represented here by primary energy demand, resource use or waste generation."@en ;
+  dcterms:description "Quantifizierter sachbilanzbasierter Indikator, im Modell beispielsweise Primärenergiebedarf, Ressourceneinsatz oder Abfallaufkommen."@de ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
+  rdfs:label "Inventory-based indicator result"@en ;
+  rdfs:label "Sachbilanzbasierter Indikatorwert"@de ;
+  rdfs:seeAlso <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/processDataSet.html> ;
+  rdfs:seeAlso <https://www.dinmedia.de/de/norm/din-en-15804/344735627> ;
   rdfs:subClassOf owl:Thing ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -130,6 +197,13 @@ lcao:LCI-Result
 .
 lcao:LCIA-Method
   rdf:type owl:Class ;
+  dcterms:description "Data set describing an impact assessment method and its mapping of elementary flows to impact indicators."@en ;
+  dcterms:description "Datensatz zur Beschreibung einer Wirkungsabschätzungsmethode und ihrer Zuordnung von Elementarflüssen zu Wirkungsindikatoren."@de ;
+  dcterms:source <https://eplca.pages.code.europa.eu/ilcd_docs/schema/lciamethod/LCIAMethodDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
+  rdfs:label "Life cycle impact assessment method data set"@en ;
+  rdfs:label "Wirkungsabschätzungsmethodendatensatz"@de ;
+  rdfs:seeAlso <https://www.iso.org/standard/38498.html> ;
   rdfs:subClassOf lcao:LCA-DataSet ;
   rdfs:subClassOf owl:Thing ;
 .
@@ -142,6 +216,13 @@ lcao:LCIA-Method_1
 .
 lcao:LCIA-Result
   rdf:type owl:Class ;
+  dcterms:description "Quantified result for an environmental impact indicator obtained using a specified impact assessment method."@en ;
+  dcterms:description "Quantifiziertes Ergebnis für einen Umweltwirkungsindikator nach Anwendung einer festgelegten Wirkungsabschätzungsmethode."@de ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
+  rdfs:label "Life cycle impact assessment indicator result"@en ;
+  rdfs:label "Wirkungsindikatorergebnis"@de ;
+  rdfs:seeAlso <https://eplca.pages.code.europa.eu/ilcd_docs/schema/lciamethod/LCIAMethodDataSet.html> ;
+  rdfs:seeAlso <https://www.iso.org/standard/38498.html> ;
   rdfs:subClassOf owl:Thing ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -156,11 +237,23 @@ lcao:LCIA-Result
 .
 lcao:Process
   rdf:type owl:Class ;
+  dcterms:description "Data set representing an inventoried process or process system, with documentation, exchanges and optional results."@en ;
+  dcterms:description "Datensatz eines bilanzierten Prozesses oder Prozesssystems mit Dokumentation, Flusseinträgen und gegebenenfalls Ergebnissen."@de ;
+  dcterms:source <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/processDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
+  rdfs:label "LCA process data set"@en ;
+  rdfs:label "LCA-Prozessdatensatz"@de ;
   rdfs:subClassOf lcao:LCA-DataSet ;
   rdfs:subClassOf owl:Thing ;
 .
 lcao:Source
   rdf:type owl:Class ;
+  dcterms:description "Data set containing bibliographic or other source references documenting information used."@en ;
+  dcterms:description "Datensatz mit bibliografischen oder sonstigen Quellenangaben zur Dokumentation verwendeter Informationen."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_SourceDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
+  rdfs:label "LCA source data set"@en ;
+  rdfs:label "LCA-Quelldatensatz"@de ;
   rdfs:subClassOf lcao:LCA-DataSet ;
   rdfs:subClassOf owl:Thing ;
 .
@@ -172,10 +265,24 @@ lcao:Source_1
 .
 lcao:SystemBoundary
   rdf:type owl:Class ;
+  dcterms:description "Festlegung der Prozesse und Flüsse, die in das betrachtete Produktsystem einbezogen werden."@de ;
+  dcterms:description "Specification of the processes and flows included in the product system under study."@en ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
+  rdfs:label "System boundary"@en ;
+  rdfs:label "Systemgrenze"@de ;
+  rdfs:seeAlso <https://www.dinmedia.de/de/norm/din-en-15804/344735627> ;
+  rdfs:seeAlso <https://www.iso.org/standard/38498.html> ;
   rdfs:subClassOf owl:Thing ;
 .
 lcao:TechnicalContext
   rdf:type owl:Class ;
+  dcterms:description "Beschreibung der Technologie und Betriebsbedingungen, die durch die Prozessdaten repräsentiert werden."@de ;
+  dcterms:description "Description of the technology and operating conditions represented by the process data."@en ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
+  rdfs:label "Technological context"@en ;
+  rdfs:label "Technologischer Bezug"@de ;
+  rdfs:seeAlso <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/processDataSet.html> ;
+  rdfs:seeAlso <https://www.iso.org/standard/38498.html> ;
   rdfs:subClassOf owl:Thing ;
 .
 lcao:TechnicalContext_1
@@ -184,6 +291,13 @@ lcao:TechnicalContext_1
 .
 lcao:TemporalContext
   rdf:type owl:Class ;
+  dcterms:description "Point in time or period for which the described process data are representative."@en ;
+  dcterms:description "Zeitpunkt oder Zeitraum, für den die beschriebenen Prozessdaten repräsentativ sind."@de ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
+  rdfs:label "Temporal context"@en ;
+  rdfs:label "Zeitlicher Bezug"@de ;
+  rdfs:seeAlso <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/processDataSet.html> ;
+  rdfs:seeAlso <https://www.iso.org/standard/38498.html> ;
   rdfs:subClassOf owl:Thing ;
 .
 lcao:TemporalContext_1
@@ -192,6 +306,12 @@ lcao:TemporalContext_1
 .
 lcao:UnitGroup
   rdf:type owl:Class ;
+  dcterms:description "Data set grouping measurement units convertible to a reference unit using fixed factors."@en ;
+  dcterms:description "Datensatz zusammengehöriger, über feste Faktoren in eine Referenzeinheit umrechenbarer Maßeinheiten."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_UnitGroupDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
+  rdfs:label "Einheitengruppendatensatz"@de ;
+  rdfs:label "Unit group data set"@en ;
   rdfs:subClassOf lcao:LCA-DataSet ;
   rdfs:subClassOf owl:Thing ;
 .
@@ -211,11 +331,23 @@ lcao:UnitGroup_2
 .
 lcao:UnityEntry
   rdf:type owl:Class ;
+  dcterms:description "Eintrag einer Maßeinheit innerhalb einer Einheitengruppe, üblicherweise mit Namen und Umrechnungsfaktor."@de ;
+  dcterms:description "Entry for a measurement unit within a unit group, typically including a name and conversion factor."@en ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_UnitGroupDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
+  rdfs:label "Einheiteneintrag"@de ;
+  rdfs:label "Unit entry"@en ;
   rdfs:subClassOf owl:Thing ;
 .
 lcao:belongsToEnvironmentalImpactIndicator
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Assigns an impact assessment result to an environmental impact indicator, such as GWP-total or AP."@en ;
+  dcterms:description "Ordnet ein Wirkungsabschätzungsergebnis einem Umweltwirkungsindikator zu, beispielsweise GWP-total oder AP."@de ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:LCIA-Result ;
+  rdfs:label "belongs to environmental impact indicator"@en ;
+  rdfs:label "gehört zu Umweltwirkungsindikator"@de ;
   rdfs:range [
       rdf:type rdfs:Datatype ;
       owl:oneOf (
@@ -240,10 +372,17 @@ lcao:belongsToEnvironmentalImpactIndicator
           "SQP"
         ) ;
     ] ;
+  rdfs:seeAlso <https://www.dinmedia.de/de/norm/din-en-15804/344735627> ;
 .
 lcao:belongsToEnvironmentalIndicator
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Assigns an inventory-based result value to a resource use, waste or output indicator."@en ;
+  dcterms:description "Ordnet einen sachbilanzbasierten Ergebniswert einem Indikator für Ressourcen, Abfälle oder Ausgänge zu."@de ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:LCI-Result ;
+  rdfs:label "belongs to inventory-based indicator"@en ;
+  rdfs:label "gehört zu Sachbilanzindikator"@de ;
   rdfs:range [
       rdf:type rdfs:Datatype ;
       owl:oneOf (
@@ -267,10 +406,17 @@ lcao:belongsToEnvironmentalIndicator
           "EET"
         ) ;
     ] ;
+  rdfs:seeAlso <https://www.dinmedia.de/de/norm/din-en-15804/344735627> ;
 .
 lcao:belongsToLifeCycleModule
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Assigns an LCA process data set to a declared life cycle module such as C1, C2, C3, C4 or D."@en ;
+  dcterms:description "Ordnet einen LCA-Prozessdatensatz einem deklarierten Lebenszyklusmodul wie C1, C2, C3, C4 oder D zu."@de ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Process ;
+  rdfs:label "belongs to life cycle module"@en ;
+  rdfs:label "gehört zu Lebenszyklusmodul"@de ;
   rdfs:range [
       rdf:type rdfs:Datatype ;
       owl:oneOf (
@@ -293,10 +439,17 @@ lcao:belongsToLifeCycleModule
           "D"
         ) ;
     ] ;
+  rdfs:seeAlso <https://www.dinmedia.de/de/norm/din-en-15804/344735627> ;
 .
 lcao:belongsToProcessSystem
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Identifies an inventoried process as belonging to the study-specific foreground or background system."@en ;
+  dcterms:description "Kennzeichnet die Zuordnung eines bilanzierten Prozesses zum untersuchungsspezifischen Vordergrund- oder zum Hintergrundsystem."@de ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Process ;
+  rdfs:label "belongs to foreground or background system"@en ;
+  rdfs:label "gehört zu Vorder- oder Hintergrundsystem"@de ;
   rdfs:range [
       rdf:type rdfs:Datatype ;
       owl:oneOf (
@@ -304,53 +457,124 @@ lcao:belongsToProcessSystem
           "Background System"
         ) ;
     ] ;
+  rdfs:seeAlso <https://www.iso.org/standard/38498.html> ;
 .
 lcao:containsLCA-DataSets
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
+  dcterms:description "Links a life cycle assessment study to one of its associated LCA data sets."@en ;
+  dcterms:description "Verknüpft eine Ökobilanzstudie mit einem der zugehörigen Ökobilanzdatensätze."@de ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:LCA-Study ;
+  rdfs:label "contains LCA data set"@en ;
+  rdfs:label "enthält Ökobilanzdatensatz"@de ;
   rdfs:range lcao:LCA-DataSet ;
+  rdfs:seeAlso <https://eplca.pages.code.europa.eu/ilcd_docs/> ;
 .
 lcao:hasAuthor
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
+  dcterms:description "Under the proposed interpretation, links a data object or study to its responsible person or organisation."@en ;
+  dcterms:description "Verknüpft nach vorgeschlagener Lesart ein Datenobjekt oder eine Studie mit ihrer verantwortlichen Person oder Organisation."@de ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Author ;
+  rdfs:label "has author"@en ;
+  rdfs:label "hat Autor"@de ;
+  rdfs:seeAlso <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_ContactDataSet.html> ;
 .
 lcao:hasCircularityPathDescription
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Beschreibt einen bewerteten Zirkularitätspfad, beispielsweise Wiederverwendung, Recycling oder energetische Verwertung."@de ;
+  dcterms:description "Describes an assessed circularity pathway, such as reuse, recycling or energy recovery."@en ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain <http://example.org/cao#CircularityAssessmentPath> ;
+  rdfs:label "has circularity pathway description"@en ;
+  rdfs:label "hat Zirkularitätspfadbeschreibung"@de ;
   rdfs:range xsd:string ;
 .
 lcao:hasContactInformation
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
+  dcterms:description "Records additional details for reaching a contact, such as an address or email."@en ;
+  dcterms:description "Speichert ergänzende Angaben zur Erreichbarkeit eines Kontakts, beispielsweise Adresse oder E-Mail."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_ContactDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Contact ;
+  rdfs:label "has contact information"@en ;
+  rdfs:label "hat Kontaktangaben"@de ;
 .
 lcao:hasContactName
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Records the human-readable name of the contact data set."@en ;
+  dcterms:description "Speichert die menschenlesbare Bezeichnung des Kontaktdatensatzes."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_ContactDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Contact ;
+  rdfs:label "has contact name"@en ;
+  rdfs:label "hat Kontaktbezeichnung"@de ;
   rdfs:range xsd:string ;
 .
 lcao:hasContactUUID
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Records the UUID identifying the contact data set across systems."@en ;
+  dcterms:description "Speichert die UUID zur systemübergreifenden Identifikation des Kontaktdatensatzes."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_ContactDataSet.html> ;
+  dcterms:source <https://www.rfc-editor.org/rfc/rfc9562.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Contact ;
+  rdfs:label "has contact data set UUID"@en ;
+  rdfs:label "hat UUID des Kontaktdatensatzes"@de ;
   rdfs:range xsd:string ;
 .
 lcao:hasContactVersion
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Records the version of the contact data set."@en ;
+  dcterms:description "Speichert den Versionsstand des Kontaktdatensatzes."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_ContactDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Contact ;
+  rdfs:label "has contact data set version"@en ;
+  rdfs:label "hat Version des Kontaktdatensatzes"@de ;
   rdfs:range xsd:string ;
 .
 lcao:hasDataSet
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
+  dcterms:description "Associates a life cycle assessment study with one of its process data sets."@en ;
+  dcterms:description "Ordnet einer Ökobilanzstudie einen ihrer Prozessdatensätze zu."@de ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:LCA-Study ;
+  rdfs:label "has LCA process data set"@en ;
+  rdfs:label "hat LCA-Prozessdatensatz"@de ;
   rdfs:range lcao:Process ;
+  rdfs:seeAlso <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/processDataSet.html> ;
 .
 lcao:hasExchange
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
+  dcterms:description "Associates an LCA process data set with a process-specific input or output entry."@en ;
+  dcterms:description "Ordnet einem LCA-Prozessdatensatz einen prozessspezifischen Ein- oder Ausgangseintrag zu."@de ;
+  dcterms:source <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/ExchangeType.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Process ;
+  rdfs:label "has exchange"@en ;
+  rdfs:label "hat Flusseintrag"@de ;
   rdfs:range lcao:Exchange ;
 .
 lcao:hasExchangeDirection
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Gibt an, ob ein Flusseintrag als Eingang oder Ausgang des bilanzierten Prozesses behandelt wird."@de ;
+  dcterms:description "Specifies whether an exchange is treated as an input to or output from the inventoried process."@en ;
+  dcterms:source <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/ExchangeType.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Exchange ;
+  rdfs:label "has exchange direction"@en ;
+  rdfs:label "hat Flussrichtung"@de ;
   rdfs:range [
       rdf:type rdfs:Datatype ;
       owl:oneOf (
@@ -361,7 +585,14 @@ lcao:hasExchangeDirection
 .
 lcao:hasFlowClassification
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Assigns an LCA flow to a material, energy or functional category."@en ;
+  dcterms:description "Ordnet einen LCA-Fluss einer stofflichen, energetischen oder funktionalen Kategorie zu."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_FlowDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Flow ;
+  rdfs:label "has flow classification"@en ;
+  rdfs:label "hat Flussklassifikation"@de ;
   rdfs:range [
       rdf:type rdfs:Datatype ;
       owl:oneOf (
@@ -434,17 +665,39 @@ lcao:hasFlowClassification
 .
 lcao:hasFlowName
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Records the human-readable name of the flow data set."@en ;
+  dcterms:description "Speichert die menschenlesbare Bezeichnung des Flussdatensatzes."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_FlowDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Flow ;
+  rdfs:label "has flow name"@en ;
+  rdfs:label "hat Flussbezeichnung"@de ;
   rdfs:range xsd:string ;
 .
 lcao:hasFlowProperty
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
+  dcterms:description "Links a flow data set to a quantitative property used to express its amount."@en ;
+  dcterms:description "Verknüpft einen Flussdatensatz mit einer quantitativen Eigenschaft zur Beschreibung seiner Menge."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_FlowDataSet.html> ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_FlowPropertyDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Flow ;
+  rdfs:label "has flow property"@en ;
+  rdfs:label "hat Flusseigenschaft"@de ;
   rdfs:range lcao:FlowProperty ;
 .
 lcao:hasFlowPropertyClassification
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Categorises the quantitative property of a flow, for example as mass, volume or number of items."@en ;
+  dcterms:description "Kategorisiert die quantitative Bezugsgröße eines Flusses, beispielsweise als Masse, Volumen oder Stückzahl."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_FlowPropertyDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:FlowProperty ;
+  rdfs:label "has flow property category"@en ;
+  rdfs:label "hat Flusseigenschaftskategorie"@de ;
   rdfs:range [
       rdf:type rdfs:Datatype ;
       owl:oneOf (
@@ -469,22 +722,51 @@ lcao:hasFlowPropertyClassification
 .
 lcao:hasFlowPropertyName
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Records the human-readable name of the flow property data set."@en ;
+  dcterms:description "Speichert die menschenlesbare Bezeichnung des Flusseigenschaftsdatensatzes."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_FlowPropertyDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:FlowProperty ;
+  rdfs:label "has flow property name"@en ;
+  rdfs:label "hat Flusseigenschaftsbezeichnung"@de ;
   rdfs:range xsd:string ;
 .
 lcao:hasFlowPropertyUUID
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Records the UUID identifying the flow property data set across systems."@en ;
+  dcterms:description "Speichert die UUID zur systemübergreifenden Identifikation des Flusseigenschaftsdatensatzes."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_FlowPropertyDataSet.html> ;
+  dcterms:source <https://www.rfc-editor.org/rfc/rfc9562.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:FlowProperty ;
+  rdfs:label "has flow property data set UUID"@en ;
+  rdfs:label "hat UUID des Flusseigenschaftsdatensatzes"@de ;
   rdfs:range xsd:string ;
 .
 lcao:hasFlowPropertyVersion
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Records the version of the flow property data set."@en ;
+  dcterms:description "Speichert den Versionsstand des Flusseigenschaftsdatensatzes."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_FlowPropertyDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:FlowProperty ;
+  rdfs:label "has flow property data set version"@en ;
+  rdfs:label "hat Version des Flusseigenschaftsdatensatzes"@de ;
   rdfs:range xsd:string ;
 .
 lcao:hasFlowType
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Identifies a flow as an elementary flow, product flow, waste flow or another flow type supported by the model."@en ;
+  dcterms:description "Kennzeichnet einen Fluss als Elementarfluss, Produktfluss, Abfallfluss oder weiteren im Modell geführten Flusstyp."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_FlowDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Flow ;
+  rdfs:label "has flow type"@en ;
+  rdfs:label "hat Flusstyp"@de ;
   rdfs:range [
       rdf:type rdfs:Datatype ;
       owl:oneOf (
@@ -497,57 +779,137 @@ lcao:hasFlowType
 .
 lcao:hasFlowUUID
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Records the UUID identifying the flow data set across systems."@en ;
+  dcterms:description "Speichert die UUID zur systemübergreifenden Identifikation des Flussdatensatzes."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_FlowDataSet.html> ;
+  dcterms:source <https://www.rfc-editor.org/rfc/rfc9562.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Flow ;
+  rdfs:label "has flow data set UUID"@en ;
+  rdfs:label "hat UUID des Flussdatensatzes"@de ;
   rdfs:range xsd:string ;
 .
 lcao:hasFlowVersion
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Records the version of the flow data set."@en ;
+  dcterms:description "Speichert den Versionsstand des Flussdatensatzes."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_FlowDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Flow ;
+  rdfs:label "has flow data set version"@en ;
+  rdfs:label "hat Version des Flussdatensatzes"@de ;
   rdfs:range xsd:string ;
 .
 lcao:hasGeographicalContext
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
+  dcterms:description "Links an LCA process data set to its geographical coverage."@en ;
+  dcterms:description "Verknüpft einen LCA-Prozessdatensatz mit seinem räumlichen Geltungsbereich."@de ;
+  dcterms:source <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/processDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Process ;
+  rdfs:label "has geographical context"@en ;
+  rdfs:label "hat geografischen Bezug"@de ;
   rdfs:range lcao:GeographicalContext ;
 .
 lcao:hasGeographicalContextDescription
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Records a textual description of geographical coverage, such as Germany."@en ;
+  dcterms:description "Speichert eine textuelle Beschreibung des geografischen Bezugs, beispielsweise Deutschland."@de ;
+  dcterms:source <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/processDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:GeographicalContext ;
+  rdfs:label "has location or region description"@en ;
+  rdfs:label "hat Orts- oder Regionsbeschreibung"@de ;
   rdfs:range xsd:string ;
 .
 lcao:hasLCI-Result
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
+  dcterms:description "Associates an LCA process data set with an inventory-based indicator result."@en ;
+  dcterms:description "Ordnet einem LCA-Prozessdatensatz einen zugehörigen sachbilanzbasierten Indikatorwert zu."@de ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Process ;
+  rdfs:label "has inventory-based indicator result"@en ;
+  rdfs:label "hat Sachbilanzindikatorergebnis"@de ;
   rdfs:range lcao:LCI-Result ;
+  rdfs:seeAlso <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/processDataSet.html> ;
+  rdfs:seeAlso <https://www.dinmedia.de/de/norm/din-en-15804/344735627> ;
 .
 lcao:hasLCIA-MethodName
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Records the human-readable name of the impact assessment method data set."@en ;
+  dcterms:description "Speichert die menschenlesbare Bezeichnung des Wirkungsabschätzungsmethodendatensatzes."@de ;
+  dcterms:source <https://eplca.pages.code.europa.eu/ilcd_docs/schema/lciamethod/LCIAMethodDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:LCIA-Method ;
+  rdfs:label "has impact assessment method name"@en ;
+  rdfs:label "hat Methodenbezeichnung"@de ;
   rdfs:range xsd:string ;
 .
 lcao:hasLCIA-MethodUUID
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Records the UUID identifying the impact assessment method data set across systems."@en ;
+  dcterms:description "Speichert die UUID zur systemübergreifenden Identifikation des Wirkungsabschätzungsmethodendatensatzes."@de ;
+  dcterms:source <https://eplca.pages.code.europa.eu/ilcd_docs/schema/lciamethod/LCIAMethodDataSet.html> ;
+  dcterms:source <https://www.rfc-editor.org/rfc/rfc9562.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:LCIA-Method ;
+  rdfs:label "has impact assessment method data set UUID"@en ;
+  rdfs:label "hat UUID des Wirkungsabschätzungsmethodendatensatzes"@de ;
   rdfs:range xsd:string ;
 .
 lcao:hasLCIA-MethodVersion
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Records the version of the impact assessment method data set."@en ;
+  dcterms:description "Speichert den Versionsstand des Wirkungsabschätzungsmethodendatensatzes."@de ;
+  dcterms:source <https://eplca.pages.code.europa.eu/ilcd_docs/schema/lciamethod/LCIAMethodDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:LCIA-Method ;
+  rdfs:label "has impact assessment method data set version"@en ;
+  rdfs:label "hat Version des Wirkungsabschätzungsmethodendatensatzes"@de ;
   rdfs:range xsd:string ;
 .
 lcao:hasLCIA-Result
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
+  dcterms:description "Associates an LCA process data set with a calculated environmental impact indicator result."@en ;
+  dcterms:description "Ordnet einem LCA-Prozessdatensatz einen berechneten Umweltwirkungsindikatorwert zu."@de ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Process ;
+  rdfs:label "has impact assessment indicator result"@en ;
+  rdfs:label "hat Wirkungsindikatorergebnis"@de ;
   rdfs:range lcao:LCIA-Result ;
+  rdfs:seeAlso <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/processDataSet.html> ;
+  rdfs:seeAlso <https://www.iso.org/standard/38498.html> ;
 .
 lcao:hasProcessDescription
   rdf:type owl:DatatypeProperty ;
+  dcterms:description "Beschreibt den im LCA-Prozessdatensatz dargestellten Prozess und seine wesentlichen Tätigkeiten."@de ;
+  dcterms:description "Describes the process represented by an LCA process data set and its principal activities."@en ;
+  dcterms:source <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/processDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Process ;
+  rdfs:label "has process description"@en ;
+  rdfs:label "hat Prozessbeschreibung"@de ;
   rdfs:range xsd:string ;
 .
 lcao:hasProcessType
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Identifies the modelling and aggregation level of a process data set, such as a unit process or aggregated inventory result."@en ;
+  dcterms:description "Kennzeichnet den Modellierungs- und Aggregationsgrad des Prozessdatensatzes, beispielsweise als Einzelprozess oder aggregiertes Sachbilanzergebnis."@de ;
+  dcterms:source <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/LCIMethodAndAllocationType.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Process ;
+  rdfs:label "has LCA process data set type"@en ;
+  rdfs:label "hat LCA-Prozessdatensatztyp"@de ;
   rdfs:range [
       rdf:type rdfs:Datatype ;
       owl:oneOf (
@@ -561,21 +923,51 @@ lcao:hasProcessType
 .
 lcao:hasProcessUUID
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Records the UUID identifying the LCA process data set across systems."@en ;
+  dcterms:description "Speichert die UUID zur systemübergreifenden Identifikation des LCA-Prozessdatensatzes."@de ;
+  dcterms:source <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/processDataSet.html> ;
+  dcterms:source <https://www.rfc-editor.org/rfc/rfc9562.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Process ;
+  rdfs:label "has process data set UUID"@en ;
+  rdfs:label "hat UUID des Prozessdatensatzes"@de ;
   rdfs:range xsd:string ;
 .
 lcao:hasProcessVersion
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Records the version of the LCA process data set."@en ;
+  dcterms:description "Speichert den Versionsstand des LCA-Prozessdatensatzes."@de ;
+  dcterms:source <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/processDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Process ;
+  rdfs:label "has process data set version"@en ;
+  rdfs:label "hat Version des Prozessdatensatzes"@de ;
   rdfs:range xsd:string ;
+  rdfs:seeAlso <https://www.rfc-editor.org/rfc/rfc9562.html> ;
 .
 lcao:hasQuantity
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Records the numerical amount of a process exchange for a specified flow property and unit."@en ;
+  dcterms:description "Speichert den Zahlenwert der Menge eines prozessbezogenen Flusseintrags mit festgelegter Bezugsgröße und Einheit."@de ;
+  dcterms:source <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/ExchangeType.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Exchange ;
+  rdfs:label "has exchange amount"@en ;
+  rdfs:label "hat Austauschmenge"@de ;
 .
 lcao:hasReferenceUnit
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Records the reference measurement unit of a unit group to which other units are converted."@en ;
+  dcterms:description "Speichert die Bezugsmaßeinheit einer Einheitengruppe, auf die weitere Einheiten umgerechnet werden."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_UnitGroupDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:UnitGroup ;
+  rdfs:label "has reference unit"@en ;
+  rdfs:label "hat Referenzeinheit"@de ;
   rdfs:range [
       rdf:type rdfs:Datatype ;
       owl:oneOf (
@@ -596,86 +988,209 @@ lcao:hasReferenceUnit
 .
 lcao:hasSourceInformation
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
+  dcterms:description "Records additional bibliographic details or a description of the information source used."@en ;
+  dcterms:description "Speichert ergänzende bibliografische Angaben oder eine Beschreibung der verwendeten Informationsquelle."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_SourceDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Source ;
+  rdfs:label "has source information"@en ;
+  rdfs:label "hat Quellenangaben"@de ;
 .
 lcao:hasSourceName
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Records the human-readable name of the source data set."@en ;
+  dcterms:description "Speichert die menschenlesbare Bezeichnung des Quelldatensatzes."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_SourceDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Source ;
+  rdfs:label "has source name"@en ;
+  rdfs:label "hat Quellenbezeichnung"@de ;
   rdfs:range xsd:string ;
 .
 lcao:hasSourceUUID
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Records the UUID identifying the source data set across systems."@en ;
+  dcterms:description "Speichert die UUID zur systemübergreifenden Identifikation des Quelldatensatzes."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_SourceDataSet.html> ;
+  dcterms:source <https://www.rfc-editor.org/rfc/rfc9562.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Source ;
+  rdfs:label "has source data set UUID"@en ;
+  rdfs:label "hat UUID des Quelldatensatzes"@de ;
   rdfs:range xsd:string ;
 .
 lcao:hasSourceVersion
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Records the version of the source data set."@en ;
+  dcterms:description "Speichert den Versionsstand des Quelldatensatzes."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_SourceDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Source ;
+  rdfs:label "has source data set version"@en ;
+  rdfs:label "hat Version des Quelldatensatzes"@de ;
   rdfs:range xsd:string ;
 .
 lcao:hasTechnicalContext
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
+  dcterms:description "Links an LCA process data set to the represented technology and its operating conditions."@en ;
+  dcterms:description "Verknüpft einen LCA-Prozessdatensatz mit der repräsentierten Technologie und ihren Betriebsbedingungen."@de ;
+  dcterms:source <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/processDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Process ;
+  rdfs:label "has technological context"@en ;
+  rdfs:label "hat technologischen Bezug"@de ;
   rdfs:range lcao:TechnicalContext ;
 .
 lcao:hasTechnicalContextDescription
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Records a textual description of the represented technology and process conditions."@en ;
+  dcterms:description "Speichert eine textuelle Beschreibung der repräsentierten Technologie und Prozessbedingungen."@de ;
+  dcterms:source <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/processDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:TechnicalContext ;
+  rdfs:label "has technology description"@en ;
+  rdfs:label "hat Technologiebeschreibung"@de ;
   rdfs:range xsd:string ;
 .
 lcao:hasTemporalContext
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
+  dcterms:description "Links an LCA process data set to the point in time or period it represents."@en ;
+  dcterms:description "Verknüpft einen LCA-Prozessdatensatz mit dem Zeitpunkt oder Zeitraum seiner Repräsentativität."@de ;
+  dcterms:source <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/processDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Process ;
+  rdfs:label "has temporal context"@en ;
+  rdfs:label "hat zeitlichen Bezug"@de ;
   rdfs:range lcao:TemporalContext ;
 .
 lcao:hasTemporalContextDescription
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Records the integer year to which the process data temporally relate in the supplied model."@en ;
+  dcterms:description "Speichert im vorliegenden Modell das ganzzahlige Jahr, auf das sich die Prozessdaten zeitlich beziehen."@de ;
+  dcterms:source <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/processDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:TemporalContext ;
+  rdfs:label "has reference year"@en ;
+  rdfs:label "hat Bezugsjahr"@de ;
   rdfs:range xsd:integer ;
 .
 lcao:hasUnitGroupName
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Records the human-readable name of the unit group data set."@en ;
+  dcterms:description "Speichert die menschenlesbare Bezeichnung des Einheitengruppendatensatzes."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_UnitGroupDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:UnitGroup ;
+  rdfs:label "has unit group name"@en ;
+  rdfs:label "hat Einheitengruppenbezeichnung"@de ;
   rdfs:range xsd:string ;
 .
 lcao:hasUnitGroupReference
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
+  dcterms:description "Links a flow property data set to the unit group for its quantitative property."@en ;
+  dcterms:description "Verknüpft einen Flusseigenschaftsdatensatz mit der Einheitengruppe seiner quantitativen Bezugsgröße."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_FlowPropertyDataSet.html> ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_UnitGroupDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:FlowProperty ;
+  rdfs:label "references unit group"@en ;
+  rdfs:label "referenziert Einheitengruppe"@de ;
   rdfs:range lcao:UnitGroup ;
 .
 lcao:hasUnitGroupUUID
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Records the UUID identifying the unit group data set across systems."@en ;
+  dcterms:description "Speichert die UUID zur systemübergreifenden Identifikation des Einheitengruppendatensatzes."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_UnitGroupDataSet.html> ;
+  dcterms:source <https://www.rfc-editor.org/rfc/rfc9562.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:UnitGroup ;
+  rdfs:label "has unit group data set UUID"@en ;
+  rdfs:label "hat UUID des Einheitengruppendatensatzes"@de ;
   rdfs:range xsd:string ;
 .
 lcao:hasUnitGroupVersion
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Records the version of the unit group data set."@en ;
+  dcterms:description "Speichert den Versionsstand des Einheitengruppendatensatzes."@de ;
+  dcterms:source <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_UnitGroupDataSet.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:UnitGroup ;
+  rdfs:label "has unit group data set version"@en ;
+  rdfs:label "hat Version des Einheitengruppendatensatzes"@de ;
   rdfs:range xsd:string ;
 .
 lcao:refersToFlow
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
+  dcterms:description "Links a process exchange to the data set identifying the exchanged flow."@en ;
+  dcterms:description "Verknüpft einen prozessbezogenen Flusseintrag mit dem Datensatz des ausgetauschten Flusses."@de ;
+  dcterms:source <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/ExchangeType.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Exchange ;
+  rdfs:label "references flow"@en ;
+  rdfs:label "referenziert Fluss"@de ;
   rdfs:range lcao:Flow ;
+  rdfs:seeAlso <https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_FlowDataSet.html> ;
 .
 lcao:refersToLCI-Method
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
+  dcterms:description "Links an LCA process data set to the methodological approach used for inventory modelling."@en ;
+  dcterms:description "Verknüpft einen LCA-Prozessdatensatz mit dem angewendeten methodischen Ansatz zur Sachbilanzmodellierung."@de ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Process ;
+  rdfs:label "references inventory modelling approach"@en ;
+  rdfs:label "referenziert Sachbilanzmodellierung"@de ;
   rdfs:range lcao:LCI-Method ;
+  rdfs:seeAlso <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/LCIMethodAndAllocationType.html> ;
 .
 lcao:refersToLCIA-Method
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
+  dcterms:description "Links an LCA process data set to the impact assessment method data set used."@en ;
+  dcterms:description "Verknüpft einen LCA-Prozessdatensatz mit dem verwendeten Wirkungsabschätzungsmethodendatensatz."@de ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Process ;
+  rdfs:label "references impact assessment method"@en ;
+  rdfs:label "referenziert Wirkungsabschätzungsmethode"@de ;
   rdfs:range lcao:LCIA-Method ;
+  rdfs:seeAlso <https://eplca.pages.code.europa.eu/ilcd_docs/schema/lciamethod/LCIAMethodDataSet.html> ;
 .
 lcao:representsProcess
   rdf:type rdf:Property ;
+  rdf:type owl:ObjectProperty ;
+  dcterms:description "Links an LCA process data set to the construction process represented in its inventory."@en ;
+  dcterms:description "Verknüpft einen LCA-Prozessdatensatz mit dem darin bilanziell beschriebenen Bauprozess."@de ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:Process ;
+  rdfs:label "represents construction process"@en ;
+  rdfs:label "repräsentiert Bauprozess"@de ;
   rdfs:range lcdmo:ConstructionProcess ;
+  rdfs:seeAlso <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/processDataSet.html> ;
 .
 lcao:usedAllocationMethod
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Identifies the inventory modelling principle as attributional, consequential or a combination of these approaches."@en ;
+  dcterms:description "Kennzeichnet das Sachbilanzprinzip als attributionell, konsequenziell oder als Kombination dieser Ansätze."@de ;
+  dcterms:source <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/LCIMethodAndAllocationType.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:LCI-Method ;
+  rdfs:label "has inventory modelling principle"@en ;
+  rdfs:label "hat Sachbilanz-Modellierungsprinzip"@de ;
   rdfs:range [
       rdf:type rdfs:Datatype ;
       owl:oneOf (
@@ -689,7 +1204,14 @@ lcao:usedAllocationMethod
 .
 lcao:usedLCI-Method
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Identifies the approach used to address multifunctionality, such as mass allocation or substitution."@en ;
+  dcterms:description "Kennzeichnet den angewendeten Ansatz zur Behandlung von Mehrfunktionalität, beispielsweise Massenallokation oder Substitution."@de ;
+  dcterms:source <https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/LCIMethodAndAllocationType.html> ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:LCI-Method ;
+  rdfs:label "has allocation or substitution approach"@en ;
+  rdfs:label "hat Allokations- oder Substitutionsansatz"@de ;
   rdfs:range [
       rdf:type rdfs:Datatype ;
       owl:oneOf (
@@ -718,10 +1240,17 @@ lcao:usedLCI-Method
           "Other"
         ) ;
     ] ;
+  rdfs:seeAlso <https://www.iso.org/standard/38498.html> ;
 .
 lcao:usedLCIA-Method
   rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
+  dcterms:description "Identifies the impact assessment method family or reference package used, such as Environmental Footprint or EN 15804."@en ;
+  dcterms:description "Kennzeichnet die verwendete Methodenfamilie oder das Referenzpaket der Wirkungsabschätzung, beispielsweise Environmental Footprint oder EN 15804."@de ;
+  dcterms:source <urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c> ;
   rdfs:domain lcao:LCIA-Method ;
+  rdfs:label "has impact assessment method family"@en ;
+  rdfs:label "hat Wirkungsabschätzungs-Methodenfamilie"@de ;
   rdfs:range [
       rdf:type rdfs:Datatype ;
       owl:oneOf (
@@ -742,4 +1271,74 @@ lcao:usedLCIA-Method
           "Eco-costs"
         ) ;
     ] ;
+  rdfs:seeAlso <https://eplca.pages.code.europa.eu/ilcd_docs/schema/lciamethod/LCIAMethodDataSet.html> ;
+.
+dcterms:description
+  rdf:type owl:AnnotationProperty ;
+.
+dcterms:source
+  rdf:type owl:AnnotationProperty ;
+.
+<https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_ContactDataSet.html>
+  dcterms:description "Frei zugängliche offizielle Schemadokumentation. Personen/Organisationen und Kontaktinformationen."@de ;
+  dcterms:title "JRC ILCD 1.1 — Contact data set" ;
+.
+<https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_FlowDataSet.html>
+  dcterms:description "Frei zugängliche offizielle Schemadokumentation. Identität, Name, Typ, Klassifikation und Flusseigenschaften."@de ;
+  dcterms:title "JRC ILCD 1.1 — Flow data set" ;
+.
+<https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_FlowPropertyDataSet.html>
+  dcterms:description "Frei zugängliche offizielle Schemadokumentation. Physikalische Bezugsgröße eines Flusses und Einheitengruppenreferenz."@de ;
+  dcterms:title "JRC ILCD 1.1 — Flow property data set" ;
+.
+<https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_SourceDataSet.html>
+  dcterms:description "Frei zugängliche offizielle Schemadokumentation. Bibliografische und andere Dokumentationsquellen."@de ;
+  dcterms:title "JRC ILCD 1.1 — Source data set" ;
+.
+<https://eplca.jrc.ec.europa.eu/LCDN/downloads/ILCD_Format_1.1_Documentation/ILCD_UnitGroupDataSet.html>
+  dcterms:description "Frei zugängliche offizielle Schemadokumentation. Einheiten, Referenzeinheit und Umrechnungsfaktoren."@de ;
+  dcterms:title "JRC ILCD 1.1 — Unit group data set" ;
+.
+<https://eplca.pages.code.europa.eu/ilcd_docs/>
+  dcterms:description "Frei zugängliche offizielle Schemadokumentation. Datensatzarten und Verzeichnis der ILCD-Schemadokumentation."@de ;
+  dcterms:title "European Commission JRC — ILCD XML schema documentation, overview" ;
+.
+<https://eplca.pages.code.europa.eu/ilcd_docs/schema/lciamethod/LCIAMethodDataSet.html>
+  dcterms:description "Frei zugängliche offizielle Schemadokumentation. Wirkungsabschätzungsdatensätze."@de ;
+  dcterms:title "JRC ILCD — LCIA Method data set" ;
+.
+<https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/ExchangeType.html>
+  dcterms:description "Frei zugängliche offizielle Schemadokumentation. Prozessspezifische Flussreferenz, Richtung und Menge."@de ;
+  dcterms:title "JRC ILCD — ExchangeType: Inputs and Outputs" ;
+.
+<https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/LCIMethodAndAllocationType.html>
+  dcterms:description "Frei zugängliche offizielle Schemadokumentation. typeOfDataSet, LCIMethodPrinciple und LCIMethodApproaches."@de ;
+  dcterms:title "JRC ILCD — LCI method and allocation" ;
+.
+<https://eplca.pages.code.europa.eu/ilcd_docs/schema/process/processDataSet.html>
+  dcterms:description "Frei zugängliche offizielle Schemadokumentation. Prozessdatensätze, Dokumentation und Ergebnisse."@de ;
+  dcterms:title "JRC ILCD — Process data set" ;
+.
+<https://www.dinmedia.de/de/norm/din-en-15804/344735627>
+  dcterms:description "Öffentliches Abstract / Verlagsbeschreibung; Normvolltext nicht eingesehen. EPD-Grundregeln für Bauprodukte; Kontext für Module und Indikatorgruppen."@de ;
+  dcterms:title "DIN EN 15804:2022-03 — EN 15804:2012+A2:2019+AC:2021" ;
+.
+<https://www.iso.org/standard/37456.html>
+  dcterms:description "Öffentliches Abstract / Verlagsbeschreibung; Normvolltext nicht eingesehen. Rahmen und Phasen der Ökobilanz; Normkontext für eigene Kurzdefinitionen."@de ;
+  dcterms:title "ISO 14040:2006 + Amd 1:2020 — LCA: Principles and framework" ;
+.
+<https://www.iso.org/standard/38498.html>
+  dcterms:description "Öffentliches Abstract / Verlagsbeschreibung; Normvolltext nicht eingesehen. Sachbilanz, Wirkungsabschätzung, Untersuchungsrahmen und methodische Anforderungen."@de ;
+  dcterms:title "ISO 14044:2006 + Amd 1:2017 + Amd 2:2020 — LCA: Requirements and guidelines" ;
+.
+<https://www.rfc-editor.org/rfc/rfc9562.html>
+  dcterms:description "Frei zugänglicher technischer Standard. UUID/GUID-Terminologie."@de ;
+  dcterms:title "IETF RFC 9562:2024 — Universally Unique IDentifiers" ;
+.
+<urn:ontology-annotation:source:lcao-input-sha256-6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c>
+  dcterms:description "Unangereicherte übergebene Originalfassung. Grundlage der lokalen Klassennamen, Spezialisierungen und modellspezifischen Arbeitsdefinitionen. Die exakten Originalbytes sind im Gesamtpaket unter Originale/ enthalten. Dies ist kein externer Normbeleg."@de ;
+  dcterms:identifier "sha256:6024a1d9ac470d4dbb34b6ec5677a4f2d644e647d06ae73c44f76849b41d7e8c" ;
+  dcterms:title "lcao(20261123-154242).ttl" ;
+  rdfs:label "Originalfassung lcao vom 23.11.2026"@de ;
+  rdfs:label "lcao source model, 2026-11-23"@en ;
 .
