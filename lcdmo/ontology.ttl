@@ -1,0 +1,281 @@
+# baseURI: http://example.org/lcdmo
+# imports: http://example.org/cao
+# imports: http://example.org/lcao
+# imports: http://w3id.org/ioc
+# imports: https://w3id.org/bot#
+# imports: https://w3id.org/isoprops
+# imports: https://w3id.org/opm#
+# prefix: lcdmo
+
+@prefix beo: <https://w3id.org/beo#> .
+@prefix ioc: <http://w3id.org/ioc#> .
+@prefix lcdmo: <http://example.org/lcdmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/lcdmo>
+  rdf:type owl:Ontology ;
+  owl:imports <http://example.org/cao> ;
+  owl:imports <http://example.org/lcao> ;
+  owl:imports <http://w3id.org/ioc> ;
+  owl:imports <https://w3id.org/bot#> ;
+  owl:imports <https://w3id.org/isoprops> ;
+  owl:imports <https://w3id.org/opm#> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+lcdmo:Construction
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+  owl:equivalentClass <https://w3id.org/bot#Building> ;
+.
+lcdmo:ConstructionObject
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+  owl:equivalentClass <https://w3id.org/bot#Element> ;
+.
+lcdmo:ConstructionObjectProperty
+  rdf:type owl:Class ;
+  rdfs:subClassOf <http://example.org/cao#CircularityAssessmentIndicator> ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf <https://w3id.org/opm#Property> ;
+.
+lcdmo:ConstructionObjectPropertySet
+  rdf:type owl:Class ;
+  rdfs:subClassOf <http://example.org/cao#CircularityAssessmentIndicatorSet> ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf <https://w3id.org/isoprops#GroupOfProperties> ;
+.
+lcdmo:ConstructionObjectPropertyState
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf <https://w3id.org/opm#PropertyState> ;
+.
+lcdmo:ConstructionProcess
+  rdf:type owl:Class ;
+  ioc:isCancelled "false"^^xsd:boolean ;
+  rdfs:subClassOf ioc:Process ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcdmo:ConstructionProcessExchanges
+  rdf:type owl:Class ;
+  rdfs:subClassOf <http://example.org/lcao#Exchange> ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcdmo:ConstructionProcessExchangesProperty
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf <https://w3id.org/opm#Property> ;
+.
+lcdmo:ConstructionProcessOccurence
+  rdf:type owl:Class ;
+  rdfs:subClassOf <http://example.org/lcao#Process> ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcdmo:ConstructionProcessProperty
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf <https://w3id.org/opm#Property> ;
+.
+lcdmo:ConstructionProject
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcdmo:DataDetectionDevice
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcdmo:DataObject
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcdmo:ProcessExchangeDeterminationType
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcdmo:ProcessResource
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcdmo:ProcessResourceProperty
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf <https://w3id.org/opm#Property> ;
+.
+lcdmo:PropertySet
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcdmo:ResourceType
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcdmo:ResourceTypeProperty
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf <https://w3id.org/opm#Property> ;
+.
+lcdmo:comesFromDataObject
+  rdf:type rdf:Property ;
+  rdfs:domain lcdmo:ConstructionProcessProperty ;
+  rdfs:range lcdmo:DataObject ;
+.
+lcdmo:hasConstruction
+  rdf:type rdf:Property ;
+  rdfs:domain lcdmo:ConstructionProject ;
+  rdfs:range lcdmo:Construction ;
+.
+lcdmo:hasConstructionObject
+  rdf:type rdf:Property ;
+  rdfs:domain lcdmo:Construction ;
+  rdfs:range lcdmo:ConstructionObject ;
+.
+lcdmo:hasConstructionObjectProperty
+  rdf:type rdf:Property ;
+  rdfs:domain lcdmo:ConstructionObjectPropertySet ;
+  rdfs:range lcdmo:ConstructionObjectProperty ;
+  rdfs:subPropertyOf <https://w3id.org/opm#hasProperty> ;
+.
+lcdmo:hasConstructionObjectPropertyState
+  rdf:type rdf:Property ;
+  rdfs:domain lcdmo:ConstructionObjectProperty ;
+  rdfs:range lcdmo:ConstructionObjectPropertyState ;
+.
+lcdmo:hasConstructionProcess
+  rdf:type rdf:Property ;
+  rdfs:domain lcdmo:ConstructionObject ;
+  rdfs:range lcdmo:ConstructionProcess ;
+.
+lcdmo:hasConstructionProcessExchanges
+  rdf:type rdf:Property ;
+  rdfs:domain lcdmo:ConstructionProcess ;
+  rdfs:range lcdmo:ConstructionProcessExchanges ;
+.
+lcdmo:hasConstructionProcessExchangesProperty
+  rdf:type rdf:Property ;
+  rdfs:domain lcdmo:ConstructionProcessExchanges ;
+  rdfs:range lcdmo:ConstructionProcessExchangesProperty ;
+  rdfs:subPropertyOf <https://w3id.org/opm#hasProperty> ;
+.
+lcdmo:hasConstructionProcessProperty
+  rdf:type rdf:Property ;
+  rdfs:domain lcdmo:ConstructionProcess ;
+  rdfs:range lcdmo:ConstructionProcessProperty ;
+  rdfs:subPropertyOf <https://w3id.org/opm#hasProperty> ;
+.
+lcdmo:hasGUID
+  rdf:type rdf:Property ;
+  rdfs:range xsd:string ;
+.
+lcdmo:hasID
+  rdf:type rdf:Property ;
+.
+lcdmo:hasIFC-ID
+  rdf:type rdf:Property ;
+  rdfs:range xsd:string ;
+.
+lcdmo:hasPrecedingProcess
+  rdf:type rdf:Property ;
+  rdfs:domain lcdmo:ConstructionProcess ;
+  rdfs:range lcdmo:ConstructionProcess ;
+.
+lcdmo:hasProcessExchangeDeterminationType
+  rdf:type rdf:Property ;
+  rdfs:domain lcdmo:ConstructionProcess ;
+  rdfs:range lcdmo:ProcessExchangeDeterminationType ;
+.
+lcdmo:hasProcessResource
+  rdf:type rdf:Property ;
+  rdfs:domain lcdmo:ConstructionProcess ;
+  rdfs:range lcdmo:ProcessResource ;
+.
+lcdmo:hasProcessResourceProperty
+  rdf:type rdf:Property ;
+  rdfs:domain lcdmo:ProcessResource ;
+  rdfs:range lcdmo:ProcessResourceProperty ;
+  rdfs:subPropertyOf <https://w3id.org/opm#hasProperty> ;
+.
+lcdmo:hasPropertySet
+  rdf:type rdf:Property ;
+  rdfs:domain lcdmo:ConstructionObject ;
+  rdfs:range lcdmo:ConstructionObjectPropertySet ;
+.
+lcdmo:hasResourceExchangeProperty
+  rdf:type rdf:Property ;
+  rdfs:domain lcdmo:ConstructionProcessExchanges ;
+  rdfs:domain <https://w3id.org/opm#Property> ;
+  rdfs:range lcdmo:ConstructionProcessExchangesProperty ;
+  rdfs:subPropertyOf <https://w3id.org/opm#hasProperty> ;
+.
+lcdmo:hasResourceFlowProperty
+  rdf:type rdf:Property ;
+  rdfs:domain lcdmo:ConstructionProcessExchanges ;
+  rdfs:subPropertyOf <https://w3id.org/opm#hasProperty> ;
+.
+lcdmo:hasResourceType
+  rdf:type rdf:Property ;
+  rdfs:domain lcdmo:ProcessResource ;
+  rdfs:range lcdmo:ResourceType ;
+.
+lcdmo:hasResourceTypeProperty
+  rdf:type rdf:Property ;
+  rdfs:domain lcdmo:ResourceType ;
+  rdfs:range lcdmo:ResourceTypeProperty ;
+  rdfs:subPropertyOf <https://w3id.org/opm#hasProperty> ;
+.
+lcdmo:hasState
+  rdf:type rdf:Property ;
+  rdfs:range xsd:string ;
+.
+lcdmo:hasSubsequentProcess
+  rdf:type rdf:Property ;
+  rdfs:domain lcdmo:ConstructionProcess ;
+  rdfs:range lcdmo:ConstructionProcess ;
+.
+lcdmo:hasUncertainty
+  rdf:type rdf:Property ;
+.
+lcdmo:hasUnit
+  rdf:type rdf:Property ;
+  rdfs:range xsd:string ;
+.
+lcdmo:hasValue
+  rdf:type rdf:Property ;
+.
+lcdmo:isComposedOf
+  rdf:type rdf:Property ;
+  rdfs:domain lcdmo:ConstructionProcessOccurence ;
+  rdfs:range lcdmo:ConstructionObject ;
+  rdfs:range lcdmo:ConstructionProcess ;
+  rdfs:range lcdmo:ProcessResource ;
+.
+lcdmo:isDetectedBy
+  rdf:type rdf:Property ;
+  rdfs:domain lcdmo:ConstructionProcessProperty ;
+  rdfs:range lcdmo:DataDetectionDevice ;
+.
+lcdmo:isOfDataGenerationType
+  rdf:type rdf:Property ;
+  rdfs:domain lcdmo:ConstructionProcessProperty ;
+  rdfs:range [
+      rdf:type rdfs:Datatype ;
+      owl:oneOf (
+          "Measured"
+          "Calculated"
+          "Simulated"
+          "Estimated"
+          "Assumed"
+        ) ;
+    ] ;
+.
+lcdmo:requiresPrecedingProcess
+  rdf:type rdf:Property ;
+  rdfs:domain lcdmo:ConstructionProcess ;
+  rdfs:range lcdmo:ConstructionProcess ;
+.
+lcdmo:requiresSubsequentProcess
+  rdf:type rdf:Property ;
+  rdfs:domain lcdmo:ConstructionProcess ;
+  rdfs:range lcdmo:ConstructionProcess ;
+.
