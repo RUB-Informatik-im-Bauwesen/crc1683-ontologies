@@ -1,23 +1,23 @@
 # baseURI: http://example.org/LCA_Slab_Recorded
-# imports: http://example.org/lcao
-# imports: http://example.org/lcdmo
-# imports: http://example.org/rc-copo
+# imports: http://w3id.org/lcao
+# imports: http://w3id.org/lcdmo
+# imports: http://w3id.org/rc-copo
 # prefix: LCA_Slab_Recorded
 
 @prefix LCA_Slab_Recorded: <http://example.org/LCA_Slab_Recorded#> .
-@prefix lcao: <http://example.org/lcao#> .
-@prefix lcdmo: <http://example.org/lcdmo#> .
+@prefix lcao: <http://w3id.org/lcao#> .
+@prefix lcdmo: <http://w3id.org/lcdmo#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rc-copo: <http://example.org/rc-copo#> .
+@prefix rc-copo: <http://w3id.org/rc-copo#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://example.org/LCA_Slab_Recorded>
   rdf:type owl:Ontology ;
-  owl:imports <http://example.org/lcao> ;
-  owl:imports <http://example.org/lcdmo> ;
-  owl:imports <http://example.org/rc-copo> ;
+  owl:imports <http://w3id.org/lcao> ;
+  owl:imports <http://w3id.org/lcdmo> ;
+  owl:imports <http://w3id.org/rc-copo> ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .
 LCA_Slab_Recorded:CapacityUtilizationDemolition_1
