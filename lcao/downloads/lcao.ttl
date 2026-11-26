@@ -1,0 +1,745 @@
+# baseURI: http://example.org/lcao
+# imports: http://example.org/lcdmo
+# prefix: lcao
+
+@prefix lcao: <http://example.org/lcao#> .
+@prefix lcdmo: <http://example.org/lcdmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/lcao>
+  rdf:type owl:Ontology ;
+  owl:imports <http://example.org/lcdmo> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+lcao:Author
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcao:Contact
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcao:LCA-DataSet ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcao:Contact_1
+  rdf:type lcao:Contact ;
+  lcao:hasContactInformation "-" ;
+  lcao:hasContactName "-" ;
+  lcao:hasContactUUID "42bbfb9f-5063-594b-8c13-59ef93e866e6" ;
+  lcao:hasContactVersion "00.00.001" ;
+.
+lcao:Exchange
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcao:Flow
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcao:LCA-DataSet ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcao:FlowProperty
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcao:LCA-DataSet ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcao:FlowProperty_1
+  rdf:type lcao:FlowProperty ;
+  lcao:hasFlowPropertyClassification "Net calorific value" ;
+  lcao:hasFlowPropertyName "-" ;
+  lcao:hasFlowPropertyUUID "203d8e6a-d2b9-50db-8375-404a7541c91b" ;
+  lcao:hasFlowPropertyVersion "00.00.001" ;
+  lcao:hasUnitGroupReference lcao:UnitGroup_1 ;
+.
+lcao:FlowProperty_2
+  rdf:type lcao:FlowProperty ;
+  lcao:hasFlowPropertyClassification "Number of items" ;
+  lcao:hasFlowPropertyName "-" ;
+  lcao:hasFlowPropertyUUID "203d8e6a-d2b9-50db-8375-404a7541c91d" ;
+  lcao:hasFlowPropertyVersion "00.00.001" ;
+  lcao:hasUnitGroupReference lcao:UnitGroup_2 ;
+.
+lcao:Flow_1
+  rdf:type lcao:Flow ;
+  lcao:hasFlowClassification "Electricity, low voltage" ;
+  lcao:hasFlowName "Electricity demand" ;
+  lcao:hasFlowProperty lcao:FlowProperty_1 ;
+  lcao:hasFlowType "Product flow" ;
+  lcao:hasFlowUUID "5858ead8-ecdf-5a3f-b930-601167b53f07" ;
+  lcao:hasFlowVersion "00.00.001" ;
+.
+lcao:Flow_2
+  rdf:type lcao:Flow ;
+  lcao:hasFlowClassification "Reused concrete element" ;
+  lcao:hasFlowName "Processing of Construction Object" ;
+  lcao:hasFlowProperty lcao:FlowProperty_2 ;
+  lcao:hasFlowType "Product flow" ;
+  lcao:hasFlowUUID "5858ead8-ecdf-5a3f-b930-601167b53f09" ;
+  lcao:hasFlowVersion "00.00.001" ;
+.
+lcao:GeographicalContext
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcao:GeographicalContext_1
+  rdf:type lcao:GeographicalContext ;
+  lcao:hasGeographicalContextDescription "Deutschland" ;
+.
+lcao:LCA-DataSet
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcao:LCA-Study
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcao:LCA-Study_1
+  rdf:type lcao:LCA-Study ;
+  lcao:containsLCA-DataSets lcao:FlowProperty_1 ;
+  lcao:containsLCA-DataSets lcao:FlowProperty_2 ;
+  lcao:containsLCA-DataSets lcao:Flow_1 ;
+  lcao:containsLCA-DataSets lcao:Flow_2 ;
+  lcao:containsLCA-DataSets lcao:LCIA-Method_1 ;
+  lcao:containsLCA-DataSets lcao:Source_1 ;
+  lcao:containsLCA-DataSets lcao:UnitGroup_1 ;
+  lcao:containsLCA-DataSets lcao:UnitGroup_2 ;
+.
+lcao:LCI-Method
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcao:LCI-Method_1
+  rdf:type lcao:LCI-Method ;
+  lcao:usedAllocationMethod "Attributional" ;
+  lcao:usedLCI-Method "Allocation - mass" ;
+.
+lcao:LCI-Result
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:decimal ;
+      owl:onProperty lcdmo:hasValue ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty lcdmo:hasUnit ;
+    ] ;
+.
+lcao:LCIA-Method
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcao:LCA-DataSet ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcao:LCIA-Method_1
+  rdf:type lcao:LCIA-Method ;
+  lcao:hasLCIA-MethodName "-" ;
+  lcao:hasLCIA-MethodUUID "203d8e6a-d2b9-50db-1075-404a7541c91b" ;
+  lcao:hasLCIA-MethodVersion "00.00.001" ;
+  lcao:usedLCIA-Method "EN 15804 reference package" ;
+.
+lcao:LCIA-Result
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:decimal ;
+      owl:onProperty lcdmo:hasValue ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty lcdmo:hasUnit ;
+    ] ;
+.
+lcao:Process
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcao:LCA-DataSet ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcao:Source
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcao:LCA-DataSet ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcao:Source_1
+  rdf:type lcao:Source ;
+  lcao:hasSourceName "-" ;
+  lcao:hasSourceUUID "80beea4e-9e8d-5d48-904f-8feffe909691" ;
+  lcao:hasSourceVersion "00.00.001" ;
+.
+lcao:SystemBoundary
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcao:TechnicalContext
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcao:TechnicalContext_1
+  rdf:type lcao:TechnicalContext ;
+  lcao:hasTechnicalContextDescription "-" ;
+.
+lcao:TemporalContext
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcao:TemporalContext_1
+  rdf:type lcao:TemporalContext ;
+  lcao:hasTemporalContextDescription 2026 ;
+.
+lcao:UnitGroup
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcao:LCA-DataSet ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcao:UnitGroup_1
+  rdf:type lcao:UnitGroup ;
+  lcao:hasReferenceUnit "MJ" ;
+  lcao:hasUnitGroupName "-" ;
+  lcao:hasUnitGroupUUID "cf760450-86d7-5573-8b9d-36f03c3e26e7" ;
+  lcao:hasUnitGroupVersion "00.00.001" ;
+.
+lcao:UnitGroup_2
+  rdf:type lcao:UnitGroup ;
+  lcao:hasReferenceUnit "Item(s)" ;
+  lcao:hasUnitGroupName "-" ;
+  lcao:hasUnitGroupUUID "cf760450-86d7-5573-8b9d-36f03c3e26e9" ;
+  lcao:hasUnitGroupVersion "00.00.001" ;
+.
+lcao:UnityEntry
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+lcao:belongsToEnvironmentalImpactIndicator
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:LCIA-Result ;
+  rdfs:range [
+      rdf:type rdfs:Datatype ;
+      owl:oneOf (
+          "GWP-total"
+          "GWP-fossil"
+          "GWP-biogenic"
+          "GWP-luluc"
+          "ODP"
+          "AP"
+          "EP-freshwater"
+          "EP-marine"
+          "EP-terrestrial"
+          "POCP"
+          "ADP-minerals&metals"
+          "ADP-fossil"
+          "WDP"
+          "PM"
+          "IRP"
+          "ETP-fw"
+          "HTP-c"
+          "HTP-nc"
+          "SQP"
+        ) ;
+    ] ;
+.
+lcao:belongsToEnvironmentalIndicator
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:LCI-Result ;
+  rdfs:range [
+      rdf:type rdfs:Datatype ;
+      owl:oneOf (
+          "PERE"
+          "PERM"
+          "PERT"
+          "PENRE"
+          "PENRM"
+          "PENRT"
+          "SM"
+          "RSF"
+          "NRSF"
+          "FW"
+          "HWD"
+          "NHWD"
+          "RWD"
+          "CRU"
+          "MFR"
+          "MER"
+          "EEE"
+          "EET"
+        ) ;
+    ] ;
+.
+lcao:belongsToLifeCycleModule
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Process ;
+  rdfs:range [
+      rdf:type rdfs:Datatype ;
+      owl:oneOf (
+          "A1"
+          "A2"
+          "A3"
+          "A4"
+          "A5"
+          "B1"
+          "B2"
+          "B3"
+          "B4"
+          "B5"
+          "B6"
+          "B7"
+          "C1"
+          "C2"
+          "C3"
+          "C4"
+          "D"
+        ) ;
+    ] ;
+.
+lcao:belongsToProcessSystem
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Process ;
+  rdfs:range [
+      rdf:type rdfs:Datatype ;
+      owl:oneOf (
+          "Foreground System"
+          "Background System"
+        ) ;
+    ] ;
+.
+lcao:containsLCA-DataSets
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:LCA-Study ;
+  rdfs:range lcao:LCA-DataSet ;
+.
+lcao:hasAuthor
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Author ;
+.
+lcao:hasCircularityPathDescription
+  rdf:type rdf:Property ;
+  rdfs:domain <http://example.org/cao#CircularityAssessmentPath> ;
+  rdfs:range xsd:string ;
+.
+lcao:hasContactInformation
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Contact ;
+.
+lcao:hasContactName
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Contact ;
+  rdfs:range xsd:string ;
+.
+lcao:hasContactUUID
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Contact ;
+  rdfs:range xsd:string ;
+.
+lcao:hasContactVersion
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Contact ;
+  rdfs:range xsd:string ;
+.
+lcao:hasDataSet
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:LCA-Study ;
+  rdfs:range lcao:Process ;
+.
+lcao:hasExchange
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Process ;
+  rdfs:range lcao:Exchange ;
+.
+lcao:hasExchangeDirection
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Exchange ;
+  rdfs:range [
+      rdf:type rdfs:Datatype ;
+      owl:oneOf (
+          "Input"
+          "Output"
+        ) ;
+    ] ;
+.
+lcao:hasFlowClassification
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Flow ;
+  rdfs:range [
+      rdf:type rdfs:Datatype ;
+      owl:oneOf (
+          "Electricity"
+          "Electricity, low voltage"
+          "Electricity, medium voltage"
+          "Electricity, high voltage"
+          "Diesel"
+          "Petrol"
+          "Natural gas"
+          "Liquefied petroleum gas"
+          "Fuel oil"
+          "Biodiesel"
+          "Hydrogen"
+          "Heat"
+          "Compressed air"
+          "Tap water"
+          "Industrial water"
+          "Concrete"
+          "Reinforcing steel"
+          "Structural steel"
+          "Timber"
+          "Aluminium"
+          "Copper"
+          "Glass"
+          "Brick"
+          "Gypsum"
+          "Asphalt"
+          "Gravel"
+          "Sand"
+          "Crushed stone"
+          "Recycled aggregate"
+          "Polypropylene"
+          "Polyethylene"
+          "Geotextile"
+          "Reused concrete element"
+          "Waste concrete"
+          "Waste steel"
+          "Waste timber"
+          "Waste plastic"
+          "Mixed construction and demolition waste"
+          "Wastewater"
+          "Hazardous waste"
+          "Carbon dioxide"
+          "Carbon dioxide, fossil"
+          "Carbon dioxide, biogenic"
+          "Methane"
+          "Methane, fossil"
+          "Methane, biogenic"
+          "Methane, land use change"
+          "Nitrous oxide"
+          "Nitrogen oxides"
+          "Sulfur dioxide"
+          "Carbon monoxide"
+          "Ammonia"
+          "Non-methane volatile organic compounds"
+          "Particulate matter, PM2.5"
+          "Particulate matter, PM10"
+          "Water, groundwater"
+          "Water, surface water"
+          "Crude oil, in ground"
+          "Natural gas, in ground"
+          "Hard coal, in ground"
+          "Lignite, in ground"
+          "Limestone, in ground"
+          "Iron ore, in ground"
+          "Bauxite, in ground"
+        ) ;
+    ] ;
+.
+lcao:hasFlowName
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Flow ;
+  rdfs:range xsd:string ;
+.
+lcao:hasFlowProperty
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Flow ;
+  rdfs:range lcao:FlowProperty ;
+.
+lcao:hasFlowPropertyClassification
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:FlowProperty ;
+  rdfs:range [
+      rdf:type rdfs:Datatype ;
+      owl:oneOf (
+          "Mass"
+          "Volume"
+          "Area"
+          "Length"
+          "Number of items"
+          "Duration"
+          "Gross calorific value"
+          "Net calorific value"
+          "Energy renewable (net calorific value)"
+          "Mass*time"
+          "Area*time"
+          "Volume*time"
+          "Goods transport (mass*distance)"
+          "Radioactivity"
+          "Carbon content (biogenic)"
+          "Carbon content (biogenic) - packaging"
+        ) ;
+    ] ;
+.
+lcao:hasFlowPropertyName
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:FlowProperty ;
+  rdfs:range xsd:string ;
+.
+lcao:hasFlowPropertyUUID
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:FlowProperty ;
+  rdfs:range xsd:string ;
+.
+lcao:hasFlowPropertyVersion
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:FlowProperty ;
+  rdfs:range xsd:string ;
+.
+lcao:hasFlowType
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Flow ;
+  rdfs:range [
+      rdf:type rdfs:Datatype ;
+      owl:oneOf (
+          "Elementary flow"
+          "Product flow"
+          "Waste flow"
+          "Other flow"
+        ) ;
+    ] ;
+.
+lcao:hasFlowUUID
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Flow ;
+  rdfs:range xsd:string ;
+.
+lcao:hasFlowVersion
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Flow ;
+  rdfs:range xsd:string ;
+.
+lcao:hasGeographicalContext
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Process ;
+  rdfs:range lcao:GeographicalContext ;
+.
+lcao:hasGeographicalContextDescription
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:GeographicalContext ;
+  rdfs:range xsd:string ;
+.
+lcao:hasLCI-Result
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Process ;
+  rdfs:range lcao:LCI-Result ;
+.
+lcao:hasLCIA-MethodName
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:LCIA-Method ;
+  rdfs:range xsd:string ;
+.
+lcao:hasLCIA-MethodUUID
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:LCIA-Method ;
+  rdfs:range xsd:string ;
+.
+lcao:hasLCIA-MethodVersion
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:LCIA-Method ;
+  rdfs:range xsd:string ;
+.
+lcao:hasLCIA-Result
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Process ;
+  rdfs:range lcao:LCIA-Result ;
+.
+lcao:hasProcessDescription
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain lcao:Process ;
+  rdfs:range xsd:string ;
+.
+lcao:hasProcessType
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Process ;
+  rdfs:range [
+      rdf:type rdfs:Datatype ;
+      owl:oneOf (
+          "Unit process, single operation"
+          "Unit process, black box"
+          "LCI result"
+          "Partly terminated system"
+          "Avoided product system"
+        ) ;
+    ] ;
+.
+lcao:hasProcessUUID
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Process ;
+  rdfs:range xsd:string ;
+.
+lcao:hasProcessVersion
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Process ;
+  rdfs:range xsd:string ;
+.
+lcao:hasQuantity
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Exchange ;
+.
+lcao:hasReferenceUnit
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:UnitGroup ;
+  rdfs:range [
+      rdf:type rdfs:Datatype ;
+      owl:oneOf (
+          "kg"
+          "m3"
+          "m2"
+          "m"
+          "Item(s)"
+          "a"
+          "MJ"
+          "kg*a"
+          "m2*a"
+          "m3*a"
+          "t*km"
+          "kBq"
+        ) ;
+    ] ;
+.
+lcao:hasSourceInformation
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Source ;
+.
+lcao:hasSourceName
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Source ;
+  rdfs:range xsd:string ;
+.
+lcao:hasSourceUUID
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Source ;
+  rdfs:range xsd:string ;
+.
+lcao:hasSourceVersion
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Source ;
+  rdfs:range xsd:string ;
+.
+lcao:hasTechnicalContext
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Process ;
+  rdfs:range lcao:TechnicalContext ;
+.
+lcao:hasTechnicalContextDescription
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:TechnicalContext ;
+  rdfs:range xsd:string ;
+.
+lcao:hasTemporalContext
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Process ;
+  rdfs:range lcao:TemporalContext ;
+.
+lcao:hasTemporalContextDescription
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:TemporalContext ;
+  rdfs:range xsd:integer ;
+.
+lcao:hasUnitGroupName
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:UnitGroup ;
+  rdfs:range xsd:string ;
+.
+lcao:hasUnitGroupReference
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:FlowProperty ;
+  rdfs:range lcao:UnitGroup ;
+.
+lcao:hasUnitGroupUUID
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:UnitGroup ;
+  rdfs:range xsd:string ;
+.
+lcao:hasUnitGroupVersion
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:UnitGroup ;
+  rdfs:range xsd:string ;
+.
+lcao:refersToFlow
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Exchange ;
+  rdfs:range lcao:Flow ;
+.
+lcao:refersToLCI-Method
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Process ;
+  rdfs:range lcao:LCI-Method ;
+.
+lcao:refersToLCIA-Method
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Process ;
+  rdfs:range lcao:LCIA-Method ;
+.
+lcao:representsProcess
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:Process ;
+  rdfs:range lcdmo:ConstructionProcess ;
+.
+lcao:usedAllocationMethod
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:LCI-Method ;
+  rdfs:range [
+      rdf:type rdfs:Datatype ;
+      owl:oneOf (
+          "Attributional"
+          "Consequential"
+          "Consequential with attributional components"
+          "Not applicable"
+          "Other"
+        ) ;
+    ] ;
+.
+lcao:usedLCI-Method
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:LCI-Method ;
+  rdfs:range [
+      rdf:type rdfs:Datatype ;
+      owl:oneOf (
+          "Allocation - market value"
+          "Allocation - gross calorific value"
+          "Allocation - net calorific value"
+          "Allocation - exergetic content"
+          "Allocation - element content"
+          "Allocation - mass"
+          "Allocation - volume"
+          "Allocation - ability to bear"
+          "Allocation - marginal causality"
+          "Allocation - physical causality"
+          "Allocation - 100% to main function"
+          "Allocation - other explicit assignment"
+          "Allocation - equal distribution"
+          "Substitution - BAT"
+          "Substitution - average, market price correction"
+          "Substitution - average, technical properties correction"
+          "Allocation - recycled content"
+          "Substitution - recycling potential"
+          "Substitution - average, no correction"
+          "Substitution - specific"
+          "Consequential effects - other"
+          "Not applicable"
+          "Other"
+        ) ;
+    ] ;
+.
+lcao:usedLCIA-Method
+  rdf:type rdf:Property ;
+  rdfs:domain lcao:LCIA-Method ;
+  rdfs:range [
+      rdf:type rdfs:Datatype ;
+      owl:oneOf (
+          "Environmental Footprint"
+          "EN 15804 reference package"
+          "ReCiPe"
+          "CML-IA"
+          "TRACI"
+          "ILCD 2011"
+          "IMPACT 2002+"
+          "IMPACT World+"
+          "LC-IMPACT"
+          "LIME"
+          "EDIP"
+          "Eco-indicator 99"
+          "Ecological Scarcity"
+          "EPS"
+          "Eco-costs"
+        ) ;
+    ] ;
+.
