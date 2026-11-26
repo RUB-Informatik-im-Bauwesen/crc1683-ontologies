@@ -1,0 +1,452 @@
+# baseURI: http://example.org/rc-copo
+# imports: http://datashapes.org/dash
+# imports: http://example.org/lcdmo
+# imports: https://w3id.org/beo#
+# imports: https://w3id.org/isoprops
+# prefix: rc-copo
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lcao: <http://example.org/lcao#> .
+@prefix lcdmo: <http://example.org/lcdmo#> .
+@prefix metadata4ing: <http://w3id.org/nfdi4ing/metadata4ing#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rc-copo: <http://example.org/rc-copo#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/rc-copo>
+  rdf:type owl:Ontology ;
+  owl:imports <http://datashapes.org/dash> ;
+  owl:imports <http://example.org/lcdmo> ;
+  owl:imports <https://w3id.org/beo#> ;
+  owl:imports <https://w3id.org/isoprops> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+rc-copo:Beam
+  rdf:type owl:Class ;
+  dcterms:creator "buildingSMART IFC 4.3.2.0 — IfcBeam; DIN EN 1992-1-1:2025-09 — EN 1992-1-1:2023, Eurocode 2" ;
+  dcterms:description "Predominantly linear construction element resisting loads transverse to its longitudinal axis, typically through bending." ;
+  rdfs:label "\"Beam\"@en" ;
+  rdfs:subClassOf lcdmo:ConstructionObject ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty lcdmo:hasIFC-ID ;
+    ] ;
+  owl:equivalentClass <https://w3id.org/beo#Beam> ;
+.
+rc-copo:CAT_DX27_Bohrhammer_1500W
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ResourceType ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:CapacityUtilization
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ConstructionProcessProperty ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom [
+          rdf:type rdfs:Datatype ;
+          owl:onDatatype xsd:decimal ;
+          owl:withRestrictions (
+              [
+                xsd:minInclusive 0.0 ;
+              ]
+              [
+                xsd:maxInclusive 1.0 ;
+              ]
+            ) ;
+        ] ;
+      owl:onProperty lcdmo:hasValue ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty lcdmo:hasUnit ;
+    ] ;
+.
+rc-copo:Crane
+  rdf:type owl:Class ;
+  lcdmo:hasProcessResourceProperty rc-copo:CapacityUtilization ;
+  lcdmo:hasProcessResourceProperty rc-copo:Power ;
+  lcdmo:hasProcessResourceProperty rc-copo:ProcessOperationDuration ;
+  rdfs:subClassOf lcdmo:ProcessResource ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Cutting
+  rdf:type owl:Class ;
+  lcdmo:hasConstructionProcessExchanges rc-copo:EnergyConsumption ;
+  lcdmo:hasPrecedingProcess rc-copo:Sawing ;
+  lcdmo:hasProcessResource rc-copo:CuttingTorch ;
+  rdfs:subClassOf lcdmo:ConstructionProcess ;
+  rdfs:subClassOf rc-copo:Extraction ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:CuttingOccurence
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ConstructionProcessOccurence ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:CuttingTorch
+  rdf:type owl:Class ;
+  lcdmo:hasProcessResourceProperty rc-copo:CapacityUtilization ;
+  lcdmo:hasProcessResourceProperty rc-copo:Power ;
+  lcdmo:hasProcessResourceProperty rc-copo:ProcessOperationDuration ;
+  rdfs:subClassOf lcdmo:ProcessResource ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:DEWALT_DCD798B
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ResourceType ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Demag_AC100-4
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ResourceType ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Demolition
+  rdf:type owl:Class ;
+  lcdmo:hasConstructionProcessExchanges rc-copo:EnergyConsumption ;
+  rdfs:subClassOf lcdmo:ConstructionProcess ;
+  rdfs:subClassOf rc-copo:Extraction ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:DemolitionHammer
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ProcessResource ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:DemolitionOccurence
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ConstructionProcessOccurence ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Digging
+  rdf:type owl:Class ;
+  lcdmo:hasConstructionProcessExchanges rc-copo:EnergyConsumption ;
+  rdfs:subClassOf lcdmo:ConstructionProcess ;
+  rdfs:subClassOf rc-copo:Excavation ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Drilling
+  rdf:type owl:Class ;
+  lcdmo:hasConstructionProcessExchanges rc-copo:EnergyConsumption ;
+  lcdmo:hasProcessResource rc-copo:HammerDrill ;
+  lcdmo:hasSubsequentProcess rc-copo:Sawing ;
+  rdfs:subClassOf lcdmo:ConstructionProcess ;
+  rdfs:subClassOf rc-copo:Extraction ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:DrillingOccurence
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ConstructionProcessOccurence ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Dumping
+  rdf:type owl:Class ;
+  lcdmo:hasConstructionProcessExchanges rc-copo:EnergyConsumption ;
+  rdfs:subClassOf lcdmo:ConstructionProcess ;
+  rdfs:subClassOf rc-copo:Excavation ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:EnergyConsumption
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ConstructionProcessExchanges ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:decimal ;
+      owl:onProperty lcdmo:hasValue ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty lcdmo:hasUnit ;
+    ] ;
+.
+rc-copo:Excavation
+  rdf:type owl:Class ;
+  lcdmo:hasConstructionProcessExchanges rc-copo:EnergyConsumption ;
+  lcdmo:hasProcessResource rc-copo:MiniExcavator ;
+  rdfs:subClassOf lcdmo:ConstructionProcess ;
+  rdfs:subClassOf rc-copo:Extraction ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:ExcavationOccurence
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ConstructionProcessOccurence ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Extraction
+  rdf:type owl:Class ;
+  lcdmo:hasConstructionProcessExchanges rc-copo:EnergyConsumption ;
+  lcdmo:requiresSubsequentProcess rc-copo:Transfer ;
+  rdfs:subClassOf lcdmo:ConstructionProcess ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:ExtractionOccurence
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ConstructionProcessOccurence ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:HammerDrill
+  rdf:type owl:Class ;
+  lcdmo:hasProcessResourceProperty rc-copo:CapacityUtilization ;
+  lcdmo:hasProcessResourceProperty rc-copo:Power ;
+  lcdmo:hasProcessResourceProperty rc-copo:ProcessOperationDuration ;
+  rdfs:subClassOf lcdmo:ProcessResource ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Harris_Modell_98-3TFR-32
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ResourceType ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Hilti_DST_10-CA
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ResourceType ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Hilti_DST_20-CA
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ResourceType ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Hoisting
+  rdf:type owl:Class ;
+  lcdmo:hasConstructionProcessExchanges rc-copo:EnergyConsumption ;
+  lcdmo:hasSubsequentProcess rc-copo:Slewing ;
+  rdfs:subClassOf lcdmo:ConstructionProcess ;
+  rdfs:subClassOf rc-copo:Lifting ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:HoistingOccurence
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ConstructionProcessOccurence ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Leveling
+  rdf:type owl:Class ;
+  lcdmo:hasConstructionProcessExchanges rc-copo:EnergyConsumption ;
+  rdfs:subClassOf lcdmo:ConstructionProcess ;
+  rdfs:subClassOf rc-copo:Excavation ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Lifting
+  rdf:type owl:Class ;
+  lcdmo:hasConstructionProcessExchanges rc-copo:EnergyConsumption ;
+  lcdmo:hasProcessResource rc-copo:Crane ;
+  rdfs:subClassOf lcdmo:ConstructionProcess ;
+  rdfs:subClassOf rc-copo:Transfer ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:LiftingOccurence
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ConstructionProcessOccurence ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Literature
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:DataObject ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Loading
+  rdf:type owl:Class ;
+  lcdmo:hasConstructionProcessExchanges rc-copo:EnergyConsumption ;
+  rdfs:subClassOf lcdmo:ConstructionProcess ;
+  rdfs:subClassOf rc-copo:Excavation ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Lowering
+  rdf:type owl:Class ;
+  lcdmo:hasConstructionProcessExchanges rc-copo:EnergyConsumption ;
+  lcdmo:hasPrecedingProcess rc-copo:Slewing ;
+  rdfs:subClassOf lcdmo:ConstructionProcess ;
+  rdfs:subClassOf rc-copo:Lifting ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:LoweringOccurence
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ConstructionProcessOccurence ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Measurement
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:DataObject ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:date ;
+      owl:onProperty lcdmo:hasState ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty lcdmo:hasConstructionProcessDescription ;
+    ] ;
+.
+rc-copo:Mercedes-Benz_Actros_2653_LS
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ResourceType ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:MiniExcavator
+  rdf:type owl:Class ;
+  lcdmo:hasProcessResourceProperty rc-copo:CapacityUtilization ;
+  lcdmo:hasProcessResourceProperty rc-copo:Power ;
+  lcdmo:hasProcessResourceProperty rc-copo:ProcessOperationDuration ;
+  rdfs:subClassOf lcdmo:ProcessResource ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Power
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ProcessResourceProperty ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:decimal ;
+      owl:onProperty lcdmo:hasValue ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty lcdmo:hasUnit ;
+    ] ;
+.
+rc-copo:PrecastConcreteObjectInformation
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ConstructionObjectPropertySet ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Prediction
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:DataObject ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:ProcessOperationDuration
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ConstructionProcessProperty ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:decimal ;
+      owl:onProperty lcdmo:hasValue ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty lcdmo:hasUnit ;
+    ] ;
+.
+rc-copo:Processing
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ConstructionProcessExchanges ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:decimal ;
+      owl:onProperty lcdmo:hasValue ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty lcdmo:hasUnit ;
+    ] ;
+.
+rc-copo:Reuse_of_ReinforcedConcreteElements
+  rdf:type owl:Class ;
+  lcdmo:hasConstruction rc-copo:UniversityBuilding ;
+  rdfs:subClassOf lcdmo:ConstructionProject ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Saw
+  rdf:type owl:Class ;
+  lcdmo:hasProcessResourceProperty rc-copo:CapacityUtilization ;
+  lcdmo:hasProcessResourceProperty rc-copo:Power ;
+  lcdmo:hasProcessResourceProperty rc-copo:ProcessOperationDuration ;
+  rdfs:subClassOf lcdmo:ProcessResource ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Sawing
+  rdf:type owl:Class ;
+  lcdmo:hasConstructionProcessExchanges rc-copo:EnergyConsumption ;
+  lcdmo:hasPrecedingProcess rc-copo:Drilling ;
+  lcdmo:hasProcessResource rc-copo:Saw ;
+  lcdmo:hasSubsequentProcess rc-copo:Cutting ;
+  rdfs:subClassOf lcdmo:ConstructionProcess ;
+  rdfs:subClassOf rc-copo:Extraction ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:SawingOccurence
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ConstructionProcessOccurence ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Sensor
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:DataDetectionDevice ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Simulation
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:DataObject ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Slab
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ConstructionObject ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty lcdmo:hasIFC-ID ;
+    ] ;
+  owl:equivalentClass <https://w3id.org/beo#Slab> ;
+.
+rc-copo:Slewing
+  rdf:type owl:Class ;
+  lcdmo:hasConstructionProcessExchanges rc-copo:EnergyConsumption ;
+  lcdmo:hasPrecedingProcess rc-copo:Hoisting ;
+  lcdmo:hasSubsequentProcess rc-copo:Lowering ;
+  rdfs:subClassOf lcdmo:ConstructionProcess ;
+  rdfs:subClassOf rc-copo:Lifting ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:SlewingOccurence
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ConstructionProcessOccurence ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Transfer
+  rdf:type owl:Class ;
+  lcdmo:requiresPrecedingProcess rc-copo:Extraction ;
+  lcdmo:requiresSubsequentProcess rc-copo:Transport ;
+  rdfs:subClassOf lcdmo:ConstructionProcess ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Transport
+  rdf:type owl:Class ;
+  lcdmo:requiresPrecedingProcess rc-copo:Transfer ;
+  rdfs:subClassOf lcdmo:ConstructionProcess ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:TransportOccurence
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ConstructionProcessOccurence ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:Truck
+  rdf:type owl:Class ;
+  rdfs:subClassOf lcdmo:ProcessResource ;
+  rdfs:subClassOf owl:Thing ;
+.
+rc-copo:UniversityBuilding
+  rdf:type owl:Class ;
+  lcdmo:hasConstructionObject rc-copo:Slab ;
+  rdfs:subClassOf lcdmo:Construction ;
+  rdfs:subClassOf owl:Thing ;
+.
