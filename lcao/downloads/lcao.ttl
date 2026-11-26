@@ -14,8 +14,34 @@
 <http://example.org/lcao>
   rdf:type owl:Ontology ;
   owl:imports <http://example.org/lcdmo> ;
-  owl:versionInfo "Created with TopBraid Composer" ;
-.
+  <http://purl.org/dc/elements/1.1/contributor> _:genid1 ;
+                         <http://purl.org/dc/elements/1.1/created> "2025-12-10"^^xsd:date ;
+                         <http://purl.org/dc/elements/1.1/modified> "2026-11-26"^^xsd:date ;
+                         <http://purl.org/dc/elements/1.1/creator> _:genid3 ;
+                         <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                         <http://purl.org/dc/elements/1.1/source> "https://github.com/RUB-Informatik-im-Bauwesen/crc1683-ontologies/tree/main/lcao"^^xsd:anyURI ;
+                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "lcao" ;
+                         rdfs:comment "LCAO represents life cycle assessment knowledge through a semantic structure closely aligned with ILCD and ILCD+EPD datasets, encompassing processes, exchanges, flows, flow properties, units, and assessment results. Its modular organisation supports the creation of reusable LCA profiles assembled from interlinked datasets, allowing these profiles to be adapted and applied across different assessment studies and projects."@en ;
+                         rdfs:label "LCAO Ontology" .
+
+_:genid1 rdf:type <https://schema.org/Person> ;
+          <https://schema.org/email> <mailto:philipp.hagedorn-n6v@rub.de> ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0002-6249-243X> ;
+          <https://schema.org/memberOf> _:genid2 ;
+          <https://schema.org/name> "Dr. Philipp Hagedorn" .
+
+_:genid3 rdf:type <https://schema.org/Person> ;
+          <https://schema.org/email> <mailto:jonas.maibaum@rub.de> ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0001-5010-7904> ;
+          <https://schema.org/memberOf> _:genid4 ;
+          <https://schema.org/name> "Jonas Maibaum" .
+
+_:genid2 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en> ;
+          <https://schema.org/name> "Ruhr University Bochum, DE" .
+
+_:genid4 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/jonas_maibaum.html.en> ;
+          <https://schema.org/name> "Ruhr University Bochum, DE" .
+
 lcao:Author
   rdf:type owl:Class ;
   dcterms:description "Person oder Organisation, die Ökobilanzdaten erstellt oder fachlich verantwortet."@de ;

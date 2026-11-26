@@ -1,28 +1,54 @@
-# baseURI: http://example.org/rc-copo
+# baseURI: http://w3id.org/rc-copo
 # imports: http://datashapes.org/dash
-# imports: http://example.org/lcdmo
+# imports: http://w3id.org/lcdmo
 # imports: https://w3id.org/beo#
 # imports: https://w3id.org/isoprops
 # prefix: rc-copo
 
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix lcao: <http://example.org/lcao#> .
-@prefix lcdmo: <http://example.org/lcdmo#> .
+@prefix lcao: <http://w3id.org/lcao#> .
+@prefix lcdmo: <http://w3id.org/lcdmo#> .
 @prefix metadata4ing: <http://w3id.org/nfdi4ing/metadata4ing#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rc-copo: <http://example.org/rc-copo#> .
+@prefix rc-copo: <http://w3id.org/rc-copo#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/rc-copo>
+<http://w3id.org/rc-copo>
   rdf:type owl:Ontology ;
   owl:imports <http://datashapes.org/dash> ;
-  owl:imports <http://example.org/lcdmo> ;
+  owl:imports <http://w3id.org/lcdmo> ;
   owl:imports <https://w3id.org/beo#> ;
   owl:imports <https://w3id.org/isoprops> ;
-  owl:versionInfo "Created with TopBraid Composer" ;
-.
+<http://purl.org/dc/elements/1.1/contributor> _:genid1 ;
+                         <http://purl.org/dc/elements/1.1/created> "2025-12-10"^^xsd:date ;
+                         <http://purl.org/dc/elements/1.1/modified> "2026-11-26"^^xsd:date ;
+                         <http://purl.org/dc/elements/1.1/creator> _:genid3 ;
+                         <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                         <http://purl.org/dc/elements/1.1/source> "https://github.com/RUB-Informatik-im-Bauwesen/crc1683-ontologies/tree/main/rc-copo"^^xsd:anyURI ;
+                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "rc-copo" ;
+                         rdfs:comment "RC-COPO represents domain-specific knowledge concerning the end-of-life processes of reinforced concrete elements, focusing on slabs and beams. It describes relevant object properties, process sequences, equipment, and resource consumption to support the consistent modelling of deconstruction, handling, and transport activities."@en ;
+                         rdfs:label "RC-COPO Ontology" .
+
+_:genid1 rdf:type <https://schema.org/Person> ;
+          <https://schema.org/email> <mailto:philipp.hagedorn-n6v@rub.de> ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0002-6249-243X> ;
+          <https://schema.org/memberOf> _:genid2 ;
+          <https://schema.org/name> "Dr. Philipp Hagedorn" .
+
+_:genid3 rdf:type <https://schema.org/Person> ;
+          <https://schema.org/email> <mailto:jonas.maibaum@rub.de> ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0001-5010-7904> ;
+          <https://schema.org/memberOf> _:genid4 ;
+          <https://schema.org/name> "Jonas Maibaum" .
+
+_:genid2 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en> ;
+          <https://schema.org/name> "Ruhr University Bochum, DE" .
+
+_:genid4 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/jonas_maibaum.html.en> ;
+          <https://schema.org/name> "Ruhr University Bochum, DE" .
+
 rc-copo:Beam
   rdf:type owl:Class ;
   dcterms:creator "buildingSMART IFC 4.3.2.0 — IfcBeam; DIN EN 1992-1-1:2025-09 — EN 1992-1-1:2023, Eurocode 2" ;

@@ -1,6 +1,6 @@
-# baseURI: http://example.org/lcdmo
+# baseURI: http://w3id.org/lcdmo
 # imports: http://example.org/cao
-# imports: http://example.org/lcao
+# imports: http://w3id.org/lcao
 # imports: http://w3id.org/ioc
 # imports: https://w3id.org/bot#
 # imports: https://w3id.org/isoprops
@@ -9,22 +9,48 @@
 
 @prefix beo: <https://w3id.org/beo#> .
 @prefix ioc: <http://w3id.org/ioc#> .
-@prefix lcdmo: <http://example.org/lcdmo#> .
+@prefix lcdmo: <http://w3id.org/lcdmo#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/lcdmo>
+<http://w3id.org/lcdmo>
   rdf:type owl:Ontology ;
   owl:imports <http://example.org/cao> ;
-  owl:imports <http://example.org/lcao> ;
+  owl:imports <http://w3id.org/lcao> ;
   owl:imports <http://w3id.org/ioc> ;
   owl:imports <https://w3id.org/bot#> ;
   owl:imports <https://w3id.org/isoprops> ;
   owl:imports <https://w3id.org/opm#> ;
-  owl:versionInfo "Created with TopBraid Composer" ;
-.
+  <http://purl.org/dc/elements/1.1/contributor> _:genid1 ;
+                         <http://purl.org/dc/elements/1.1/created> "2025-12-10"^^xsd:date ;
+                         <http://purl.org/dc/elements/1.1/modified> "2026-11-26"^^xsd:date ;
+                         <http://purl.org/dc/elements/1.1/creator> _:genid3 ;
+                         <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                         <http://purl.org/dc/elements/1.1/source> "https://github.com/RUB-Informatik-im-Bauwesen/crc1683-ontologies/tree/main/lcdmo"^^xsd:anyURI ;
+                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "lcdmo" ;
+                         rdfs:comment "LCDMO provides an overarching semantic framework for managing construction products, their associated processes, and the resulting resource and energy demands. It connects construction objects, process occurrences, resources, and quantified exchanges within a common structure that can be extended through domain-specific ontologies."@en ;
+                         rdfs:label "LCDMO Ontology" .
+
+_:genid1 rdf:type <https://schema.org/Person> ;
+          <https://schema.org/email> <mailto:philipp.hagedorn-n6v@rub.de> ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0002-6249-243X> ;
+          <https://schema.org/memberOf> _:genid2 ;
+          <https://schema.org/name> "Dr. Philipp Hagedorn" .
+
+_:genid3 rdf:type <https://schema.org/Person> ;
+          <https://schema.org/email> <mailto:jonas.maibaum@rub.de> ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0001-5010-7904> ;
+          <https://schema.org/memberOf> _:genid4 ;
+          <https://schema.org/name> "Jonas Maibaum" .
+
+_:genid2 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en> ;
+          <https://schema.org/name> "Ruhr University Bochum, DE" .
+
+_:genid4 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/jonas_maibaum.html.en> ;
+          <https://schema.org/name> "Ruhr University Bochum, DE" .
+
 lcdmo:Construction
   rdf:type owl:Class ;
   rdfs:subClassOf owl:Thing ;
@@ -60,7 +86,7 @@ lcdmo:ConstructionProcess
 .
 lcdmo:ConstructionProcessExchanges
   rdf:type owl:Class ;
-  rdfs:subClassOf <http://example.org/lcao#Exchange> ;
+  rdfs:subClassOf <http://w3id.org/lcao#Exchange> ;
   rdfs:subClassOf owl:Thing ;
 .
 lcdmo:ConstructionProcessExchangesProperty
@@ -70,7 +96,7 @@ lcdmo:ConstructionProcessExchangesProperty
 .
 lcdmo:ConstructionProcessOccurence
   rdf:type owl:Class ;
-  rdfs:subClassOf <http://example.org/lcao#Process> ;
+  rdfs:subClassOf <http://w3id.org/lcao#Process> ;
   rdfs:subClassOf owl:Thing ;
 .
 lcdmo:ConstructionProcessProperty
