@@ -1,0 +1,211 @@
+# baseURI: http://example.org/LCA_Beam_Recorded
+# imports: http://w3id.org/lcao
+# imports: http://w3id.org/lcdmo
+# imports: http://w3id.org/rc-copo
+# prefix: LCA_Beam_Recorded
+
+@prefix LCA_Beam_Recorded: <http://example.org/LCA_Beam_Recorded#> .
+@prefix lcao: <http://w3id.org/lcao#> .
+@prefix lcdmo: <http://w3id.org/lcdmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rc-copo: <http://w3id.org/rc-copo#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/LCA_Beam_Recorded>
+  rdf:type owl:Ontology ;
+  owl:imports <http://w3id.org/lcao> ;
+  owl:imports <http://w3id.org/lcdmo> ;
+  owl:imports <http://w3id.org/rc-copo> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+LCA_Beam_Recorded:Beam_1
+  rdf:type rc-copo:Beam ;
+  lcdmo:hasConstructionProcess LCA_Beam_Recorded:Lifting_1 ;
+  lcdmo:hasConstructionProcess LCA_Beam_Recorded:Transport_1 ;
+  lcdmo:hasIFC-ID "3t3TDZl_D9NOIWB0BSjzJI" ;
+  lcdmo:hasPropertySet LCA_Beam_Recorded:PrecastConcreteObjectInformation_1 ;
+.
+LCA_Beam_Recorded:CapacityUtilizationLifting_1
+  rdf:type rc-copo:CapacityUtilization ;
+  lcdmo:hasUnit "-" ;
+  lcdmo:hasValue 0.75 ;
+.
+LCA_Beam_Recorded:Crane_1
+  rdf:type rc-copo:Crane ;
+  lcdmo:hasProcessResourceProperty LCA_Beam_Recorded:Power_1 ;
+  lcdmo:hasResourceType LCA_Beam_Recorded:DEWALT_DCD798B_1 ;
+.
+LCA_Beam_Recorded:DEWALT_DCD798B_1
+  rdf:type rc-copo:DEWALT_DCD798B ;
+.
+LCA_Beam_Recorded:EnergyConsumptionLifting_1
+  rdf:type rc-copo:EnergyConsumption ;
+  lcao:hasExchangeDirection "Input" ;
+  lcao:hasQuantity "58.05" ;
+  lcao:refersToFlow lcao:Flow_1 ;
+  lcdmo:hasUnit "MJ" ;
+  lcdmo:hasValue 58.05 ;
+.
+LCA_Beam_Recorded:EnergyConsumptionTransport_1
+  rdf:type rc-copo:EnergyConsumption ;
+.
+LCA_Beam_Recorded:LCI-ResultPENRT_1
+  rdf:type lcao:LCI-Result ;
+  lcao:belongsToEnvironmentalIndicator "PENRT" ;
+  lcdmo:hasUnit "MJ" ;
+  lcdmo:hasValue 109.3 ;
+.
+LCA_Beam_Recorded:LCI-ResultPENRT_2
+  rdf:type lcao:LCI-Result ;
+  lcao:belongsToEnvironmentalIndicator "PENRT" ;
+  lcdmo:hasUnit "MJ" ;
+  lcdmo:hasValue 15.75 ;
+.
+LCA_Beam_Recorded:LCI-ResultPERT_1
+  rdf:type lcao:LCI-Result ;
+  lcao:belongsToEnvironmentalIndicator "PERT" ;
+  lcdmo:hasUnit "MJ" ;
+  lcdmo:hasValue 71.27 ;
+.
+LCA_Beam_Recorded:LCI-ResultPERT_2
+  rdf:type lcao:LCI-Result ;
+  lcao:belongsToEnvironmentalIndicator "PERT" ;
+  lcdmo:hasUnit "MJ" ;
+  lcdmo:hasValue 0.9138 ;
+.
+LCA_Beam_Recorded:LCIA-ResultGWP_1
+  rdf:type lcao:LCIA-Result ;
+  lcao:belongsToEnvironmentalImpactIndicator "GWP-total" ;
+  lcdmo:hasUnit "kg CO2 eq." ;
+  lcdmo:hasValue 8.779 ;
+.
+LCA_Beam_Recorded:LCIA-ResultGWP_2
+  rdf:type lcao:LCIA-Result ;
+  lcao:belongsToEnvironmentalImpactIndicator "GWP-total" ;
+  lcdmo:hasUnit "kg CO2 eq." ;
+  lcdmo:hasValue 1.2 ;
+.
+LCA_Beam_Recorded:LiftingOccurence_1
+  rdf:type rc-copo:LiftingOccurence ;
+  lcao:belongsToLifeCycleModule "C1" ;
+  lcao:belongsToProcessSystem "Foreground System" ;
+  lcao:hasExchange LCA_Beam_Recorded:EnergyConsumptionLifting_1 ;
+  lcao:hasExchange LCA_Beam_Recorded:ProcessingLifting_1 ;
+  lcao:hasGeographicalContext lcao:GeographicalContext_1 ;
+  lcao:hasLCI-Result LCA_Beam_Recorded:LCI-ResultPENRT_1 ;
+  lcao:hasLCI-Result LCA_Beam_Recorded:LCI-ResultPERT_1 ;
+  lcao:hasLCIA-Result LCA_Beam_Recorded:LCIA-ResultGWP_1 ;
+  lcao:hasProcessDescription "Lifting of Beam using Crane" ;
+  lcao:hasProcessType "Unit process, single operation" ;
+  lcao:hasProcessUUID "5858ead8-ecdf-5a3f-b930-601167b53f00" ;
+  lcao:hasProcessVersion "00.00.001" ;
+  lcao:hasTechnicalContext lcao:TechnicalContext_1 ;
+  lcao:hasTemporalContext lcao:TemporalContext_1 ;
+  lcao:refersToLCI-Method lcao:LCI-Method_1 ;
+  lcao:refersToLCIA-Method lcao:LCIA-Method_1 ;
+  lcdmo:isComposedOf LCA_Beam_Recorded:Beam_1 ;
+  lcdmo:isComposedOf LCA_Beam_Recorded:Crane_1 ;
+  lcdmo:isComposedOf LCA_Beam_Recorded:Lifting_1 ;
+.
+LCA_Beam_Recorded:Lifting_1
+  rdf:type rc-copo:Lifting ;
+  lcdmo:hasConstructionProcessExchanges LCA_Beam_Recorded:EnergyConsumptionLifting_1 ;
+  lcdmo:hasConstructionProcessExchanges LCA_Beam_Recorded:ProcessingLifting_1 ;
+  lcdmo:hasConstructionProcessProperty LCA_Beam_Recorded:CapacityUtilizationLifting_1 ;
+  lcdmo:hasConstructionProcessProperty LCA_Beam_Recorded:ProcessOperationDurationLifting_1 ;
+  lcdmo:hasProcessResource LCA_Beam_Recorded:Crane_1 ;
+  lcdmo:hasSubsequentProcess LCA_Beam_Recorded:Transport_1 ;
+.
+LCA_Beam_Recorded:Measurement_1
+  rdf:type rc-copo:Measurement ;
+  lcdmo:hasConstructionProcessDescription "LiftingMeasurement" ;
+  lcdmo:hasState "2026-11-17"^^xsd:date ;
+.
+LCA_Beam_Recorded:Measurement_2
+  rdf:type rc-copo:Measurement ;
+  lcdmo:hasConstructionProcessDescription "TransportMeasurement" ;
+  lcdmo:hasState "2026-11-17"^^xsd:date ;
+.
+LCA_Beam_Recorded:Mercedes-Benz_Actros_2653_LS_1
+  rdf:type rc-copo:Mercedes-Benz_Actros_2653_LS ;
+.
+LCA_Beam_Recorded:Power_1
+  rdf:type rc-copo:Power ;
+  lcdmo:hasUnit "kW" ;
+  lcdmo:hasValue "129"^^xsd:decimal ;
+.
+LCA_Beam_Recorded:PrecastConcreteObjectInformation_1
+  rdf:type rc-copo:PrecastConcreteObjectInformation ;
+.
+LCA_Beam_Recorded:ProcessOperationDurationLifting_1
+  rdf:type rc-copo:ProcessOperationDuration ;
+  lcdmo:comesFromDataObject LCA_Beam_Recorded:Measurement_1 ;
+  lcdmo:hasUnit "h/km" ;
+  lcdmo:hasValue 0.167 ;
+.
+LCA_Beam_Recorded:ProcessOperationDurationTransport_1
+  rdf:type rc-copo:ProcessOperationDuration ;
+  lcdmo:comesFromDataObject LCA_Beam_Recorded:Measurement_2 ;
+  lcdmo:hasUnit "h/km" ;
+  lcdmo:hasValue "3"^^xsd:decimal ;
+.
+LCA_Beam_Recorded:ProcessingLifting_1
+  rdf:type rc-copo:Processing ;
+  lcao:hasExchangeDirection "Output" ;
+  lcao:hasQuantity "1" ;
+  lcao:refersToFlow lcao:Flow_2 ;
+.
+LCA_Beam_Recorded:ProcessingTransport_1
+  rdf:type rc-copo:Processing ;
+  lcao:hasExchangeDirection "Output" ;
+  lcao:hasQuantity "1" ;
+  lcao:refersToFlow lcao:Flow_2 ;
+.
+LCA_Beam_Recorded:Reuse_of_ReinforcedConcreteElements_1
+  rdf:type rc-copo:Reuse_of_ReinforcedConcreteElements ;
+  lcdmo:hasConstruction LCA_Beam_Recorded:UniversityBuilding_1 ;
+.
+LCA_Beam_Recorded:TransportOccurence_1
+  rdf:type rc-copo:TransportOccurence ;
+  lcao:belongsToLifeCycleModule "C2" ;
+  lcao:belongsToProcessSystem "Foreground System" ;
+  lcao:hasExchange LCA_Beam_Recorded:EnergyConsumptionTransport_1 ;
+  lcao:hasExchange LCA_Beam_Recorded:ProcessingTransport_1 ;
+  lcao:hasGeographicalContext lcao:GeographicalContext_1 ;
+  lcao:hasLCI-Result LCA_Beam_Recorded:LCI-ResultPENRT_2 ;
+  lcao:hasLCI-Result LCA_Beam_Recorded:LCI-ResultPERT_2 ;
+  lcao:hasLCIA-Result LCA_Beam_Recorded:LCIA-ResultGWP_2 ;
+  lcao:hasProcessDescription "Transport of Beam using Truck" ;
+  lcao:hasProcessType "Unit process, single operation" ;
+  lcao:hasProcessUUID "5858ead8-ecdf-5a3f-b930-601167b53f04" ;
+  lcao:hasProcessVersion "00.00.001" ;
+  lcao:hasTechnicalContext lcao:TechnicalContext_1 ;
+  lcao:hasTemporalContext lcao:TemporalContext_1 ;
+  lcao:refersToLCI-Method lcao:LCI-Method_1 ;
+  lcao:refersToLCIA-Method lcao:LCIA-Method_1 ;
+  lcdmo:hasProcessOccurenceName "Transport of Slab using Truck" ;
+  lcdmo:isComposedOf LCA_Beam_Recorded:Beam_1 ;
+  lcdmo:isComposedOf LCA_Beam_Recorded:Transport_1 ;
+  lcdmo:isComposedOf LCA_Beam_Recorded:Truck_1 ;
+.
+LCA_Beam_Recorded:Transport_1
+  rdf:type rc-copo:Transport ;
+  lcdmo:hasConstructionProcessExchanges LCA_Beam_Recorded:EnergyConsumptionTransport_1 ;
+  lcdmo:hasConstructionProcessExchanges LCA_Beam_Recorded:ProcessingTransport_1 ;
+  lcdmo:hasConstructionProcessProperty LCA_Beam_Recorded:ProcessOperationDurationTransport_1 ;
+  lcdmo:hasPrecedingProcess LCA_Beam_Recorded:Lifting_1 ;
+  lcdmo:hasProcessResource LCA_Beam_Recorded:Truck_1 ;
+.
+LCA_Beam_Recorded:Truck_1
+  rdf:type rc-copo:Truck ;
+  lcdmo:hasResourceType LCA_Beam_Recorded:Mercedes-Benz_Actros_2653_LS_1 ;
+.
+LCA_Beam_Recorded:UniversityBuilding_1
+  rdf:type rc-copo:UniversityBuilding ;
+  lcdmo:hasConstructionObject LCA_Beam_Recorded:Beam_1 ;
+.
+rc-copo:Truck
+  rdfs:subClassOf lcdmo:ProcessResource ;
+.

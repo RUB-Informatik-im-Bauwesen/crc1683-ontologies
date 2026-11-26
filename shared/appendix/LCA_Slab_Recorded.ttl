@@ -1,0 +1,364 @@
+# baseURI: http://example.org/LCA_Slab_Recorded
+# imports: http://example.org/lcao
+# imports: http://example.org/lcdmo
+# imports: http://example.org/rc-copo
+# prefix: LCA_Slab_Recorded
+
+@prefix LCA_Slab_Recorded: <http://example.org/LCA_Slab_Recorded#> .
+@prefix lcao: <http://example.org/lcao#> .
+@prefix lcdmo: <http://example.org/lcdmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rc-copo: <http://example.org/rc-copo#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/LCA_Slab_Recorded>
+  rdf:type owl:Ontology ;
+  owl:imports <http://example.org/lcao> ;
+  owl:imports <http://example.org/lcdmo> ;
+  owl:imports <http://example.org/rc-copo> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+LCA_Slab_Recorded:CapacityUtilizationDemolition_1
+  rdf:type rc-copo:CapacityUtilization ;
+  lcdmo:hasUnit "-" ;
+  lcdmo:hasValue 0.75 ;
+.
+LCA_Slab_Recorded:CapacityUtilizationLifting_1
+  rdf:type rc-copo:CapacityUtilization ;
+  lcdmo:hasUnit "-" ;
+  lcdmo:hasValue 0.75 ;
+.
+LCA_Slab_Recorded:CapacityUtilizationSawing_1
+  rdf:type rc-copo:CapacityUtilization ;
+  lcdmo:hasUnit "-" ;
+  lcdmo:hasValue 0.75 ;
+.
+LCA_Slab_Recorded:Crane_1
+  rdf:type rc-copo:Crane ;
+  lcdmo:hasProcessResourceProperty LCA_Slab_Recorded:PowerCrane_1 ;
+  lcdmo:hasResourceType LCA_Slab_Recorded:Demag_AC100-4_1 ;
+.
+LCA_Slab_Recorded:Demag_AC100-4_1
+  rdf:type rc-copo:Demag_AC100-4 ;
+.
+LCA_Slab_Recorded:DemolitionHammer_1
+  rdf:type rc-copo:DemolitionHammer ;
+  lcdmo:hasProcessResourceProperty LCA_Slab_Recorded:PowerDemolitionHammer_1 ;
+  lcdmo:hasResourceType LCA_Slab_Recorded:Harris_Modell_98-3TFR-32_1 ;
+.
+LCA_Slab_Recorded:DemolitionOccurence_1
+  rdf:type rc-copo:DemolitionOccurence ;
+  lcao:belongsToLifeCycleModule "C1" ;
+  lcao:belongsToProcessSystem "Foreground System" ;
+  lcao:hasExchange LCA_Slab_Recorded:EnergyConsumptionDemolition_1 ;
+  lcao:hasExchange LCA_Slab_Recorded:Processing_1 ;
+  lcao:hasGeographicalContext lcao:GeographicalContext_1 ;
+  lcao:hasLCI-Result LCA_Slab_Recorded:LCI-ResultPENRT_1 ;
+  lcao:hasLCI-Result LCA_Slab_Recorded:LCI-ResultPERT_1 ;
+  lcao:hasLCIA-Result LCA_Slab_Recorded:LCIA-ResultGWP_1 ;
+  lcao:hasProcessDescription "Demolition of Slab using Demolition Hammer" ;
+  lcao:hasProcessType "Unit process, single operation" ;
+  lcao:hasProcessUUID "5858ead8-ecdf-5a3f-b930-601167b53faa" ;
+  lcao:hasProcessVersion "00.00.001" ;
+  lcao:hasTechnicalContext lcao:TechnicalContext_1 ;
+  lcao:hasTemporalContext lcao:TemporalContext_1 ;
+  lcao:refersToLCI-Method lcao:LCI-Method_1 ;
+  lcao:refersToLCIA-Method lcao:LCIA-Method_1 ;
+  lcdmo:isComposedOf LCA_Slab_Recorded:DemolitionHammer_1 ;
+  lcdmo:isComposedOf LCA_Slab_Recorded:Demolition_1 ;
+  lcdmo:isComposedOf LCA_Slab_Recorded:Slab_1 ;
+.
+LCA_Slab_Recorded:Demolition_1
+  rdf:type rc-copo:Demolition ;
+  lcdmo:hasConstructionProcessExchanges LCA_Slab_Recorded:EnergyConsumptionDemolition_1 ;
+  lcdmo:hasConstructionProcessExchanges LCA_Slab_Recorded:Processing_1 ;
+  lcdmo:hasConstructionProcessProperty LCA_Slab_Recorded:CapacityUtilizationDemolition_1 ;
+  lcdmo:hasConstructionProcessProperty LCA_Slab_Recorded:ProcessOperationDurationDemolition_1 ;
+  lcdmo:hasProcessResource LCA_Slab_Recorded:DemolitionHammer_1 ;
+  lcdmo:hasSubsequentProcess LCA_Slab_Recorded:Sawing_1 ;
+.
+LCA_Slab_Recorded:EnergyConsumptionDemolition_1
+  rdf:type rc-copo:EnergyConsumption ;
+  lcao:hasExchangeDirection "Input" ;
+  lcao:hasQuantity "0.35" ;
+  lcao:refersToFlow lcao:Flow_1 ;
+  lcdmo:hasUnit "MJ" ;
+  lcdmo:hasValue 0.35 ;
+.
+LCA_Slab_Recorded:EnergyConsumptionLifting_1
+  rdf:type rc-copo:EnergyConsumption ;
+  lcao:hasExchangeDirection "Input" ;
+  lcao:hasQuantity "58.17" ;
+  lcao:refersToFlow lcao:Flow_1 ;
+  lcdmo:hasUnit "MJ" ;
+  lcdmo:hasValue 58.17 ;
+.
+LCA_Slab_Recorded:EnergyConsumptionSawing_1
+  rdf:type rc-copo:EnergyConsumption ;
+  lcao:hasExchangeDirection "Input" ;
+  lcao:hasQuantity "40.5" ;
+  lcao:refersToFlow lcao:Flow_1 ;
+  lcdmo:hasUnit "MJ" ;
+  lcdmo:hasValue 40.5 ;
+.
+LCA_Slab_Recorded:Harris_Modell_98-3TFR-32_1
+  rdf:type rc-copo:Harris_Modell_98-3TFR-32 ;
+.
+LCA_Slab_Recorded:Hilti_DST_10-CA_1
+  rdf:type rc-copo:Hilti_DST_10-CA ;
+.
+LCA_Slab_Recorded:LCI-ResultPENRT_1
+  rdf:type lcao:LCI-Result ;
+  lcao:belongsToEnvironmentalIndicator "PENRT" ;
+  lcdmo:hasUnit "MJ" ;
+  lcdmo:hasValue 0.66 ;
+.
+LCA_Slab_Recorded:LCI-ResultPENRT_2
+  rdf:type lcao:LCI-Result ;
+  lcao:belongsToEnvironmentalIndicator "PENRT" ;
+  lcdmo:hasUnit "MJ" ;
+  lcdmo:hasValue 76.23 ;
+.
+LCA_Slab_Recorded:LCI-ResultPENRT_3
+  rdf:type lcao:LCI-Result ;
+  lcao:belongsToEnvironmentalIndicator "PENRT" ;
+  lcdmo:hasUnit "MJ" ;
+  lcdmo:hasValue 109.5 ;
+.
+LCA_Slab_Recorded:LCI-ResultPENRT_4
+  rdf:type lcao:LCI-Result ;
+  lcao:belongsToEnvironmentalIndicator "PENRT" ;
+  lcdmo:hasUnit "MJ" ;
+  lcdmo:hasValue "208"^^xsd:decimal ;
+.
+LCA_Slab_Recorded:LCI-ResultPERT_1
+  rdf:type lcao:LCI-Result ;
+  lcao:belongsToEnvironmentalIndicator "PERT" ;
+  lcdmo:hasUnit "MJ" ;
+  lcdmo:hasValue 0.43 ;
+.
+LCA_Slab_Recorded:LCI-ResultPERT_2
+  rdf:type lcao:LCI-Result ;
+  lcao:belongsToEnvironmentalIndicator "PERT" ;
+  lcdmo:hasUnit "MJ" ;
+  lcdmo:hasValue 49.72 ;
+.
+LCA_Slab_Recorded:LCI-ResultPERT_3
+  rdf:type lcao:LCI-Result ;
+  lcao:belongsToEnvironmentalIndicator "PERT" ;
+  lcdmo:hasUnit "MJ" ;
+  lcdmo:hasValue 71.41 ;
+.
+LCA_Slab_Recorded:LCI-ResultPERT_4
+  rdf:type lcao:LCI-Result ;
+  lcao:belongsToEnvironmentalIndicator "PERT" ;
+  lcdmo:hasUnit "MJ" ;
+  lcdmo:hasValue 1.28 ;
+.
+LCA_Slab_Recorded:LCIA-ResultGWP_1
+  rdf:type lcao:LCIA-Result ;
+  lcao:belongsToEnvironmentalImpactIndicator "GWP-total" ;
+  lcdmo:hasUnit "kg CO2 eq." ;
+  lcdmo:hasValue 0.05 ;
+.
+LCA_Slab_Recorded:LCIA-ResultGWP_2
+  rdf:type lcao:LCIA-Result ;
+  lcao:belongsToEnvironmentalImpactIndicator "GWP-total" ;
+  lcdmo:hasUnit "kg CO2 eq." ;
+  lcdmo:hasValue 6.13 ;
+.
+LCA_Slab_Recorded:LCIA-ResultGWP_3
+  rdf:type lcao:LCIA-Result ;
+  lcao:belongsToEnvironmentalImpactIndicator "GWP-total" ;
+  lcdmo:hasUnit "kg CO2 eq." ;
+  lcdmo:hasValue 8.80 ;
+.
+LCA_Slab_Recorded:LCIA-ResultGWP_4
+  rdf:type lcao:LCIA-Result ;
+  lcao:belongsToEnvironmentalImpactIndicator "GWP-total" ;
+  lcdmo:hasUnit "kg CO2 eq." ;
+  lcdmo:hasValue 1.66 ;
+.
+LCA_Slab_Recorded:LiftingOccurence_1
+  rdf:type rc-copo:LiftingOccurence ;
+  lcao:belongsToLifeCycleModule "C1" ;
+  lcao:belongsToProcessSystem "Foreground System" ;
+  lcao:hasExchange LCA_Slab_Recorded:EnergyConsumptionLifting_1 ;
+  lcao:hasExchange LCA_Slab_Recorded:Processing_3 ;
+  lcao:hasGeographicalContext lcao:GeographicalContext_1 ;
+  lcao:hasLCI-Result LCA_Slab_Recorded:LCI-ResultPENRT_3 ;
+  lcao:hasLCI-Result LCA_Slab_Recorded:LCI-ResultPERT_3 ;
+  lcao:hasLCIA-Result LCA_Slab_Recorded:LCIA-ResultGWP_3 ;
+  lcao:hasProcessDescription "Lifting of Slab using Crane" ;
+  lcao:hasProcessType "Unit process, single operation" ;
+  lcao:hasProcessUUID "5858ead8-ecdf-5a3f-b930-601167b53fcc" ;
+  lcao:hasProcessVersion "00.00.001" ;
+  lcao:hasTechnicalContext lcao:TechnicalContext_1 ;
+  lcao:hasTemporalContext lcao:TemporalContext_1 ;
+  lcao:refersToLCI-Method lcao:LCI-Method_1 ;
+  lcao:refersToLCIA-Method lcao:LCIA-Method_1 ;
+  lcdmo:isComposedOf LCA_Slab_Recorded:Crane_1 ;
+  lcdmo:isComposedOf LCA_Slab_Recorded:Lifting_1 ;
+  lcdmo:isComposedOf LCA_Slab_Recorded:Slab_1 ;
+.
+LCA_Slab_Recorded:Lifting_1
+  rdf:type rc-copo:Lifting ;
+  lcdmo:hasConstructionProcessExchanges LCA_Slab_Recorded:EnergyConsumptionLifting_1 ;
+  lcdmo:hasConstructionProcessExchanges LCA_Slab_Recorded:Processing_2 ;
+  lcdmo:hasConstructionProcessProperty LCA_Slab_Recorded:CapacityUtilizationLifting_1 ;
+  lcdmo:hasConstructionProcessProperty LCA_Slab_Recorded:ProcessOperationDurationLifting_1 ;
+  lcdmo:hasPrecedingProcess LCA_Slab_Recorded:Sawing_1 ;
+  lcdmo:hasProcessResource LCA_Slab_Recorded:Crane_1 ;
+  lcdmo:hasSubsequentProcess LCA_Slab_Recorded:Transport_1 ;
+.
+LCA_Slab_Recorded:Mercedes-Benz_Actros_2653_LS_1
+  rdf:type rc-copo:Mercedes-Benz_Actros_2653_LS ;
+.
+LCA_Slab_Recorded:PowerCrane_1
+  rdf:type rc-copo:Power ;
+  lcdmo:hasUnit "kW" ;
+  lcdmo:hasValue "129"^^xsd:decimal ;
+.
+LCA_Slab_Recorded:PowerDemolitionHammer_1
+  rdf:type rc-copo:Power ;
+  lcdmo:hasUnit "kW" ;
+  lcdmo:hasValue 1.55 ;
+.
+LCA_Slab_Recorded:PowerSaw_1
+  rdf:type rc-copo:Power ;
+  lcdmo:hasUnit "kW" ;
+  lcdmo:hasValue "20"^^xsd:decimal ;
+.
+LCA_Slab_Recorded:PrecastConcreteObjectInformation_1
+  rdf:type rc-copo:PrecastConcreteObjectInformation ;
+.
+LCA_Slab_Recorded:ProcessOperationDurationDemolition_1
+  rdf:type rc-copo:ProcessOperationDuration ;
+  lcdmo:hasUnit "h/km" ;
+  lcdmo:hasValue 0.08 ;
+.
+LCA_Slab_Recorded:ProcessOperationDurationLifting_1
+  rdf:type rc-copo:ProcessOperationDuration ;
+  lcdmo:hasUnit "h/km" ;
+  lcdmo:hasValue 0.167 ;
+.
+LCA_Slab_Recorded:ProcessOperationDurationSawing_1
+  rdf:type rc-copo:ProcessOperationDuration ;
+  lcdmo:hasUnit "h/km" ;
+  lcdmo:hasValue 0.75 ;
+.
+LCA_Slab_Recorded:ProcessOperationDurationTransport_1
+  rdf:type rc-copo:ProcessOperationDuration ;
+.
+LCA_Slab_Recorded:Processing_1
+  rdf:type rc-copo:Processing ;
+  lcao:hasExchangeDirection "Output" ;
+  lcao:hasQuantity "1" ;
+  lcao:refersToFlow lcao:Flow_2 ;
+.
+LCA_Slab_Recorded:Processing_2
+  rdf:type rc-copo:Processing ;
+  lcao:hasExchangeDirection "Output" ;
+  lcao:hasQuantity "1" ;
+  lcao:refersToFlow lcao:Flow_2 ;
+.
+LCA_Slab_Recorded:Processing_3
+  rdf:type rc-copo:Processing ;
+  lcao:hasExchangeDirection "Output" ;
+  lcao:hasQuantity "1" ;
+  lcao:refersToFlow lcao:Flow_2 ;
+.
+LCA_Slab_Recorded:Processing_4
+  rdf:type rc-copo:Processing ;
+  lcao:hasExchangeDirection "Output" ;
+  lcao:hasQuantity "1" ;
+  lcao:refersToFlow lcao:Flow_2 ;
+.
+LCA_Slab_Recorded:Reuse_of_ReinforcedConcreteElements_1
+  rdf:type rc-copo:Reuse_of_ReinforcedConcreteElements ;
+  lcdmo:hasConstruction LCA_Slab_Recorded:UniversityBuilding_1 ;
+.
+LCA_Slab_Recorded:Saw_1
+  rdf:type rc-copo:Saw ;
+  lcdmo:hasProcessResourceProperty LCA_Slab_Recorded:PowerSaw_1 ;
+  lcdmo:hasResourceType LCA_Slab_Recorded:Hilti_DST_10-CA_1 ;
+.
+LCA_Slab_Recorded:SawingOccurence_1
+  rdf:type rc-copo:SawingOccurence ;
+  lcao:belongsToLifeCycleModule "C1" ;
+  lcao:belongsToProcessSystem "Foreground System" ;
+  lcao:hasExchange LCA_Slab_Recorded:EnergyConsumptionSawing_1 ;
+  lcao:hasExchange LCA_Slab_Recorded:Processing_2 ;
+  lcao:hasGeographicalContext lcao:GeographicalContext_1 ;
+  lcao:hasLCI-Result LCA_Slab_Recorded:LCI-ResultPENRT_2 ;
+  lcao:hasLCI-Result LCA_Slab_Recorded:LCI-ResultPERT_2 ;
+  lcao:hasLCIA-Result LCA_Slab_Recorded:LCIA-ResultGWP_2 ;
+  lcao:hasProcessDescription "Sawing of Slab using Saw" ;
+  lcao:hasProcessType "Unit process, black box" ;
+  lcao:hasProcessUUID "5858ead8-ecdf-5a3f-b930-601167b53fbb" ;
+  lcao:hasProcessVersion "00.00.001" ;
+  lcao:hasTechnicalContext lcao:TechnicalContext_1 ;
+  lcao:hasTemporalContext lcao:TemporalContext_1 ;
+  lcao:refersToLCI-Method lcao:LCI-Method_1 ;
+  lcao:refersToLCIA-Method lcao:LCIA-Method_1 ;
+  lcdmo:isComposedOf LCA_Slab_Recorded:Saw_1 ;
+  lcdmo:isComposedOf LCA_Slab_Recorded:Sawing_1 ;
+  lcdmo:isComposedOf LCA_Slab_Recorded:Slab_1 ;
+.
+LCA_Slab_Recorded:Sawing_1
+  rdf:type rc-copo:Sawing ;
+  lcdmo:hasConstructionProcessExchanges LCA_Slab_Recorded:EnergyConsumptionSawing_1 ;
+  lcdmo:hasConstructionProcessExchanges LCA_Slab_Recorded:Processing_3 ;
+  lcdmo:hasConstructionProcessProperty LCA_Slab_Recorded:CapacityUtilizationSawing_1 ;
+  lcdmo:hasConstructionProcessProperty LCA_Slab_Recorded:ProcessOperationDurationSawing_1 ;
+  lcdmo:hasPrecedingProcess LCA_Slab_Recorded:Demolition_1 ;
+  lcdmo:hasProcessResource LCA_Slab_Recorded:Saw_1 ;
+  lcdmo:hasSubsequentProcess LCA_Slab_Recorded:Lifting_1 ;
+.
+LCA_Slab_Recorded:Slab_1
+  rdf:type rc-copo:Slab ;
+  lcdmo:hasConstructionProcess LCA_Slab_Recorded:Demolition_1 ;
+  lcdmo:hasConstructionProcess LCA_Slab_Recorded:Lifting_1 ;
+  lcdmo:hasConstructionProcess LCA_Slab_Recorded:Sawing_1 ;
+  lcdmo:hasConstructionProcess LCA_Slab_Recorded:Transport_1 ;
+  lcdmo:hasIFC-ID "3t3TDZl_D9NOIWB0BSslab" ;
+  lcdmo:hasPropertySet LCA_Slab_Recorded:PrecastConcreteObjectInformation_1 ;
+.
+LCA_Slab_Recorded:TransportOccurence_1
+  rdf:type rc-copo:TransportOccurence ;
+  lcao:belongsToLifeCycleModule "C2" ;
+  lcao:belongsToProcessSystem "Foreground System" ;
+  lcao:hasExchange LCA_Slab_Recorded:Processing_4 ;
+  lcao:hasGeographicalContext lcao:GeographicalContext_1 ;
+  lcao:hasLCI-Result LCA_Slab_Recorded:LCI-ResultPENRT_4 ;
+  lcao:hasLCI-Result LCA_Slab_Recorded:LCI-ResultPERT_4 ;
+  lcao:hasLCIA-Result LCA_Slab_Recorded:LCIA-ResultGWP_4 ;
+  lcao:hasProcessDescription "Transport of Slab using Truck" ;
+  lcao:hasProcessType "Unit process, single operation" ;
+  lcao:hasProcessUUID "5858ead8-ecdf-5a3f-b930-601167b53fdd" ;
+  lcao:hasProcessVersion "00.00.001" ;
+  lcao:hasTechnicalContext lcao:TechnicalContext_1 ;
+  lcao:hasTemporalContext lcao:TemporalContext_1 ;
+  lcao:refersToLCI-Method lcao:LCI-Method_1 ;
+  lcao:refersToLCIA-Method lcao:LCIA-Method_1 ;
+  lcdmo:isComposedOf LCA_Slab_Recorded:Slab_1 ;
+  lcdmo:isComposedOf LCA_Slab_Recorded:Transport_1 ;
+  lcdmo:isComposedOf LCA_Slab_Recorded:Truck_1 ;
+.
+LCA_Slab_Recorded:Transport_1
+  rdf:type rc-copo:Transport ;
+  lcdmo:hasConstructionProcessExchanges LCA_Slab_Recorded:Processing_4 ;
+  lcdmo:hasConstructionProcessProperty LCA_Slab_Recorded:ProcessOperationDurationTransport_1 ;
+  lcdmo:hasPrecedingProcess LCA_Slab_Recorded:Lifting_1 ;
+  lcdmo:hasProcessResource LCA_Slab_Recorded:Truck_1 ;
+.
+LCA_Slab_Recorded:Truck_1
+  rdf:type rc-copo:Truck ;
+  lcdmo:hasResourceType LCA_Slab_Recorded:Mercedes-Benz_Actros_2653_LS_1 ;
+.
+LCA_Slab_Recorded:UniversityBuilding_1
+  rdf:type rc-copo:UniversityBuilding ;
+  lcdmo:hasConstructionObject LCA_Slab_Recorded:Slab_1 ;
+.

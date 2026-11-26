@@ -1,0 +1,256 @@
+# baseURI: http://example.org/LCA_Beam_Literature
+# imports: http://example.org/lcao
+# imports: http://example.org/lcdmo
+# imports: http://example.org/rc-copo
+# prefix: LCA_Beam_Literature
+
+@prefix LCA_Beam_Literature: <http://example.org/LCA_Beam_Literature#> .
+@prefix lcao: <http://example.org/lcao#> .
+@prefix lcdmo: <http://example.org/lcdmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rc-copo: <http://example.org/rc-copo#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/LCA_Beam_Literature>
+  rdf:type owl:Ontology ;
+  owl:imports <http://example.org/lcao> ;
+  owl:imports <http://example.org/lcdmo> ;
+  owl:imports <http://example.org/rc-copo> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+LCA_Beam_Literature:Beam_1
+  rdf:type rc-copo:Beam ;
+  lcdmo:hasConstructionProcess LCA_Beam_Literature:Excavation_1 ;
+  lcdmo:hasConstructionProcess LCA_Beam_Literature:Lifting_1 ;
+  lcdmo:hasConstructionProcess LCA_Beam_Literature:Transport_1 ;
+  lcdmo:hasIFC-ID "3t3TDZl_D9NOIWB0BSjzJI" ;
+  lcdmo:hasPropertySet LCA_Beam_Literature:PrecastConcreteObjectInformation_1 ;
+.
+LCA_Beam_Literature:CapacityUtilizationCrane_1
+  rdf:type rc-copo:CapacityUtilization ;
+.
+LCA_Beam_Literature:CapacityUtilizationExcavator_1
+  rdf:type rc-copo:CapacityUtilization ;
+.
+LCA_Beam_Literature:Crane_1
+  rdf:type rc-copo:Crane ;
+  lcdmo:hasProcessResourceProperty LCA_Beam_Literature:PowerCrane_1 ;
+.
+LCA_Beam_Literature:EnergyConsumptionExcavation_1
+  rdf:type rc-copo:EnergyConsumption ;
+  lcao:hasExchangeDirection "Input" ;
+  lcao:hasQuantity "2.53" ;
+  lcao:refersToFlow lcao:Flow_1 ;
+  lcdmo:hasUnit "MJ" ;
+  lcdmo:hasValue 2.53 ;
+.
+LCA_Beam_Literature:EnergyConsumptionLifting_1
+  rdf:type rc-copo:EnergyConsumption ;
+  lcao:hasExchangeDirection "Input" ;
+  lcao:hasQuantity "222.27" ;
+  lcao:refersToFlow lcao:Flow_1 ;
+  lcdmo:hasUnit "MJ" ;
+  lcdmo:hasValue 222.27 ;
+.
+LCA_Beam_Literature:ExcavationOccurence_1
+  rdf:type rc-copo:ExcavationOccurence ;
+  lcao:belongsToLifeCycleModule "C1" ;
+  lcao:belongsToProcessSystem "Foreground System" ;
+  lcao:hasExchange LCA_Beam_Literature:EnergyConsumptionExcavation_1 ;
+  lcao:hasExchange LCA_Beam_Literature:ProcessingExcavation_1 ;
+  lcao:hasGeographicalContext lcao:GeographicalContext_1 ;
+  lcao:hasLCI-Result LCA_Beam_Literature:LCI-ResultPENRT_1 ;
+  lcao:hasLCI-Result LCA_Beam_Literature:LCI-ResultPERT_1 ;
+  lcao:hasLCIA-Result LCA_Beam_Literature:LCIA-ResultGWP_1 ;
+  lcao:hasProcessDescription "Excavation of Beam using MiniExcavator" ;
+  lcao:hasProcessType "Unit process, single operation" ;
+  lcao:hasProcessUUID "5858ead8-ecdf-5a3f-b930-601167b53f77" ;
+  lcao:hasProcessVersion "00.00.001" ;
+  lcao:hasTechnicalContext lcao:TechnicalContext_1 ;
+  lcao:hasTemporalContext lcao:TemporalContext_1 ;
+  lcao:refersToLCI-Method lcao:LCI-Method_1 ;
+  lcao:refersToLCIA-Method lcao:LCIA-Method_1 ;
+  lcdmo:isComposedOf LCA_Beam_Literature:Beam_1 ;
+  lcdmo:isComposedOf LCA_Beam_Literature:Excavation_1 ;
+  lcdmo:isComposedOf LCA_Beam_Literature:MiniExcavator_1 ;
+.
+LCA_Beam_Literature:Excavation_1
+  rdf:type rc-copo:Excavation ;
+  lcdmo:hasConstructionProcessExchanges LCA_Beam_Literature:EnergyConsumptionExcavation_1 ;
+  lcdmo:hasConstructionProcessExchanges LCA_Beam_Literature:ProcessingExcavation_1 ;
+  lcdmo:hasConstructionProcessProperty LCA_Beam_Literature:CapacityUtilizationExcavator_1 ;
+  lcdmo:hasConstructionProcessProperty LCA_Beam_Literature:ProcessOperationDurationExcavator_1 ;
+  lcdmo:hasProcessResource LCA_Beam_Literature:MiniExcavator_1 ;
+  lcdmo:hasSubsequentProcess LCA_Beam_Literature:Lifting_1 ;
+.
+LCA_Beam_Literature:LCI-ResultPENRT_1
+  rdf:type lcao:LCI-Result ;
+  lcao:belongsToEnvironmentalIndicator "PENRT" ;
+  lcdmo:hasUnit "MJ" ;
+  lcdmo:hasValue 2.168 ;
+.
+LCA_Beam_Literature:LCI-ResultPENRT_2
+  rdf:type lcao:LCI-Result ;
+  lcao:belongsToEnvironmentalIndicator "PENRT" ;
+  lcdmo:hasUnit "MJ" ;
+  lcdmo:hasValue 418.4 ;
+.
+LCA_Beam_Literature:LCI-ResultPENRT_3
+  rdf:type lcao:LCI-Result ;
+  lcao:belongsToEnvironmentalIndicator "PENRT" ;
+  lcdmo:hasUnit "MJ" ;
+  lcdmo:hasValue 144.9 ;
+.
+LCA_Beam_Literature:LCI-ResultPERT_1
+  rdf:type lcao:LCI-Result ;
+  lcao:belongsToEnvironmentalIndicator "PERT" ;
+  lcdmo:hasUnit "MJ" ;
+  lcdmo:hasValue 1.414 ;
+.
+LCA_Beam_Literature:LCI-ResultPERT_2
+  rdf:type lcao:LCI-Result ;
+  lcao:belongsToEnvironmentalIndicator "PERT" ;
+  lcdmo:hasUnit "MJ" ;
+  lcdmo:hasValue 272.9 ;
+.
+LCA_Beam_Literature:LCI-ResultPERT_3
+  rdf:type lcao:LCI-Result ;
+  lcao:belongsToEnvironmentalIndicator "PERT" ;
+  lcdmo:hasUnit "MJ" ;
+  lcdmo:hasValue 8.409 ;
+.
+LCA_Beam_Literature:LCIA-ResultGWP_1
+  rdf:type lcao:LCIA-Result ;
+  lcao:belongsToEnvironmentalImpactIndicator "GWP-total" ;
+  lcdmo:hasUnit "kg CO2 eq." ;
+  lcdmo:hasValue 33.61 ;
+.
+LCA_Beam_Literature:LCIA-ResultGWP_2
+  rdf:type lcao:LCIA-Result ;
+  lcao:belongsToEnvironmentalImpactIndicator "GWP-total" ;
+  lcdmo:hasUnit "kg CO2 eq." ;
+  lcdmo:hasValue 0.1742 ;
+.
+LCA_Beam_Literature:LCIA-ResultGWP_3
+  rdf:type lcao:LCIA-Result ;
+  lcao:belongsToEnvironmentalImpactIndicator "GWP-total" ;
+  lcdmo:hasUnit "kg CO2 eq." ;
+  lcdmo:hasValue 11.00 ;
+.
+LCA_Beam_Literature:LiftingOccurence_1
+  rdf:type rc-copo:LiftingOccurence ;
+  lcao:belongsToLifeCycleModule "C1" ;
+  lcao:belongsToProcessSystem "Foreground System" ;
+  lcao:hasExchange LCA_Beam_Literature:EnergyConsumptionLifting_1 ;
+  lcao:hasExchange LCA_Beam_Literature:ProcessingLifting_1 ;
+  lcao:hasGeographicalContext lcao:GeographicalContext_1 ;
+  lcao:hasLCI-Result LCA_Beam_Literature:LCI-ResultPENRT_2 ;
+  lcao:hasLCI-Result LCA_Beam_Literature:LCI-ResultPERT_2 ;
+  lcao:hasLCIA-Result LCA_Beam_Literature:LCIA-ResultGWP_2 ;
+  lcao:hasProcessDescription "Lifting of Beam using Crane" ;
+  lcao:hasProcessType "Unit process, single operation" ;
+  lcao:hasProcessUUID "5858ead8-ecdf-5a3f-b930-601167b53f55" ;
+  lcao:hasProcessVersion "00.00.001" ;
+  lcao:hasTechnicalContext lcao:TechnicalContext_1 ;
+  lcao:hasTemporalContext lcao:TemporalContext_1 ;
+  lcao:refersToLCI-Method lcao:LCI-Method_1 ;
+  lcao:refersToLCIA-Method lcao:LCIA-Method_1 ;
+  lcdmo:isComposedOf LCA_Beam_Literature:Beam_1 ;
+  lcdmo:isComposedOf LCA_Beam_Literature:Crane_1 ;
+  lcdmo:isComposedOf LCA_Beam_Literature:Lifting_1 ;
+.
+LCA_Beam_Literature:Lifting_1
+  rdf:type rc-copo:Lifting ;
+  lcdmo:hasConstructionProcessExchanges LCA_Beam_Literature:EnergyConsumptionLifting_1 ;
+  lcdmo:hasConstructionProcessExchanges LCA_Beam_Literature:ProcessingLifting_1 ;
+  lcdmo:hasConstructionProcessProperty LCA_Beam_Literature:CapacityUtilizationCrane_1 ;
+  lcdmo:hasConstructionProcessProperty LCA_Beam_Literature:ProcessOperationDurationCrane_1 ;
+  lcdmo:hasPrecedingProcess LCA_Beam_Literature:Excavation_1 ;
+  lcdmo:hasProcessResource LCA_Beam_Literature:Crane_1 ;
+  lcdmo:hasSubsequentProcess LCA_Beam_Literature:Transport_1 ;
+.
+LCA_Beam_Literature:MiniExcavator_1
+  rdf:type rc-copo:MiniExcavator ;
+  lcdmo:hasProcessResourceProperty LCA_Beam_Literature:PowerExcavator_1 ;
+.
+LCA_Beam_Literature:PowerCrane_1
+  rdf:type rc-copo:Power ;
+  lcdmo:hasUnit "kW" ;
+  lcdmo:hasValue "149"^^xsd:decimal ;
+.
+LCA_Beam_Literature:PowerExcavator_1
+  rdf:type rc-copo:Power ;
+  lcdmo:hasUnit "kW" ;
+  lcdmo:hasValue 10.3 ;
+.
+LCA_Beam_Literature:PrecastConcreteObjectInformation_1
+  rdf:type rc-copo:PrecastConcreteObjectInformation ;
+.
+LCA_Beam_Literature:ProcessOperationDurationCrane_1
+  rdf:type rc-copo:ProcessOperationDuration ;
+.
+LCA_Beam_Literature:ProcessOperationDurationExcavator_1
+  rdf:type rc-copo:ProcessOperationDuration ;
+.
+LCA_Beam_Literature:ProcessOperationDurationTruck_1
+  rdf:type rc-copo:ProcessOperationDuration ;
+.
+LCA_Beam_Literature:ProcessingExcavation_1
+  rdf:type rc-copo:Processing ;
+  lcao:hasExchangeDirection "Output" ;
+  lcao:hasQuantity "1" ;
+  lcao:refersToFlow lcao:Flow_2 ;
+.
+LCA_Beam_Literature:ProcessingLifting_1
+  rdf:type rc-copo:Processing ;
+  lcao:hasExchangeDirection "Output" ;
+  lcao:hasQuantity "1" ;
+  lcao:refersToFlow lcao:Flow_2 ;
+.
+LCA_Beam_Literature:ProcessingTransport_1
+  rdf:type rc-copo:Processing ;
+  lcao:hasExchangeDirection "Output" ;
+  lcao:hasQuantity "1" ;
+  lcao:refersToFlow lcao:Flow_2 ;
+.
+LCA_Beam_Literature:Reuse_of_ReinforcedConcreteElements_1
+  rdf:type rc-copo:Reuse_of_ReinforcedConcreteElements ;
+  lcdmo:hasConstruction LCA_Beam_Literature:UniversityBuilding_1 ;
+.
+LCA_Beam_Literature:TransportOccurence_1
+  rdf:type rc-copo:TransportOccurence ;
+  lcao:belongsToLifeCycleModule "C2" ;
+  lcao:belongsToProcessSystem "Foreground System" ;
+  lcao:hasExchange LCA_Beam_Literature:ProcessingTransport_1 ;
+  lcao:hasGeographicalContext lcao:GeographicalContext_1 ;
+  lcao:hasLCI-Result LCA_Beam_Literature:LCI-ResultPENRT_3 ;
+  lcao:hasLCI-Result LCA_Beam_Literature:LCI-ResultPERT_3 ;
+  lcao:hasLCIA-Result LCA_Beam_Literature:LCIA-ResultGWP_3 ;
+  lcao:hasProcessDescription "Transport of Beam with Truck" ;
+  lcao:hasProcessType "Unit process, black box" ;
+  lcao:hasProcessUUID "5858ead8-ecdf-5a3f-b930-601167b53f22" ;
+  lcao:hasProcessVersion "00.00.001" ;
+  lcao:hasTechnicalContext lcao:TechnicalContext_1 ;
+  lcao:hasTemporalContext lcao:TemporalContext_1 ;
+  lcao:refersToLCI-Method lcao:LCI-Method_1 ;
+  lcao:refersToLCIA-Method lcao:LCIA-Method_1 ;
+  lcdmo:isComposedOf LCA_Beam_Literature:Beam_1 ;
+  lcdmo:isComposedOf LCA_Beam_Literature:Transport_1 ;
+  lcdmo:isComposedOf LCA_Beam_Literature:Truck_1 ;
+.
+LCA_Beam_Literature:Transport_1
+  rdf:type rc-copo:Transport ;
+  lcdmo:hasConstructionProcessExchanges LCA_Beam_Literature:ProcessingTransport_1 ;
+  lcdmo:hasConstructionProcessProperty LCA_Beam_Literature:ProcessOperationDurationTruck_1 ;
+  lcdmo:hasPrecedingProcess LCA_Beam_Literature:Transport_1 ;
+  lcdmo:hasProcessResource LCA_Beam_Literature:Truck_1 ;
+.
+LCA_Beam_Literature:Truck_1
+  rdf:type rc-copo:Truck ;
+.
+LCA_Beam_Literature:UniversityBuilding_1
+  rdf:type rc-copo:UniversityBuilding ;
+  lcdmo:hasConstructionObject LCA_Beam_Literature:Beam_1 ;
+.
